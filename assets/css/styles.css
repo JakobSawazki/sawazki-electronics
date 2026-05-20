@@ -764,12 +764,17 @@ select:focus {
 }
 
 .contact-link {
-  display: inline-flex;
+  width: fit-content;
   max-width: 100%;
+  display: flex;
   margin: 0.35rem 0;
   color: var(--teal-2);
   font-weight: 850;
   overflow-wrap: anywhere;
+}
+
+.contact-link + .contact-link {
+  margin-top: 1rem;
 }
 
 .mini-list {

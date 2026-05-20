@@ -13,7 +13,7 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 
 ## Kontaktformular
 
-Das Formular sendet über FormSubmit an `Jakob_Sawazki@web.de`.
+Das Formular sendet über FormSubmit an `sawazki.electronics@googlemail.com`.
 Beim ersten echten Absenden verschickt FormSubmit eine Aktivierungs-E-Mail an diese Adresse.
 Nach Bestätigung werden Formularanfragen direkt weitergeleitet.
 
