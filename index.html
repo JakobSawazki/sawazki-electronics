@@ -53,7 +53,7 @@
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-media" aria-hidden="true">
-          <img src="assets/images/hero-workbench.png" alt="" />
+          <img src="assets/images/customer-consulting.jpg" alt="" />
         </div>
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="hero-inner">
@@ -71,18 +71,18 @@
             <a class="button secondary" href="#leistungen">Leistungen ansehen</a>
           </div>
           <div class="hero-showcase reveal" aria-label="Service-Eindrücke">
-            <figure>
+            <a class="hero-showcase-card" href="#beratung" aria-label="Zum Bereich Beratung">
               <img src="assets/images/customer-consulting.jpg" alt="Kundenberatung zu IT-Service und Datensicherung" />
-              <figcaption>Beratung</figcaption>
-            </figure>
-            <figure>
+              <span>Beratung</span>
+            </a>
+            <a class="hero-showcase-card" href="#reparatur" aria-label="Zum Bereich Reparatur">
               <img src="assets/images/repair-laptop.jpg" alt="Laptop-Reparatur auf einer Werkbank" />
-              <figcaption>Reparatur</figcaption>
-            </figure>
-            <figure>
+              <span>Reparatur</span>
+            </a>
+            <a class="hero-showcase-card" href="#elektronik" aria-label="Zum Bereich Elektronik">
               <img src="assets/images/smartphone-repair.jpg" alt="Feine Elektronikreparatur mit Präzisionswerkzeug" />
-              <figcaption>Elektronik</figcaption>
-            </figure>
+              <span>Elektronik</span>
+            </a>
           </div>
           <dl class="hero-facts reveal" aria-label="Schwerpunkte">
             <div>
@@ -188,8 +188,12 @@
               <li>Maßnahmen priorisieren und sauber dokumentieren</li>
             </ul>
           </div>
-          <figure class="image-panel reveal">
-            <img src="assets/images/support-dashboard.png" alt="Abstrakte Darstellung eines IT-Diagnose-Dashboards" loading="lazy" />
+          <figure class="image-panel diagnostic-photo reveal">
+            <img src="assets/images/customer-consulting.jpg" alt="Beratungsgespräch mit klarer IT-Diagnose am Laptop" loading="lazy" />
+            <figcaption>
+              <strong>Ruhig prüfen, klar empfehlen.</strong>
+              <span>Du siehst, was gemacht wird, warum es sinnvoll ist und welche nächsten Schritte passen.</span>
+            </figcaption>
           </figure>
         </div>
       </section>
@@ -205,7 +209,7 @@
         </div>
 
         <div class="gallery-grid">
-          <figure class="gallery-card large reveal">
+          <figure class="gallery-card large reveal" id="reparatur">
             <img src="assets/images/repair-laptop.jpg" alt="Professionelle Laptop-Reparatur auf einer Elektronik-Werkbank" loading="lazy" />
             <figcaption>
               <strong>Laptop-Reparatur & Diagnose</strong>
@@ -213,7 +217,7 @@
             </figcaption>
           </figure>
 
-          <figure class="gallery-card reveal">
+          <figure class="gallery-card reveal" id="beratung">
             <img src="assets/images/customer-consulting.jpg" alt="Kundengespräch zur IT-Beratung und Datensicherung" loading="lazy" />
             <figcaption>
               <strong>Beratung auf Augenhöhe</strong>
@@ -221,7 +225,7 @@
             </figcaption>
           </figure>
 
-          <figure class="gallery-card reveal">
+          <figure class="gallery-card reveal" id="elektronik">
             <img src="assets/images/smartphone-repair.jpg" alt="Feine Elektronik- und Smartphone-Reparatur mit Präzisionswerkzeug" loading="lazy" />
             <figcaption>
               <strong>Elektronik & Kleingeräte</strong>
@@ -269,7 +273,14 @@
             schnelle Reparatur, sondern ein Setup, das im Alltag ruhig und zuverlässig funktioniert.
           </p>
         </div>
-        <img src="assets/images/hardware-detail.png" alt="Illustration einer Laptop-Hardwarediagnose" loading="lazy" />
+        <figure class="detail-photo reveal">
+          <img src="assets/images/repair-laptop.jpg" alt="Saubere Laptop-Reparatur und Einrichtung auf einer Werkbank" loading="lazy" />
+          <figcaption>
+            <span>Einrichtung</span>
+            <span>Sicherheit</span>
+            <span>Backup</span>
+          </figcaption>
+        </figure>
       </section>
 
       <section class="section contact" id="kontakt" aria-labelledby="contact-title">
@@ -361,9 +372,10 @@
     </main>
 
     <footer class="site-footer">
-      <div>
+      <div class="footer-brand">
         <strong>Sawazki Electronics</strong>
         <p>IT-Service, PC & Laptop Support.</p>
+        <p class="footer-meta">&copy; 2026 Sawazki Electronics. Alle Rechte vorbehalten.</p>
       </div>
       <nav aria-label="Fußnavigation">
         <a href="#leistungen">Leistungen</a>
