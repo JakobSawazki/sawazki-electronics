@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Sawazki Electronics">
+  <defs>
+    <linearGradient id="g" x1="10" y1="8" x2="54" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2ed0b3" />
+      <stop offset="1" stop-color="#f3ad36" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="10" fill="#1e262a" />
+  <path d="M17 19h30v8H26v6h18v8H26v4h23v8H17z" fill="url(#g)" />
+</svg>
