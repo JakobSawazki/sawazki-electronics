@@ -1,17 +1,17 @@
-const CONTACT_EMAIL = "kontakt@sawazki-electronics.de";
-
 const header = document.querySelector("[data-header]");
 const navToggle = document.querySelector("[data-nav-toggle]");
 const navLinks = document.querySelector("[data-nav-links]");
 const revealItems = document.querySelectorAll(".reveal");
 const contactForm = document.querySelector("[data-contact-form]");
 const formStatus = document.querySelector("[data-form-status]");
+const subjectField = document.querySelector("[data-subject-field]");
 
 document.documentElement.classList.add("js-ready");
 
 function updateHeader() {
   if (!header) return;
-  header.classList.toggle("is-scrolled", window.scrollY > 12);
+  const forceSolidHeader = document.body.classList.contains("legal-body");
+  header.classList.toggle("is-scrolled", forceSolidHeader || window.scrollY > 12);
 }
 
 function closeMenu() {
@@ -66,52 +66,22 @@ function getFormValue(data, key) {
   return String(data.get(key) || "").trim();
 }
 
-function buildMessage(data) {
-  const name = getFormValue(data, "name");
-  const email = getFormValue(data, "email");
-  const phone = getFormValue(data, "phone") || "Nicht angegeben";
-  const topic = getFormValue(data, "topic");
-  const message = getFormValue(data, "message");
-
-  return [
-    "Hallo Sawazki Electronics,",
-    "",
-    "ich möchte eine Anfrage stellen.",
-    "",
-    `Name: ${name}`,
-    `E-Mail: ${email}`,
-    `Telefon: ${phone}`,
-    `Thema: ${topic}`,
-    "",
-    "Nachricht:",
-    message,
-    "",
-    "Viele Grüße",
-    name,
-  ].join("\n");
-}
-
 if (contactForm && formStatus) {
-  contactForm.addEventListener("submit", async (event) => {
-    event.preventDefault();
-
+  contactForm.addEventListener("submit", (event) => {
     if (!contactForm.reportValidity()) {
+      event.preventDefault();
       return;
     }
 
     const data = new FormData(contactForm);
     const topic = getFormValue(data, "topic");
-    const body = buildMessage(data);
-    const subject = `Anfrage über Website: ${topic}`;
-    const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-    try {
-      await navigator.clipboard?.writeText(body);
-      formStatus.textContent = "Nachricht vorbereitet und in die Zwischenablage kopiert. Dein E-Mail-Programm wird geöffnet.";
-    } catch {
-      formStatus.textContent = "Nachricht vorbereitet. Dein E-Mail-Programm wird geöffnet.";
+    if (subjectField) {
+      subjectField.value = topic
+        ? `Neue Anfrage über Sawazki Electronics: ${topic}`
+        : "Neue Anfrage über Sawazki Electronics";
     }
 
-    window.location.href = mailto;
+    formStatus.textContent = "Anfrage wird gesendet...";
   });
 }

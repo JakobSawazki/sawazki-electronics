@@ -42,6 +42,7 @@
           <a href="#leistungen">Leistungen</a>
           <a href="#ablauf">Ablauf</a>
           <a href="#kontakt">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
           <a class="nav-cta" href="#kontakt">Anfrage starten</a>
         </div>
       </nav>
@@ -174,6 +175,43 @@
         </div>
       </section>
 
+      <section class="section work-gallery" id="praxis" aria-labelledby="work-gallery-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Service in der Praxis</p>
+          <h2 id="work-gallery-title">Technikhilfe, die nah am Alltag bleibt.</h2>
+          <p>
+            Reparatur, Beratung und Einrichtung gehören zusammen: erst zuhören, dann sauber prüfen
+            und am Ende so erklären, dass die Lösung wirklich nutzbar ist.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-card large reveal">
+            <img src="assets/images/repair-laptop.jpg" alt="Professionelle Laptop-Reparatur auf einer Elektronik-Werkbank" loading="lazy" />
+            <figcaption>
+              <strong>Laptop-Reparatur & Diagnose</strong>
+              <span>Präzise Prüfung von Hardware, Kühlung, Speicher und Fehlerursachen.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-card reveal">
+            <img src="assets/images/customer-consulting.jpg" alt="Kundengespräch zur IT-Beratung und Datensicherung" loading="lazy" />
+            <figcaption>
+              <strong>Beratung auf Augenhöhe</strong>
+              <span>Verständliche Empfehlungen für Einrichtung, Sicherheit und Backup.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-card reveal">
+            <img src="assets/images/smartphone-repair.jpg" alt="Feine Elektronik- und Smartphone-Reparatur mit Präzisionswerkzeug" loading="lazy" />
+            <figcaption>
+              <strong>Elektronik & Kleingeräte</strong>
+              <span>Sorgfältiger Umgang mit Bauteilen, Werkzeugen und Kundengeräten.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
       <section class="section process" id="ablauf" aria-labelledby="process-title">
         <div class="section-heading reveal">
           <p class="eyebrow">Ablauf</p>
@@ -220,13 +258,22 @@
           <p class="eyebrow">Kontakt</p>
           <h2 id="contact-title">Beschreibe kurz, wobei du Hilfe brauchst.</h2>
           <p>
-            Das Formular öffnet dein E-Mail-Programm mit einer vorbereiteten Nachricht. Die E-Mail-Adresse
-            kann später jederzeit an deine echte Geschäftsadresse angepasst werden.
+            Deine Anfrage wird über das Formular an die hinterlegte E-Mail-Adresse weitergeleitet.
+            Alternativ kannst du auch direkt per E-Mail oder Telefon Kontakt aufnehmen.
           </p>
         </div>
 
         <div class="contact-layout">
-          <form class="contact-form reveal" data-contact-form>
+          <form
+            class="contact-form reveal"
+            action="https://formsubmit.co/Jakob_Sawazki@web.de"
+            method="POST"
+            data-contact-form
+          >
+            <input type="hidden" name="_subject" value="Neue Anfrage über sawazki-electronics.de" data-subject-field />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="https://jakobsawazki.github.io/sawazki-electronics/danke.html" />
+            <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
             <div class="form-row">
               <label>
                 Name
@@ -266,17 +313,24 @@
               ></textarea>
             </label>
 
-            <button class="button primary form-submit" type="submit">Nachricht vorbereiten</button>
+            <button class="button primary form-submit" type="submit">Anfrage senden</button>
+            <p class="privacy-note">
+              Mit dem Absenden werden deine Angaben zur Bearbeitung der Anfrage verarbeitet.
+              Details stehen in der <a href="datenschutz.html">Datenschutzerklärung</a>.
+            </p>
             <p class="form-status" role="status" aria-live="polite" data-form-status></p>
           </form>
 
           <aside class="contact-aside reveal" aria-label="Kontaktinformationen">
             <h3>Direkter Kontakt</h3>
             <p>
-              Für den ersten Entwurf ist eine Platzhalter-Adresse hinterlegt. Vor dem produktiven Einsatz
-              sollten E-Mail, Impressum und Datenschutz final ergänzt werden.
+              Sawazki Electronics<br />
+              Jakob Sawazki<br />
+              Mörikestraße 15<br />
+              72250 Freudenstadt
             </p>
-            <a class="contact-link" href="mailto:kontakt@sawazki-electronics.de">kontakt@sawazki-electronics.de</a>
+            <a class="contact-link" href="mailto:Jakob_Sawazki@web.de">Jakob_Sawazki@web.de</a>
+            <a class="contact-link" href="tel:+4974414686">07441 4686</a>
             <div class="mini-list">
               <span>PC- und Laptop-Support</span>
               <span>Remote-Hilfe nach Absprache</span>
@@ -296,6 +350,9 @@
         <a href="#leistungen">Leistungen</a>
         <a href="#ablauf">Ablauf</a>
         <a href="#kontakt">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB</a>
       </nav>
     </footer>
 

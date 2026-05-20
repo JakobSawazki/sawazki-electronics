@@ -13,14 +13,11 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 
 ## Kontaktformular
 
-Die Zieladresse ist aktuell in `assets/js/main.js` als Platzhalter gesetzt:
-
-```js
-const CONTACT_EMAIL = "kontakt@sawazki-electronics.de";
-```
-
-Vor dem produktiven Einsatz sollte diese Adresse durch die echte Geschäftsadresse ersetzt werden.
+Das Formular sendet über FormSubmit an `Jakob_Sawazki@web.de`.
+Beim ersten echten Absenden verschickt FormSubmit eine Aktivierungs-E-Mail an diese Adresse.
+Nach Bestätigung werden Formularanfragen direkt weitergeleitet.
 
 ## Rechtliches
 
-Impressum und Datenschutz sollten vor einer finalen öffentlichen Nutzung mit vollständigen, geprüften Angaben ergänzt werden.
+Impressum, Datenschutz und AGB sind als Arbeitsfassung ergänzt. Vor dauerhaftem gewerblichem
+Einsatz empfiehlt sich eine rechtliche Prüfung anhand der konkreten Geschäftspraxis.

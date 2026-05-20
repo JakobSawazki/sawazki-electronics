@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://jakobsawazki.github.io/sawazki-electronics/sitemap.xml
