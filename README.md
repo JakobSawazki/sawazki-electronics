@@ -10,6 +10,7 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - Kontaktformular mit `mailto:`-Fallback
 - Responsive Layout für Desktop, Tablet und Smartphone
 - Lokale Bildassets, keine externen Bildabhängigkeiten
+- Unternehmenslogo als lokales Website-Asset in Navigation, Favicon und Hero-Bereich
 
 ## Kontaktformular
 
