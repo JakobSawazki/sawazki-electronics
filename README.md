@@ -12,6 +12,13 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - Lokale Bildassets, keine externen Bildabhängigkeiten
 - Unternehmenslogo als lokales Website-Asset in Navigation, Favicon und Hero-Bereich
 
+## Dokumentation
+
+Die laufende Codex-Projektdokumentation liegt unter
+[`docs/CODEX_PROJECT_DOCUMENTATION.md`](docs/CODEX_PROJECT_DOCUMENTATION.md).
+Sie enthält Projektstand, lokale Weiterarbeit, Veröffentlichungsablauf, Designentscheidungen
+und ein Änderungsprotokoll.
+
 ## Kontaktformular
 
 Das Formular sendet über FormSubmit an `sawazki.electronics@googlemail.com`.
@@ -20,5 +27,5 @@ Nach Bestätigung werden Formularanfragen direkt weitergeleitet.
 
 ## Rechtliches
 
-Impressum, Datenschutz und AGB sind als Arbeitsfassung ergänzt. Vor dauerhaftem gewerblichem
-Einsatz empfiehlt sich eine rechtliche Prüfung anhand der konkreten Geschäftspraxis.
+Impressum, Datenschutz und AGB sind als eigene Seiten enthalten. Bei Änderungen an Leistungen,
+externen Diensten oder geschäftlichen Abläufen sollten die rechtlichen Inhalte mit geprüft werden.
