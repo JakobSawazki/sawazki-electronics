@@ -11,6 +11,7 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - Responsive Layout für Desktop, Tablet und Smartphone
 - Lokale Bildassets, keine externen Bildabhängigkeiten
 - Unternehmenslogo als lokales Website-Asset in Navigation, Favicon und Hero-Bereich
+- Dezenter Games-Lab-Hinweis als Sawazki-Electronics-Nebenprojekt im unteren Seitenbereich
 
 ## Dokumentation
 

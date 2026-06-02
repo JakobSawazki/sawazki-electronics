@@ -1,6 +1,6 @@
 # Sawazki Electronics Website - Codex Projektdokumentation
 
-Stand: 20. Mai 2026
+Stand: 2. Juni 2026
 
 Diese Dokumentation dient als Arbeitsgrundlage fuer Codex und fuer die Weiterarbeit auf einem anderen Laptop. Sie soll bei kuenftigen Aenderungen fortgeschrieben werden: Was wurde geaendert, warum, in welchen Dateien und wie wurde geprueft.
 
@@ -50,6 +50,7 @@ Aktiv genutzt:
 - `assets/images/customer-consulting.jpg`: Beratung/Kundengespraech, Hero-Hintergrund und Diagnosebereich
 - `assets/images/repair-laptop.jpg`: Laptop-Reparatur, Praxisbereich und Detailband
 - `assets/images/smartphone-repair.jpg`: Elektronik/Kleingeraete
+- `assets/images/games-lab-logo.png`: dezentes Nebenprojekt-Logo fuer Games Lab im unteren Startseitenbereich
 
 Noch vorhanden als moegliche Rueckfall- oder Alternativassets:
 
@@ -228,6 +229,14 @@ Commit-Titel: `Add Codex project documentation`
 
 - Diese Dokumentation angelegt.
 - README mit Verweis auf die Dokumentation erweitert.
+
+### 2. Juni 2026 - Games Lab dezent eingebunden
+
+Commit-Titel: `Add subtle Games Lab side project link`
+
+- Games Lab als unaufdringliches Nebenprojekt im unteren Bereich der Startseite verlinkt.
+- Lokales Games-Lab-Logo als Website-Asset unter `assets/images/games-lab-logo.png` ergaenzt.
+- Footer-Navigation um einen diskreten `Games Lab`-Link erweitert.
 
 ## Regeln fuer kuenftige Codex-Aenderungen
 
