@@ -45,7 +45,7 @@
           <a href="#ablauf">Ablauf</a>
           <a href="#kontakt">Kontakt</a>
           <a href="impressum.html">Impressum</a>
-          <a class="nav-cta" href="#kontakt">Anfrage starten</a>
+          <a class="nav-cta" href="anfrage-assistent.html">Anfrage starten</a>
         </div>
       </nav>
     </header>
@@ -300,7 +300,13 @@
             method="POST"
             data-contact-form
           >
-            <input type="hidden" name="_subject" value="Neue Anfrage über sawazki-electronics.de" data-subject-field />
+            <input
+              type="hidden"
+              name="_subject"
+              value="Neue Anfrage über Sawazki Electronics"
+              data-subject-prefix="Neue Anfrage über Sawazki Electronics"
+              data-subject-field
+            />
             <input type="hidden" name="_template" value="table" />
             <input type="hidden" name="_next" value="https://jakobsawazki.github.io/sawazki-electronics/danke.html" />
             <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
@@ -372,11 +378,12 @@
 
       <section class="side-project" id="games-lab" aria-labelledby="side-project-title">
         <a class="side-project-card reveal" href="https://jakobsawazki.github.io/games-lab/" target="_blank" rel="noopener">
-          <img src="assets/images/games-lab-logo.png" alt="" aria-hidden="true" loading="lazy" />
+          <img src="assets/images/games-lab-logo.png" alt="" aria-hidden="true" />
           <span>
-            <small>Nebenprojekt</small>
+            <small>Projects &amp; Sub-Projects</small>
             <strong id="side-project-title">Games Lab</strong>
-            <em>Browser-Games und kleine Experimente von Sawazki Electronics</em>
+            <em>Games, Lernideen und kleine Experimente für die Sawazki-Electronics-Welt</em>
+            <b>Designed by Sawazki Electronics</b>
           </span>
         </a>
       </section>
@@ -392,6 +399,7 @@
         <a href="#leistungen">Leistungen</a>
         <a href="#ablauf">Ablauf</a>
         <a href="#kontakt">Kontakt</a>
+        <a href="anfrage-assistent.html">Anfrage-Assistent</a>
         <a href="impressum.html">Impressum</a>
         <a href="datenschutz.html">Datenschutz</a>
         <a href="agb.html">AGB</a>

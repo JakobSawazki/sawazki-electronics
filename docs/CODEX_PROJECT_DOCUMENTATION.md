@@ -10,7 +10,7 @@ Diese Dokumentation dient als Arbeitsgrundlage fuer Codex und fuer die Weiterarb
 - Zweck: professionelle Homepage fuer IT-, PC-, Laptop-, Support- und Elektronikdienstleistungen
 - GitHub Repository: `JakobSawazki/sawazki-electronics`
 - Live-Seite: <https://jakobsawazki.github.io/sawazki-electronics/>
-- Lokaler Arbeitsordner auf dem aktuellen Laptop: `D:\Google Drive\Gewerbe\Sawazki Electronics Website`
+- Lokaler Arbeitsordner auf dem aktuellen Laptop: `G:\Meine Ablage\Gewerbe\Sawazki Electronics Website`
 - Standard-Branch: `main`
 - Backup-Branch vor der Hero-/Hintergrund-Ueberarbeitung: `codex/backup-startseite-2026-05-20`
 
@@ -20,7 +20,8 @@ Die Website ist bewusst statisch gehalten. Es gibt keinen Build-Prozess, keine F
 
 Wichtige Dateien:
 
-- `index.html`: Startseite mit Hero, Leistungen, Diagnose, Praxisbildern, Ablauf, Detailband und Kontaktformular
+- `index.html`: Startseite mit Hero, Leistungen, Diagnose, Praxisbildern, Ablauf, Detailband, Kontaktformular und Projects-/Sub-Projects-Hinweis
+- `anfrage-assistent.html`: gefuehrter Anfrage-Assistent als statische, datensparsame Alternative zu einem echten Live-Chatbot
 - `impressum.html`: Impressum
 - `datenschutz.html`: Datenschutzerklaerung
 - `agb.html`: Allgemeine Geschaeftsbedingungen
@@ -48,9 +49,9 @@ Aktiv genutzt:
 - `assets/images/sawazki-electronics-logo.png`: breites Unternehmenslogo, genutzt im Hero und als OpenGraph-Bild
 - `assets/images/sawazki-electronics-mark.png`: quadratisches Logo/Marke, genutzt in Navigation und Favicon
 - `assets/images/customer-consulting.jpg`: Beratung/Kundengespraech, Hero-Hintergrund und Diagnosebereich
-- `assets/images/repair-laptop.jpg`: Laptop-Reparatur, Praxisbereich und Detailband
+- `assets/images/repair-laptop.jpg`: neu generiertes Laptop-Reparaturfoto, Praxisbereich und Detailband
 - `assets/images/smartphone-repair.jpg`: Elektronik/Kleingeraete
-- `assets/images/games-lab-logo.png`: dezentes Nebenprojekt-Logo fuer Games Lab im unteren Startseitenbereich
+- `assets/images/games-lab-logo.png`: Projects-/Sub-Projects-Logo fuer Games Lab im unteren Startseitenbereich
 
 Noch vorhanden als moegliche Rueckfall- oder Alternativassets:
 
@@ -79,6 +80,7 @@ Kontaktformular:
 - Formularziel: `https://formsubmit.co/sawazki.electronics@googlemail.com`
 - Danke-Seite: `https://jakobsawazki.github.io/sawazki-electronics/danke.html`
 - Hinweis: Beim ersten echten Absenden kann FormSubmit eine Aktivierungs-E-Mail an die Zieladresse senden. Danach werden Anfragen direkt weitergeleitet.
+- Der neue Anfrage-Assistent nutzt ebenfalls FormSubmit, bleibt statisch und vermeidet deshalb Backend-, API- und Datenschutzkomplexitaet eines echten Chatbots.
 
 ## Rechtliche Seiten
 
@@ -237,6 +239,19 @@ Commit-Titel: `Add subtle Games Lab side project link`
 - Games Lab als unaufdringliches Nebenprojekt im unteren Bereich der Startseite verlinkt.
 - Lokales Games-Lab-Logo als Website-Asset unter `assets/images/games-lab-logo.png` ergaenzt.
 - Footer-Navigation um einen diskreten `Games Lab`-Link erweitert.
+
+### 2. Juni 2026 - Projects-Bereich und Anfrage-Assistent verfeinert
+
+Commit-Titel: `Refine projects card and add request assistant`
+
+- Games-Lab-Hinweis von einzelnem Nebenprojekt auf `Projects & Sub-Projects` umgestellt, damit spaetere Bereiche wie Learn Lab sauber anschliessen koennen.
+- `Designed by Sawazki Electronics` im Projects-Hinweis ergaenzt.
+- Professionelle Hover-Effekte fuer Header-Logo, Navigation, CTA und Games-Lab-Symbol umgesetzt.
+- CTA `Anfrage starten` auf die neue Seite `anfrage-assistent.html` umgestellt.
+- Anfrage-Assistent als statisches FormSubmit-Formular erstellt, damit Kunden Anliegen gefuehrt einsenden koennen, ohne dass ein echter Chatbot oder ein Backend noetig ist.
+- Hintergrundflaechen beim Scrollen professioneller und weniger weiss gestaltet.
+- Reparaturbild `assets/images/repair-laptop.jpg` durch ein neues fotorealistisches Laptop-Reparaturfoto ersetzt.
+- Sitemap und README um den Anfrage-Assistenten erweitert.
 
 ## Regeln fuer kuenftige Codex-Aenderungen
 

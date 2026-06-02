@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anfrage-Assistent - Sawazki Electronics</title>
+    <meta
+      name="description"
+      content="Geführter Anfrage-Assistent für IT-Service, PC- und Laptop-Support von Sawazki Electronics."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#1e262a" />
+    <link rel="icon" href="assets/images/sawazki-electronics-mark.png" type="image/png" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="legal-body assistant-body">
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+    <header class="site-header is-scrolled" data-header>
+      <nav class="nav-shell" aria-label="Hauptnavigation">
+        <a class="brand" href="index.html#top" aria-label="Sawazki Electronics Startseite">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="assets/images/sawazki-electronics-mark.png" alt="" />
+          </span>
+          <span>
+            <strong>Sawazki Electronics</strong>
+            <small>IT-Service & Support</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" data-nav-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" data-nav-links>
+          <a href="index.html#leistungen">Leistungen</a>
+          <a href="index.html#ablauf">Ablauf</a>
+          <a href="index.html#kontakt">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
+          <a class="nav-cta" href="#assistent">Anfrage starten</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="assistant-main">
+      <section class="assistant-hero" aria-labelledby="assistant-title">
+        <p class="eyebrow reveal">Geführte Anfrage</p>
+        <h1 id="assistant-title" class="reveal">Anfrage-Assistent</h1>
+        <p class="reveal">
+          Beschreibe dein Anliegen Schritt für Schritt. Die Angaben werden strukturiert per E-Mail
+          an Sawazki Electronics gesendet, damit die Rückmeldung schneller und gezielter erfolgen kann.
+        </p>
+        <div class="assistant-tags reveal" aria-label="Vorteile">
+          <span>Kein Kundenkonto</span>
+          <span>Direkt per E-Mail</span>
+          <span>Für PC, Laptop & IT-Fragen</span>
+        </div>
+      </section>
+
+      <section class="assistant-layout" id="assistent" aria-label="Anfrageformular">
+        <form
+          class="assistant-form"
+          action="https://formsubmit.co/sawazki.electronics@googlemail.com"
+          method="POST"
+          data-contact-form
+        >
+          <input
+            type="hidden"
+            name="_subject"
+            value="Neue Anfrage über den Sawazki Electronics Anfrage-Assistenten"
+            data-subject-prefix="Neue Anfrage über den Sawazki Electronics Anfrage-Assistenten"
+            data-subject-field
+          />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="https://jakobsawazki.github.io/sawazki-electronics/danke.html" />
+          <input type="hidden" name="Quelle" value="Anfrage-Assistent" />
+          <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+          <fieldset>
+            <legend>Kontakt</legend>
+            <div class="form-row">
+              <label>
+                Name
+                <input name="name" autocomplete="name" required placeholder="Dein Name" />
+              </label>
+              <label>
+                E-Mail
+                <input type="email" name="email" autocomplete="email" required placeholder="name@beispiel.de" />
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                Telefon
+                <input name="phone" autocomplete="tel" placeholder="Optional für Rückfragen" />
+              </label>
+              <label>
+                Erreichbarkeit
+                <input name="availability" placeholder="z. B. werktags ab 17 Uhr" />
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Gerät & Anliegen</legend>
+            <div class="form-row">
+              <label>
+                Thema
+                <select name="topic" required>
+                  <option value="">Bitte auswählen</option>
+                  <option>Laptop oder PC Problem</option>
+                  <option>Einrichtung neues Gerät</option>
+                  <option>Datensicherung oder Wiederherstellung</option>
+                  <option>Netzwerk, WLAN oder Drucker</option>
+                  <option>Allgemeine IT-Beratung</option>
+                  <option>Sonstige Anfrage</option>
+                </select>
+              </label>
+              <label>
+                Gerät
+                <input name="device" placeholder="z. B. Lenovo Laptop, Windows PC" />
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                Dringlichkeit
+                <select name="urgency">
+                  <option>Normal</option>
+                  <option>Dringend</option>
+                  <option>Planbar</option>
+                </select>
+              </label>
+              <label>
+                Gewünschte Hilfe
+                <select name="support_type">
+                  <option>Noch offen</option>
+                  <option>Remote-Hilfe</option>
+                  <option>Vor-Ort-Service nach Absprache</option>
+                  <option>Erstberatung</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              Beschreibung
+              <textarea
+                name="message"
+                rows="7"
+                required
+                placeholder="Was ist passiert? Seit wann tritt es auf? Gibt es Fehlermeldungen oder wichtige Dateien?"
+              ></textarea>
+            </label>
+          </fieldset>
+
+          <button class="button primary form-submit" type="submit">Anfrage senden</button>
+          <p class="privacy-note">
+            Mit dem Absenden werden deine Angaben zur Bearbeitung der Anfrage verarbeitet.
+            Details stehen in der <a href="datenschutz.html">Datenschutzerklärung</a>.
+          </p>
+          <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+        </form>
+
+        <aside class="assistant-panel" aria-label="Hinweise zum Anfrage-Assistenten">
+          <h2>Warum ein Assistent?</h2>
+          <p>
+            Ein echter Live-Chat braucht ein eigenes Backend und klare Datenschutzregeln. Diese
+            Version bleibt bewusst schlank: Sie sammelt die wichtigsten Angaben und leitet sie als
+            strukturierte Anfrage weiter.
+          </p>
+          <ol>
+            <li>Du beschreibst Gerät, Problem und Dringlichkeit.</li>
+            <li>Sawazki Electronics erhält die Angaben direkt per E-Mail.</li>
+            <li>Die Rückmeldung kann gezielter erfolgen, weil die wichtigsten Infos schon da sind.</li>
+          </ol>
+          <a class="contact-link" href="mailto:sawazki.electronics@googlemail.com">sawazki.electronics@googlemail.com</a>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <strong>Sawazki Electronics</strong>
+        <p>IT-Service, PC & Laptop Support.</p>
+        <p class="footer-meta">&copy; 2026 Sawazki Electronics. Alle Rechte vorbehalten.</p>
+      </div>
+      <nav aria-label="Fußnavigation">
+        <a href="index.html">Start</a>
+        <a href="index.html#leistungen">Leistungen</a>
+        <a href="index.html#kontakt">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB</a>
+      </nav>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

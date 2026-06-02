@@ -4,14 +4,23 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 
 ## Inhalt
 
-- Professionelle Startseite mit Hero-Grafik
+- Professionelle Startseite mit Hero-Bereich, lokalen Bildassets und Sawazki-Electronics-Branding
 - Leistungsübersicht für PC, Laptop, Sicherheit, Backup, Netzwerk und Beratung
 - Ablaufbereich für Anfrage, Analyse, Umsetzung und Übergabe
-- Kontaktformular mit `mailto:`-Fallback
+- Kontaktformular und geführter `Anfrage-Assistent` über FormSubmit
+- Dezenter `Projects & Sub-Projects`-Hinweis mit Verlinkung zum Games Lab
 - Responsive Layout für Desktop, Tablet und Smartphone
 - Lokale Bildassets, keine externen Bildabhängigkeiten
 - Unternehmenslogo als lokales Website-Asset in Navigation, Favicon und Hero-Bereich
-- Dezenter Games-Lab-Hinweis als Sawazki-Electronics-Nebenprojekt im unteren Seitenbereich
+
+## Wichtige Seiten
+
+- Startseite: `index.html`
+- Anfrage-Assistent: `anfrage-assistent.html`
+- Danke-Seite nach Formularversand: `danke.html`
+- Impressum: `impressum.html`
+- Datenschutz: `datenschutz.html`
+- AGB: `agb.html`
 
 ## Dokumentation
 
@@ -20,11 +29,12 @@ Die laufende Codex-Projektdokumentation liegt unter
 Sie enthält Projektstand, lokale Weiterarbeit, Veröffentlichungsablauf, Designentscheidungen
 und ein Änderungsprotokoll.
 
-## Kontaktformular
+## Kontaktformulare
 
-Das Formular sendet über FormSubmit an `sawazki.electronics@googlemail.com`.
-Beim ersten echten Absenden verschickt FormSubmit eine Aktivierungs-E-Mail an diese Adresse.
-Nach Bestätigung werden Formularanfragen direkt weitergeleitet.
+Das Kontaktformular und der Anfrage-Assistent senden über FormSubmit an
+`sawazki.electronics@googlemail.com`. Beim ersten echten Absenden kann FormSubmit eine
+Aktivierungs-E-Mail an diese Adresse verschicken. Nach Bestätigung werden Formularanfragen direkt
+weitergeleitet.
 
 ## Rechtliches
 

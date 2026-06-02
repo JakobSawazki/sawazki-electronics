@@ -77,9 +77,10 @@ if (contactForm && formStatus) {
     const topic = getFormValue(data, "topic");
 
     if (subjectField) {
+      const subjectPrefix = subjectField.dataset.subjectPrefix || "Neue Anfrage über Sawazki Electronics";
       subjectField.value = topic
-        ? `Neue Anfrage über Sawazki Electronics: ${topic}`
-        : "Neue Anfrage über Sawazki Electronics";
+        ? `${subjectPrefix}: ${topic}`
+        : subjectPrefix;
     }
 
     formStatus.textContent = "Anfrage wird gesendet...";
