@@ -5,6 +5,7 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 ## Inhalt
 
 - Professionelle Startseite mit Hero-Bereich, lokalen Bildassets und Sawazki-Electronics-Branding
+- Projektkarten mit Logos für Games Lab und PythonWerkstatt BG
 - Fußnavigation zu den Projekten Games Lab und PythonWerkstatt BG
 - Leistungsübersicht für PC, Laptop, Sicherheit, Backup, Netzwerk und Beratung
 - Ablaufbereich für Anfrage, Analyse, Umsetzung und Übergabe
