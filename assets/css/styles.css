@@ -1068,6 +1068,30 @@ select:focus {
     linear-gradient(180deg, rgba(247, 248, 244, 0.84), rgba(237, 242, 239, 0.9));
 }
 
+.side-project-heading {
+  width: min(100% - 2rem, var(--max));
+  margin: 0 auto 1.35rem;
+}
+
+.side-project-heading small {
+  display: block;
+  margin-bottom: 0.28rem;
+  color: var(--teal);
+  font-size: 0.76rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.side-project-heading h2 {
+  margin-bottom: 0.3rem;
+  font-size: clamp(1.65rem, 3vw, 2.25rem);
+}
+
+.side-project-heading p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .side-project-grid {
   width: min(100% - 2rem, var(--max));
   display: grid;
