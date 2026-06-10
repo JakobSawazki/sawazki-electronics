@@ -286,6 +286,15 @@ Commit-Titel: `Link BM Lernportal from main homepage`
 - Nur unsichtbare SEO-Angaben wie Seitentitel, Beschreibung, Canonical-URLs, Social-Metadaten,
   strukturierte Unternehmensdaten und Sitemap-Optimierung beibehalten.
 
+### 10. Juni 2026 - Hero, Projekte und Footer verfeinert
+
+- Hero-Logo ohne inneren Kartenabstand dargestellt und mit abgerundeten Ecken versehen.
+- Servicebilder im Hero vergrößert und höher positioniert, damit das Faktenband die unteren Bilder
+  nicht mehr verdeckt.
+- Projektkennzeichnung einheitlich auf `Designed by Sawazki Electronics` gesetzt.
+- Einzelne Projektlinks aus der Fußnavigation entfernt.
+- Copyright und `Alle Rechte vorbehalten.` in zwei getrennte Zeilen gesetzt.
+
 ## Regeln fuer kuenftige Codex-Aenderungen
 
 Wenn Codex kuenftig an diesem Projekt arbeitet:

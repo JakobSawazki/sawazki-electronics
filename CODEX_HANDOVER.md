@@ -46,8 +46,9 @@ Der Projektbereich befindet sich am Ende der Startseite unter `#projekte`.
 | BM Lernportal | <https://jakobsawazki.github.io/bm-lernportal/> | `assets/images/bm-lernportal-logo.svg` |
 
 Neue Projekte sollen als weitere `.side-project-card` innerhalb von `.side-project-grid` ergänzt
-werden. Den passenden Footer-Link ebenfalls ergänzen. Vorhandene Karten und Links nicht umbenennen
-oder entfernen, sofern dies nicht ausdrücklich verlangt wurde.
+werden. Projektlinks bleiben auf diesen Karten und werden nicht zusätzlich in der Fußnavigation
+aufgeführt. Vorhandene Karten nicht umbenennen oder entfernen, sofern dies nicht ausdrücklich
+verlangt wurde. Die Kennzeichnung lautet einheitlich `Designed by Sawazki Electronics`.
 
 ## 4. Formulare und Kontakt
 
@@ -159,6 +160,10 @@ Für neue öffentliche HTML-Seiten außerdem `sitemap.xml`, Navigation, Footer u
 - Canonical-URLs, OpenGraph-Daten und strukturierte LocalBusiness-Daten sind integriert.
 - Das sichtbare Design und die Logoassets entsprechen wieder dem Stand vor der SEO-Überarbeitung.
 - SEO-Optimierungen bleiben auf Metadaten, strukturierte Daten und Sitemap beschränkt.
+- Hero-Logo füllt seine abgerundete weiße Fläche ohne inneren Rahmen aus.
+- Hero-Servicebilder sind größer und überdecken das Faktenband nicht.
+- Projektkarten verwenden einheitlich `Designed by Sawazki Electronics`; Projektlinks stehen nicht
+  zusätzlich im Footer.
 - Kontaktformular und Anfrage-Assistent sind integriert.
 - Das Reparaturfoto wurde durch eine realistischere lokale Grafik ersetzt.
 - Der Projektbereich unterstützt mehrere Karten.
