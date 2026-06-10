@@ -12,9 +12,9 @@ Diese Datei ist der Einstiegspunkt für einen neuen Codex-Agenten. Vor Änderung
 - Zweck: professionelle Firmen-Homepage für IT-, PC-, Laptop- und Support-Dienstleistungen
 - Repository: <https://github.com/JakobSawazki/sawazki-electronics>
 - Live-Seite: <https://jakobsawazki.github.io/sawazki-electronics/>
-- Lokaler Projektordner: `G:\Meine Ablage\Gewerbe\Sawazki Electronics Website`
+- Lokaler Projektordner: `D:\Google Drive\Gewerbe\Sawazki Electronics Website`
 - Standard-Branch: `main`
-- Zuletzt geprüfter Funktionsstand vor dieser Übergabe: Commit `90e42e9`
+- Zuletzt geprüfter Funktionsstand: Designrunde vom 10. Juni 2026
 - Hosting: GitHub Pages direkt aus dem Repository
 
 Die Website ist statisch. Es gibt keinen Build-Prozess, kein Framework und keine Paketabhängigkeiten.
@@ -77,13 +77,15 @@ Datenschutzerklärung.
 ## 5. Designregeln
 
 - Wirkung: professionell, ruhig, technisch und kundenorientiert
-- Farbwelt: Anthrazit, Teal, helle Grau-/Grüntöne und sparsame warme Akzente
+- Farbwelt: Navy, Logo-Blau, Cyan sowie helle blau-graue Flächen
+- Helle Hauptbereiche verwenden ein dezentes Leiterbahn-/Knotenpunktmuster
 - Bestehende Gestaltung und CSS-Konventionen weiterverwenden
 - Keine externen Schriftarten oder Bild-CDNs ohne guten Grund
 - Bilder möglichst lokal unter `assets/images/` speichern
 - Firmen-Seite nicht wie eine Spieleseite gestalten; Hover-Effekte bleiben dezent
-- CTA `Anfrage starten` soll seine kräftige Teal-Farbe auch im Scroll-Header behalten
+- CTA `Anfrage starten` soll seinen Blau-Cyan-Verlauf auch im Scroll-Header behalten
 - Das Firmenlogo oben links führt zur Startseite und hat einen professionellen Hover-Zustand
+- Das große Hero-Logo führt zu `#leistungen` und besitzt Lichtlauf, Tiefeneffekt und Fokuszustand
 - Desktop, Tablet und Smartphone berücksichtigen
 - Keine sichtbaren internen technischen Erklärungen auf Kundenseiten
 
@@ -158,9 +160,15 @@ Für neue öffentliche HTML-Seiten außerdem `sitemap.xml`, Navigation, Footer u
 - Firmen-Startseite und rechtliche Seiten sind veröffentlicht.
 - Startseite ist lokal auf IT-Service sowie PC- und Laptop-Reparatur in Freudenstadt ausgerichtet.
 - Canonical-URLs, OpenGraph-Daten und strukturierte LocalBusiness-Daten sind integriert.
-- Das sichtbare Design und die Logoassets entsprechen wieder dem Stand vor der SEO-Überarbeitung.
+- Das sichtbare Design baut auf dem vertrauten Seitenaufbau auf und nutzt die Logo-Blauwelt als
+  durchgängiges Designsystem.
 - SEO-Optimierungen bleiben auf Metadaten, strukturierte Daten und Sitemap beschränkt.
 - Hero-Logo füllt seine abgerundete weiße Fläche ohne inneren Rahmen aus.
+- Das Header-Logo ist größer, ohne mit der Navigation zu kollidieren.
+- Helle Seitenbereiche tragen ein dezentes technisches Leiterbahn-/Knotenpunktmuster.
+- Praxisüberschriften erscheinen als Blau-Cyan-Badges über den Fotokarten.
+- Der Ablauf verwendet größere Nummern, kontrastreiche Titel und Pfeile auf dem Desktop.
+- Ablauf- und Kontaktüberschrift bleiben ab Tabletbreite einzeilig.
 - Hero-Servicebilder sind größer und überdecken das Faktenband nicht.
 - Projektkarten verwenden einheitlich `Designed by Sawazki Electronics`; Projektlinks stehen nicht
   zusätzlich im Footer.
@@ -174,7 +182,7 @@ Für neue öffentliche HTML-Seiten außerdem `sitemap.xml`, Navigation, Footer u
 
 1. Bestehende Funktionen und Links erhalten.
 2. Kundenverständlichkeit vor internen technischen Erklärungen priorisieren.
-3. Neue Projekte konsistent in Projektbereich und Footer aufnehmen.
+3. Neue Projekte konsistent im Projektbereich aufnehmen, aber nicht zusätzlich im Footer duplizieren.
 4. Rechtliche Auswirkungen neuer Dienste oder Datenübertragungen mitdenken.
 5. Änderungen lokal und anschließend live prüfen.
 

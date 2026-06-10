@@ -4,15 +4,17 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 
 ## Inhalt
 
-- Professionelle Startseite mit Hero-Bereich, lokalen Bildassets und Sawazki-Electronics-Branding
+- Professionelle Startseite mit Hero-Bereich, lokalen Bildassets und blauem Sawazki-Electronics-Branding
+- Dezente Leiterbahn-/Knotenpunktmuster auf den hellen Flächen statt leerem Weiß
+- Interaktives Hero-Logo mit Lichtlauf und direktem Sprung zu den Leistungen
 - Projektkarten mit Logos für Games Lab, PythonWerkstatt BG und BM Lernportal
 - Kompakte Fußnavigation ohne doppelte Projektlinks
 - Leistungsübersicht für PC, Laptop, Sicherheit, Backup, Netzwerk und Beratung
 - Unsichtbare lokale SEO-Ausrichtung auf IT-Service sowie PC- und Laptop-Reparatur in Freudenstadt
 - Strukturierte Unternehmensdaten, Canonical-URLs und optimierte Social-Media-Vorschauen
-- Ablaufbereich für Anfrage, Analyse, Umsetzung und Übergabe
+- Visuell geführter Ablaufbereich mit großen Ziffern und Pfeilen für Anfrage, Analyse, Umsetzung und Übergabe
 - Kontaktformular und geführter `Anfrage-Assistent` über FormSubmit
-- Dezenter `Projects & Sub-Projects`-Hinweis mit Verlinkung zum Games Lab
+- Einheitlicher Projektbereich für Games Lab, PythonWerkstatt BG und BM Lernportal
 - Responsive Layout für Desktop, Tablet und Smartphone
 - Lokale Bildassets, keine externen Bildabhängigkeiten
 - Unternehmenslogo als lokales Website-Asset in Navigation, Favicon und Hero-Bereich

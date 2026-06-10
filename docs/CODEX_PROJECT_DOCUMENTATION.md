@@ -10,7 +10,7 @@ Diese Dokumentation dient als Arbeitsgrundlage fuer Codex und fuer die Weiterarb
 - Zweck: professionelle Homepage fuer IT-, PC-, Laptop-, Support- und Elektronikdienstleistungen
 - GitHub Repository: `JakobSawazki/sawazki-electronics`
 - Live-Seite: <https://jakobsawazki.github.io/sawazki-electronics/>
-- Lokaler Arbeitsordner auf dem aktuellen Laptop: `G:\Meine Ablage\Gewerbe\Sawazki Electronics Website`
+- Lokaler Arbeitsordner auf dem aktuellen Laptop: `D:\Google Drive\Gewerbe\Sawazki Electronics Website`
 - Standard-Branch: `main`
 - Backup-Branch vor der Hero-/Hintergrund-Ueberarbeitung: `codex/backup-startseite-2026-05-20`
 
@@ -36,10 +36,14 @@ Wichtige Dateien:
 
 - Die Seite soll modern, professionell, ruhig und kundenorientiert wirken.
 - Schwerpunkt der Startseite: IT-Service, Laptop-/PC-Dienstleistungen, Beratung, Reparatur und Support.
-- Farbwelt: dunkles Technik-Gruen/Anthrazit, Teal-Akzente, weiss/hellgraue Flaechen, dezente warme Akzente.
+- Farbwelt: dunkles Navy, Logo-Blau und Cyan auf weiss/blaugrauen Flaechen.
+- Dezente Leiterbahn- und Knotenpunktmuster beleben die hellen Bereiche, ohne Inhalte oder Fotos zu
+  ueberlagern.
 - Schrift: Systemschriften, fuer die Hero-Ueberschrift bevorzugt `Bahnschrift`, `Segoe UI Variable Display`, `Aptos Display`, `Segoe UI`.
 - Keine externen Bild-CDNs und keine externen Fonts. Das reduziert Datenschutz- und Ladezeitrisiken.
 - Die Startseite verwendet echte bzw. realistisch wirkende Servicebilder statt abstrakter Vektorgrafiken.
+- Das grosse Hero-Logo ist interaktiv und fuehrt mit Lichtlauf- und Tiefeneffekt zu den Leistungen.
+- Praxis-Karten verwenden CTA-aehnliche Titelbadges; der Ablauf zeigt grosse Nummern und Pfeile.
 - Der alte abstrakte Hintergrund mit moeglicher "Zigarette"-Assoziation wurde nicht geloescht, aber nicht mehr aktiv verwendet.
 
 ## Bild- und Logoassets
@@ -294,6 +298,19 @@ Commit-Titel: `Link BM Lernportal from main homepage`
 - Projektkennzeichnung einheitlich auf `Designed by Sawazki Electronics` gesetzt.
 - Einzelne Projektlinks aus der Fußnavigation entfernt.
 - Copyright und `Alle Rechte vorbehalten.` in zwei getrennte Zeilen gesetzt.
+
+### 10. Juni 2026 - Blaues Elektronik-Designsystem und Prozessführung
+
+- Header-Logo von 48 auf 56 Pixel vergroessert und Navigation daran ausgerichtet.
+- Farbwelt von Gruen/Anthrazit auf Navy, Logo-Blau und Cyan umgestellt.
+- Helle Hauptbereiche mit einem dezenten Leiterbahn-/Knotenpunktmuster aufgefrischt.
+- Grosses Hero-Logo als Link zu `#leistungen` mit Lichtlauf, Tiefeneffekt und Fokuszustand umgesetzt.
+- Praxisbilder auf die volle Inhaltsbreite erweitert und Titel als Blau-Cyan-Badges gestaltet.
+- Ablaufkarten mit grossen Nummern, kontrastreichen Titeln und Desktop-Pfeilen verbunden.
+- Ablauf- und Kontaktueberschrift ab Tabletbreite einzeilig ausgerichtet.
+- Bestehende fotorealistische Servicebilder beibehalten; die aelteren Illustrationen bleiben nur
+  Rueckfallassets, damit der visuelle Stil einheitlich bleibt.
+- Desktop mit 1280 Pixeln, Tablet mit 900 Pixeln und Smartphone mit 390 Pixeln lokal geprueft.
 
 ## Regeln fuer kuenftige Codex-Aenderungen
 
