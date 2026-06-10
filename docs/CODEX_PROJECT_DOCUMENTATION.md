@@ -21,6 +21,7 @@ Die Website ist bewusst statisch gehalten. Es gibt keinen Build-Prozess, keine F
 Wichtige Dateien:
 
 - `index.html`: Startseite mit Hero, Leistungen, Diagnose, Praxisbildern, Ablauf, Detailband, Kontaktformular und Projects-/Sub-Projects-Hinweis
+- `projekte.html`: zentrale Projektseite mit PythonLab, BM-Lab und Games Lab
 - `anfrage-assistent.html`: gefuehrter Anfrage-Assistent als statische, datensparsame Alternative zu einem echten Live-Chatbot
 - `impressum.html`: Impressum
 - `datenschutz.html`: Datenschutzerklaerung
@@ -56,6 +57,8 @@ Aktiv genutzt:
 - `assets/images/repair-laptop.jpg`: neu generiertes Laptop-Reparaturfoto, Praxisbereich und Detailband
 - `assets/images/smartphone-repair.jpg`: Elektronik/Kleingeraete
 - `assets/images/games-lab-logo.png`: Projects-/Sub-Projects-Logo fuer Games Lab im unteren Startseitenbereich
+- `assets/images/pythonwerkstatt-logo.webp`: Logo fuer das sichtbar als PythonLab gefuehrte Lernprojekt
+- `assets/images/bm-lernportal-logo.svg`: Logo fuer das sichtbar als BM-Lab gefuehrte Lernprojekt
 
 Noch vorhanden als moegliche Rueckfall- oder Alternativassets:
 
@@ -311,6 +314,15 @@ Commit-Titel: `Link BM Lernportal from main homepage`
 - Bestehende fotorealistische Servicebilder beibehalten; die aelteren Illustrationen bleiben nur
   Rueckfallassets, damit der visuelle Stil einheitlich bleibt.
 - Desktop mit 1280 Pixeln, Tablet mit 900 Pixeln und Smartphone mit 390 Pixeln lokal geprueft.
+
+### 10. Juni 2026 - Labs neu geordnet und Projektseite ergänzt
+
+- Projektkarten auf der Startseite in die Reihenfolge PythonLab, BM-Lab und Games Lab gebracht.
+- Sichtbare Namen `PythonWerkstatt BG` zu `PythonLab` und `BM Lernportal` zu `BM-Lab` vereinheitlicht.
+- Neue Seite `projekte.html` mit Beschreibung, Zielgruppe und Ziel jedes Labs erstellt.
+- Bestehende Logos und externe Projektziele weiterverwendet.
+- Footer aller Seiten um den zentralen Link `Projekte` ergänzt.
+- `projekte.html` in die Sitemap aufgenommen.
 
 ## Regeln fuer kuenftige Codex-Aenderungen
 

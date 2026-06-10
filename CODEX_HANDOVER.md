@@ -23,6 +23,7 @@ HTML, CSS und JavaScript werden direkt veröffentlicht.
 ## 2. Wichtige Dateien
 
 - `index.html`: Startseite, Leistungen, Arbeitsablauf, Kontaktformular und Projektbereich
+- `projekte.html`: zentrale Vorstellung von PythonLab, BM-Lab und Games Lab
 - `anfrage-assistent.html`: geführtes Anfrageformular
 - `danke.html`: Zielseite nach erfolgreicher Formularübermittlung
 - `impressum.html`: Impressum
@@ -41,14 +42,14 @@ Der Projektbereich befindet sich am Ende der Startseite unter `#projekte`.
 
 | Projekt | Live-Link | Lokales Logo |
 | --- | --- | --- |
+| PythonLab | <https://jakobsawazki.github.io/Python-Lernportal-BG/> | `assets/images/pythonwerkstatt-logo.webp` |
+| BM-Lab | <https://jakobsawazki.github.io/bm-lernportal/> | `assets/images/bm-lernportal-logo.svg` |
 | Games Lab | <https://jakobsawazki.github.io/games-lab/> | `assets/images/games-lab-logo.png` |
-| PythonWerkstatt BG | <https://jakobsawazki.github.io/Python-Lernportal-BG/> | `assets/images/pythonwerkstatt-logo.webp` |
-| BM Lernportal | <https://jakobsawazki.github.io/bm-lernportal/> | `assets/images/bm-lernportal-logo.svg` |
 
 Neue Projekte sollen als weitere `.side-project-card` innerhalb von `.side-project-grid` ergänzt
-werden. Projektlinks bleiben auf diesen Karten und werden nicht zusätzlich in der Fußnavigation
-aufgeführt. Vorhandene Karten nicht umbenennen oder entfernen, sofern dies nicht ausdrücklich
-verlangt wurde. Die Kennzeichnung lautet einheitlich `Designed by Sawazki Electronics`.
+und zusätzlich auf `projekte.html` ausführlich vorgestellt werden. Im Footer steht nur der zentrale
+Link `Projekte`; einzelne Lab-Links werden dort nicht dupliziert. Die Kennzeichnung auf der Startseite
+lautet einheitlich `Designed by Sawazki Electronics`.
 
 ## 4. Formulare und Kontakt
 
@@ -170,12 +171,14 @@ Für neue öffentliche HTML-Seiten außerdem `sitemap.xml`, Navigation, Footer u
 - Der Ablauf verwendet größere Nummern, kontrastreiche Titel und Pfeile auf dem Desktop.
 - Ablauf- und Kontaktüberschrift bleiben ab Tabletbreite einzeilig.
 - Hero-Servicebilder sind größer und überdecken das Faktenband nicht.
-- Projektkarten verwenden einheitlich `Designed by Sawazki Electronics`; Projektlinks stehen nicht
-  zusätzlich im Footer.
+- Projektkarten verwenden einheitlich `Designed by Sawazki Electronics`.
+- Die Reihenfolge lautet PythonLab, BM-Lab und Games Lab.
+- `projekte.html` erklärt für jedes Lab Zweck, Zielgruppe und Ziel; der Footer verweist zentral
+  auf diese Seite.
 - Kontaktformular und Anfrage-Assistent sind integriert.
 - Das Reparaturfoto wurde durch eine realistischere lokale Grafik ersetzt.
 - Der Projektbereich unterstützt mehrere Karten.
-- Games Lab, PythonWerkstatt BG und BM Lernportal sind verlinkt.
+- PythonLab, BM-Lab und Games Lab sind verlinkt.
 - README und ausführliche Codex-Dokumentation sind vorhanden.
 
 ## 11. Prioritäten für zukünftige Änderungen
