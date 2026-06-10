@@ -253,6 +253,17 @@ Commit-Titel: `Refine projects card and add request assistant`
 - Reparaturbild `assets/images/repair-laptop.jpg` durch ein neues fotorealistisches Laptop-Reparaturfoto ersetzt.
 - Sitemap und README um den Anfrage-Assistenten erweitert.
 
+### 10. Juni 2026 - BM Lernportal verlinkt
+
+Commit-Titel: `Link BM Lernportal from main homepage`
+
+- BM Lernportal als dritte Karte im Bereich `Projects & Sub-Projects`
+  ergänzt.
+- Lokales BM-Logo unter `assets/images/bm-lernportal-logo.svg` eingebunden.
+- Projektkarten auf drei Spalten am Desktop und zwei Spalten auf Tablets
+  erweitert.
+- Fußnavigation um den Link zum BM Lernportal ergänzt.
+
 ## Regeln fuer kuenftige Codex-Aenderungen
 
 Wenn Codex kuenftig an diesem Projekt arbeitet:

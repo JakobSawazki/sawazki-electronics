@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">BM Lernportal</title>
+  <rect width="512" height="512" rx="132" fill="#173f36"/>
+  <path d="M122 112h204c35 0 64 29 64 64v224H186c-35 0-64-29-64-64V112Z" fill="#f6f1e7"/>
+  <path d="M326 112h64v64c0-35-29-64-64-64Z" fill="#e09a70"/>
+  <text x="256" y="300" text-anchor="middle" font-family="Georgia,serif" font-size="126" font-weight="700" fill="#173f36">BM</text>
+  <circle cx="376" cy="376" r="42" fill="#d8e89c"/>
+</svg>
+
