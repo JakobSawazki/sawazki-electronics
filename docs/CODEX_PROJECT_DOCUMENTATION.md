@@ -278,6 +278,14 @@ Commit-Titel: `Link BM Lernportal from main homepage`
 - SEO- und Marketing-Leitfaden für Google-Unternehmensprofil, Search Console und einheitliche
   Firmendaten unter `docs/SEO_MARKETING_GUIDE.md` angelegt.
 
+### 10. Juni 2026 - Sichtbares Design wiederhergestellt
+
+- Hero, Navigation, Leistungsbereiche, Kontakttexte und Footer auf den Stand vor der
+  SEO-Überarbeitung zurückgesetzt.
+- Vorherige Website-Logoassets wiederhergestellt.
+- Nur unsichtbare SEO-Angaben wie Seitentitel, Beschreibung, Canonical-URLs, Social-Metadaten,
+  strukturierte Unternehmensdaten und Sitemap-Optimierung beibehalten.
+
 ## Regeln fuer kuenftige Codex-Aenderungen
 
 Wenn Codex kuenftig an diesem Projekt arbeitet:

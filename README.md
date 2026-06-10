@@ -8,9 +8,8 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - Projektkarten mit Logos für Games Lab, PythonWerkstatt BG und BM Lernportal
 - Fußnavigation zu Games Lab, PythonWerkstatt BG und BM Lernportal
 - Leistungsübersicht für PC, Laptop, Sicherheit, Backup, Netzwerk und Beratung
-- Lokale SEO-Ausrichtung auf IT-Service sowie PC- und Laptop-Reparatur in Freudenstadt
+- Unsichtbare lokale SEO-Ausrichtung auf IT-Service sowie PC- und Laptop-Reparatur in Freudenstadt
 - Strukturierte Unternehmensdaten, Canonical-URLs und optimierte Social-Media-Vorschauen
-- Marketingorientierte Nutzenargumente und FAQ-Bereich auf der Startseite
 - Ablaufbereich für Anfrage, Analyse, Umsetzung und Übergabe
 - Kontaktformular und geführter `Anfrage-Assistent` über FormSubmit
 - Dezenter `Projects & Sub-Projects`-Hinweis mit Verlinkung zum Games Lab

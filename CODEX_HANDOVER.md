@@ -157,7 +157,8 @@ Für neue öffentliche HTML-Seiten außerdem `sitemap.xml`, Navigation, Footer u
 - Firmen-Startseite und rechtliche Seiten sind veröffentlicht.
 - Startseite ist lokal auf IT-Service sowie PC- und Laptop-Reparatur in Freudenstadt ausgerichtet.
 - Canonical-URLs, OpenGraph-Daten und strukturierte LocalBusiness-Daten sind integriert.
-- Die neueste Logo- und Icon-Generation aus den Geschäftsvorlagen ist eingebunden.
+- Das sichtbare Design und die Logoassets entsprechen wieder dem Stand vor der SEO-Überarbeitung.
+- SEO-Optimierungen bleiben auf Metadaten, strukturierte Daten und Sitemap beschränkt.
 - Kontaktformular und Anfrage-Assistent sind integriert.
 - Das Reparaturfoto wurde durch eine realistischere lokale Grafik ersetzt.
 - Der Projektbereich unterstützt mehrere Karten.

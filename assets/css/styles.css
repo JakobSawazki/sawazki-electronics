@@ -335,9 +335,9 @@ select {
 }
 
 .hero-brand-card {
-  width: min(410px, 88vw);
+  width: min(320px, 82vw);
   margin-bottom: 1.4rem;
-  padding: 0.7rem 0.9rem;
+  padding: 0.55rem 0.75rem;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.93);
@@ -595,50 +595,6 @@ h3 {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(237, 242, 239, 0.84)),
     linear-gradient(135deg, rgba(46, 208, 179, 0.08), rgba(255, 255, 255, 0));
-}
-
-.local-service {
-  background:
-    radial-gradient(circle at 12% 20%, rgba(46, 208, 179, 0.12), transparent 24rem),
-    linear-gradient(180deg, rgba(247, 248, 244, 0.96), rgba(237, 242, 239, 0.88));
-}
-
-.local-benefit-grid {
-  width: min(100% - 2rem, var(--max));
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.local-benefit-card {
-  min-height: 190px;
-  padding: 1.5rem;
-  border: 1px solid rgba(27, 154, 136, 0.18);
-  border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.88);
-  box-shadow: 0 14px 42px rgba(25, 33, 35, 0.07);
-}
-
-.local-benefit-card::before {
-  content: "";
-  width: 42px;
-  height: 4px;
-  margin-bottom: 1.1rem;
-  display: block;
-  border-radius: 999px;
-  background: linear-gradient(90deg, var(--teal), var(--teal-2));
-}
-
-.local-benefit-card strong {
-  display: block;
-  margin-bottom: 0.6rem;
-  font-size: 1.15rem;
-}
-
-.local-benefit-card p {
-  margin-bottom: 0;
-  color: var(--muted);
 }
 
 .section-heading,
@@ -918,59 +874,6 @@ h3 {
   background:
     radial-gradient(circle at 24% 52%, rgba(46, 208, 179, 0.16), transparent 25rem),
     linear-gradient(135deg, #1e262a 0%, #11191c 54%, #183833 100%);
-}
-
-.faq {
-  background:
-    linear-gradient(180deg, rgba(237, 242, 239, 0.9), rgba(247, 248, 244, 0.96)),
-    radial-gradient(circle at 80% 10%, rgba(46, 208, 179, 0.11), transparent 25rem);
-}
-
-.faq-list {
-  width: min(100% - 2rem, 880px);
-  margin: 0 auto;
-  display: grid;
-  gap: 0.8rem;
-}
-
-.faq-item {
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--white);
-  box-shadow: 0 12px 36px rgba(25, 33, 35, 0.06);
-}
-
-.faq-item summary {
-  position: relative;
-  padding: 1.2rem 3.4rem 1.2rem 1.25rem;
-  cursor: pointer;
-  font-weight: 800;
-  list-style: none;
-}
-
-.faq-item summary::-webkit-details-marker {
-  display: none;
-}
-
-.faq-item summary::after {
-  content: "+";
-  position: absolute;
-  top: 50%;
-  right: 1.25rem;
-  color: var(--teal);
-  font-size: 1.5rem;
-  transform: translateY(-50%);
-}
-
-.faq-item[open] summary::after {
-  content: "−";
-}
-
-.faq-item p {
-  margin: 0;
-  padding: 0 1.25rem 1.25rem;
-  color: var(--muted);
 }
 
 .detail-band::before {
@@ -1553,8 +1456,7 @@ select:focus {
 
   .service-grid,
   .process-steps,
-  .gallery-grid,
-  .local-benefit-grid {
+  .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1683,8 +1585,7 @@ select:focus {
 
   .service-grid,
   .process-steps,
-  .gallery-grid,
-  .local-benefit-grid {
+  .gallery-grid {
     grid-template-columns: 1fr;
   }
 
