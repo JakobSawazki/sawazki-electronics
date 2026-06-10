@@ -2,17 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jakobsawazki.github.io/sawazki-electronics/</loc>
-  </url>
-  <url>
-    <loc>https://jakobsawazki.github.io/sawazki-electronics/impressum.html</loc>
-  </url>
-  <url>
-    <loc>https://jakobsawazki.github.io/sawazki-electronics/datenschutz.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://jakobsawazki.github.io/sawazki-electronics/anfrage-assistent.html</loc>
-  </url>
-  <url>
-    <loc>https://jakobsawazki.github.io/sawazki-electronics/agb.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
   </url>
 </urlset>

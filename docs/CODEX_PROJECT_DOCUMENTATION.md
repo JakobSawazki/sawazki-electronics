@@ -1,6 +1,6 @@
 # Sawazki Electronics Website - Codex Projektdokumentation
 
-Stand: 2. Juni 2026
+Stand: 10. Juni 2026
 
 Diese Dokumentation dient als Arbeitsgrundlage fuer Codex und fuer die Weiterarbeit auf einem anderen Laptop. Sie soll bei kuenftigen Aenderungen fortgeschrieben werden: Was wurde geaendert, warum, in welchen Dateien und wie wurde geprueft.
 
@@ -263,6 +263,20 @@ Commit-Titel: `Link BM Lernportal from main homepage`
 - Projektkarten auf drei Spalten am Desktop und zwei Spalten auf Tablets
   erweitert.
 - Fußnavigation um den Link zum BM Lernportal ergänzt.
+
+### 10. Juni 2026 - Lokale SEO- und Marketingoptimierung
+
+- Seitentitel und Meta-Beschreibung auf IT-Service, PC- und Laptop-Reparatur in Freudenstadt
+  ausgerichtet.
+- Canonical-URLs, OpenGraph-/Twitter-Metadaten sowie strukturierte `LocalBusiness`- und
+  `WebSite`-Daten ergänzt.
+- Neueste Logo- und Icon-Dateien aus den Geschäftsvorlagen eingebunden.
+- Hero-Bereich mit lokalem Leistungsversprechen, direktem Anfrage-CTA und Telefon-CTA überarbeitet.
+- Lokalen Vertrauensbereich und FAQ mit typischen Kundenfragen ergänzt.
+- Rechtliche Seiten auf `noindex, follow` gesetzt und Sitemap auf relevante Einstiegsseiten
+  konzentriert.
+- SEO- und Marketing-Leitfaden für Google-Unternehmensprofil, Search Console und einheitliche
+  Firmendaten unter `docs/SEO_MARKETING_GUIDE.md` angelegt.
 
 ## Regeln fuer kuenftige Codex-Aenderungen
 

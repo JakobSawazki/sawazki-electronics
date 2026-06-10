@@ -155,6 +155,9 @@ Für neue öffentliche HTML-Seiten außerdem `sitemap.xml`, Navigation, Footer u
 ## 10. Aktueller Entwicklungsstand
 
 - Firmen-Startseite und rechtliche Seiten sind veröffentlicht.
+- Startseite ist lokal auf IT-Service sowie PC- und Laptop-Reparatur in Freudenstadt ausgerichtet.
+- Canonical-URLs, OpenGraph-Daten und strukturierte LocalBusiness-Daten sind integriert.
+- Die neueste Logo- und Icon-Generation aus den Geschäftsvorlagen ist eingebunden.
 - Kontaktformular und Anfrage-Assistent sind integriert.
 - Das Reparaturfoto wurde durch eine realistischere lokale Grafik ersetzt.
 - Der Projektbereich unterstützt mehrere Karten.
@@ -168,6 +171,8 @@ Für neue öffentliche HTML-Seiten außerdem `sitemap.xml`, Navigation, Footer u
 3. Neue Projekte konsistent in Projektbereich und Footer aufnehmen.
 4. Rechtliche Auswirkungen neuer Dienste oder Datenübertragungen mitdenken.
 5. Änderungen lokal und anschließend live prüfen.
+
+Zusätzliche SEO- und Marketinghinweise stehen unter `docs/SEO_MARKETING_GUIDE.md`.
 
 Wenn Angaben in dieser Datei und im aktuellen Code voneinander abweichen, gilt der aktuelle Code als
 technische Wahrheit. Die Übergabe anschließend aktualisieren.
