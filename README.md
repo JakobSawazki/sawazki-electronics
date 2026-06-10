@@ -10,6 +10,8 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - Projektkarten mit Logos für PythonLab, BM-Lab und Games Lab
 - Eigene Projektseite mit Zweck, Zielgruppe und Ziel jedes Labs
 - Footer-Link zur zentralen Projektübersicht ohne doppelte Einzelprojektlinks
+- Zentrales Produktportfolio für Dienstleistungen, Angebote und spätere physische Produkte
+- Eigene Angebotsseite für VHS-, VHS-C- und Camcorder-Kassetten-Digitalisierung
 - Leistungsübersicht für PC, Laptop, Sicherheit, Backup, Netzwerk und Beratung
 - Unsichtbare lokale SEO-Ausrichtung auf IT-Service sowie PC- und Laptop-Reparatur in Freudenstadt
 - Strukturierte Unternehmensdaten, Canonical-URLs und optimierte Social-Media-Vorschauen
@@ -24,6 +26,8 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 
 - Startseite: `index.html`
 - Projektübersicht: `projekte.html`
+- Produktportfolio: `produkte.html`
+- VHS-Digitalisierung: `vhs-digitalisierung.html`
 - Anfrage-Assistent: `anfrage-assistent.html`
 - Danke-Seite nach Formularversand: `danke.html`
 - Impressum: `impressum.html`
@@ -43,6 +47,20 @@ und ein Änderungsprotokoll.
 
 Konkrete Empfehlungen für Google-Unternehmensprofil, Search Console und einheitliche Firmendaten
 stehen im [`docs/SEO_MARKETING_GUIDE.md`](docs/SEO_MARKETING_GUIDE.md).
+
+## Aufgabenwarteschlange
+
+Neue Arbeitsaufträge können in `tasks.txt` im Projektstamm hinterlegt werden. Aufgabenblöcke werden
+durch mindestens eine Leerzeile getrennt.
+
+Für jede neue Arbeitssitzung gilt:
+
+1. `tasks.txt` vor anderen Aufgaben prüfen.
+2. Immer nur den obersten nicht leeren Aufgabenblock bearbeiten.
+3. Die Aufgabe vollständig umsetzen, dokumentieren, testen, veröffentlichen und live prüfen.
+4. Erst danach den erledigten ersten Block aus `tasks.txt` entfernen.
+5. Später hinzugefügte Aufgaben und ihre Reihenfolge unverändert erhalten.
+6. Bei einer Blockade bleibt die Aufgabe in `tasks.txt` stehen.
 
 ## Kontaktformulare
 

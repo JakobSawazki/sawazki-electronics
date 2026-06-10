@@ -5,6 +5,7 @@ const revealItems = document.querySelectorAll(".reveal");
 const contactForm = document.querySelector("[data-contact-form]");
 const formStatus = document.querySelector("[data-form-status]");
 const subjectField = document.querySelector("[data-subject-field]");
+const topicField = document.querySelector('select[name="topic"]');
 
 document.documentElement.classList.add("js-ready");
 
@@ -22,6 +23,17 @@ function closeMenu() {
 
 updateHeader();
 window.addEventListener("scroll", updateHeader, { passive: true });
+
+if (topicField) {
+  const requestedTopic = new URLSearchParams(window.location.search).get("topic");
+  const matchingOption = requestedTopic
+    ? Array.from(topicField.options).find((option) => option.value === requestedTopic)
+    : null;
+
+  if (matchingOption) {
+    topicField.value = requestedTopic;
+  }
+}
 
 if (navToggle && navLinks) {
   navToggle.addEventListener("click", () => {

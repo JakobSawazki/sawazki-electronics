@@ -20,10 +20,27 @@ Diese Datei ist der Einstiegspunkt für einen neuen Codex-Agenten. Vor Änderung
 Die Website ist statisch. Es gibt keinen Build-Prozess, kein Framework und keine Paketabhängigkeiten.
 HTML, CSS und JavaScript werden direkt veröffentlicht.
 
-## 2. Wichtige Dateien
+## 2. Verbindliche Aufgabenwarteschlange
+
+Vor jeder inhaltlichen oder technischen Arbeit zuerst `tasks.txt` im Projektstamm als UTF-8 lesen.
+Die Datei ist die priorisierte Aufgabenwarteschlange des Nutzers.
+
+- Aufgaben sind durch eine oder mehrere Leerzeilen getrennt.
+- Immer zuerst den obersten nicht leeren Aufgabenblock bearbeiten.
+- Nur eine Warteschlangenaufgabe gleichzeitig beginnen.
+- Die Aufgabe einschließlich Code, Dokumentation, Tests, Commit, Push und Live-Prüfung abschließen.
+- Erst nach erfolgreicher Live-Prüfung den exakt erledigten ersten Block aus `tasks.txt` entfernen.
+- Vor dem Entfernen `tasks.txt` erneut lesen, damit zwischenzeitlich ergänzte Aufgaben erhalten bleiben.
+- Wenn sich der erste Block während der Bearbeitung geändert hat, nichts automatisch entfernen.
+- Wenn die Aufgabe blockiert oder nicht vollständig abgeschlossen ist, bleibt sie unverändert stehen.
+- Eine leere `tasks.txt` bleibt als Warteschlangendatei im Repository erhalten.
+
+## 3. Wichtige Dateien
 
 - `index.html`: Startseite, Leistungen, Arbeitsablauf, Kontaktformular und Projektbereich
 - `projekte.html`: zentrale Vorstellung von PythonLab, BM-Lab und Games Lab
+- `produkte.html`: Produktportfolio mit Dienstleistungen und späteren physischen Produkten
+- `vhs-digitalisierung.html`: Angebotsseite für die Digitalisierung alter Videokassetten
 - `anfrage-assistent.html`: geführtes Anfrageformular
 - `danke.html`: Zielseite nach erfolgreicher Formularübermittlung
 - `impressum.html`: Impressum
@@ -35,8 +52,9 @@ HTML, CSS und JavaScript werden direkt veröffentlicht.
 - `sitemap.xml`, `robots.txt`, `.nojekyll`: GitHub-Pages- und Suchmaschinenkonfiguration
 - `README.md`: öffentlicher Projektüberblick
 - `docs/CODEX_PROJECT_DOCUMENTATION.md`: ausführliche Projekthistorie und technische Dokumentation
+- `tasks.txt`: priorisierte, durch Leerzeilen getrennte Aufgabenwarteschlange
 
-## 3. Aktuell eingebundene Projekte
+## 4. Aktuell eingebundene Projekte
 
 Der Projektbereich befindet sich am Ende der Startseite unter `#projekte`.
 
@@ -51,7 +69,7 @@ und zusätzlich auf `projekte.html` ausführlich vorgestellt werden. Im Footer s
 Link `Projekte`; einzelne Lab-Links werden dort nicht dupliziert. Die Kennzeichnung auf der Startseite
 lautet einheitlich `Designed by Sawazki Electronics`.
 
-## 4. Formulare und Kontakt
+## 5. Formulare und Kontakt
 
 Öffentliche Kontaktdaten:
 
@@ -75,7 +93,7 @@ Formulare bei Tests nicht unnötig echt absenden. Änderungen an Formularanbiete
 Cookies, Datenübertragung oder eingebetteten externen Diensten erfordern auch eine Prüfung der
 Datenschutzerklärung.
 
-## 5. Designregeln
+## 6. Designregeln
 
 - Wirkung: professionell, ruhig, technisch und kundenorientiert
 - Farbwelt: Navy, Logo-Blau, Cyan sowie helle blau-graue Flächen
@@ -90,7 +108,7 @@ Datenschutzerklärung.
 - Desktop, Tablet und Smartphone berücksichtigen
 - Keine sichtbaren internen technischen Erklärungen auf Kundenseiten
 
-## 6. Technische Besonderheiten
+## 7. Technische Besonderheiten
 
 - Alle Dateien sollen UTF-8 verwenden. PowerShell kann Umlaute bei `Get-Content` abhängig von der
   Terminalkodierung fehlerhaft darstellen; deshalb nicht allein aufgrund einer solchen Anzeige
@@ -102,8 +120,10 @@ Datenschutzerklärung.
   dürfen `loading="lazy"` verwenden.
 - GitHub Pages kann nach einem Push kurz verzögert aktualisieren. Zur Kontrolle einen Cache-Buster
   verwenden, zum Beispiel `?v=<commit>`.
+- `assets/js/main.js` übernimmt den Query-Parameter `topic`, wenn ein passender Wert im
+  Anfrageformular existiert. Die VHS-Seite nutzt `topic=VHS-Digitalisierung`.
 
-## 7. Lokal starten
+## 8. Lokal starten
 
 Im Projektordner:
 
@@ -123,7 +143,7 @@ Falls `python` nicht verfügbar ist:
 py -m http.server 4177
 ```
 
-## 8. Prüfungen vor einem Push
+## 9. Prüfungen vor einem Push
 
 1. `git status --short` prüfen und fremde Änderungen nicht verwerfen.
 2. Interne Links sowie referenzierte Bilder kontrollieren.
@@ -140,7 +160,7 @@ py -m http.server 4177
 8. Nur zusammengehörige Dateien committen und anschließend auf `main` pushen.
 9. Live-Seite mit Cache-Buster prüfen.
 
-## 9. Veröffentlichung
+## 10. Veröffentlichung
 
 ```powershell
 git add <dateien>
@@ -156,7 +176,7 @@ https://jakobsawazki.github.io/sawazki-electronics/?v=<commit-kuerzel>
 
 Für neue öffentliche HTML-Seiten außerdem `sitemap.xml`, Navigation, Footer und README prüfen.
 
-## 10. Aktueller Entwicklungsstand
+## 11. Aktueller Entwicklungsstand
 
 - Firmen-Startseite und rechtliche Seiten sind veröffentlicht.
 - Startseite ist lokal auf IT-Service sowie PC- und Laptop-Reparatur in Freudenstadt ausgerichtet.
@@ -175,19 +195,24 @@ Für neue öffentliche HTML-Seiten außerdem `sitemap.xml`, Navigation, Footer u
 - Die Reihenfolge lautet PythonLab, BM-Lab und Games Lab.
 - `projekte.html` erklärt für jedes Lab Zweck, Zielgruppe und Ziel; der Footer verweist zentral
   auf diese Seite.
+- Der Hauptmenüpunkt `Produkte` führt zum erweiterbaren Portfolio unter `produkte.html`.
+- `vhs-digitalisierung.html` beschreibt Formate, Ablauf, Preisstaffeln, FAQ und Anfrageweg.
+- Das lokale Bild `assets/images/vhs-digitalisierung-hero.webp` wurde speziell für die
+  Digitalisierungsleistung erstellt.
 - Kontaktformular und Anfrage-Assistent sind integriert.
 - Das Reparaturfoto wurde durch eine realistischere lokale Grafik ersetzt.
 - Der Projektbereich unterstützt mehrere Karten.
 - PythonLab, BM-Lab und Games Lab sind verlinkt.
 - README und ausführliche Codex-Dokumentation sind vorhanden.
 
-## 11. Prioritäten für zukünftige Änderungen
+## 12. Prioritäten für zukünftige Änderungen
 
-1. Bestehende Funktionen und Links erhalten.
-2. Kundenverständlichkeit vor internen technischen Erklärungen priorisieren.
-3. Neue Projekte konsistent im Projektbereich aufnehmen, aber nicht zusätzlich im Footer duplizieren.
-4. Rechtliche Auswirkungen neuer Dienste oder Datenübertragungen mitdenken.
-5. Änderungen lokal und anschließend live prüfen.
+1. Vor allem anderen `tasks.txt` prüfen und die oberste Aufgabe abarbeiten.
+2. Bestehende Funktionen und Links erhalten.
+3. Kundenverständlichkeit vor internen technischen Erklärungen priorisieren.
+4. Neue Projekte konsistent im Projektbereich aufnehmen, aber nicht zusätzlich im Footer duplizieren.
+5. Rechtliche Auswirkungen neuer Dienste oder Datenübertragungen mitdenken.
+6. Änderungen lokal und anschließend live prüfen.
 
 Zusätzliche SEO- und Marketinghinweise stehen unter `docs/SEO_MARKETING_GUIDE.md`.
 

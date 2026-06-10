@@ -22,6 +22,8 @@ Wichtige Dateien:
 
 - `index.html`: Startseite mit Hero, Leistungen, Diagnose, Praxisbildern, Ablauf, Detailband, Kontaktformular und Projects-/Sub-Projects-Hinweis
 - `projekte.html`: zentrale Projektseite mit PythonLab, BM-Lab und Games Lab
+- `produkte.html`: erweiterbares Portfolio fuer Dienstleistungen, Angebote und physische Produkte
+- `vhs-digitalisierung.html`: eigenstaendige Angebotsseite fuer alte Videokassetten
 - `anfrage-assistent.html`: gefuehrter Anfrage-Assistent als statische, datensparsame Alternative zu einem echten Live-Chatbot
 - `impressum.html`: Impressum
 - `datenschutz.html`: Datenschutzerklaerung
@@ -59,6 +61,8 @@ Aktiv genutzt:
 - `assets/images/games-lab-logo.png`: Projects-/Sub-Projects-Logo fuer Games Lab im unteren Startseitenbereich
 - `assets/images/pythonwerkstatt-logo.webp`: Logo fuer das sichtbar als PythonLab gefuehrte Lernprojekt
 - `assets/images/bm-lernportal-logo.svg`: Logo fuer das sichtbar als BM-Lab gefuehrte Lernprojekt
+- `assets/images/vhs-digitalisierung-hero.webp`: fotorealistisches Hero-Bild fuer die
+  Videokassetten-Digitalisierung
 
 Noch vorhanden als moegliche Rueckfall- oder Alternativassets:
 
@@ -324,10 +328,41 @@ Commit-Titel: `Link BM Lernportal from main homepage`
 - Footer aller Seiten um den zentralen Link `Projekte` ergänzt.
 - `projekte.html` in die Sitemap aufgenommen.
 
+### 10. Juni 2026 - Produktportfolio und VHS-Digitalisierung
+
+- Hauptnavigation und Footer um den Bereich `Produkte` erweitert.
+- Neue Portfolioseite `produkte.html` fuer Dienstleistungen und spaetere physische Produkte erstellt.
+- Neue Seite `vhs-digitalisierung.html` mit Formaten, Leistungsumfang, Ablauf, FAQ und Kontaktweg
+  erstellt.
+- VHS/VHS-C-Preisstaffel bis 90 Minuten mit Mengenpreisen von 19,90 EUR bis 15,90 EUR je Kassette
+  sowie Laufzeitaufschlaegen von 5,00 EUR und 10,00 EUR eingefuehrt.
+- Video8, Hi8 und MiniDV werden nach technischer Pruefung ab 24,90 EUR angeboten.
+- Preisstruktur gegen aktuelle deutsche Anbieter mit Basispreisen, Mengenstaffeln und
+  Ueberlaengenzuschlaegen abgeglichen.
+- Anfrage-Assistent und Startseitenformular um das Thema `VHS-Digitalisierung` erweitert.
+- Query-Parameter fuer eine automatische Themenvorauswahl im Anfrage-Assistenten ergaenzt.
+- Fotorealistisches Bild `assets/images/vhs-digitalisierung-hero.webp` lokal eingebunden.
+- Produkt- und VHS-Seite in die Sitemap aufgenommen.
+
+## Aufgabenwarteschlange `tasks.txt`
+
+`tasks.txt` im Projektstamm ist die verbindliche priorisierte Warteschlange fuer neue
+Nutzeraufgaben.
+
+1. Datei vor jeder anderen Arbeit als UTF-8 lesen.
+2. Aufgaben anhand von Leerzeilen in Bloecke aufteilen.
+3. Nur den obersten nicht leeren Block bearbeiten.
+4. Aufgabe vollstaendig implementieren, dokumentieren, testen, committen, pushen und live pruefen.
+5. Datei unmittelbar vor dem Entfernen erneut lesen.
+6. Nur den unveraenderten erledigten ersten Block entfernen; spaetere Bloecke unveraendert lassen.
+7. Bei Aenderung, Blockade oder fehlender Live-Pruefung nichts entfernen.
+8. Die Datei bleibt auch leer im Repository bestehen.
+
 ## Regeln fuer kuenftige Codex-Aenderungen
 
 Wenn Codex kuenftig an diesem Projekt arbeitet:
 
+- Vor allen anderen Schritten `tasks.txt` nach der oben dokumentierten Warteschlangenregel pruefen.
 - Diese Datei vor groesseren Aenderungen lesen.
 - Nach relevanten Aenderungen den Abschnitt "Bisheriges Aenderungsprotokoll" ergaenzen.
 - Bei visuellen Aenderungen lokale Browserpruefung machen.
