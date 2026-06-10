@@ -26,6 +26,10 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 
 ## Dokumentation
 
+Für die schnelle Weitergabe an einen neuen Codex-Agenten gibt es die
+[`CODEX_HANDOVER.md`](CODEX_HANDOVER.md). Sie enthält den aktuellen technischen Stand,
+Arbeitsregeln, Prüfungen und den Veröffentlichungsablauf.
+
 Die laufende Codex-Projektdokumentation liegt unter
 [`docs/CODEX_PROJECT_DOCUMENTATION.md`](docs/CODEX_PROJECT_DOCUMENTATION.md).
 Sie enthält Projektstand, lokale Weiterarbeit, Veröffentlichungsablauf, Designentscheidungen
