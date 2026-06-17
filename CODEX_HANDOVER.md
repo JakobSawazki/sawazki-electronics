@@ -60,7 +60,7 @@ Der Projektbereich befindet sich am Ende der Startseite unter `#projekte`.
 
 | Projekt | Live-Link | Lokales Logo |
 | --- | --- | --- |
-| PythonLab | <https://jakobsawazki.github.io/Python-Lernportal-BG/> | `assets/images/pythonwerkstatt-logo.webp` |
+| PythonLab | <https://jakobsawazki.github.io/PythonLab/> | `assets/images/pythonlab-logo.webp` |
 | BM-Lab | <https://jakobsawazki.github.io/bm-lernportal/> | `assets/images/bm-lernportal-logo.svg` |
 | Games Lab | <https://jakobsawazki.github.io/games-lab/> | `assets/images/games-lab-logo.png` |
 
@@ -203,6 +203,7 @@ Für neue öffentliche HTML-Seiten außerdem `sitemap.xml`, Navigation, Footer u
 - Das Reparaturfoto wurde durch eine realistischere lokale Grafik ersetzt.
 - Der Projektbereich unterstützt mehrere Karten.
 - PythonLab, BM-Lab und Games Lab sind verlinkt.
+- PythonLab verweist auf die neue GitHub-Pages-Adresse `/PythonLab/`.
 - README und ausführliche Codex-Dokumentation sind vorhanden.
 
 ## 12. Prioritäten für zukünftige Änderungen

@@ -59,7 +59,7 @@ Aktiv genutzt:
 - `assets/images/repair-laptop.jpg`: neu generiertes Laptop-Reparaturfoto, Praxisbereich und Detailband
 - `assets/images/smartphone-repair.jpg`: Elektronik/Kleingeraete
 - `assets/images/games-lab-logo.png`: Projects-/Sub-Projects-Logo fuer Games Lab im unteren Startseitenbereich
-- `assets/images/pythonwerkstatt-logo.webp`: Logo fuer das sichtbar als PythonLab gefuehrte Lernprojekt
+- `assets/images/pythonlab-logo.webp`: Logo fuer PythonLab
 - `assets/images/bm-lernportal-logo.svg`: Logo fuer das sichtbar als BM-Lab gefuehrte Lernprojekt
 - `assets/images/vhs-digitalisierung-hero.webp`: fotorealistisches Hero-Bild fuer die
   Videokassetten-Digitalisierung
@@ -327,6 +327,12 @@ Commit-Titel: `Link BM Lernportal from main homepage`
 - Bestehende Logos und externe Projektziele weiterverwendet.
 - Footer aller Seiten um den zentralen Link `Projekte` ergänzt.
 - `projekte.html` in die Sitemap aufgenommen.
+
+### 17. Juni 2026 - PythonLab-Link aktualisiert
+
+- PythonLab-Links von `/Python-Lernportal-BG/` auf `/PythonLab/` umgestellt.
+- JSON-LD auf `projekte.html` an die neue PythonLab-Adresse angepasst.
+- Logo-Datei von `pythonwerkstatt-logo.webp` zu `pythonlab-logo.webp` umbenannt.
 
 ### 10. Juni 2026 - Produktportfolio und VHS-Digitalisierung
 

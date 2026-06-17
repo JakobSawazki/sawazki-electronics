@@ -8,6 +8,7 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - Dezente Leiterbahn-/Knotenpunktmuster auf den hellen Flächen statt leerem Weiß
 - Interaktives Hero-Logo mit Lichtlauf und direktem Sprung zu den Leistungen
 - Projektkarten mit Logos für PythonLab, BM-Lab und Games Lab
+- PythonLab ist auf `https://jakobsawazki.github.io/PythonLab/` verlinkt
 - Eigene Projektseite mit Zweck, Zielgruppe und Ziel jedes Labs
 - Footer-Link zur zentralen Projektübersicht ohne doppelte Einzelprojektlinks
 - Zentrales Produktportfolio für Dienstleistungen, Angebote und spätere physische Produkte
