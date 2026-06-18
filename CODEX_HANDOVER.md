@@ -14,7 +14,7 @@ Diese Datei ist der Einstiegspunkt für einen neuen Codex-Agenten. Vor Änderung
 - Live-Seite: <https://jakobsawazki.github.io/sawazki-electronics/>
 - Lokaler Projektordner: `G:\Meine Ablage\Codex\sawazki-electronics`
 - Standard-Branch: `main`
-- Zuletzt geprüfter Funktionsstand: WorkbenchLab-Erweiterung vom 18. Juni 2026
+- Zuletzt geprüfter Funktionsstand: Projektsprung und Light-/Dark-Mode vom 18. Juni 2026
 - Hosting: GitHub Pages direkt aus dem Repository
 
 Die Website ist statisch. Es gibt keinen Build-Prozess, kein Framework und keine Paketabhängigkeiten.
@@ -48,6 +48,7 @@ Die Datei ist die priorisierte Aufgabenwarteschlange des Nutzers.
 - `agb.html`: Allgemeine Geschäftsbedingungen
 - `assets/css/styles.css`: gesamtes Layout, Responsive Design und Interaktionen
 - `assets/js/main.js`: Scroll-Header, mobile Navigation, Reveal-Effekte und Formularbetreff
+- `assets/js/theme.js`: systembewusster Light-/Dark-Mode und lokal gespeicherte Auswahl
 - `assets/images/`: Logos und lokale Website-Bilder
 - `sitemap.xml`, `robots.txt`, `.nojekyll`: GitHub-Pages- und Suchmaschinenkonfiguration
 - `README.md`: öffentlicher Projektüberblick
@@ -107,6 +108,8 @@ Datenschutzerklärung.
 - Das Firmenlogo oben links führt zur Startseite und hat einen professionellen Hover-Zustand
 - Das große Hero-Logo führt zu `#leistungen` und besitzt Lichtlauf, Tiefeneffekt und Fokuszustand
 - Desktop, Tablet und Smartphone berücksichtigen
+- Der Hauptmenüpunkt `Projekte` springt direkt zum Projektbereich `#projekte` der Startseite
+- Der Theme-Schalter steht rechts neben `Impressum` und bleibt auf allen Seiten verfügbar
 - Keine sichtbaren internen technischen Erklärungen auf Kundenseiten
 
 ## 7. Technische Besonderheiten
@@ -115,6 +118,9 @@ Datenschutzerklärung.
   Terminalkodierung fehlerhaft darstellen; deshalb nicht allein aufgrund einer solchen Anzeige
   Texte automatisch neu kodieren.
 - `assets/js/main.js` setzt die Klasse `is-scrolled` am Header und steuert die mobile Navigation.
+- `assets/js/theme.js` setzt `data-theme` auf dem Wurzelelement. Die Auswahl wird unter
+  `sawazki-electronics-theme` im lokalen Browserspeicher abgelegt; ohne Auswahl gilt die
+  Betriebssystemvorgabe.
 - Reveal-Animationen verwenden `.reveal` und `.is-visible`. Formulare oder sofort benötigte Inhalte
   nicht unnötig mit Reveal verstecken.
 - Bilder in der ersten sichtbaren Ansicht nicht lazy laden. Weiter unten liegende große Bilder
@@ -152,6 +158,7 @@ py -m http.server 4177
 
    ```powershell
    node --check assets/js/main.js
+   node --check assets/js/theme.js
    ```
 
 4. Startseite und betroffene Unterseiten lokal im Browser ansehen.
@@ -197,6 +204,9 @@ Für neue öffentliche HTML-Seiten außerdem `sitemap.xml`, Navigation, Footer u
 - `projekte.html` erklärt für jedes Lab Zweck, Zielgruppe und Ziel; der Footer verweist zentral
   auf diese Seite.
 - Der Hauptmenüpunkt `Produkte` führt zum erweiterbaren Portfolio unter `produkte.html`.
+- Der Hauptmenüpunkt `Projekte` führt auf allen Seiten direkt zum Projektbereich der Startseite.
+- Ein kompakter, barrierearm beschrifteter Theme-Schalter bietet einen persistenten Light- und
+  Dark-Mode und folgt beim ersten Besuch der Betriebssystemvorgabe.
 - `vhs-digitalisierung.html` beschreibt Formate, Ablauf, Preisstaffeln, FAQ und Anfrageweg.
 - Das lokale Bild `assets/images/vhs-digitalisierung-hero.webp` wurde speziell für die
   Digitalisierungsleistung erstellt.

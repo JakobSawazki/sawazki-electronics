@@ -31,6 +31,7 @@ Wichtige Dateien:
 - `danke.html`: Zielseite nach erfolgreichem Formularversand
 - `assets/css/styles.css`: gesamtes Layout, Farben, Responsive Design, Hover-Effekte
 - `assets/js/main.js`: Navigation, Scroll-Header, Reveal-Animationen, Formular-Betreff
+- `assets/js/theme.js`: Light-/Dark-Mode, Systemvorgabe und lokal gespeicherte Auswahl
 - `assets/images/`: lokale Bild- und Logoassets
 - `robots.txt` und `sitemap.xml`: Suchmaschinen-Hinweise
 - `.nojekyll`: sorgt dafuer, dass GitHub Pages die Dateien unveraendert ausliefert
@@ -347,6 +348,22 @@ Commit-Titel: `Add WorkbenchLab to project showcase`
 - Startseite und Projektseite bei 1440, 1280 und 390 Pixeln geprüft: richtige
   Reihenfolge, geladene Logos, gültige Links, kein horizontaler Überlauf und
   keine Browserfehler.
+
+### 18. Juni 2026 - Projektsprung und Light-/Dark-Mode
+
+Commit-Titel: `Add project navigation and theme switcher`
+
+- Hauptnavigation aller Seiten um `Projekte` erweitert; der Link springt direkt zum Bereich
+  `#projekte` am Ende der Startseite.
+- Kompakten Theme-Schalter unmittelbar rechts neben `Impressum` integriert.
+- Light- und Dark-Mode fuer Startseite, Unterseiten, Karten, Formulare und rechtliche Seiten
+  gestalterisch ausgearbeitet.
+- Auswahl im lokalen Browserspeicher unter `sawazki-electronics-theme` persistiert; ohne manuelle
+  Auswahl wird die Systemvorgabe des Browsers verwendet.
+- Tablet-Navigation bereits ab 1080 Pixeln kompakt dargestellt, damit die erweiterte Navigation
+  ohne Ueberlauf funktioniert.
+- Lokal bei 1440, 1024 und 390 Pixeln geprueft: Sprungziel, Moduswechsel, Seitenpersistenz,
+  mobiles Menue, sichtbare Bedienelemente, kein horizontaler Ueberlauf und keine Browserfehler.
 
 ### 10. Juni 2026 - Produktportfolio und VHS-Digitalisierung
 
