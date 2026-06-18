@@ -3,7 +3,6 @@
 
   const storageKey = "sawazki-electronics-theme";
   const root = document.documentElement;
-  const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
   function storedTheme() {
     try {
@@ -12,10 +11,6 @@
     } catch {
       return null;
     }
-  }
-
-  function preferredTheme() {
-    return mediaQuery.matches ? "dark" : "light";
   }
 
   function ensureThemeToggles() {
@@ -67,7 +62,7 @@
     }
   }
 
-  applyTheme(storedTheme() || preferredTheme());
+  applyTheme(storedTheme() || "dark");
 
   document.addEventListener("DOMContentLoaded", () => {
     ensureThemeToggles();
@@ -83,11 +78,5 @@
         applyTheme(nextTheme);
       });
     });
-  });
-
-  mediaQuery.addEventListener?.("change", (event) => {
-    if (!storedTheme()) {
-      applyTheme(event.matches ? "dark" : "light");
-    }
   });
 })();

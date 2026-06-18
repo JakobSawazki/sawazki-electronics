@@ -99,6 +99,10 @@ select {
   right: 0;
   left: 0;
   z-index: 20;
+  background: linear-gradient(180deg, rgba(4, 20, 32, 0.94), rgba(4, 20, 32, 0.86));
+  border-bottom: 1px solid rgba(118, 213, 226, 0.18);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(16px) saturate(125%);
   transition: background 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
 }
 
@@ -203,7 +207,13 @@ select {
   display: flex;
   align-items: center;
   gap: 0.25rem;
+  padding: 0.28rem;
   color: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(118, 213, 226, 0.22);
+  border-radius: var(--radius);
+  background: rgba(2, 17, 28, 0.7);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(14px) saturate(125%);
   font-weight: 650;
 }
 
@@ -264,6 +274,9 @@ select {
 
 .site-header.is-scrolled .nav-links {
   color: var(--ink-2);
+  border-color: var(--line);
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 8px 24px rgba(8, 47, 87, 0.1);
 }
 
 .nav-links a {
@@ -2580,6 +2593,13 @@ select:focus {
   box-shadow: 0 14px 38px rgba(0, 0, 0, 0.28);
 }
 
+:root[data-theme="dark"] .site-header.is-scrolled .nav-links,
+:root[data-theme="dark"] .legal-body .nav-links {
+  border-color: rgba(118, 213, 226, 0.24);
+  background: rgba(3, 18, 28, 0.82);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.26);
+}
+
 :root[data-theme="dark"] .services,
 :root[data-theme="dark"] .diagnostic,
 :root[data-theme="dark"] .work-gallery,
@@ -2663,6 +2683,14 @@ select:focus {
 :root[data-theme="dark"] .project-profile-header img {
   border-color: rgba(127, 190, 211, 0.22);
   background: #0b1821;
+}
+
+:root[data-theme="dark"] .detail-photo span {
+  color: #edf9fb;
+  border: 1px solid rgba(110, 220, 226, 0.38);
+  background: rgba(5, 28, 41, 0.9);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(12px);
 }
 
 @media (max-width: 1080px) {

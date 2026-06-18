@@ -31,7 +31,7 @@ Wichtige Dateien:
 - `danke.html`: Zielseite nach erfolgreichem Formularversand
 - `assets/css/styles.css`: gesamtes Layout, Farben, Responsive Design, Hover-Effekte
 - `assets/js/main.js`: Navigation, Scroll-Header, Reveal-Animationen, Formular-Betreff
-- `assets/js/theme.js`: Light-/Dark-Mode, Systemvorgabe und lokal gespeicherte Auswahl
+- `assets/js/theme.js`: Dark Mode als Standard und lokal gespeicherte Theme-Auswahl
 - `assets/images/`: lokale Bild- und Logoassets
 - `robots.txt` und `sitemap.xml`: Suchmaschinen-Hinweise
 - `.nojekyll`: sorgt dafuer, dass GitHub Pages die Dateien unveraendert ausliefert
@@ -364,6 +364,19 @@ Commit-Titel: `Add project navigation and theme switcher`
   ohne Ueberlauf funktioniert.
 - Lokal bei 1440, 1024 und 390 Pixeln geprueft: Sprungziel, Moduswechsel, Seitenpersistenz,
   mobiles Menue, sichtbare Bedienelemente, kein horizontaler Ueberlauf und keine Browserfehler.
+
+### 18. Juni 2026 - Dark Mode und Header verfeinert
+
+Commit-Titel: `Refine dark mode and header contrast`
+
+- Dark Mode als Standardansicht festgelegt; eine gespeicherte manuelle Auswahl bleibt erhalten.
+- Header bereits am Seitenanfang mit einer dunklen Glasflaeche, Rand und Schatten klar vom Inhalt
+  getrennt.
+- Navigationsreiter in einem eigenen, eingerahmten Hintergrund zusammengefasst, der auch beim
+  Scrollen lesbar bleibt.
+- Bild-Badges `Einrichtung`, `Sicherheit` und `Backup` im Dark Mode mit kontrastreichem
+  Navy-Cyan-Stil versehen.
+- Cache-Version fuer Theme-JavaScript und Stylesheet auf `20260618-dark-polish` aktualisiert.
 
 ### 10. Juni 2026 - Produktportfolio und VHS-Digitalisierung
 
