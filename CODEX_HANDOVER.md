@@ -1,6 +1,6 @@
 # Codex-Übergabe: Sawazki Electronics Website
 
-Stand: 10. Juni 2026
+Stand: 18. Juni 2026
 
 Diese Datei ist der Einstiegspunkt für einen neuen Codex-Agenten. Vor Änderungen zuerst diese
 Übergabe, anschließend bei Bedarf die ausführliche Projektdokumentation unter
@@ -12,9 +12,9 @@ Diese Datei ist der Einstiegspunkt für einen neuen Codex-Agenten. Vor Änderung
 - Zweck: professionelle Firmen-Homepage für IT-, PC-, Laptop- und Support-Dienstleistungen
 - Repository: <https://github.com/JakobSawazki/sawazki-electronics>
 - Live-Seite: <https://jakobsawazki.github.io/sawazki-electronics/>
-- Lokaler Projektordner: `D:\Google Drive\Gewerbe\Sawazki Electronics Website`
+- Lokaler Projektordner: `G:\Meine Ablage\Codex\sawazki-electronics`
 - Standard-Branch: `main`
-- Zuletzt geprüfter Funktionsstand: Designrunde vom 10. Juni 2026
+- Zuletzt geprüfter Funktionsstand: WorkbenchLab-Erweiterung vom 18. Juni 2026
 - Hosting: GitHub Pages direkt aus dem Repository
 
 Die Website ist statisch. Es gibt keinen Build-Prozess, kein Framework und keine Paketabhängigkeiten.
@@ -38,7 +38,7 @@ Die Datei ist die priorisierte Aufgabenwarteschlange des Nutzers.
 ## 3. Wichtige Dateien
 
 - `index.html`: Startseite, Leistungen, Arbeitsablauf, Kontaktformular und Projektbereich
-- `projekte.html`: zentrale Vorstellung von PythonLab, BM-Lab und Games Lab
+- `projekte.html`: zentrale Vorstellung von PythonLab, WorkbenchLab, BM-Lab und Games Lab
 - `produkte.html`: Produktportfolio mit Dienstleistungen und späteren physischen Produkten
 - `vhs-digitalisierung.html`: Angebotsseite für die Digitalisierung alter Videokassetten
 - `anfrage-assistent.html`: geführtes Anfrageformular
@@ -61,6 +61,7 @@ Der Projektbereich befindet sich am Ende der Startseite unter `#projekte`.
 | Projekt | Live-Link | Lokales Logo |
 | --- | --- | --- |
 | PythonLab | <https://jakobsawazki.github.io/PythonLab/> | `assets/images/pythonlab-logo.webp` |
+| WorkbenchLab | <https://jakobsawazki.github.io/WorkbenchLab/> | `assets/images/workbenchlab-logo.webp` |
 | BM-Lab | <https://jakobsawazki.github.io/bm-lernportal/> | `assets/images/bm-lernportal-logo.svg` |
 | Games Lab | <https://jakobsawazki.github.io/games-lab/> | `assets/images/games-lab-logo.png` |
 
@@ -192,7 +193,7 @@ Für neue öffentliche HTML-Seiten außerdem `sitemap.xml`, Navigation, Footer u
 - Ablauf- und Kontaktüberschrift bleiben ab Tabletbreite einzeilig.
 - Hero-Servicebilder sind größer und überdecken das Faktenband nicht.
 - Projektkarten verwenden einheitlich `Designed by Sawazki Electronics`.
-- Die Reihenfolge lautet PythonLab, BM-Lab und Games Lab.
+- Die Reihenfolge lautet PythonLab, WorkbenchLab, BM-Lab und Games Lab.
 - `projekte.html` erklärt für jedes Lab Zweck, Zielgruppe und Ziel; der Footer verweist zentral
   auf diese Seite.
 - Der Hauptmenüpunkt `Produkte` führt zum erweiterbaren Portfolio unter `produkte.html`.
@@ -202,7 +203,7 @@ Für neue öffentliche HTML-Seiten außerdem `sitemap.xml`, Navigation, Footer u
 - Kontaktformular und Anfrage-Assistent sind integriert.
 - Das Reparaturfoto wurde durch eine realistischere lokale Grafik ersetzt.
 - Der Projektbereich unterstützt mehrere Karten.
-- PythonLab, BM-Lab und Games Lab sind verlinkt.
+- PythonLab, WorkbenchLab, BM-Lab und Games Lab sind verlinkt.
 - PythonLab verweist auf die neue GitHub-Pages-Adresse `/PythonLab/`.
 - README und ausführliche Codex-Dokumentation sind vorhanden.
 

@@ -1,6 +1,6 @@
 # Sawazki Electronics Website - Codex Projektdokumentation
 
-Stand: 10. Juni 2026
+Stand: 18. Juni 2026
 
 Diese Dokumentation dient als Arbeitsgrundlage fuer Codex und fuer die Weiterarbeit auf einem anderen Laptop. Sie soll bei kuenftigen Aenderungen fortgeschrieben werden: Was wurde geaendert, warum, in welchen Dateien und wie wurde geprueft.
 
@@ -10,7 +10,7 @@ Diese Dokumentation dient als Arbeitsgrundlage fuer Codex und fuer die Weiterarb
 - Zweck: professionelle Homepage fuer IT-, PC-, Laptop-, Support- und Elektronikdienstleistungen
 - GitHub Repository: `JakobSawazki/sawazki-electronics`
 - Live-Seite: <https://jakobsawazki.github.io/sawazki-electronics/>
-- Lokaler Arbeitsordner auf dem aktuellen Laptop: `D:\Google Drive\Gewerbe\Sawazki Electronics Website`
+- Lokaler Arbeitsordner auf dem aktuellen Laptop: `G:\Meine Ablage\Codex\sawazki-electronics`
 - Standard-Branch: `main`
 - Backup-Branch vor der Hero-/Hintergrund-Ueberarbeitung: `codex/backup-startseite-2026-05-20`
 
@@ -21,7 +21,7 @@ Die Website ist bewusst statisch gehalten. Es gibt keinen Build-Prozess, keine F
 Wichtige Dateien:
 
 - `index.html`: Startseite mit Hero, Leistungen, Diagnose, Praxisbildern, Ablauf, Detailband, Kontaktformular und Projects-/Sub-Projects-Hinweis
-- `projekte.html`: zentrale Projektseite mit PythonLab, BM-Lab und Games Lab
+- `projekte.html`: zentrale Projektseite mit PythonLab, WorkbenchLab, BM-Lab und Games Lab
 - `produkte.html`: erweiterbares Portfolio fuer Dienstleistungen, Angebote und physische Produkte
 - `vhs-digitalisierung.html`: eigenstaendige Angebotsseite fuer alte Videokassetten
 - `anfrage-assistent.html`: gefuehrter Anfrage-Assistent als statische, datensparsame Alternative zu einem echten Live-Chatbot
@@ -333,6 +333,20 @@ Commit-Titel: `Link BM Lernportal from main homepage`
 - PythonLab-Links von `/Python-Lernportal-BG/` auf `/PythonLab/` umgestellt.
 - JSON-LD auf `projekte.html` an die neue PythonLab-Adresse angepasst.
 - Logo-Datei von `pythonwerkstatt-logo.webp` zu `pythonlab-logo.webp` umbenannt.
+
+### 18. Juni 2026 - WorkbenchLab eingebunden
+
+Commit-Titel: `Add WorkbenchLab to project showcase`
+
+- WorkbenchLab direkt neben PythonLab in den Projektbereich der Startseite aufgenommen.
+- Eigenes, lokal optimiertes Datenbank- und SQL-Symbol unter
+  `assets/images/workbenchlab-logo.webp` ergänzt.
+- Startseitenraster für vier gleichwertige Karten als responsives 2×2-Raster gestaltet.
+- WorkbenchLab mit Zweck, Zielgruppe und Lernziel auf `projekte.html` dokumentiert.
+- Metadaten und strukturierte Daten der Projektseite um WorkbenchLab erweitert.
+- Startseite und Projektseite bei 1440, 1280 und 390 Pixeln geprüft: richtige
+  Reihenfolge, geladene Logos, gültige Links, kein horizontaler Überlauf und
+  keine Browserfehler.
 
 ### 10. Juni 2026 - Produktportfolio und VHS-Digitalisierung
 

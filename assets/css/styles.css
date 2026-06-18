@@ -1301,7 +1301,7 @@ select:focus {
 .side-project-grid {
   width: min(100% - 2rem, var(--max));
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
   margin: 0 auto;
 }
@@ -2264,10 +2264,14 @@ select:focus {
 }
 
 .project-profile:nth-child(2)::before {
-  background: linear-gradient(90deg, #174f43, #2d8f78, #b7d86d);
+  background: linear-gradient(90deg, #083f41, #0f8b84, #57ddd0);
 }
 
 .project-profile:nth-child(3)::before {
+  background: linear-gradient(90deg, #174f43, #2d8f78, #b7d86d);
+}
+
+.project-profile:nth-child(4)::before {
   background: linear-gradient(90deg, #071f56, #176fc3, #24d4d6);
 }
 
