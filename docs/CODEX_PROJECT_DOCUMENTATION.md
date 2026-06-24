@@ -1,6 +1,6 @@
 # Sawazki Electronics Website - Codex Projektdokumentation
 
-Stand: 24. Juni 2026 · Version: v1.8.0
+Stand: 24. Juni 2026 · Version: v1.9.0
 
 Diese Dokumentation dient als Arbeitsgrundlage fuer Codex und fuer die Weiterarbeit auf einem anderen Laptop. Sie soll bei kuenftigen Aenderungen fortgeschrieben werden: Was wurde geaendert, warum, in welchen Dateien und wie wurde geprueft.
 
@@ -12,6 +12,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.9.0 | 2026-06-24 | Schwebender WhatsApp-Kontaktbutton auf allen Seiten (direkter Draht zu Jakob) |
 | v1.8.0 | 2026-06-24 | Neue Seite `ueber-mich.html` (Vertrauen/Profil) inkl. Footer-Verlinkung auf allen Seiten |
 | v1.7.1 | 2026-06-24 | FAQ-Schema (FAQPage) auf den Service-Seiten fuer Rich Results; Review + Cleanup |
 | v1.7.0 | 2026-06-24 | Services-Navigation; einheitliche Projektbilder; 3D-Druck-/Datenrettungsbilder; Word-Queue finalisiert |
@@ -210,6 +211,19 @@ Nach dem Veröffentlichen:
 - Commit-Kuerzel in dieser Dokumentation im Aenderungsprotokoll ergaenzen
 
 ## Bisheriges Aenderungsprotokoll
+
+### 24. Juni 2026 - WhatsApp-Kontaktbutton (v1.9.0)
+
+- Schwebender WhatsApp-Button (`.wa-float`) unten rechts auf allen Seiten ergaenzt. Er oeffnet
+  `https://wa.me/4915202967632` mit vorbefuellter Nachricht. Kunden schreiben damit **direkt an
+  Jakob** (kein Bot/keine KI).
+- CSS in `styles.css` (`.wa-float`, mobil als reiner Icon-Button ab 460px, `prefers-reduced-motion`
+  beruecksichtigt). Button-Markup per Skript byte-/UTF-8-sicher vor `</body>` auf allen Seiten
+  eingefuegt (reines ASCII, daher keine Umlaut-Probleme).
+- Stylesheet-Cache-Token von `20260624-services-images` auf `20260624-whatsapp` angehoben
+  (alle Seiten konsistent).
+- Hinweis: Falls die WhatsApp-Nutzung beworben wird, ggf. Datenschutzhinweis zu WhatsApp/Meta
+  pruefen. Die Telefonnummer ist bereits oeffentlich (Impressum/Kontakt).
 
 ### 24. Juni 2026 - "Ueber mich"-Seite fuer Vertrauen (v1.8.0)
 
