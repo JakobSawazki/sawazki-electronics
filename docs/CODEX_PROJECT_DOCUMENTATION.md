@@ -228,9 +228,8 @@ Nach dem Veröffentlichen:
 - `docs/SEO_MARKETING_GUIDE.md` um Kurzlink-/Domain-Einschaetzung und Dropshipping-/Shopify-
   Empfehlung ergaenzt. Ergebnis: eigene Domain bevorzugen, Bitly nur fuer Kampagnen; statt
   generischem Dropshipping service-nahe, validierte Technikprodukte pruefen.
-- `tasks.docx` als alleinige Aufgabenwarteschlange finalisiert; `tasks.txt` wird nach erfolgreicher
-  Live-Pruefung entfernt. Bildauftrag und alte Word-Aufgaben werden danach aus `tasks.docx`
-  geloescht.
+- `tasks.docx` als alleinige Aufgabenwarteschlange finalisiert; `tasks.txt` entfernt.
+  Bildauftrag und alte Word-Aufgaben wurden aus `tasks.docx` geloescht.
 
 ### 24. Juni 2026 - Datenrettung als Dienstleistung (v1.6.0)
 

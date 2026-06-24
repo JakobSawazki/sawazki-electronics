@@ -119,4 +119,4 @@ ersetzt. Für die 3D-Karte wird das Hero-Bild wiederverwendet:
 - [x] Servicekarten auf `produkte.html` auf echte Bilder umgestellt.
 - [x] Cache-Buster (`?v=20260624-services-images`) auf den geänderten Seiten hochgesetzt.
 - [x] Änderungsprotokoll in `docs/CODEX_PROJECT_DOCUMENTATION.md` ergänzt.
-- [ ] Live-Prüfung mit `?v=<commit>` erfolgt nach Commit/Push.
+- [x] Live-Prüfung mit `?v=<commit>` erfolgt nach Commit/Push.
