@@ -1854,7 +1854,8 @@ select:focus {
 /* Gebrandeter Service-Hero: das Foto liegt unter dem Verlauf, der als
    markentypische Abdunklung und Fallback-Hintergrund dient. */
 .print-hero,
-.recovery-hero {
+.recovery-hero,
+.about-hero {
   background:
     radial-gradient(circle at 78% 18%, rgba(32, 191, 210, 0.24), transparent 30rem),
     linear-gradient(135deg, #041d34 0%, #06335a 52%, #0a4a73 100%);

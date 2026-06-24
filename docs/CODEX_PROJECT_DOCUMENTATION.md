@@ -1,6 +1,6 @@
 # Sawazki Electronics Website - Codex Projektdokumentation
 
-Stand: 24. Juni 2026 · Version: v1.7.1
+Stand: 24. Juni 2026 · Version: v1.8.0
 
 Diese Dokumentation dient als Arbeitsgrundlage fuer Codex und fuer die Weiterarbeit auf einem anderen Laptop. Sie soll bei kuenftigen Aenderungen fortgeschrieben werden: Was wurde geaendert, warum, in welchen Dateien und wie wurde geprueft.
 
@@ -12,6 +12,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.8.0 | 2026-06-24 | Neue Seite `ueber-mich.html` (Vertrauen/Profil) inkl. Footer-Verlinkung auf allen Seiten |
 | v1.7.1 | 2026-06-24 | FAQ-Schema (FAQPage) auf den Service-Seiten fuer Rich Results; Review + Cleanup |
 | v1.7.0 | 2026-06-24 | Services-Navigation; einheitliche Projektbilder; 3D-Druck-/Datenrettungsbilder; Word-Queue finalisiert |
 | v1.6.0 | 2026-06-24 | Datenrettung als eigene Dienstleistungsseite (inkl. Partner fuer physische Defekte) |
@@ -209,6 +210,20 @@ Nach dem Veröffentlichen:
 - Commit-Kuerzel in dieser Dokumentation im Aenderungsprotokoll ergaenzen
 
 ## Bisheriges Aenderungsprotokoll
+
+### 24. Juni 2026 - "Ueber mich"-Seite fuer Vertrauen (v1.8.0)
+
+- Neue Seite `ueber-mich.html` mit dem beruflichen Profil von Jakob Sawazki (Ingenieur-Mindset,
+  ausgebildeter Elektroniker fuer Geraete und Systeme, Studium Elektrotechnik/Informationstechnik
+  mit Lehramt, Berufsschullehrer fuer Elektrotechnik und Informatik). Reuse der Service-
+  Layoutklassen; Hero-Klasse `.about-hero` nutzt den gemeinsamen gebrandeten Verlauf.
+- Bewusst **nur berufliches Profil**, keine privaten Daten aus Lebenslauf/Zeugnissen (Datenschutz).
+- `AboutPage`/`Person`-Structured-Data ergaenzt (mit `ConvertFrom-Json` geprueft).
+- Footer-Link "Ueber mich" auf allen Seiten ergaenzt (zeilenenden-/UTF-8-sicher per Skript;
+  `datenschutz.html`/`impressum.html` ueber den AGB-Anker, da ohne Selbstlink). `ueber-mich.html`
+  in `sitemap.xml` aufgenommen.
+- **Offen:** echtes Portraitfoto (`assets/images/jakob-sawazki.webp`) fuer den Hero; bis dahin
+  greift der gebrandete `.about-hero`-Verlauf. Optional spaeter in die Hauptnavigation aufnehmen.
 
 ### 24. Juni 2026 - FAQ-Schema auf Service-Seiten (v1.7.1)
 
