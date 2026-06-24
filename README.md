@@ -15,6 +15,9 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - Footer-Link zur zentralen Projektübersicht ohne doppelte Einzelprojektlinks
 - Zentrales Produktportfolio für Dienstleistungen, Angebote und spätere physische Produkte
 - Eigene Angebotsseite für VHS-, VHS-C- und Camcorder-Kassetten-Digitalisierung
+- Eigene Angebotsseite für 3D-Druck nach Kundenwunsch (individuelle Drucke, Hilfe bei 3D-Modellen, Prototypen, Ersatzteile)
+- Eigene Angebotsseite für professionelle Datenrettung (logische und physische Schäden, Partnerlabore für defekte Datenträger)
+- Vereinheitlichte Projektkacheln mit einheitlichem „App-Icon"-Framing
 - Leistungsübersicht für PC, Laptop, Sicherheit, Backup, Netzwerk und Beratung
 - Unsichtbare lokale SEO-Ausrichtung auf IT-Service sowie PC- und Laptop-Reparatur in Freudenstadt
 - Strukturierte Unternehmensdaten, Canonical-URLs und optimierte Social-Media-Vorschauen
@@ -31,6 +34,8 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - Projektübersicht: `projekte.html`
 - Produktportfolio: `produkte.html`
 - VHS-Digitalisierung: `vhs-digitalisierung.html`
+- 3D-Druck: `3d-druck.html`
+- Datenrettung: `datenrettung.html`
 - Anfrage-Assistent: `anfrage-assistent.html`
 - Danke-Seite nach Formularversand: `danke.html`
 - Impressum: `impressum.html`
@@ -39,31 +44,39 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 
 ## Dokumentation
 
+Für den schnellen Einstieg eines KI-Agenten gibt es die kompakte Sofort-Anleitung
+[`AGENTS.md`](AGENTS.md) im Projektstamm.
+
 Für die schnelle Weitergabe an einen neuen Codex-Agenten gibt es die
 [`CODEX_HANDOVER.md`](CODEX_HANDOVER.md). Sie enthält den aktuellen technischen Stand,
 Arbeitsregeln, Prüfungen und den Veröffentlichungsablauf.
 
 Die laufende Codex-Projektdokumentation liegt unter
 [`docs/CODEX_PROJECT_DOCUMENTATION.md`](docs/CODEX_PROJECT_DOCUMENTATION.md).
-Sie enthält Projektstand, lokale Weiterarbeit, Veröffentlichungsablauf, Designentscheidungen
-und ein Änderungsprotokoll.
+Sie enthält Projektstand, Versionsstand, lokale Weiterarbeit, Veröffentlichungsablauf,
+Designentscheidungen und ein Änderungsprotokoll.
+
+Ein offener Bildauftrag (einheitliche, fotorealistische Projekt- und 3D-Druck-Bilder) ist
+mit Prompts und Einbauhinweisen in
+[`docs/BILDAUFTRAG_PROJEKTBILDER.md`](docs/BILDAUFTRAG_PROJEKTBILDER.md) beschrieben.
 
 Konkrete Empfehlungen für Google-Unternehmensprofil, Search Console und einheitliche Firmendaten
 stehen im [`docs/SEO_MARKETING_GUIDE.md`](docs/SEO_MARKETING_GUIDE.md).
 
 ## Aufgabenwarteschlange
 
-Neue Arbeitsaufträge können in `tasks.txt` im Projektstamm hinterlegt werden. Aufgabenblöcke werden
-durch mindestens eine Leerzeile getrennt.
+Neue Arbeitsaufträge werden in `tasks.docx` (Word) im Projektstamm hinterlegt. Diese Datei
+ist seit dem 24. Juni 2026 die primäre Warteschlange und ersetzt die frühere `tasks.txt`;
+in Word lassen sich auch Screenshots zu einer Aufgabe einfügen.
 
 Für jede neue Arbeitssitzung gilt:
 
-1. `tasks.txt` vor anderen Aufgaben prüfen.
-2. Immer nur den obersten nicht leeren Aufgabenblock bearbeiten.
+1. `tasks.docx` vor anderen Aufgaben prüfen (Lesehinweis in `CODEX_HANDOVER.md`, Abschnitt 2).
+2. Immer nur die oberste Aufgabe bearbeiten (von oben nach unten).
 3. Die Aufgabe vollständig umsetzen, dokumentieren, testen, veröffentlichen und live prüfen.
-4. Erst danach den erledigten ersten Block aus `tasks.txt` entfernen.
+4. Erst danach die erledigte Aufgabe (samt zugehöriger Bilder) aus `tasks.docx` entfernen.
 5. Später hinzugefügte Aufgaben und ihre Reihenfolge unverändert erhalten.
-6. Bei einer Blockade bleibt die Aufgabe in `tasks.txt` stehen.
+6. Bei einer Blockade bleibt die Aufgabe in `tasks.docx` stehen.
 
 ## Kontaktformulare
 

@@ -1438,12 +1438,16 @@ select:focus {
 
 .side-project-card img {
   position: relative;
-  width: 64px;
-  height: 64px;
-  border-radius: 8px;
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
   object-fit: cover;
-  opacity: 0.95;
-  box-shadow: 0 10px 26px rgba(25, 33, 35, 0.16);
+  object-position: center;
+  opacity: 1;
+  background: linear-gradient(150deg, #07243f, #0a4a73);
+  box-shadow:
+    0 0 0 1px rgba(8, 47, 87, 0.14),
+    0 10px 26px rgba(25, 33, 35, 0.16);
   transition: transform 220ms ease, box-shadow 220ms ease, filter 220ms ease;
 }
 
@@ -1734,6 +1738,39 @@ select:focus {
   filter: saturate(1.08);
 }
 
+/* Gebrandete Platzhalter-Kachel fuer Angebote ohne eigenes Foto.
+   Sobald ein echtes Bild vorliegt, kann diese Kachel durch das in der
+   VHS-Karte verwendete <a class="featured-product-image"><img ...></a>
+   ersetzt werden (siehe docs/BILDAUFTRAG_PROJEKTBILDER.md). */
+.featured-product-image.is-placeholder {
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  text-decoration: none;
+  background:
+    radial-gradient(circle at 75% 20%, rgba(32, 191, 210, 0.26), transparent 22rem),
+    linear-gradient(140deg, #041d34 0%, #06335a 55%, #0a4a73 100%);
+}
+
+.featured-placeholder-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  color: #eaf7fb;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 800;
+  text-align: center;
+}
+
+.featured-placeholder-label small {
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(234, 247, 251, 0.82);
+}
+
 .featured-product-copy {
   padding: clamp(1.5rem, 4vw, 3rem);
   display: flex;
@@ -1844,6 +1881,17 @@ select:focus {
   overflow: hidden;
   isolation: isolate;
   color: var(--white);
+}
+
+/* Service-Hero ohne Foto: gebrandeter Verlauf, damit Service-Seiten auch ohne
+   eigenes Hero-Bild fertig wirken. Sobald ein Foto vorliegt (z. B.
+   assets/images/3d-druck-hero.webp oder datenrettung-hero.webp), kann es als
+   .vhs-hero-image ergaenzt werden und legt sich automatisch ueber diesen Verlauf. */
+.print-hero,
+.recovery-hero {
+  background:
+    radial-gradient(circle at 78% 18%, rgba(32, 191, 210, 0.24), transparent 30rem),
+    linear-gradient(135deg, #041d34 0%, #06335a 52%, #0a4a73 100%);
 }
 
 .vhs-hero-image,

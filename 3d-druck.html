@@ -1,0 +1,396 @@
+<!doctype html>
+<!--
+  3D-Druck-Dienstleistung von Sawazki Electronics.
+  Diese Seite nutzt bewusst die bereits vorhandenen Service-Layoutklassen
+  (urspruenglich fuer die VHS-Seite eingefuehrt: .vhs-hero, .vhs-trust-strip,
+  .vhs-value-*, .vhs-process-*, .vhs-cta sowie die generischen .section-,
+  .format-grid-, .price- und .faq-Klassen). So bleibt das Design ohne neues CSS
+  konsistent. Der Hero hat zusaetzlich die Klasse .print-hero und einen
+  gebrandeten Verlauf, damit die Seite auch ohne Foto fertig aussieht.
+  OFFENER BILDAUFTRAG fuer Codex: echtes Hero-Foto unter
+  assets/images/3d-druck-hero.webp ergaenzen (Details in
+  docs/BILDAUFTRAG_PROJEKTBILDER.md).
+-->
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>3D-Druck nach Maß in Freudenstadt | Sawazki Electronics</title>
+    <meta
+      name="description"
+      content="Individueller 3D-Druck nach Kundenwunsch in Freudenstadt: maßgeschneiderte Drucke, Hilfe bei 3D-Modellen, Prototypen und Ersatzteilen. Persönliche Beratung von Sawazki Electronics."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#082f57" />
+    <link
+      rel="canonical"
+      href="https://jakobsawazki.github.io/sawazki-electronics/3d-druck.html"
+    />
+    <meta property="og:title" content="3D-Druck nach Maß | Sawazki Electronics" />
+    <meta
+      property="og:description"
+      content="Maßgeschneiderter 3D-Druck, Hilfe bei 3D-Modellen, Prototypen und Ersatzteilen – persönlich betreut in Freudenstadt."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://jakobsawazki.github.io/sawazki-electronics/3d-druck.html"
+    />
+    <meta property="og:site_name" content="Sawazki Electronics" />
+    <meta property="og:locale" content="de_DE" />
+    <meta
+      property="og:image"
+      content="https://jakobsawazki.github.io/sawazki-electronics/assets/images/sawazki-electronics-logo.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="Sawazki Electronics – 3D-Druck nach Kundenwunsch"
+    />
+    <link rel="icon" href="assets/images/sawazki-electronics-mark.png" type="image/png" />
+    <script src="assets/js/theme.js?v=20260624-3d-print"></script>
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260624-3d-print" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "3D-Druck nach Kundenwunsch",
+        "serviceType": "3D-Druck, 3D-Konstruktion und Prototypenbau",
+        "description": "Individueller 3D-Druck nach Kundenwunsch, Unterstützung bei 3D-Modellen sowie Prototypen-, Ersatzteil- und Kleinserien-Druck.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Sawazki Electronics",
+          "url": "https://jakobsawazki.github.io/sawazki-electronics/",
+          "telephone": "+49 1520 2967632",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Mörikestraße 15",
+            "postalCode": "72250",
+            "addressLocality": "Freudenstadt",
+            "addressCountry": "DE"
+          }
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Freudenstadt"
+        }
+      }
+    </script>
+  </head>
+  <body class="vhs-body print-body">
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+    <header class="site-header" data-header>
+      <nav class="nav-shell" aria-label="Hauptnavigation">
+        <a class="brand" href="index.html#top" aria-label="Sawazki Electronics Startseite">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="assets/images/sawazki-electronics-mark.png" alt="" />
+          </span>
+          <span>
+            <strong>Sawazki Electronics</strong>
+            <small>IT-Service & Support</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" data-nav-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" data-nav-links>
+          <a href="produkte.html" aria-current="page">Produkte</a>
+          <a href="#leistungen">Leistungen</a>
+          <a href="#optionen">Optionen</a>
+          <a href="#ablauf">Ablauf</a>
+          <a href="#fragen">FAQ</a>
+          <a href="index.html#projekte">Projekte</a>
+          <a
+            class="nav-cta"
+            href="anfrage-assistent.html?topic=3D-Druck#assistent"
+          >
+            3D-Druck anfragen
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="vhs-hero print-hero" aria-labelledby="print-title">
+        <div class="vhs-hero-overlay" aria-hidden="true"></div>
+        <div class="vhs-hero-content">
+          <p class="eyebrow reveal">3D-Druck nach Maß</p>
+          <h1 id="print-title" class="reveal">Vom Wunsch zum gedruckten Objekt.</h1>
+          <p class="reveal">
+            Ob individuelles Einzelstück, fehlendes Ersatzteil oder erster Prototyp: Sawazki
+            Electronics setzt deine Idee Schritt für Schritt in ein gedrucktes Objekt um –
+            maßgeschneidert auf deinen Wunsch und verständlich begleitet.
+          </p>
+          <div class="vhs-hero-actions reveal">
+            <a
+              class="button primary"
+              href="anfrage-assistent.html?topic=3D-Druck#assistent"
+            >
+              3D-Druck anfragen
+            </a>
+            <a class="button secondary" href="#leistungen">Leistungen ansehen</a>
+          </div>
+          <div class="vhs-format-tags reveal" aria-label="Schwerpunkte">
+            <span>Individuelle Drucke</span>
+            <span>3D-Modelle</span>
+            <span>Prototypen</span>
+            <span>Ersatzteile</span>
+            <span>Kleinserien</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="vhs-trust-strip" aria-label="Leistungsversprechen">
+        <span>Maßgeschneidert nach Kundenwunsch</span>
+        <span>Hilfe bei Idee, Modell &amp; Material</span>
+        <span>Persönliche Beratung in Freudenstadt</span>
+      </section>
+
+      <section class="section vhs-intro" aria-labelledby="print-intro-title">
+        <div class="vhs-intro-copy reveal">
+          <p class="eyebrow">Idee wird Gegenstand</p>
+          <h2 id="print-intro-title">Genau das, was du brauchst – einzeln gefertigt.</h2>
+          <p>
+            Nicht jedes Teil gibt es fertig zu kaufen. Mit dem 3D-Druck lassen sich passgenaue
+            Objekte, Halterungen, Gehäuse, Ersatzteile oder Designstücke gezielt herstellen –
+            abgestimmt auf den konkreten Anwendungsfall. Auf Wunsch entsteht das passende
+            3D-Modell gemeinsam, auch wenn noch keine Druckdatei vorhanden ist.
+          </p>
+        </div>
+        <div class="vhs-value-grid">
+          <article class="vhs-value-card reveal">
+            <span>01</span>
+            <h3>Individuell konstruiert</h3>
+            <p>Vorhandene Vorlage oder gemeinsam entwickeltes 3D-Modell – passend zu deiner Idee.</p>
+          </article>
+          <article class="vhs-value-card reveal">
+            <span>02</span>
+            <h3>Sorgfältig gedruckt</h3>
+            <p>Material, Genauigkeit und Stabilität werden auf den Einsatzzweck abgestimmt.</p>
+          </article>
+          <article class="vhs-value-card reveal">
+            <span>03</span>
+            <h3>Verständlich begleitet</h3>
+            <p>Von der ersten Idee bis zur Übergabe bleibt der Ablauf nachvollziehbar erklärt.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section vhs-formats" id="leistungen" aria-labelledby="print-services-title">
+        <div class="section-heading">
+          <p class="eyebrow">Leistungen</p>
+          <h2 id="print-services-title">Was Sawazki Electronics für dich druckt.</h2>
+          <p>
+            Jeder Auftrag wird individuell besprochen. Umfang, Material und Aufwand richten sich
+            nach deinem Projekt und werden vorab nachvollziehbar abgestimmt.
+          </p>
+        </div>
+        <div class="format-grid">
+          <article>
+            <strong>Individuelle Auftragsdrucke</strong>
+            <p>Maßgeschneiderte Objekte nach deinem Wunsch – vom Einzelstück bis zur kleinen Serie.</p>
+          </article>
+          <article>
+            <strong>Hilfe bei 3D-Modellen</strong>
+            <p>Unterstützung beim Erstellen, Anpassen oder Optimieren von 3D-Modellen für den Druck.</p>
+          </article>
+          <article>
+            <strong>Prototypen &amp; Funktionsteile</strong>
+            <p>Erste Muster und funktionale Teile, um Ideen früh greifbar und testbar zu machen.</p>
+          </article>
+          <article>
+            <strong>Ersatz- &amp; Sonderteile</strong>
+            <p>Nachbau passgenauer Teile, die es nicht mehr oder nicht von der Stange gibt.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section vhs-pricing" id="optionen" aria-labelledby="print-options-title">
+        <div class="section-heading">
+          <p class="eyebrow">Optionen &amp; Aufwand</p>
+          <h2 id="print-options-title">Faire, nachvollziehbare Angebote.</h2>
+          <p>
+            Da jedes 3D-Projekt anders ist, gibt es keine Pauschalpreise von der Stange. Stattdessen
+            erhältst du nach kurzer Absprache ein individuelles, nachvollziehbares Angebot.
+          </p>
+        </div>
+
+        <div class="pricing-layout">
+          <div class="price-card reveal">
+            <div class="price-card-header">
+              <span>3D-Druck nach Kundenwunsch</span>
+              <strong>Individuelles Angebot</strong>
+            </div>
+            <div class="price-table" role="table" aria-label="Was in den Aufwand einfließt">
+              <div role="row">
+                <span role="cell">Materialeinsatz</span>
+                <b role="cell">je nach Menge</b>
+              </div>
+              <div role="row">
+                <span role="cell">Druckzeit &amp; Größe</span>
+                <b role="cell">nach Aufwand</b>
+              </div>
+              <div role="row">
+                <span role="cell">3D-Modell / Konstruktion</span>
+                <b role="cell">nach Aufwand</b>
+              </div>
+              <div role="row">
+                <span role="cell">Nachbearbeitung</span>
+                <b role="cell">optional</b>
+              </div>
+              <div role="row">
+                <span role="cell">Prototyp / Funktionsmuster</span>
+                <b role="cell">nach Absprache</b>
+              </div>
+            </div>
+          </div>
+
+          <aside class="price-extras reveal" aria-label="Materialien und Optionen">
+            <h3>Materialien &amp; Optionen</h3>
+            <div><span>Gängige Kunststoffe (z.&nbsp;B. PLA, PETG)</span><b>nach Projekt</b></div>
+            <div><span>Weitere Materialien</span><b>nach Absprache</b></div>
+            <div><span>Farb- &amp; Oberflächenwahl</span><b>je nach Verfügbarkeit</b></div>
+
+            <h3>Hilfe rund ums Modell</h3>
+            <div><span>Bestehende Druckdatei prüfen</span><b>möglich</b></div>
+            <div><span>Modell anpassen oder neu erstellen</span><b>nach Aufwand</b></div>
+            <div><span>Beratung zu Machbarkeit</span><b>vorab</b></div>
+          </aside>
+        </div>
+
+        <p class="pricing-note">
+          Maßgeblich sind Größe, Material, Druckzeit, gewünschte Genauigkeit und der Aufwand für
+          Modell und Nachbearbeitung. Umfang und Machbarkeit werden vor dem Druck gemeinsam
+          abgestimmt.
+        </p>
+      </section>
+
+      <section class="section vhs-process" id="ablauf" aria-labelledby="print-process-title">
+        <div class="section-heading">
+          <p class="eyebrow">Ablauf</p>
+          <h2 id="print-process-title">In vier Schritten zum fertigen Druck.</h2>
+        </div>
+        <div class="vhs-process-grid">
+          <article class="reveal">
+            <span>01</span>
+            <h3>Idee &amp; Anfrage</h3>
+            <p>Du beschreibst, was du brauchst – mit oder ohne fertige Datei.</p>
+          </article>
+          <article class="reveal">
+            <span>02</span>
+            <h3>Beratung &amp; 3D-Modell</h3>
+            <p>Machbarkeit, Material und Modell werden geklärt oder gemeinsam erstellt.</p>
+          </article>
+          <article class="reveal">
+            <span>03</span>
+            <h3>Druck &amp; Kontrolle</h3>
+            <p>Das Objekt wird gedruckt und auf Maß, Passung und Qualität geprüft.</p>
+          </article>
+          <article class="reveal">
+            <span>04</span>
+            <h3>Übergabe</h3>
+            <p>Du erhältst dein fertiges Teil – bei Bedarf inklusive Nachbearbeitung.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section vhs-faq" id="fragen" aria-labelledby="print-faq-title">
+        <div class="section-heading">
+          <p class="eyebrow">Häufige Fragen</p>
+          <h2 id="print-faq-title">Gut zu wissen.</h2>
+        </div>
+        <div class="faq-grid">
+          <details>
+            <summary>Brauche ich eine fertige 3D-Datei?</summary>
+            <p>
+              Nein. Wenn bereits eine Druckdatei vorhanden ist, kann sie geprüft und verwendet
+              werden. Andernfalls entsteht das passende 3D-Modell gemeinsam nach deinen Vorgaben.
+            </p>
+          </details>
+          <details>
+            <summary>Welche Dateiformate kann ich liefern?</summary>
+            <p>
+              Gängige 3D-Formate wie STL, STEP oder 3MF lassen sich gut verarbeiten. Auch eine
+              einfache Skizze oder ein Foto mit Maßangaben ist ein guter Ausgangspunkt.
+            </p>
+          </details>
+          <details>
+            <summary>Welche Größe und welches Material sind möglich?</summary>
+            <p>
+              Größe, Material und Genauigkeit hängen vom Projekt ab und werden vorab abgestimmt.
+              Häufig kommen gängige Kunststoffe wie PLA oder PETG zum Einsatz; weitere Materialien
+              nach Absprache.
+            </p>
+          </details>
+          <details>
+            <summary>Kann ich einen Prototyp drucken lassen?</summary>
+            <p>
+              Ja. Prototypen und Funktionsmuster sind ein Schwerpunkt, um Ideen früh greifbar und
+              testbar zu machen, bevor größere Stückzahlen entstehen.
+            </p>
+          </details>
+          <details>
+            <summary>Wie lange dauert ein 3D-Druck?</summary>
+            <p>
+              Die Dauer richtet sich nach Größe, Material und Anzahl der Teile. Ein realistischer
+              Zeitrahmen wird bei der Anfrage gemeinsam eingeschätzt.
+            </p>
+          </details>
+          <details>
+            <summary>Welche Modelle darf ich drucken lassen?</summary>
+            <p>
+              Bitte nur eigene Entwürfe oder Modelle, für deren Vervielfältigung du die
+              erforderlichen Rechte besitzt. Bei Unsicherheiten lässt sich das vorab klären.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="vhs-cta" aria-labelledby="print-cta-title">
+        <div>
+          <p class="eyebrow">Unverbindlich anfragen</p>
+          <h2 id="print-cta-title">Hast du eine Idee für ein 3D-Projekt?</h2>
+          <p>
+            Beschreibe kurz, was du brauchst – mit oder ohne Datei. Danach lässt sich Machbarkeit
+            und Aufwand schnell einschätzen.
+          </p>
+        </div>
+        <div class="vhs-cta-actions">
+          <a
+            class="button primary"
+            href="anfrage-assistent.html?topic=3D-Druck#assistent"
+          >
+            3D-Druck anfragen
+          </a>
+          <a class="button secondary" href="tel:+4915202967632">+49 1520 2967632</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <strong>Sawazki Electronics</strong>
+        <p>IT-Service, PC & Laptop Support.</p>
+        <p class="footer-meta">
+          <span>&copy; 2026 Sawazki Electronics.</span>
+          <span>Alle Rechte vorbehalten.</span>
+        </p>
+      </div>
+      <nav aria-label="Fußnavigation">
+        <a href="index.html">Start</a>
+        <a href="produkte.html">Produkte</a>
+        <a href="projekte.html">Projekte</a>
+        <a href="anfrage-assistent.html">Anfrage-Assistent</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB</a>
+      </nav>
+    </footer>
+
+    <script src="assets/js/main.js?v=20260610-products" defer></script>
+  </body>
+</html>

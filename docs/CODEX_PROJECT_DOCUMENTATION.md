@@ -1,8 +1,27 @@
 # Sawazki Electronics Website - Codex Projektdokumentation
 
-Stand: 18. Juni 2026
+Stand: 24. Juni 2026 · Version: v1.6.0
 
 Diese Dokumentation dient als Arbeitsgrundlage fuer Codex und fuer die Weiterarbeit auf einem anderen Laptop. Sie soll bei kuenftigen Aenderungen fortgeschrieben werden: Was wurde geaendert, warum, in welchen Dateien und wie wurde geprueft.
+
+## Versionsstand
+
+Die Versionsnummern folgen `MAJOR.MINOR.PATCH`. MINOR = neue Seite/Funktion oder
+sichtbares Feature, PATCH = kleinere Korrekturen. Das vollstaendige Aenderungsprotokoll
+steht weiter unten.
+
+| Version | Datum | Schwerpunkt |
+| --- | --- | --- |
+| v1.6.0 | 2026-06-24 | Datenrettung als eigene Dienstleistungsseite (inkl. Partner fuer physische Defekte) |
+| v1.5.0 | 2026-06-24 | 3D-Druck-Dienstleistung als eigene Seite; Projektkacheln vereinheitlicht; Bildauftrag fuer Codex dokumentiert |
+| v1.4.0 | 2026-06-24 | EC-Lernstudio im Projektbereich ergaenzt |
+| v1.3.0 | 2026-06-18 | WorkbenchLab ergaenzt; Projektnavigation + Light-/Dark-Mode; Dark-Mode-Feinschliff |
+| v1.2.0 | 2026-06-10 | Produktportfolio + VHS-Digitalisierung; lokale SEO; blaues Elektronik-Designsystem; projekte.html |
+| v1.1.0 | 2026-06-02 | Games Lab + BM Lernportal als Projekte; Anfrage-Assistent |
+| v1.0.0 | 2026-05-20 | Erste Homepage, rechtliche Seiten, Kontaktformular, Branding |
+
+> Hinweis: Die Versionsnummern wurden am 24. Juni 2026 rueckwirkend aus dem
+> Aenderungsprotokoll abgeleitet, um einen klaren Versionsstand zu haben.
 
 ## Kurzueberblick
 
@@ -10,7 +29,8 @@ Diese Dokumentation dient als Arbeitsgrundlage fuer Codex und fuer die Weiterarb
 - Zweck: professionelle Homepage fuer IT-, PC-, Laptop-, Support- und Elektronikdienstleistungen
 - GitHub Repository: `JakobSawazki/sawazki-electronics`
 - Live-Seite: <https://jakobsawazki.github.io/sawazki-electronics/>
-- Lokaler Arbeitsordner auf dem aktuellen Laptop: `G:\Meine Ablage\Codex\sawazki-electronics`
+- Lokaler Arbeitsordner (Acer Nitro 5, via Google Drive Desktop synchronisiert): `D:\Google Drive\Gewerbe\Sawazki Electronics Website`
+- Aelterer Pfad auf einem anderen Geraet: `G:\Meine Ablage\Codex\sawazki-electronics` (kann je nach Laptop abweichen)
 - Standard-Branch: `main`
 - Backup-Branch vor der Hero-/Hintergrund-Ueberarbeitung: `codex/backup-startseite-2026-05-20`
 
@@ -72,6 +92,18 @@ Noch vorhanden als moegliche Rueckfall- oder Alternativassets:
 - `assets/images/support-dashboard.png`
 - `assets/images/hardware-detail.png`
 - `assets/icons/favicon.svg`
+
+Noch zu erstellen (offener Bildauftrag, siehe `docs/BILDAUFTRAG_PROJEKTBILDER.md`):
+
+- `assets/images/project-pythonlab.webp`, `project-workbenchlab.webp`, `project-bmlab.webp`,
+  `project-gameslab.webp`, `project-eclernstudio.webp`: einheitliche, fotorealistische
+  Projektkacheln (ersetzen die bisherigen gemischten Logos in `index.html`).
+- `assets/images/3d-druck-hero.webp` (16:9) und optional `3d-druck-card.webp` (1:1) fuer die
+  3D-Druck-Seite bzw. die Produkte-Karte. Bis dahin greifen ein gebrandeter Verlauf
+  (`.print-hero`) und eine Platzhalter-Kachel.
+- `assets/images/datenrettung-hero.webp` (16:9) und optional `datenrettung-card.webp` (1:1) fuer
+  die Datenrettungs-Seite bzw. die Produkte-Karte. Bis dahin greifen der gemeinsame Verlauf
+  (`.recovery-hero`) und eine Platzhalter-Kachel.
 
 Originale Logoquellen auf dem aktuellen Laptop:
 
@@ -181,6 +213,63 @@ Nach dem Veröffentlichen:
 - Commit-Kuerzel in dieser Dokumentation im Aenderungsprotokoll ergaenzen
 
 ## Bisheriges Aenderungsprotokoll
+
+### 24. Juni 2026 - Datenrettung als Dienstleistung (v1.6.0)
+
+- Neue Seite `datenrettung.html` fuer professionelle Datenrettung erstellt (Hero, Leistungen,
+  Optionen/Aufwand, Ablauf, FAQ, CTA). Reuse der Service-Layoutklassen wie bei `3d-druck.html`;
+  Hero-Klasse `.recovery-hero` nutzt den gemeinsamen gebrandeten Verlauf.
+- Inhalt bewusst ehrlich und kundenorientiert: logische Wiederherstellung selbst, bei
+  **physischen Defekten** (z. B. defekter Schreib-/Lesekopf) Abwicklung ueber spezialisierte
+  **Partnerlabore** – ein Ansprechpartner fuer den Kunden. Keine Erfolgsgarantie, „erst Diagnose,
+  dann Angebot", Hinweis „Datentraeger nicht weiter benutzen". Die verwendete Software wird
+  bewusst **nicht** namentlich genannt.
+- Datenrettung als dritte `featured-product`-Karte auf `produkte.html` eingebunden (Platzhalter-
+  Kachel) inkl. JSON-LD-`ItemList`-Eintrag (Position 3).
+- Thema „Datenrettung (geloeschte/verlorene Daten)" (`value="Datenrettung"`) im Anfrage-Assistenten
+  ergaenzt; CTA-Links nutzen `anfrage-assistent.html?topic=Datenrettung#assistent`.
+- `datenrettung.html` in `sitemap.xml` aufgenommen; CSS-Selektor `.print-hero` zu
+  `.print-hero, .recovery-hero` erweitert (gemeinsamer Service-Hero-Verlauf).
+- **Datenschutz-Hinweis (offen):** Eine Datenrettung verarbeitet Kundendaten und ggf. fremde
+  Datentraeger sowie Partnerlabore. Die Datenschutzerklaerung sollte darauf geprueft/ergaenzt
+  werden (Datenuebermittlung an Partner, Aufbewahrung/Loeschung, Vertraulichkeit).
+- Optionaler Bildauftrag fuer ein `datenrettung-hero.webp` in `docs/BILDAUFTRAG_PROJEKTBILDER.md`
+  ergaenzt.
+
+### 24. Juni 2026 - 3D-Druck-Dienstleistung, einheitliche Projektkacheln, Bildauftrag (v1.5.0)
+
+- Neue Seite `3d-druck.html` fuer die Dienstleistung 3D-Druck nach Kundenwunsch erstellt:
+  Hero, Leistungen, Optionen/Aufwand, Ablauf, FAQ und CTA. Sie nutzt bewusst die bereits
+  vorhandenen Service-Layoutklassen (`.vhs-hero`, `.vhs-trust-strip`, `.vhs-value-*`,
+  `.vhs-process-*`, `.vhs-cta` sowie generische `.section`-, `.format-grid`-, `.price-`-
+  und `.faq`-Klassen), damit kein doppeltes CSS entsteht.
+- Inhalte bewusst kundenorientiert und ohne erfundene Pauschalpreise gehalten
+  (individuelles Angebot, „nach Aufwand"/„nach Absprache"). Konkrete Drucker-, Material-
+  und Groessenangaben sollten vom Inhaber noch ergaenzt/bestaetigt werden.
+- 3D-Druck als zweite `featured-product`-Karte auf `produkte.html` eingebunden inkl.
+  JSON-LD-`ItemList`-Eintrag (Position 2). Da noch kein Foto existiert, zeigt die Karte
+  eine gebrandete Platzhalter-Kachel (`.featured-product-image.is-placeholder`).
+- Thema „3D-Druck nach Kundenwunsch" (`value="3D-Druck"`) im Anfrage-Assistenten ergaenzt;
+  CTA-Links nutzen `anfrage-assistent.html?topic=3D-Druck#assistent`.
+- `3d-druck.html` in `sitemap.xml` aufgenommen.
+- Projektkacheln auf der Startseite vereinheitlicht: `.side-project-card img` auf eine
+  einheitliche „App-Icon"-Plate umgestellt (72x72, Radius 18px, einheitlicher Rahmen via
+  `box-shadow`, dezenter Marken-Gradient als Hintergrund). Das vereinheitlicht das Framing
+  der bisher gemischten Logos; die Bildinhalte selbst werden ueber den Bildauftrag ersetzt.
+- Neuer CSS-Baustein `.print-hero`: gebrandeter Verlauf, damit der 3D-Hero auch ohne Foto
+  fertig wirkt.
+- Cache-Buster fuer Theme-/Stylesheet-Referenzen von `20260618-dark-polish` auf
+  `20260624-3d-print` aktualisiert (alle bestehenden HTML-Seiten + neue 3D-Seite).
+- **Offener Bildauftrag dokumentiert:** `docs/BILDAUFTRAG_PROJEKTBILDER.md` enthaelt einen
+  einheitlichen Stil-Leitfaden, Motiv-Prompts je Projekt + 3D-Hero, Zieldateinamen, Masse
+  und exakte Einbauhinweise. Echte fotorealistische Bilder konnten in dieser Umgebung nicht
+  erzeugt werden und sind als naechster Schritt fuer Codex bzw. einen Agenten mit
+  Bildgenerator vorgesehen.
+- Hinweis Aufgabenquelle: Laut `tasks.txt` soll kuenftig `tasks.docx` die Warteschlange sein
+  (erlaubt eingefuegte Screenshots). `tasks.docx` enthaelt bereits offene Aufgaben
+  (Service-Text „Remote oder vor Ort nach Absprache" einzeilig; Datenrettung mit EaseUS +
+  Partner fuer physisch defekte HDDs; kuerzerer Link/Bitly; Dropshipping/Shopify-Idee).
+  Diese wurden in dieser Sitzung **nicht** bearbeitet und bleiben offen.
 
 ### 20. Mai 2026 - Erste Homepage erstellt
 

@@ -1,10 +1,15 @@
 # Codex-Übergabe: Sawazki Electronics Website
 
-Stand: 18. Juni 2026
+Stand: 24. Juni 2026 · Version: v1.6.0
 
 Diese Datei ist der Einstiegspunkt für einen neuen Codex-Agenten. Vor Änderungen zuerst diese
 Übergabe, anschließend bei Bedarf die ausführliche Projektdokumentation unter
 [`docs/CODEX_PROJECT_DOCUMENTATION.md`](docs/CODEX_PROJECT_DOCUMENTATION.md) lesen.
+
+> **Schnelleinstieg / sofort wissen, was zu tun ist:** Eine kompakte Sofort-Anleitung steht
+> in [`AGENTS.md`](AGENTS.md) im Projektstamm. Ein aktuell **offener Auftrag** ist das
+> Erzeugen einheitlicher, fotorealistischer Projekt- und 3D-Druck-Bilder – vollständig
+> beschrieben in [`docs/BILDAUFTRAG_PROJEKTBILDER.md`](docs/BILDAUFTRAG_PROJEKTBILDER.md).
 
 ## 1. Projektüberblick
 
@@ -12,9 +17,9 @@ Diese Datei ist der Einstiegspunkt für einen neuen Codex-Agenten. Vor Änderung
 - Zweck: professionelle Firmen-Homepage für IT-, PC-, Laptop- und Support-Dienstleistungen
 - Repository: <https://github.com/JakobSawazki/sawazki-electronics>
 - Live-Seite: <https://jakobsawazki.github.io/sawazki-electronics/>
-- Lokaler Projektordner: `G:\Meine Ablage\Codex\sawazki-electronics`
+- Lokaler Projektordner (Acer Nitro 5, via Google Drive Desktop synchronisiert): `D:\Google Drive\Gewerbe\Sawazki Electronics Website` (auf anderen Geräten ggf. abweichend, z. B. `G:\Meine Ablage\Codex\sawazki-electronics`)
 - Standard-Branch: `main`
-- Zuletzt geprüfter Funktionsstand: Dark-Mode- und Header-Verfeinerung vom 18. Juni 2026
+- Zuletzt geprüfter Funktionsstand: 3D-Druck- und Datenrettungs-Seite, einheitliche Projektkacheln und Bildauftrag vom 24. Juni 2026 (v1.6.0)
 - Hosting: GitHub Pages direkt aus dem Repository
 
 Die Website ist statisch. Es gibt keinen Build-Prozess, kein Framework und keine Paketabhängigkeiten.
@@ -22,18 +27,42 @@ HTML, CSS und JavaScript werden direkt veröffentlicht.
 
 ## 2. Verbindliche Aufgabenwarteschlange
 
-Vor jeder inhaltlichen oder technischen Arbeit zuerst `tasks.txt` im Projektstamm als UTF-8 lesen.
-Die Datei ist die priorisierte Aufgabenwarteschlange des Nutzers.
+Die priorisierte Aufgabenwarteschlange des Nutzers ist seit dem 24. Juni 2026 die
+**Word-Datei `tasks.docx`** im Projektstamm. Sie ersetzt die frühere `tasks.txt`, weil dort
+auch Screenshots zu einer Aufgabe eingefügt werden können. (`tasks.txt` ist veraltet; ihre
+geplante Entfernung steht noch aus und sollte nicht eigenmächtig erfolgen.)
 
-- Aufgaben sind durch eine oder mehrere Leerzeilen getrennt.
-- Immer zuerst den obersten nicht leeren Aufgabenblock bearbeiten.
+Vor jeder inhaltlichen oder technischen Arbeit zuerst `tasks.docx` lesen. Da `.docx` ein
+ZIP-Archiv ist, kann der Text z. B. unter Windows PowerShell so extrahiert werden (auch
+eingebettete Bilder liegen unter `word/media/`):
+
+```powershell
+Add-Type -AssemblyName System.IO.Compression.FileSystem
+$zip = [System.IO.Compression.ZipFile]::OpenRead("tasks.docx")
+$e = $zip.Entries | Where-Object { $_.FullName -eq 'word/document.xml' }
+$sr = New-Object System.IO.StreamReader($e.Open()); $xml = $sr.ReadToEnd(); $sr.Close()
+[System.Text.RegularExpressions.Regex]::Replace(($xml -replace '</w:p>', "`n"), '<[^>]+>', '')
+$zip.Dispose()
+```
+
+Regeln (wie zuvor, nur Quelle ist jetzt `tasks.docx`):
+
+- Aufgaben sind durch Absätze/Leerzeilen getrennt; Bilder gehören zur jeweiligen Aufgabe.
+- Immer zuerst die oberste Aufgabe von oben nach unten bearbeiten.
 - Nur eine Warteschlangenaufgabe gleichzeitig beginnen.
 - Die Aufgabe einschließlich Code, Dokumentation, Tests, Commit, Push und Live-Prüfung abschließen.
-- Erst nach erfolgreicher Live-Prüfung den exakt erledigten ersten Block aus `tasks.txt` entfernen.
-- Vor dem Entfernen `tasks.txt` erneut lesen, damit zwischenzeitlich ergänzte Aufgaben erhalten bleiben.
-- Wenn sich der erste Block während der Bearbeitung geändert hat, nichts automatisch entfernen.
+- Erst nach erfolgreicher Live-Prüfung die erledigte Aufgabe (samt zugehöriger Bilder) aus
+  `tasks.docx` entfernen.
+- Vor dem Entfernen `tasks.docx` erneut lesen, damit zwischenzeitlich ergänzte Aufgaben erhalten bleiben.
 - Wenn die Aufgabe blockiert oder nicht vollständig abgeschlossen ist, bleibt sie unverändert stehen.
-- Eine leere `tasks.txt` bleibt als Warteschlangendatei im Repository erhalten.
+- Eine leere `tasks.docx` bleibt als Warteschlangendatei im Repository erhalten.
+
+> Einträge aus `tasks.docx` (Stand 24. Juni 2026):
+> - **Erledigt:** Datenrettung als Dienstleistung umgesetzt (`datenrettung.html`, Partner für
+>   physisch defekte Datenträger; die Software wird bewusst nicht genannt). Offen bleibt die
+>   Prüfung/Ergänzung der Datenschutzerklärung für diesen Dienst.
+> - **Noch offen:** Service-Text „Remote oder vor Ort nach Absprache" einzeilig darstellen;
+>   kürzerer Link/Bitly für die GitHub-Pages-URL; Dropshipping/Shopify-Nischenidee prüfen.
 
 ## 3. Wichtige Dateien
 
@@ -41,6 +70,8 @@ Die Datei ist die priorisierte Aufgabenwarteschlange des Nutzers.
 - `projekte.html`: zentrale Vorstellung von PythonLab, WorkbenchLab, BM-Lab, Games Lab und EC-Lernstudio
 - `produkte.html`: Produktportfolio mit Dienstleistungen und späteren physischen Produkten
 - `vhs-digitalisierung.html`: Angebotsseite für die Digitalisierung alter Videokassetten
+- `3d-druck.html`: Angebotsseite für 3D-Druck nach Kundenwunsch (Service-Layoutklassen wiederverwendet)
+- `datenrettung.html`: Angebotsseite für professionelle Datenrettung (Service-Layoutklassen wiederverwendet)
 - `anfrage-assistent.html`: geführtes Anfrageformular
 - `danke.html`: Zielseite nach erfolgreicher Formularübermittlung
 - `impressum.html`: Impressum
@@ -51,9 +82,12 @@ Die Datei ist die priorisierte Aufgabenwarteschlange des Nutzers.
 - `assets/js/theme.js`: standardmäßiger Dark Mode und lokal gespeicherte Theme-Auswahl
 - `assets/images/`: Logos und lokale Website-Bilder
 - `sitemap.xml`, `robots.txt`, `.nojekyll`: GitHub-Pages- und Suchmaschinenkonfiguration
+- `AGENTS.md`: kompakte Sofort-Anleitung für KI-Agenten (Schnelleinstieg)
 - `README.md`: öffentlicher Projektüberblick
-- `docs/CODEX_PROJECT_DOCUMENTATION.md`: ausführliche Projekthistorie und technische Dokumentation
-- `tasks.txt`: priorisierte, durch Leerzeilen getrennte Aufgabenwarteschlange
+- `docs/CODEX_PROJECT_DOCUMENTATION.md`: ausführliche Projekthistorie, Versionsstand und technische Dokumentation
+- `docs/BILDAUFTRAG_PROJEKTBILDER.md`: offener Bildauftrag (einheitliche Projekt-/3D-Bilder) mit Prompts und Einbau
+- `tasks.docx`: priorisierte Aufgabenwarteschlange (Word, erlaubt Screenshots) — **primäre Quelle**
+- `tasks.txt`: veraltete frühere Warteschlange; durch `tasks.docx` ersetzt, Entfernung noch offen
 
 ## 4. Aktuell eingebundene Projekte
 
