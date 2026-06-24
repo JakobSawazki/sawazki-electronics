@@ -209,6 +209,26 @@ Nach dem Veröffentlichen:
 
 ## Bisheriges Aenderungsprotokoll
 
+### 24. Juni 2026 - Review der v1.7.0-Aenderungen (Claude)
+
+Unabhaengige Pruefung der von Codex ergaenzten Aenderungen (Commits `e7cab37`, `7432f61`, `187a146`):
+
+- Geprueft und in Ordnung: alle fuenf Projektbilder und beide Service-Hero-Bilder live mit
+  HTTP 200; Projektkacheln in `index.html` und `projekte.html` auf die neuen `project-*.webp`
+  umgestellt; 3D-Druck- und Datenrettungs-Hero mit lokalem Foto; Servicekarten auf
+  `produkte.html` mit echten Bildern statt Platzhalter.
+- Konsistenz ok: Nav-Label `Services` einheitlich auf allen elf Seiten; `produkte.html` als
+  `Services & Angebote` gefuehrt; Cache-Token einheitlich (styles.css `20260624-services-images`,
+  theme.js `20260624-3d-print`); Datenschutz um Abschnitt 4 (Datenverarbeitung bei
+  Dienstleistungen inkl. Datenrettung/Partnerlabore) ergaenzt.
+- Offene Punkte (zur Entscheidung durch den Inhaber):
+  1. `tasks.docx` ist jetzt im oeffentlichen Repository sichtbar und herunterladbar (inkl.
+     eingebettetem Screenshot und internen Notizen). Falls die Aufgabenliste privat bleiben soll,
+     sollte sie aus dem Repo entfernt und per `.gitignore` ausgeschlossen werden.
+  2. Ungenutztes CSS: `.featured-product-image.is-placeholder` und `.featured-placeholder-label`
+     (in `assets/css/styles.css`) werden nach dem Ersetzen der Platzhalter nicht mehr verwendet
+     und koennen entfernt werden.
+
 ### 24. Juni 2026 - Services-Navigation, Bildassets und Word-Queue (v1.7.0)
 
 - Sichtbaren Hauptmenuepunkt von `Produkte` auf `Services` umgestellt, weil die aktuellen Angebote
