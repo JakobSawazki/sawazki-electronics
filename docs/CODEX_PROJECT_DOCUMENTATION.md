@@ -1,6 +1,6 @@
 # Sawazki Electronics Website - Codex Projektdokumentation
 
-Stand: 24. Juni 2026 · Version: v1.7.0
+Stand: 24. Juni 2026 · Version: v1.7.1
 
 Diese Dokumentation dient als Arbeitsgrundlage fuer Codex und fuer die Weiterarbeit auf einem anderen Laptop. Sie soll bei kuenftigen Aenderungen fortgeschrieben werden: Was wurde geaendert, warum, in welchen Dateien und wie wurde geprueft.
 
@@ -12,6 +12,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.7.1 | 2026-06-24 | FAQ-Schema (FAQPage) auf den Service-Seiten fuer Rich Results; Review + Cleanup |
 | v1.7.0 | 2026-06-24 | Services-Navigation; einheitliche Projektbilder; 3D-Druck-/Datenrettungsbilder; Word-Queue finalisiert |
 | v1.6.0 | 2026-06-24 | Datenrettung als eigene Dienstleistungsseite (inkl. Partner fuer physische Defekte) |
 | v1.5.0 | 2026-06-24 | 3D-Druck-Dienstleistung als eigene Seite; Projektkacheln vereinheitlicht; Bildauftrag fuer Codex dokumentiert |
@@ -208,6 +209,16 @@ Nach dem Veröffentlichen:
 - Commit-Kuerzel in dieser Dokumentation im Aenderungsprotokoll ergaenzen
 
 ## Bisheriges Aenderungsprotokoll
+
+### 24. Juni 2026 - FAQ-Schema auf Service-Seiten (v1.7.1)
+
+- `3d-druck.html`, `datenrettung.html` und `vhs-digitalisierung.html` um `FAQPage`-Structured-Data
+  (JSON-LD) ergaenzt. Inhalt entspricht 1:1 den sichtbaren FAQ-Bereichen (Voraussetzung fuer
+  gueltige Rich Results). Jede Service-Seite hat nun zwei JSON-LD-Bloecke (`Service` + `FAQPage`);
+  alle mit `ConvertFrom-Json` als gueltig geprueft.
+- Naechste Marketing-Schritte in Vorbereitung (brauchen echte Inhalte vom Inhaber): Kundenstimmen,
+  `Ueber mich`-Bereich mit Foto, Referenz-Galerie sowie ein optionaler WhatsApp-Kontaktbutton.
+  Google-Unternehmensprofil + Bewertungen sammeln siehe `docs/SEO_MARKETING_GUIDE.md`.
 
 ### 24. Juni 2026 - Review der v1.7.0-Aenderungen (Claude)
 
