@@ -122,9 +122,9 @@ Shop-Texten gibt. Bis dahin sollte die Website die Produktkategorie bewusst als
 
 Quellen zur Einordnung:
 
-- Shopify Deutschland: Dropshipping-Grundlagen und Ablauf
-  <https://www.shopify.com/de/blog/dropshipping>
-- Shopify Help Center: Apps und Vertriebskanäle für Dropshipping
-  <https://help.shopify.com/>
-- IHK: Pflichten im Onlinehandel, Impressum, Widerruf und Verbraucherinformationen
-  <https://www.ihk.de/>
+- Shopify: Dropshipping-Grundlagen und Ablauf
+  <https://www.shopify.com/blog/dropshipping-guide>
+- Shopify Deutschland: Dropshipping-Apps und Produktbeschaffung
+  <https://www.shopify.com/de/blog/produktbeschaffung>
+- IHK Stuttgart: E-Commerce-Recht, Impressum und Informationspflichten
+  <https://www.ihk.de/stuttgart/fuer-unternehmen/recht-und-steuern/it-recht/ecommerce/ecommerce-impressum-4633698>
