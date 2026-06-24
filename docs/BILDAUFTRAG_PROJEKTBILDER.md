@@ -1,20 +1,16 @@
 # Bildauftrag: Einheitliche Projekt- und Servicebilder
 
-Stand: 24. Juni 2026 · Status: **offen (für Codex / Bildgenerator)**
+Stand: 24. Juni 2026 · Status: **erledigt und eingebaut**
 
 ## Worum es geht
 
 Die Projektkacheln auf der Startseite (`index.html`, Abschnitt `#projekte`) und die
-3D-Druck-Seite (`3d-druck.html`) sollen **echte, fotorealistische Bilder in einem
-einheitlichen Stil** erhalten. Aktuell werden gemischte Logos (SVG-Icons und
-PNG/WebP-Grafiken) verwendet; das Framing wurde bereits vereinheitlicht (gleiche Größe,
-Radius, Rahmen), aber die Bildinhalte selbst sind noch uneinheitlich.
+Service-Seiten für 3D-Druck (`3d-druck.html`) sowie Datenrettung (`datenrettung.html`)
+haben echte, fotorealistische Bilder in einem einheitlichen Stil erhalten.
 
-**Warum noch nicht erledigt:** Diese Bilder können nur mit einem Bildgenerator erzeugt
-werden (z. B. DALL·E / GPT-Image, Google Imagen, Midjourney, Flux). Die Arbeitsumgebung,
-in der dieser Auftrag dokumentiert wurde, hatte keinen Bildgenerator. Codex (oder ein
-Agent mit Bildgenerierung) soll die Bilder nach den unten stehenden Prompts erzeugen,
-als WebP speichern und gemäß „Einbau" verlinken.
+Die Bilder wurden am 24. Juni 2026 mit dem integrierten Codex-Bildgenerator erzeugt, als
+WebP optimiert und lokal unter `assets/images/` eingebunden. Diese Datei bleibt als
+Stil- und Prompt-Dokumentation erhalten.
 
 ---
 
@@ -33,7 +29,8 @@ Nur das **Motiv** ändert sich pro Projekt.
 **Verbindliche Vorgaben:**
 
 - Seitenverhältnis Projektkacheln: **1:1**, Auflösung **1024×1024** (oder größer).
-- Seitenverhältnis 3D-Druck-Hero: **16:9**, Auflösung **2400×1350** (oder größer).
+- Seitenverhältnis Service-Hero: **16:9**. Die finalen WebP-Hero-Dateien liegen bei
+  1672×941 px und sind für die aktuelle Website ausreichend scharf.
 - Format: **WebP** (Qualität ~82). Dateien klein halten (Kacheln idealerweise < 80 KB).
 - Farbwelt strikt einhalten: Navy `#082f57`, Logo-Blau, Cyan `#20bfd2`.
 - **Kein Text, keine Buchstaben, keine Logos** im Bild (die Kachel zeigt den Namen separat).
@@ -71,9 +68,9 @@ als Rückfall erhalten):
 | `project-gameslab.webp` | Games-Lab-Kachel | dito in Games-Lab-Karte |
 | `project-eclernstudio.webp` | EC-Lernstudio-Kachel | dito in EC-Lernstudio-Karte |
 | `3d-druck-hero.webp` | 3D-Druck-Hero | siehe unten |
-| `3d-druck-card.webp` (optional) | 3D-Karte auf `produkte.html` | Platzhalter ersetzen |
+| `3d-druck-hero.webp` | 3D-Karte auf `produkte.html` | wird auch dort als Kartenbild genutzt |
 | `datenrettung-hero.webp` | Datenrettung-Hero | wie 3D-Hero, in `datenrettung.html` (Klasse `.recovery-hero`) |
-| `datenrettung-card.webp` (optional) | Datenrettung-Karte auf `produkte.html` | Platzhalter ersetzen |
+| `datenrettung-hero.webp` | Datenrettung-Karte auf `produkte.html` | wird auch dort als Kartenbild genutzt |
 
 ### Einbau Projektkacheln (`index.html`, Abschnitt `#projekte`)
 
@@ -83,39 +80,30 @@ Jede Karte hat aktuell z. B.:
 <img src="assets/images/pythonlab-logo.webp" alt="" aria-hidden="true" />
 ```
 
-Nur das `src` auf die neue Datei umstellen, z. B. `assets/images/project-pythonlab.webp`.
-Die CSS-Plate (`.side-project-card img`, 72×72, `object-fit: cover`, Radius 18px) bleibt
-unverändert – die neuen quadratischen Fotos passen direkt hinein.
+Die `src`-Pfade wurden auf die neuen Dateien umgestellt, z. B.
+`assets/images/project-pythonlab.webp`. Die CSS-Plate (`.side-project-card img`, 78×78,
+`object-fit: cover`, Radius 20px) bleibt bewusst kompakt und einheitlich.
 
 ### Einbau 3D-Druck-Hero (`3d-druck.html`)
 
-Der Hero nutzt aktuell den gebrandeten Verlauf `.print-hero` (kein Foto). Sobald
-`3d-druck-hero.webp` existiert, im Hero direkt nach dem öffnenden
-`<section class="vhs-hero print-hero" ...>` ergänzen:
+Der Hero nutzt `assets/images/3d-druck-hero.webp` direkt nach dem öffnenden
+`<section class="vhs-hero print-hero" ...>`:
 
 ```html
 <img class="vhs-hero-image" src="assets/images/3d-druck-hero.webp" alt="" aria-hidden="true" />
 ```
 
-Das Bild legt sich automatisch hinter das `.vhs-hero-overlay` (wie auf der VHS-Seite).
-Optional danach den `og:image`-Meta-Tag von `sawazki-electronics-logo.png` auf
-`3d-druck-hero.webp` umstellen.
+Das Bild liegt hinter dem `.vhs-hero-overlay`; der `og:image`-Meta-Tag zeigt ebenfalls auf
+`3d-druck-hero.webp`.
 
-### Einbau 3D-Karte (`produkte.html`)
+### Einbau Servicekarten (`produkte.html`)
 
-Den Platzhalter
-
-```html
-<a class="featured-product-image is-placeholder" href="3d-druck.html" ...>
-  <span class="featured-placeholder-label">3D-Druck<small>nach Kundenwunsch</small></span>
-</a>
-```
-
-durch die bildbasierte Variante (wie bei der VHS-Karte) ersetzen:
+Die früheren Platzhalter für 3D-Druck und Datenrettung wurden durch bildbasierte Varianten
+ersetzt. Für die 3D-Karte wird das Hero-Bild wiederverwendet:
 
 ```html
 <a class="featured-product-image" href="3d-druck.html" aria-label="Zum 3D-Druck-Angebot">
-  <img src="assets/images/3d-druck-card.webp" alt="3D-Drucker beim Druck eines Objekts" />
+  <img src="assets/images/3d-druck-hero.webp" alt="3D-Drucker beim Drucken eines technischen Bauteils" />
 </a>
 ```
 
@@ -123,11 +111,12 @@ durch die bildbasierte Variante (wie bei der VHS-Karte) ersetzen:
 
 ## Abnahme-Checkliste
 
-- [ ] Alle fünf Projektbilder im selben Stil (Licht, Hintergrund, Blickwinkel) erzeugt.
-- [ ] Quadratisch 1:1, als WebP gespeichert, Dateigröße klein.
-- [ ] Kein Text/Logo im Bild.
-- [ ] `src`-Pfade in `index.html` umgestellt; Startseite Desktop + Mobile geprüft.
-- [ ] 3D-Druck-Hero + ggf. Produkte-Karte eingebaut.
-- [ ] Cache-Buster (`?v=`) auf den geänderten Seiten hochgesetzt.
-- [ ] Änderungsprotokoll in `docs/CODEX_PROJECT_DOCUMENTATION.md` ergänzt.
-- [ ] Live-Prüfung mit `?v=<commit>`.
+- [x] Alle fünf Projektbilder im selben Stil (Licht, Hintergrund, Blickwinkel) erzeugt.
+- [x] Quadratisch 1:1, als WebP gespeichert, Dateigröße klein.
+- [x] Kein Text/Logo im Bild.
+- [x] `src`-Pfade in `index.html` und `projekte.html` umgestellt.
+- [x] 3D-Druck-Hero und Datenrettungs-Hero eingebaut.
+- [x] Servicekarten auf `produkte.html` auf echte Bilder umgestellt.
+- [x] Cache-Buster (`?v=20260624-services-images`) auf den geänderten Seiten hochgesetzt.
+- [x] Änderungsprotokoll in `docs/CODEX_PROJECT_DOCUMENTATION.md` ergänzt.
+- [ ] Live-Prüfung mit `?v=<commit>` erfolgt nach Commit/Push.

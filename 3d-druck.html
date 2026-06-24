@@ -1,15 +1,8 @@
 <!doctype html>
 <!--
   3D-Druck-Dienstleistung von Sawazki Electronics.
-  Diese Seite nutzt bewusst die bereits vorhandenen Service-Layoutklassen
-  (urspruenglich fuer die VHS-Seite eingefuehrt: .vhs-hero, .vhs-trust-strip,
-  .vhs-value-*, .vhs-process-*, .vhs-cta sowie die generischen .section-,
-  .format-grid-, .price- und .faq-Klassen). So bleibt das Design ohne neues CSS
-  konsistent. Der Hero hat zusaetzlich die Klasse .print-hero und einen
-  gebrandeten Verlauf, damit die Seite auch ohne Foto fertig aussieht.
-  OFFENER BILDAUFTRAG fuer Codex: echtes Hero-Foto unter
-  assets/images/3d-druck-hero.webp ergaenzen (Details in
-  docs/BILDAUFTRAG_PROJEKTBILDER.md).
+  Diese Seite nutzt die vorhandenen Service-Layoutklassen und ein lokales
+  Hero-Bild unter assets/images/3d-druck-hero.webp.
 -->
 <html lang="de">
   <head>
@@ -40,7 +33,7 @@
     <meta property="og:locale" content="de_DE" />
     <meta
       property="og:image"
-      content="https://jakobsawazki.github.io/sawazki-electronics/assets/images/sawazki-electronics-logo.png"
+      content="https://jakobsawazki.github.io/sawazki-electronics/assets/images/3d-druck-hero.webp"
     />
     <meta
       property="og:image:alt"
@@ -48,7 +41,7 @@
     />
     <link rel="icon" href="assets/images/sawazki-electronics-mark.png" type="image/png" />
     <script src="assets/js/theme.js?v=20260624-3d-print"></script>
-    <link rel="stylesheet" href="assets/css/styles.css?v=20260624-3d-print" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260624-services-images" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -98,7 +91,7 @@
         </button>
 
         <div class="nav-links" data-nav-links>
-          <a href="produkte.html" aria-current="page">Produkte</a>
+          <a href="produkte.html" aria-current="page">Services</a>
           <a href="#leistungen">Leistungen</a>
           <a href="#optionen">Optionen</a>
           <a href="#ablauf">Ablauf</a>
@@ -116,6 +109,7 @@
 
     <main id="main">
       <section class="vhs-hero print-hero" aria-labelledby="print-title">
+        <img class="vhs-hero-image" src="assets/images/3d-druck-hero.webp" alt="" aria-hidden="true" />
         <div class="vhs-hero-overlay" aria-hidden="true"></div>
         <div class="vhs-hero-content">
           <p class="eyebrow reveal">3D-Druck nach Maß</p>
@@ -382,7 +376,7 @@
       </div>
       <nav aria-label="Fußnavigation">
         <a href="index.html">Start</a>
-        <a href="produkte.html">Produkte</a>
+        <a href="produkte.html">Services</a>
         <a href="projekte.html">Projekte</a>
         <a href="anfrage-assistent.html">Anfrage-Assistent</a>
         <a href="impressum.html">Impressum</a>

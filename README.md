@@ -7,13 +7,13 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - Professionelle Startseite mit Hero-Bereich, lokalen Bildassets und blauem Sawazki-Electronics-Branding
 - Dezente Leiterbahn-/Knotenpunktmuster auf den hellen Flächen statt leerem Weiß
 - Interaktives Hero-Logo mit Lichtlauf und direktem Sprung zu den Leistungen
-- Projektkarten mit Logos für PythonLab, WorkbenchLab, BM-Lab, Games Lab und EC-Lernstudio
+- Projektkarten mit einheitlichen fotorealistischen Bildkacheln für PythonLab, WorkbenchLab, BM-Lab, Games Lab und EC-Lernstudio
 - Direkter Navigationspunkt `Projekte` mit Sprung zum Projektbereich der Startseite
 - Dark Mode als Standard sowie persistent umschaltbarer Light-/Dark-Mode
 - PythonLab, WorkbenchLab und EC-Lernstudio sind auf ihren GitHub-Pages-Lernportalen verlinkt
 - Eigene Projektseite mit Zweck, Zielgruppe und Ziel jedes Labs
 - Footer-Link zur zentralen Projektübersicht ohne doppelte Einzelprojektlinks
-- Zentrales Produktportfolio für Dienstleistungen, Angebote und spätere physische Produkte
+- Zentraler Servicebereich für Dienstleistungen, Angebote und spätere ausgewählte Produkte
 - Eigene Angebotsseite für VHS-, VHS-C- und Camcorder-Kassetten-Digitalisierung
 - Eigene Angebotsseite für 3D-Druck nach Kundenwunsch (individuelle Drucke, Hilfe bei 3D-Modellen, Prototypen, Ersatzteile)
 - Eigene Angebotsseite für professionelle Datenrettung (logische und physische Schäden, Partnerlabore für defekte Datenträger)
@@ -32,7 +32,7 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 
 - Startseite: `index.html`
 - Projektübersicht: `projekte.html`
-- Produktportfolio: `produkte.html`
+- Services & Angebote: `produkte.html`
 - VHS-Digitalisierung: `vhs-digitalisierung.html`
 - 3D-Druck: `3d-druck.html`
 - Datenrettung: `datenrettung.html`
@@ -56,9 +56,8 @@ Die laufende Codex-Projektdokumentation liegt unter
 Sie enthält Projektstand, Versionsstand, lokale Weiterarbeit, Veröffentlichungsablauf,
 Designentscheidungen und ein Änderungsprotokoll.
 
-Ein offener Bildauftrag (einheitliche, fotorealistische Projekt- und 3D-Druck-Bilder) ist
-mit Prompts und Einbauhinweisen in
-[`docs/BILDAUFTRAG_PROJEKTBILDER.md`](docs/BILDAUFTRAG_PROJEKTBILDER.md) beschrieben.
+Die erzeugten Projekt- und Servicebilder sowie die finalen Prompts sind in
+[`docs/BILDAUFTRAG_PROJEKTBILDER.md`](docs/BILDAUFTRAG_PROJEKTBILDER.md) dokumentiert.
 
 Konkrete Empfehlungen für Google-Unternehmensprofil, Search Console und einheitliche Firmendaten
 stehen im [`docs/SEO_MARKETING_GUIDE.md`](docs/SEO_MARKETING_GUIDE.md).
@@ -66,8 +65,8 @@ stehen im [`docs/SEO_MARKETING_GUIDE.md`](docs/SEO_MARKETING_GUIDE.md).
 ## Aufgabenwarteschlange
 
 Neue Arbeitsaufträge werden in `tasks.docx` (Word) im Projektstamm hinterlegt. Diese Datei
-ist seit dem 24. Juni 2026 die primäre Warteschlange und ersetzt die frühere `tasks.txt`;
-in Word lassen sich auch Screenshots zu einer Aufgabe einfügen.
+ist seit dem 24. Juni 2026 die primäre Warteschlange; in Word lassen sich auch Screenshots
+zu einer Aufgabe einfügen.
 
 Für jede neue Arbeitssitzung gilt:
 

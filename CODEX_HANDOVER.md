@@ -1,15 +1,14 @@
 # Codex-Übergabe: Sawazki Electronics Website
 
-Stand: 24. Juni 2026 · Version: v1.6.0
+Stand: 24. Juni 2026 · Version: v1.7.0
 
 Diese Datei ist der Einstiegspunkt für einen neuen Codex-Agenten. Vor Änderungen zuerst diese
 Übergabe, anschließend bei Bedarf die ausführliche Projektdokumentation unter
 [`docs/CODEX_PROJECT_DOCUMENTATION.md`](docs/CODEX_PROJECT_DOCUMENTATION.md) lesen.
 
 > **Schnelleinstieg / sofort wissen, was zu tun ist:** Eine kompakte Sofort-Anleitung steht
-> in [`AGENTS.md`](AGENTS.md) im Projektstamm. Ein aktuell **offener Auftrag** ist das
-> Erzeugen einheitlicher, fotorealistischer Projekt- und 3D-Druck-Bilder – vollständig
-> beschrieben in [`docs/BILDAUFTRAG_PROJEKTBILDER.md`](docs/BILDAUFTRAG_PROJEKTBILDER.md).
+> in [`AGENTS.md`](AGENTS.md) im Projektstamm. Vor neuen Änderungen immer zuerst
+> `tasks.docx` prüfen.
 
 ## 1. Projektüberblick
 
@@ -19,7 +18,7 @@ Diese Datei ist der Einstiegspunkt für einen neuen Codex-Agenten. Vor Änderung
 - Live-Seite: <https://jakobsawazki.github.io/sawazki-electronics/>
 - Lokaler Projektordner (Acer Nitro 5, via Google Drive Desktop synchronisiert): `D:\Google Drive\Gewerbe\Sawazki Electronics Website` (auf anderen Geräten ggf. abweichend, z. B. `G:\Meine Ablage\Codex\sawazki-electronics`)
 - Standard-Branch: `main`
-- Zuletzt geprüfter Funktionsstand: 3D-Druck- und Datenrettungs-Seite, einheitliche Projektkacheln und Bildauftrag vom 24. Juni 2026 (v1.6.0)
+- Zuletzt geprüfter Funktionsstand: Services-Navigation, 3D-Druck-/Datenrettungsbilder, einheitliche Projektbilder und Word-Queue vom 24. Juni 2026 (v1.7.0)
 - Hosting: GitHub Pages direkt aus dem Repository
 
 Die Website ist statisch. Es gibt keinen Build-Prozess, kein Framework und keine Paketabhängigkeiten.
@@ -28,9 +27,8 @@ HTML, CSS und JavaScript werden direkt veröffentlicht.
 ## 2. Verbindliche Aufgabenwarteschlange
 
 Die priorisierte Aufgabenwarteschlange des Nutzers ist seit dem 24. Juni 2026 die
-**Word-Datei `tasks.docx`** im Projektstamm. Sie ersetzt die frühere `tasks.txt`, weil dort
-auch Screenshots zu einer Aufgabe eingefügt werden können. (`tasks.txt` ist veraltet; ihre
-geplante Entfernung steht noch aus und sollte nicht eigenmächtig erfolgen.)
+**Word-Datei `tasks.docx`** im Projektstamm, weil dort auch Screenshots zu einer Aufgabe
+eingefügt werden können.
 
 Vor jeder inhaltlichen oder technischen Arbeit zuerst `tasks.docx` lesen. Da `.docx` ein
 ZIP-Archiv ist, kann der Text z. B. unter Windows PowerShell so extrahiert werden (auch
@@ -57,18 +55,14 @@ Regeln (wie zuvor, nur Quelle ist jetzt `tasks.docx`):
 - Wenn die Aufgabe blockiert oder nicht vollständig abgeschlossen ist, bleibt sie unverändert stehen.
 - Eine leere `tasks.docx` bleibt als Warteschlangendatei im Repository erhalten.
 
-> Einträge aus `tasks.docx` (Stand 24. Juni 2026):
-> - **Erledigt:** Datenrettung als Dienstleistung umgesetzt (`datenrettung.html`, Partner für
->   physisch defekte Datenträger; die Software wird bewusst nicht genannt). Offen bleibt die
->   Prüfung/Ergänzung der Datenschutzerklärung für diesen Dienst.
-> - **Noch offen:** Service-Text „Remote oder vor Ort nach Absprache" einzeilig darstellen;
->   kürzerer Link/Bitly für die GitHub-Pages-URL; Dropshipping/Shopify-Nischenidee prüfen.
+> Einträge aus `tasks.docx` (Stand 24. Juni 2026): keine bekannte offene Aufgabe nach Abschluss
+> der v1.7.0-Arbeiten.
 
 ## 3. Wichtige Dateien
 
 - `index.html`: Startseite, Leistungen, Arbeitsablauf, Kontaktformular und Projektbereich
 - `projekte.html`: zentrale Vorstellung von PythonLab, WorkbenchLab, BM-Lab, Games Lab und EC-Lernstudio
-- `produkte.html`: Produktportfolio mit Dienstleistungen und späteren physischen Produkten
+- `produkte.html`: sichtbarer Bereich „Services & Angebote" mit Dienstleistungen und späteren physischen Produkten
 - `vhs-digitalisierung.html`: Angebotsseite für die Digitalisierung alter Videokassetten
 - `3d-druck.html`: Angebotsseite für 3D-Druck nach Kundenwunsch (Service-Layoutklassen wiederverwendet)
 - `datenrettung.html`: Angebotsseite für professionelle Datenrettung (Service-Layoutklassen wiederverwendet)
@@ -85,21 +79,20 @@ Regeln (wie zuvor, nur Quelle ist jetzt `tasks.docx`):
 - `AGENTS.md`: kompakte Sofort-Anleitung für KI-Agenten (Schnelleinstieg)
 - `README.md`: öffentlicher Projektüberblick
 - `docs/CODEX_PROJECT_DOCUMENTATION.md`: ausführliche Projekthistorie, Versionsstand und technische Dokumentation
-- `docs/BILDAUFTRAG_PROJEKTBILDER.md`: offener Bildauftrag (einheitliche Projekt-/3D-Bilder) mit Prompts und Einbau
+- `docs/BILDAUFTRAG_PROJEKTBILDER.md`: erledigter Bildauftrag mit finalen Prompts und Asset-Liste
 - `tasks.docx`: priorisierte Aufgabenwarteschlange (Word, erlaubt Screenshots) — **primäre Quelle**
-- `tasks.txt`: veraltete frühere Warteschlange; durch `tasks.docx` ersetzt, Entfernung noch offen
 
 ## 4. Aktuell eingebundene Projekte
 
 Der Projektbereich befindet sich am Ende der Startseite unter `#projekte`.
 
-| Projekt | Live-Link | Lokales Logo |
+| Projekt | Live-Link | Lokales Bild |
 | --- | --- | --- |
-| PythonLab | <https://jakobsawazki.github.io/PythonLab/> | `assets/images/pythonlab-logo.webp` |
-| WorkbenchLab | <https://jakobsawazki.github.io/WorkbenchLab/> | `assets/images/workbenchlab-logo.webp` |
-| BM-Lab | <https://jakobsawazki.github.io/bm-lernportal/> | `assets/images/bm-lernportal-logo.svg` |
-| Games Lab | <https://jakobsawazki.github.io/games-lab/> | `assets/images/games-lab-logo.png` |
-| EC-Lernstudio | <https://jakobsawazki.github.io/ec-lernstudio-lf7/> | `assets/images/ec-lernstudio-logo.svg` |
+| PythonLab | <https://jakobsawazki.github.io/PythonLab/> | `assets/images/project-pythonlab.webp` |
+| WorkbenchLab | <https://jakobsawazki.github.io/WorkbenchLab/> | `assets/images/project-workbenchlab.webp` |
+| BM-Lab | <https://jakobsawazki.github.io/bm-lernportal/> | `assets/images/project-bmlab.webp` |
+| Games Lab | <https://jakobsawazki.github.io/games-lab/> | `assets/images/project-gameslab.webp` |
+| EC-Lernstudio | <https://jakobsawazki.github.io/ec-lernstudio-lf7/> | `assets/images/project-eclernstudio.webp` |
 
 Neue Projekte sollen als weitere `.side-project-card` innerhalb von `.side-project-grid` ergänzt
 und zusätzlich auf `projekte.html` ausführlich vorgestellt werden. Im Footer steht nur der zentrale
@@ -238,7 +231,7 @@ Für neue öffentliche HTML-Seiten außerdem `sitemap.xml`, Navigation, Footer u
 - Die Projektübersicht enthält PythonLab, WorkbenchLab, BM-Lab, Games Lab und EC-Lernstudio.
 - `projekte.html` erklärt für jedes Lab Zweck, Zielgruppe und Ziel; der Footer verweist zentral
   auf diese Seite.
-- Der Hauptmenüpunkt `Produkte` führt zum erweiterbaren Portfolio unter `produkte.html`.
+- Der Hauptmenüpunkt `Services` führt zum erweiterbaren Service- und Angebotsbereich unter `produkte.html`.
 - Der Hauptmenüpunkt `Projekte` führt auf allen Seiten direkt zum Projektbereich der Startseite.
 - Ein kompakter, barrierearm beschrifteter Theme-Schalter bietet einen persistenten Light- und
   Dark-Mode. Dark Mode ist die Standardansicht.
@@ -254,7 +247,7 @@ Für neue öffentliche HTML-Seiten außerdem `sitemap.xml`, Navigation, Footer u
 
 ## 12. Prioritäten für zukünftige Änderungen
 
-1. Vor allem anderen `tasks.txt` prüfen und die oberste Aufgabe abarbeiten.
+1. Vor allem anderen `tasks.docx` prüfen und die oberste Aufgabe abarbeiten.
 2. Bestehende Funktionen und Links erhalten.
 3. Kundenverständlichkeit vor internen technischen Erklärungen priorisieren.
 4. Neue Projekte konsistent im Projektbereich aufnehmen, aber nicht zusätzlich im Footer duplizieren.

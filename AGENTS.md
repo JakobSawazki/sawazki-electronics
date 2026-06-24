@@ -12,7 +12,7 @@ Dienstleistungen). Diese Datei sagt dir in Kürze, was zu tun ist. Details stehe
 ## So startest du (Reihenfolge)
 
 1. **`tasks.docx` lesen** (Word-Datei im Projektstamm) – das ist die priorisierte
-   Aufgabenwarteschlange. Sie ersetzt die alte `tasks.txt` und kann Screenshots enthalten.
+   Aufgabenwarteschlange und kann Screenshots enthalten.
    Lesehinweis (PowerShell) steht in `CODEX_HANDOVER.md`, Abschnitt 2.
 2. Die **oberste** Aufgabe von oben nach unten abarbeiten – immer nur eine gleichzeitig.
 3. Aufgabe vollständig umsetzen: Code → Doku → lokal testen → committen → pushen → live prüfen.
@@ -53,11 +53,9 @@ Bei neuen HTML-Seiten zusätzlich `sitemap.xml`, Navigation, Footer und README p
 
 ## Aktuell offene Aufgaben (Stand 24.06.2026)
 
-- **Offener Bildauftrag:** einheitliche, fotorealistische Projekt-, 3D-Druck- und
-  Datenrettungs-Bilder erzeugen und einbauen – vollständige Anleitung + Prompts in
-  [`docs/BILDAUFTRAG_PROJEKTBILDER.md`](docs/BILDAUFTRAG_PROJEKTBILDER.md). (Benötigt einen
-  Bildgenerator.)
-- **Datenschutz prüfen:** Die neue Datenrettung verarbeitet Kundendaten und ggf. fremde
-  Datenträger/Partnerlabore. `datenschutz.html` entsprechend prüfen/ergänzen.
-- Weitere Aufgaben siehe `tasks.docx` (u. a. Service-Text „Remote oder vor Ort" einzeilig,
-  kürzerer Link/Bitly, Dropshipping-Idee). Die Datenrettung selbst ist bereits umgesetzt.
+- Vor jeder neuen Arbeit `tasks.docx` prüfen. Wenn dort keine Aufgabe steht, gibt es keinen
+  bekannten Queue-Auftrag.
+- Erzeugte Projekt-, 3D-Druck- und Datenrettungsbilder sind eingebaut; Prompts und Assets stehen in
+  [`docs/BILDAUFTRAG_PROJEKTBILDER.md`](docs/BILDAUFTRAG_PROJEKTBILDER.md).
+- Die Datenschutzerklärung enthält eine Passage für Reparatur, Datensicherung, Datenrettung und
+  Partnerlabore. Bei konkretem Geschäftsbetrieb rechtlich prüfen lassen.

@@ -703,6 +703,7 @@ h3 {
   margin: 0;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .quick-strip {
@@ -1438,9 +1439,9 @@ select:focus {
 
 .side-project-card img {
   position: relative;
-  width: 72px;
-  height: 72px;
-  border-radius: 18px;
+  width: 78px;
+  height: 78px;
+  border-radius: 20px;
   object-fit: cover;
   object-position: center;
   opacity: 1;
@@ -1883,10 +1884,8 @@ select:focus {
   color: var(--white);
 }
 
-/* Service-Hero ohne Foto: gebrandeter Verlauf, damit Service-Seiten auch ohne
-   eigenes Hero-Bild fertig wirken. Sobald ein Foto vorliegt (z. B.
-   assets/images/3d-druck-hero.webp oder datenrettung-hero.webp), kann es als
-   .vhs-hero-image ergaenzt werden und legt sich automatisch ueber diesen Verlauf. */
+/* Gebrandeter Service-Hero: das Foto liegt unter dem Verlauf, der als
+   markentypische Abdunklung und Fallback-Hintergrund dient. */
 .print-hero,
 .recovery-hero {
   background:

@@ -1,6 +1,6 @@
 # Sawazki Electronics Website - Codex Projektdokumentation
 
-Stand: 24. Juni 2026 · Version: v1.6.0
+Stand: 24. Juni 2026 · Version: v1.7.0
 
 Diese Dokumentation dient als Arbeitsgrundlage fuer Codex und fuer die Weiterarbeit auf einem anderen Laptop. Sie soll bei kuenftigen Aenderungen fortgeschrieben werden: Was wurde geaendert, warum, in welchen Dateien und wie wurde geprueft.
 
@@ -12,6 +12,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.7.0 | 2026-06-24 | Services-Navigation; einheitliche Projektbilder; 3D-Druck-/Datenrettungsbilder; Word-Queue finalisiert |
 | v1.6.0 | 2026-06-24 | Datenrettung als eigene Dienstleistungsseite (inkl. Partner fuer physische Defekte) |
 | v1.5.0 | 2026-06-24 | 3D-Druck-Dienstleistung als eigene Seite; Projektkacheln vereinheitlicht; Bildauftrag fuer Codex dokumentiert |
 | v1.4.0 | 2026-06-24 | EC-Lernstudio im Projektbereich ergaenzt |
@@ -42,7 +43,7 @@ Wichtige Dateien:
 
 - `index.html`: Startseite mit Hero, Leistungen, Diagnose, Praxisbildern, Ablauf, Detailband, Kontaktformular und Projects-/Sub-Projects-Hinweis
 - `projekte.html`: zentrale Projektseite mit PythonLab, WorkbenchLab, BM-Lab, Games Lab und EC-Lernstudio
-- `produkte.html`: erweiterbares Portfolio fuer Dienstleistungen, Angebote und physische Produkte
+- `produkte.html`: sichtbarer Bereich „Services & Angebote" fuer Dienstleistungen, Angebote und spaetere physische Produkte
 - `vhs-digitalisierung.html`: eigenstaendige Angebotsseite fuer alte Videokassetten
 - `anfrage-assistent.html`: gefuehrter Anfrage-Assistent als statische, datensparsame Alternative zu einem echten Live-Chatbot
 - `impressum.html`: Impressum
@@ -79,31 +80,25 @@ Aktiv genutzt:
 - `assets/images/customer-consulting.jpg`: Beratung/Kundengespraech, Hero-Hintergrund und Diagnosebereich
 - `assets/images/repair-laptop.jpg`: neu generiertes Laptop-Reparaturfoto, Praxisbereich und Detailband
 - `assets/images/smartphone-repair.jpg`: Elektronik/Kleingeraete
-- `assets/images/games-lab-logo.png`: Projects-/Sub-Projects-Logo fuer Games Lab im unteren Startseitenbereich
-- `assets/images/pythonlab-logo.webp`: Logo fuer PythonLab
-- `assets/images/bm-lernportal-logo.svg`: Logo fuer das sichtbar als BM-Lab gefuehrte Lernprojekt
-- `assets/images/ec-lernstudio-logo.svg`: Logo fuer das EC-Lernstudio im Projektbereich
 - `assets/images/vhs-digitalisierung-hero.webp`: fotorealistisches Hero-Bild fuer die
   Videokassetten-Digitalisierung
+- `assets/images/3d-druck-hero.webp`: fotorealistisches Hero-Bild fuer die 3D-Druck-Dienstleistung
+- `assets/images/datenrettung-hero.webp`: fotorealistisches Hero-Bild fuer die Datenrettung
+- `assets/images/project-pythonlab.webp`, `project-workbenchlab.webp`, `project-bmlab.webp`,
+  `project-gameslab.webp`, `project-eclernstudio.webp`: einheitliche, fotorealistische
+  Projektbilder fuer Startseite und `projekte.html`
 
 Noch vorhanden als moegliche Rueckfall- oder Alternativassets:
 
 - `assets/images/hero-workbench.png`
 - `assets/images/support-dashboard.png`
 - `assets/images/hardware-detail.png`
+- `assets/images/games-lab-logo.png`
+- `assets/images/pythonlab-logo.webp`
+- `assets/images/workbenchlab-logo.webp`
+- `assets/images/bm-lernportal-logo.svg`
+- `assets/images/ec-lernstudio-logo.svg`
 - `assets/icons/favicon.svg`
-
-Noch zu erstellen (offener Bildauftrag, siehe `docs/BILDAUFTRAG_PROJEKTBILDER.md`):
-
-- `assets/images/project-pythonlab.webp`, `project-workbenchlab.webp`, `project-bmlab.webp`,
-  `project-gameslab.webp`, `project-eclernstudio.webp`: einheitliche, fotorealistische
-  Projektkacheln (ersetzen die bisherigen gemischten Logos in `index.html`).
-- `assets/images/3d-druck-hero.webp` (16:9) und optional `3d-druck-card.webp` (1:1) fuer die
-  3D-Druck-Seite bzw. die Produkte-Karte. Bis dahin greifen ein gebrandeter Verlauf
-  (`.print-hero`) und eine Platzhalter-Kachel.
-- `assets/images/datenrettung-hero.webp` (16:9) und optional `datenrettung-card.webp` (1:1) fuer
-  die Datenrettungs-Seite bzw. die Produkte-Karte. Bis dahin greifen der gemeinsame Verlauf
-  (`.recovery-hero`) und eine Platzhalter-Kachel.
 
 Originale Logoquellen auf dem aktuellen Laptop:
 
@@ -214,6 +209,29 @@ Nach dem Veröffentlichen:
 
 ## Bisheriges Aenderungsprotokoll
 
+### 24. Juni 2026 - Services-Navigation, Bildassets und Word-Queue (v1.7.0)
+
+- Sichtbaren Hauptmenuepunkt von `Produkte` auf `Services` umgestellt, weil die aktuellen Angebote
+  VHS-Digitalisierung, 3D-Druck und Datenrettung Dienstleistungen sind. Die Datei `produkte.html`
+  bleibt aus Link-Kompatibilitaet bestehen, wird in Titel, Text und Metadaten aber als
+  `Services & Angebote` gefuehrt.
+- `3d-druck.html` und `datenrettung.html` um lokale fotorealistische Hero-Bilder ergaenzt:
+  `assets/images/3d-druck-hero.webp` und `assets/images/datenrettung-hero.webp`. Beide werden
+  auch auf `produkte.html` in den Servicekarten genutzt.
+- Einheitliche Projektbilder erstellt und in `index.html` sowie `projekte.html` eingebunden:
+  `project-pythonlab.webp`, `project-workbenchlab.webp`, `project-bmlab.webp`,
+  `project-gameslab.webp`, `project-eclernstudio.webp`.
+- Hero-Service-Text `Remote oder vor Ort nach Absprache` per CSS einzeilig gehalten
+  (`.hero-facts dd { white-space: nowrap; }`).
+- `datenschutz.html` um eine Passage zur Datenverarbeitung bei Reparatur, Datensicherung,
+  Datenrettung und Partnerlaboren ergaenzt.
+- `docs/SEO_MARKETING_GUIDE.md` um Kurzlink-/Domain-Einschaetzung und Dropshipping-/Shopify-
+  Empfehlung ergaenzt. Ergebnis: eigene Domain bevorzugen, Bitly nur fuer Kampagnen; statt
+  generischem Dropshipping service-nahe, validierte Technikprodukte pruefen.
+- `tasks.docx` als alleinige Aufgabenwarteschlange finalisiert; `tasks.txt` wird nach erfolgreicher
+  Live-Pruefung entfernt. Bildauftrag und alte Word-Aufgaben werden danach aus `tasks.docx`
+  geloescht.
+
 ### 24. Juni 2026 - Datenrettung als Dienstleistung (v1.6.0)
 
 - Neue Seite `datenrettung.html` fuer professionelle Datenrettung erstellt (Hero, Leistungen,
@@ -230,11 +248,7 @@ Nach dem Veröffentlichen:
   ergaenzt; CTA-Links nutzen `anfrage-assistent.html?topic=Datenrettung#assistent`.
 - `datenrettung.html` in `sitemap.xml` aufgenommen; CSS-Selektor `.print-hero` zu
   `.print-hero, .recovery-hero` erweitert (gemeinsamer Service-Hero-Verlauf).
-- **Datenschutz-Hinweis (offen):** Eine Datenrettung verarbeitet Kundendaten und ggf. fremde
-  Datentraeger sowie Partnerlabore. Die Datenschutzerklaerung sollte darauf geprueft/ergaenzt
-  werden (Datenuebermittlung an Partner, Aufbewahrung/Loeschung, Vertraulichkeit).
-- Optionaler Bildauftrag fuer ein `datenrettung-hero.webp` in `docs/BILDAUFTRAG_PROJEKTBILDER.md`
-  ergaenzt.
+- Datenschutz und Bildauftrag wurden in v1.7.0 nachgezogen.
 
 ### 24. Juni 2026 - 3D-Druck-Dienstleistung, einheitliche Projektkacheln, Bildauftrag (v1.5.0)
 
@@ -247,8 +261,8 @@ Nach dem Veröffentlichen:
   (individuelles Angebot, „nach Aufwand"/„nach Absprache"). Konkrete Drucker-, Material-
   und Groessenangaben sollten vom Inhaber noch ergaenzt/bestaetigt werden.
 - 3D-Druck als zweite `featured-product`-Karte auf `produkte.html` eingebunden inkl.
-  JSON-LD-`ItemList`-Eintrag (Position 2). Da noch kein Foto existiert, zeigt die Karte
-  eine gebrandete Platzhalter-Kachel (`.featured-product-image.is-placeholder`).
+  JSON-LD-`ItemList`-Eintrag (Position 2). Das urspruengliche Platzhalterbild wurde in v1.7.0
+  durch `assets/images/3d-druck-hero.webp` ersetzt.
 - Thema „3D-Druck nach Kundenwunsch" (`value="3D-Druck"`) im Anfrage-Assistenten ergaenzt;
   CTA-Links nutzen `anfrage-assistent.html?topic=3D-Druck#assistent`.
 - `3d-druck.html` in `sitemap.xml` aufgenommen.
@@ -260,16 +274,9 @@ Nach dem Veröffentlichen:
   fertig wirkt.
 - Cache-Buster fuer Theme-/Stylesheet-Referenzen von `20260618-dark-polish` auf
   `20260624-3d-print` aktualisiert (alle bestehenden HTML-Seiten + neue 3D-Seite).
-- **Offener Bildauftrag dokumentiert:** `docs/BILDAUFTRAG_PROJEKTBILDER.md` enthaelt einen
+- **Bildauftrag dokumentiert:** `docs/BILDAUFTRAG_PROJEKTBILDER.md` enthaelt einen
   einheitlichen Stil-Leitfaden, Motiv-Prompts je Projekt + 3D-Hero, Zieldateinamen, Masse
-  und exakte Einbauhinweise. Echte fotorealistische Bilder konnten in dieser Umgebung nicht
-  erzeugt werden und sind als naechster Schritt fuer Codex bzw. einen Agenten mit
-  Bildgenerator vorgesehen.
-- Hinweis Aufgabenquelle: Laut `tasks.txt` soll kuenftig `tasks.docx` die Warteschlange sein
-  (erlaubt eingefuegte Screenshots). `tasks.docx` enthaelt bereits offene Aufgaben
-  (Service-Text „Remote oder vor Ort nach Absprache" einzeilig; Datenrettung mit EaseUS +
-  Partner fuer physisch defekte HDDs; kuerzerer Link/Bitly; Dropshipping/Shopify-Idee).
-  Diese wurden in dieser Sitzung **nicht** bearbeitet und bleiben offen.
+  und exakte Einbauhinweise. Die Bilder wurden in v1.7.0 erzeugt und eingebaut.
 
 ### 20. Mai 2026 - Erste Homepage erstellt
 
@@ -491,17 +498,19 @@ Commit-Titel: `Refine dark mode and header contrast`
 - Fotorealistisches Bild `assets/images/vhs-digitalisierung-hero.webp` lokal eingebunden.
 - Produkt- und VHS-Seite in die Sitemap aufgenommen.
 
-## Aufgabenwarteschlange `tasks.txt`
+## Aufgabenwarteschlange `tasks.docx`
 
-`tasks.txt` im Projektstamm ist die verbindliche priorisierte Warteschlange fuer neue
-Nutzeraufgaben.
+`tasks.docx` im Projektstamm ist die verbindliche priorisierte Warteschlange fuer neue
+Nutzeraufgaben. Die Word-Datei ersetzt die fruehere Textdatei, weil dort auch Screenshots zu
+Aufgaben abgelegt werden koennen.
 
-1. Datei vor jeder anderen Arbeit als UTF-8 lesen.
-2. Aufgaben anhand von Leerzeilen in Bloecke aufteilen.
+1. Datei vor jeder anderen Arbeit lesen.
+2. Aufgaben anhand von Absaetzen/Leerzeilen in Bloecke aufteilen; eingebettete Bilder gehoeren zur
+   jeweiligen Aufgabe.
 3. Nur den obersten nicht leeren Block bearbeiten.
 4. Aufgabe vollstaendig implementieren, dokumentieren, testen, committen, pushen und live pruefen.
 5. Datei unmittelbar vor dem Entfernen erneut lesen.
-6. Nur den unveraenderten erledigten ersten Block entfernen; spaetere Bloecke unveraendert lassen.
+6. Nur die erledigte erste Aufgabe samt zugehoeriger Bilder entfernen; spaetere Aufgaben erhalten.
 7. Bei Aenderung, Blockade oder fehlender Live-Pruefung nichts entfernen.
 8. Die Datei bleibt auch leer im Repository bestehen.
 
@@ -509,7 +518,7 @@ Nutzeraufgaben.
 
 Wenn Codex kuenftig an diesem Projekt arbeitet:
 
-- Vor allen anderen Schritten `tasks.txt` nach der oben dokumentierten Warteschlangenregel pruefen.
+- Vor allen anderen Schritten `tasks.docx` nach der oben dokumentierten Warteschlangenregel pruefen.
 - Diese Datei vor groesseren Aenderungen lesen.
 - Nach relevanten Aenderungen den Abschnitt "Bisheriges Aenderungsprotokoll" ergaenzen.
 - Bei visuellen Aenderungen lokale Browserpruefung machen.

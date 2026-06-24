@@ -1,6 +1,6 @@
 # SEO- und Marketing-Leitfaden
 
-Stand: 10. Juni 2026
+Stand: 24. Juni 2026
 
 ## Zielbegriffe der Website
 
@@ -70,3 +70,61 @@ zuordnen kann.
 Eine eigene kurze Domain wirkt professioneller und ist leichter zu merken als eine GitHub-Pages-URL.
 Bei einem späteren Domainwechsel müssen Canonicals, Sitemap, Formular-Weiterleitungen,
 Google-Unternehmensprofil und Search Console gemeinsam aktualisiert werden.
+
+## Kurzlink oder eigene Domain
+
+Empfehlung: Für den regulären Internetauftritt ist eine eigene Domain sinnvoller als ein
+reiner Kurzlink. GitHub Pages kann weiterhin das Hosting übernehmen; die Domain zeigt dann per
+DNS/CNAME auf die bestehende GitHub-Pages-Seite.
+
+Gute Zielvarianten:
+
+- `sawazki-electronics.de`
+- `sawazki-electronics.com`
+- optional eine sehr kurze Weiterleitungsdomain für Visitenkarten oder QR-Codes
+
+Bitly oder vergleichbare Kurzlinks sind eher für Kampagnen, Flyer, QR-Codes oder messbare
+Einzelaktionen geeignet. Als Hauptadresse wirken sie weniger vertrauensbildend als eine eigene
+Domain und tragen weniger zur lokalen Markenwirkung bei.
+
+Bei einer eigenen Domain anschließend gemeinsam ändern:
+
+1. GitHub-Pages-Custom-Domain und DNS einrichten.
+2. Canonical-URLs, `sitemap.xml`, Open-Graph-URLs und strukturierte Daten aktualisieren.
+3. Google-Unternehmensprofil und Google Search Console auf die neue Domain umstellen.
+4. Alte GitHub-Pages-URL als funktionierenden Fallback bestehen lassen.
+
+Quellen zur Einordnung:
+
+- GitHub Docs: Custom Domain für GitHub Pages konfigurieren
+  <https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site>
+- Bitly Support: Custom/branded Links und Shortlinks
+  <https://support.bitly.com/hc/en-us>
+
+## Dropshipping / Shopify-Einschätzung
+
+Für Sawazki Electronics ist ein klassisches generisches Dropshipping-Modell aktuell nicht der
+stärkste erste Schritt. Es passt nur begrenzt zur lokalen Vertrauensmarke, erzeugt zusätzliche
+Pflichten im Onlinehandel und konkurriert schnell über Preis, Lieferzeit und Support.
+
+Stärker wäre ein service-naher Produktansatz:
+
+- kleine 3D-gedruckte Technikhelfer nach Bedarf, z. B. Kabelhalter, Adapterhalter,
+  Wandhalterungen, Ordnungssysteme für Schreibtisch/Netzwerk/Backup
+- Ersatz- und Funktionsteile, die aus konkreten Kundenproblemen entstehen
+- kleine Sets rund um Datensicherung, Kabelmanagement oder Arbeitsplatz-Einrichtung
+- erst Nachfrage lokal testen, dann wiederkehrende Produkte als Shop-Kategorie aufnehmen
+
+Shopify kann später sinnvoll sein, wenn es mindestens ein klar validiertes Produkt mit
+wiederholbarer Nachfrage, belastbarer Marge, sauberem Lieferprozess und rechtlich geklärten
+Shop-Texten gibt. Bis dahin sollte die Website die Produktkategorie bewusst als
+„spätere ausgewählte Produkte" behandeln und die aktuellen Umsätze über Services aufbauen.
+
+Quellen zur Einordnung:
+
+- Shopify Deutschland: Dropshipping-Grundlagen und Ablauf
+  <https://www.shopify.com/de/blog/dropshipping>
+- Shopify Help Center: Apps und Vertriebskanäle für Dropshipping
+  <https://help.shopify.com/>
+- IHK: Pflichten im Onlinehandel, Impressum, Widerruf und Verbraucherinformationen
+  <https://www.ihk.de/>
