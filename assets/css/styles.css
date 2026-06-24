@@ -1407,6 +1407,10 @@ select:focus {
   transition: transform 160ms ease, border-color 160ms ease, background 160ms ease, box-shadow 160ms ease;
 }
 
+.side-project-card.is-wide {
+  grid-column: 1 / -1;
+}
+
 .side-project-card::before {
   content: "";
   position: absolute;
@@ -2353,6 +2357,10 @@ select:focus {
 
 .project-profile:nth-child(4)::before {
   background: linear-gradient(90deg, #071f56, #176fc3, #24d4d6);
+}
+
+.project-profile:nth-child(5)::before {
+  background: linear-gradient(90deg, #071827, #0b4d67, #ffbd7a);
 }
 
 .project-profile-header {

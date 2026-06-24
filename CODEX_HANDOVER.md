@@ -38,7 +38,7 @@ Die Datei ist die priorisierte Aufgabenwarteschlange des Nutzers.
 ## 3. Wichtige Dateien
 
 - `index.html`: Startseite, Leistungen, Arbeitsablauf, Kontaktformular und Projektbereich
-- `projekte.html`: zentrale Vorstellung von PythonLab, WorkbenchLab, BM-Lab und Games Lab
+- `projekte.html`: zentrale Vorstellung von PythonLab, WorkbenchLab, BM-Lab, Games Lab und EC-Lernstudio
 - `produkte.html`: Produktportfolio mit Dienstleistungen und späteren physischen Produkten
 - `vhs-digitalisierung.html`: Angebotsseite für die Digitalisierung alter Videokassetten
 - `anfrage-assistent.html`: geführtes Anfrageformular
@@ -65,6 +65,7 @@ Der Projektbereich befindet sich am Ende der Startseite unter `#projekte`.
 | WorkbenchLab | <https://jakobsawazki.github.io/WorkbenchLab/> | `assets/images/workbenchlab-logo.webp` |
 | BM-Lab | <https://jakobsawazki.github.io/bm-lernportal/> | `assets/images/bm-lernportal-logo.svg` |
 | Games Lab | <https://jakobsawazki.github.io/games-lab/> | `assets/images/games-lab-logo.png` |
+| EC-Lernstudio | <https://jakobsawazki.github.io/ec-lernstudio-lf7/> | `assets/images/ec-lernstudio-logo.svg` |
 
 Neue Projekte sollen als weitere `.side-project-card` innerhalb von `.side-project-grid` ergänzt
 und zusätzlich auf `projekte.html` ausführlich vorgestellt werden. Im Footer steht nur der zentrale
@@ -200,7 +201,7 @@ Für neue öffentliche HTML-Seiten außerdem `sitemap.xml`, Navigation, Footer u
 - Ablauf- und Kontaktüberschrift bleiben ab Tabletbreite einzeilig.
 - Hero-Servicebilder sind größer und überdecken das Faktenband nicht.
 - Projektkarten verwenden einheitlich `Designed by Sawazki Electronics`.
-- Die Reihenfolge lautet PythonLab, WorkbenchLab, BM-Lab und Games Lab.
+- Die Projektübersicht enthält PythonLab, WorkbenchLab, BM-Lab, Games Lab und EC-Lernstudio.
 - `projekte.html` erklärt für jedes Lab Zweck, Zielgruppe und Ziel; der Footer verweist zentral
   auf diese Seite.
 - Der Hauptmenüpunkt `Produkte` führt zum erweiterbaren Portfolio unter `produkte.html`.
@@ -213,7 +214,7 @@ Für neue öffentliche HTML-Seiten außerdem `sitemap.xml`, Navigation, Footer u
 - Kontaktformular und Anfrage-Assistent sind integriert.
 - Das Reparaturfoto wurde durch eine realistischere lokale Grafik ersetzt.
 - Der Projektbereich unterstützt mehrere Karten.
-- PythonLab, WorkbenchLab, BM-Lab und Games Lab sind verlinkt.
+- PythonLab, WorkbenchLab, BM-Lab, Games Lab und EC-Lernstudio sind verlinkt.
 - PythonLab verweist auf die neue GitHub-Pages-Adresse `/PythonLab/`.
 - README und ausführliche Codex-Dokumentation sind vorhanden.
 

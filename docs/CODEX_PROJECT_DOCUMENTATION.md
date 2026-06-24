@@ -21,7 +21,7 @@ Die Website ist bewusst statisch gehalten. Es gibt keinen Build-Prozess, keine F
 Wichtige Dateien:
 
 - `index.html`: Startseite mit Hero, Leistungen, Diagnose, Praxisbildern, Ablauf, Detailband, Kontaktformular und Projects-/Sub-Projects-Hinweis
-- `projekte.html`: zentrale Projektseite mit PythonLab, WorkbenchLab, BM-Lab und Games Lab
+- `projekte.html`: zentrale Projektseite mit PythonLab, WorkbenchLab, BM-Lab, Games Lab und EC-Lernstudio
 - `produkte.html`: erweiterbares Portfolio fuer Dienstleistungen, Angebote und physische Produkte
 - `vhs-digitalisierung.html`: eigenstaendige Angebotsseite fuer alte Videokassetten
 - `anfrage-assistent.html`: gefuehrter Anfrage-Assistent als statische, datensparsame Alternative zu einem echten Live-Chatbot
@@ -62,6 +62,7 @@ Aktiv genutzt:
 - `assets/images/games-lab-logo.png`: Projects-/Sub-Projects-Logo fuer Games Lab im unteren Startseitenbereich
 - `assets/images/pythonlab-logo.webp`: Logo fuer PythonLab
 - `assets/images/bm-lernportal-logo.svg`: Logo fuer das sichtbar als BM-Lab gefuehrte Lernprojekt
+- `assets/images/ec-lernstudio-logo.svg`: Logo fuer das EC-Lernstudio im Projektbereich
 - `assets/images/vhs-digitalisierung-hero.webp`: fotorealistisches Hero-Bild fuer die
   Videokassetten-Digitalisierung
 
@@ -345,6 +346,13 @@ Commit-Titel: `Add WorkbenchLab to project showcase`
 - Startseitenraster für vier gleichwertige Karten als responsives 2×2-Raster gestaltet.
 - WorkbenchLab mit Zweck, Zielgruppe und Lernziel auf `projekte.html` dokumentiert.
 - Metadaten und strukturierte Daten der Projektseite um WorkbenchLab erweitert.
+
+### 24. Juni 2026 - EC-Lernstudio in Projektbereich aufgenommen
+
+- EC-Lernstudio als weitere Projektkarte im Bereich `#projekte` der Startseite ergänzt.
+- Eigene Projektprofilkarte auf `projekte.html` mit Zweck, Zielgruppe und Ziel ergänzt.
+- Neues lokales SVG-Logo `assets/images/ec-lernstudio-logo.svg` erstellt.
+- Metadaten und strukturierte Daten der Projektseite um EC-Lernstudio erweitert.
 - Startseite und Projektseite bei 1440, 1280 und 390 Pixeln geprüft: richtige
   Reihenfolge, geladene Logos, gültige Links, kein horizontaler Überlauf und
   keine Browserfehler.

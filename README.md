@@ -7,10 +7,10 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - Professionelle Startseite mit Hero-Bereich, lokalen Bildassets und blauem Sawazki-Electronics-Branding
 - Dezente Leiterbahn-/Knotenpunktmuster auf den hellen Flächen statt leerem Weiß
 - Interaktives Hero-Logo mit Lichtlauf und direktem Sprung zu den Leistungen
-- Projektkarten mit Logos für PythonLab, WorkbenchLab, BM-Lab und Games Lab
+- Projektkarten mit Logos für PythonLab, WorkbenchLab, BM-Lab, Games Lab und EC-Lernstudio
 - Direkter Navigationspunkt `Projekte` mit Sprung zum Projektbereich der Startseite
 - Dark Mode als Standard sowie persistent umschaltbarer Light-/Dark-Mode
-- PythonLab und WorkbenchLab sind auf ihren GitHub-Pages-Lernportalen verlinkt
+- PythonLab, WorkbenchLab und EC-Lernstudio sind auf ihren GitHub-Pages-Lernportalen verlinkt
 - Eigene Projektseite mit Zweck, Zielgruppe und Ziel jedes Labs
 - Footer-Link zur zentralen Projektübersicht ohne doppelte Einzelprojektlinks
 - Zentrales Produktportfolio für Dienstleistungen, Angebote und spätere physische Produkte
@@ -20,7 +20,7 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - Strukturierte Unternehmensdaten, Canonical-URLs und optimierte Social-Media-Vorschauen
 - Visuell geführter Ablaufbereich mit großen Ziffern und Pfeilen für Anfrage, Analyse, Umsetzung und Übergabe
 - Kontaktformular und geführter `Anfrage-Assistent` über FormSubmit
-- Einheitlicher Projektbereich in der Reihenfolge PythonLab, WorkbenchLab, BM-Lab und Games Lab
+- Einheitlicher Projektbereich mit PythonLab, WorkbenchLab, BM-Lab, Games Lab und EC-Lernstudio
 - Responsive Layout für Desktop, Tablet und Smartphone
 - Lokale Bildassets, keine externen Bildabhängigkeiten
 - Unternehmenslogo als lokales Website-Asset in Navigation, Favicon und Hero-Bereich
