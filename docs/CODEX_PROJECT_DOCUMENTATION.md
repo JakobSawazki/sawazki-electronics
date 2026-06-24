@@ -221,13 +221,13 @@ Unabhaengige Pruefung der von Codex ergaenzten Aenderungen (Commits `e7cab37`, `
   `Services & Angebote` gefuehrt; Cache-Token einheitlich (styles.css `20260624-services-images`,
   theme.js `20260624-3d-print`); Datenschutz um Abschnitt 4 (Datenverarbeitung bei
   Dienstleistungen inkl. Datenrettung/Partnerlabore) ergaenzt.
-- Offene Punkte (zur Entscheidung durch den Inhaber):
-  1. `tasks.docx` ist jetzt im oeffentlichen Repository sichtbar und herunterladbar (inkl.
-     eingebettetem Screenshot und internen Notizen). Falls die Aufgabenliste privat bleiben soll,
-     sollte sie aus dem Repo entfernt und per `.gitignore` ausgeschlossen werden.
-  2. Ungenutztes CSS: `.featured-product-image.is-placeholder` und `.featured-placeholder-label`
-     (in `assets/css/styles.css`) werden nach dem Ersetzen der Platzhalter nicht mehr verwendet
-     und koennen entfernt werden.
+- Nach Ruecksprache umgesetzt:
+  1. `tasks.docx` aus dem Repository entfernt (`git rm --cached`, Datei bleibt lokal erhalten) und
+     per `.gitignore` ausgeschlossen, damit die interne Aufgabenliste samt Screenshot nicht mehr
+     oeffentlich ist. Hinweis: In der aelteren Historie (Commit `7432f61`) bleibt sie einsehbar;
+     fuer eine vollstaendige Tilgung waere ein History-Rewrite + Force-Push noetig.
+  2. Ungenutztes Platzhalter-CSS (`.featured-product-image.is-placeholder`,
+     `.featured-placeholder-label`) aus `assets/css/styles.css` entfernt.
 
 ### 24. Juni 2026 - Services-Navigation, Bildassets und Word-Queue (v1.7.0)
 

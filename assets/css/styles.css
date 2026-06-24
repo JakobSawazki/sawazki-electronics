@@ -1739,39 +1739,6 @@ select:focus {
   filter: saturate(1.08);
 }
 
-/* Gebrandete Platzhalter-Kachel fuer Angebote ohne eigenes Foto.
-   Sobald ein echtes Bild vorliegt, kann diese Kachel durch das in der
-   VHS-Karte verwendete <a class="featured-product-image"><img ...></a>
-   ersetzt werden (siehe docs/BILDAUFTRAG_PROJEKTBILDER.md). */
-.featured-product-image.is-placeholder {
-  display: grid;
-  place-items: center;
-  padding: 2rem;
-  text-decoration: none;
-  background:
-    radial-gradient(circle at 75% 20%, rgba(32, 191, 210, 0.26), transparent 22rem),
-    linear-gradient(140deg, #041d34 0%, #06335a 55%, #0a4a73 100%);
-}
-
-.featured-placeholder-label {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.4rem;
-  color: #eaf7fb;
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
-  font-weight: 800;
-  text-align: center;
-}
-
-.featured-placeholder-label small {
-  font-size: 0.92rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba(234, 247, 251, 0.82);
-}
-
 .featured-product-copy {
   padding: clamp(1.5rem, 4vw, 3rem);
   display: flex;
