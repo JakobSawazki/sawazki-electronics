@@ -52,6 +52,7 @@ Jeweils Motiv + gemeinsamen Stil-Baustein kombinieren.
 | **EC-Lernstudio** | E-Commerce & Daten | `A small clean cardboard parcel with a glowing scan line and floating data points, modern e-commerce logistics concept` |
 | **3D-Druck (Hero)** | Dienstleistung | `A precise FDM 3D printer mid-print creating a smooth object on the print bed, glowing cyan rim light, dark workshop, 16:9 cinematic` |
 | **Datenrettung (Hero)** | Dienstleistung | `An opened hard drive (HDD) on a clean workbench with a soft glowing cyan data stream rising from the platter, dark studio, 16:9 cinematic` |
+| **Energietechnik (Hero)** | Dienstleistung | `A neat LiFePO4 battery storage unit with a solar panel and a charge controller, glowing cyan accents, off-grid energy concept, dark studio, 16:9 cinematic` |
 
 ---
 
@@ -71,6 +72,8 @@ als Rückfall erhalten):
 | `3d-druck-hero.webp` | 3D-Karte auf `produkte.html` | wird auch dort als Kartenbild genutzt |
 | `datenrettung-hero.webp` | Datenrettung-Hero | wie 3D-Hero, in `datenrettung.html` (Klasse `.recovery-hero`) |
 | `datenrettung-hero.webp` | Datenrettung-Karte auf `produkte.html` | wird auch dort als Kartenbild genutzt |
+| `energietechnik-hero.webp` | Energietechnik-Hero | in `energietechnik.html` als `.vhs-hero-image` einsetzen (Klasse `.energy-hero`) |
+| `energietechnik-hero.webp` | Energietechnik-Karte auf `produkte.html` | Platzhalter `.is-placeholder` durch `<a class="featured-product-image"><img ...></a>` ersetzen |
 
 ### Einbau Projektkacheln (`index.html`, Abschnitt `#projekte`)
 

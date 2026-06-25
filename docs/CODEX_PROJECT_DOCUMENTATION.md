@@ -1,6 +1,6 @@
 # Sawazki Electronics Website - Codex Projektdokumentation
 
-Stand: 24. Juni 2026 · Version: v1.9.0
+Stand: 24. Juni 2026 · Version: v1.10.0
 
 Diese Dokumentation dient als Arbeitsgrundlage fuer Codex und fuer die Weiterarbeit auf einem anderen Laptop. Sie soll bei kuenftigen Aenderungen fortgeschrieben werden: Was wurde geaendert, warum, in welchen Dateien und wie wurde geprueft.
 
@@ -12,6 +12,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.10.0 | 2026-06-24 | Energietechnik-Service (Batteriespeicher & Inselnetz) inkl. Produkte-/Anfrage-/Sitemap-Integration |
 | v1.9.0 | 2026-06-24 | Schwebender WhatsApp-Kontaktbutton auf allen Seiten (direkter Draht zu Jakob) |
 | v1.8.0 | 2026-06-24 | Neue Seite `ueber-mich.html` (Vertrauen/Profil) inkl. Footer-Verlinkung auf allen Seiten |
 | v1.7.1 | 2026-06-24 | FAQ-Schema (FAQPage) auf den Service-Seiten fuer Rich Results; Review + Cleanup |
@@ -211,6 +212,22 @@ Nach dem Veröffentlichen:
 - Commit-Kuerzel in dieser Dokumentation im Aenderungsprotokoll ergaenzen
 
 ## Bisheriges Aenderungsprotokoll
+
+### 24. Juni 2026 - Energietechnik-Service: Batteriespeicher & Inselnetz (v1.10.0)
+
+- Neue Seite `energietechnik.html` mit Schwerpunkt Batteriespeicher (z. B. LiFePO4) und
+  netzunabhaengige Inselnetz-/Off-Grid-Loesungen (Beratung, Auslegung, Aufbau). Reuse der
+  Service-Layoutklassen; Hero-Klasse `.energy-hero` nutzt den gemeinsamen gebrandeten Verlauf.
+- Bewusst **kein** netzgekoppelter PV-Anschluss als Versprechen (regulatorisch: eingetragener
+  Installateur + Netzbetreiber-Anmeldung); klar als „nur in Zusammenarbeit/Absprache"
+  ausgewiesen (Hero/Optionen/FAQ). Keine erfundenen Pauschalpreise.
+- Integriert: vierte Servicekarte auf `produkte.html` (+ JSON-LD Position 4), Thema
+  „Energietechnik" im Anfrage-Assistenten, Eintrag in `sitemap.xml`. `Service`- und
+  `FAQPage`-Structured-Data ergaenzt (mit ConvertFrom-Json geprueft).
+- Platzhalter-CSS (`.featured-product-image.is-placeholder`/`.featured-placeholder-label`)
+  fuer die Energie-Servicekarte wieder eingefuehrt (noch kein Foto). Stylesheet-Cache-Token auf
+  `20260624-energie` angehoben (alle Seiten konsistent).
+- **Offen:** Hero-/Kartenbild `energietechnik-hero.webp` (im Bildauftrag ergaenzt).
 
 ### 24. Juni 2026 - WhatsApp-Kontaktbutton (v1.9.0)
 

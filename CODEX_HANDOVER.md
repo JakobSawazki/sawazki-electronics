@@ -1,6 +1,6 @@
 # Codex-Übergabe: Sawazki Electronics Website
 
-Stand: 24. Juni 2026 · Version: v1.7.0
+Stand: 24. Juni 2026 · Version: v1.10.0
 
 Diese Datei ist der Einstiegspunkt für einen neuen Codex-Agenten. Vor Änderungen zuerst diese
 Übergabe, anschließend bei Bedarf die ausführliche Projektdokumentation unter
@@ -18,7 +18,7 @@ Diese Datei ist der Einstiegspunkt für einen neuen Codex-Agenten. Vor Änderung
 - Live-Seite: <https://jakobsawazki.github.io/sawazki-electronics/>
 - Lokaler Projektordner (Acer Nitro 5, via Google Drive Desktop synchronisiert): `D:\Google Drive\Gewerbe\Sawazki Electronics Website` (auf anderen Geräten ggf. abweichend, z. B. `G:\Meine Ablage\Codex\sawazki-electronics`)
 - Standard-Branch: `main`
-- Zuletzt geprüfter Funktionsstand: Services-Navigation, 3D-Druck-/Datenrettungsbilder, einheitliche Projektbilder und Word-Queue vom 24. Juni 2026 (v1.7.0)
+- Zuletzt geprüfter Funktionsstand: Energietechnik-Service, „Über mich"-Seite und WhatsApp-Button (auf v1.7.0 folgend) vom 24. Juni 2026 (v1.10.0)
 - Hosting: GitHub Pages direkt aus dem Repository
 
 Die Website ist statisch. Es gibt keinen Build-Prozess, kein Framework und keine Paketabhängigkeiten.
@@ -66,6 +66,8 @@ Regeln (wie zuvor, nur Quelle ist jetzt `tasks.docx`):
 - `vhs-digitalisierung.html`: Angebotsseite für die Digitalisierung alter Videokassetten
 - `3d-druck.html`: Angebotsseite für 3D-Druck nach Kundenwunsch (Service-Layoutklassen wiederverwendet)
 - `datenrettung.html`: Angebotsseite für professionelle Datenrettung (Service-Layoutklassen wiederverwendet)
+- `energietechnik.html`: Angebotsseite für Batteriespeicher & Inselnetzlösungen (Service-Layoutklassen wiederverwendet)
+- `ueber-mich.html`: persönliche Profil-/Vertrauensseite (Industrie-Elektronik, Energietechnik, Lehre)
 - `anfrage-assistent.html`: geführtes Anfrageformular
 - `danke.html`: Zielseite nach erfolgreicher Formularübermittlung
 - `impressum.html`: Impressum

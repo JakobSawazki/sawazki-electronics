@@ -17,6 +17,9 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - Eigene Angebotsseite für VHS-, VHS-C- und Camcorder-Kassetten-Digitalisierung
 - Eigene Angebotsseite für 3D-Druck nach Kundenwunsch (individuelle Drucke, Hilfe bei 3D-Modellen, Prototypen, Ersatzteile)
 - Eigene Angebotsseite für professionelle Datenrettung (logische und physische Schäden, Partnerlabore für defekte Datenträger)
+- Eigene Angebotsseite für Batteriespeicher und Inselnetzlösungen (Energietechnik, netzunabhängig/Off-Grid)
+- „Über mich"-Seite mit beruflichem Profil (Industrie-Elektronik, Energietechnik, Lehre)
+- Schwebender WhatsApp-Kontaktbutton auf allen Seiten (direkt an Jakob, kein Bot)
 - Vereinheitlichte Projektkacheln mit einheitlichem „App-Icon"-Framing
 - Leistungsübersicht für PC, Laptop, Sicherheit, Backup, Netzwerk und Beratung
 - Unsichtbare lokale SEO-Ausrichtung auf IT-Service sowie PC- und Laptop-Reparatur in Freudenstadt
@@ -36,6 +39,8 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - VHS-Digitalisierung: `vhs-digitalisierung.html`
 - 3D-Druck: `3d-druck.html`
 - Datenrettung: `datenrettung.html`
+- Energietechnik (Batteriespeicher & Inselnetz): `energietechnik.html`
+- Über mich: `ueber-mich.html`
 - Anfrage-Assistent: `anfrage-assistent.html`
 - Danke-Seite nach Formularversand: `danke.html`
 - Impressum: `impressum.html`
