@@ -56,38 +56,24 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 
 ## Dokumentation
 
-Für den schnellen Einstieg eines KI-Agenten gibt es die kompakte Sofort-Anleitung
-[`AGENTS.md`](AGENTS.md) im Projektstamm.
+Seit dem 02.07.2026 gibt es eine konsolidierte Doku-Struktur (nur noch vier MD-Dateien):
 
-Für die schnelle Weitergabe an einen neuen Codex-Agenten gibt es die
-[`CODEX_HANDOVER.md`](CODEX_HANDOVER.md). Sie enthält den aktuellen technischen Stand,
-Arbeitsregeln, Prüfungen und den Veröffentlichungsablauf.
-
-Die laufende Codex-Projektdokumentation liegt unter
-[`docs/CODEX_PROJECT_DOCUMENTATION.md`](docs/CODEX_PROJECT_DOCUMENTATION.md).
-Sie enthält Projektstand, Versionsstand, lokale Weiterarbeit, Veröffentlichungsablauf,
-Designentscheidungen und ein Änderungsprotokoll.
-
-Die erzeugten Projekt- und Servicebilder sowie die finalen Prompts sind in
-[`docs/BILDAUFTRAG_PROJEKTBILDER.md`](docs/BILDAUFTRAG_PROJEKTBILDER.md) dokumentiert.
-
-Konkrete Empfehlungen für Google-Unternehmensprofil, Search Console und einheitliche Firmendaten
-stehen im [`docs/SEO_MARKETING_GUIDE.md`](docs/SEO_MARKETING_GUIDE.md).
+- [`AGENTS.md`](AGENTS.md) (Projektstamm): zentrale Übergabe für alle Mitarbeiter und
+  KI-Agenten – Regeln, Arbeitsablauf, Prüfungen, Veröffentlichung. Die frühere
+  `CODEX_HANDOVER.md` ist hier integriert.
+- [`docs/Tasks.md`](docs/Tasks.md): primäre Aufgabenquelle – offene, laufende und
+  abgeschlossene Aufgaben mit Datum, Version und Bearbeiter.
+- [`docs/documentation.md`](docs/documentation.md): ausführliche Projekt- und Firmendoku –
+  Versionsstand, Änderungsprotokoll, Design-/Technikentscheidungen, SEO-/Marketing-Leitfaden,
+  Bildauftrag (Prompts) und Projektgedächtnis. Hieß früher `CODEX_PROJECT_DOCUMENTATION.md`.
+- `README.md` (diese Datei): öffentlicher Überblick.
 
 ## Aufgabenwarteschlange
 
-Neue Arbeitsaufträge werden in `tasks.docx` (Word) im Projektstamm hinterlegt. Diese Datei
-ist seit dem 24. Juni 2026 die primäre Warteschlange; in Word lassen sich auch Screenshots
-zu einer Aufgabe einfügen.
-
-Für jede neue Arbeitssitzung gilt:
-
-1. `tasks.docx` vor anderen Aufgaben prüfen (Lesehinweis in `CODEX_HANDOVER.md`, Abschnitt 2).
-2. Immer nur die oberste Aufgabe bearbeiten (von oben nach unten).
-3. Die Aufgabe vollständig umsetzen, dokumentieren, testen, veröffentlichen und live prüfen.
-4. Erst danach die erledigte Aufgabe (samt zugehöriger Bilder) aus `tasks.docx` entfernen.
-5. Später hinzugefügte Aufgaben und ihre Reihenfolge unverändert erhalten.
-6. Bei einer Blockade bleibt die Aufgabe in `tasks.docx` stehen.
+Aufgaben werden in [`docs/Tasks.md`](docs/Tasks.md) geführt (offen / in Arbeit /
+abgeschlossen). `tasks.docx` im Projektstamm bleibt als lokaler, nicht versionierter
+Eingang für Aufgaben mit privaten Screenshots; solche Aufgaben werden ohne private Details
+in `docs/Tasks.md` gespiegelt. Details und Regeln stehen in `AGENTS.md`.
 
 ## Kontaktformulare
 

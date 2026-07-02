@@ -1,8 +1,15 @@
-# Sawazki Electronics Website - Codex Projektdokumentation
+# Sawazki Electronics – Projektdokumentation
 
-Stand: 2. Juli 2026 · Version: v1.14.0
+Stand: 2. Juli 2026 · Version: v1.14.1
 
-Diese Dokumentation dient als Arbeitsgrundlage fuer Codex und fuer die Weiterarbeit auf einem anderen Laptop. Sie soll bei kuenftigen Aenderungen fortgeschrieben werden: Was wurde geaendert, warum, in welchen Dateien und wie wurde geprueft.
+Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
+(Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
+Aenderung fortgeschrieben: Was wurde geaendert, warum, in welchen Dateien und wie wurde geprueft.
+(Bis 02.07.2026 hiess diese Datei `CODEX_PROJECT_DOCUMENTATION.md`.)
+
+Weitere Doku: Einstieg/Uebergabe in [`../AGENTS.md`](../AGENTS.md) ·
+Aufgaben in [`Tasks.md`](Tasks.md) · oeffentlicher Ueberblick in [`../README.md`](../README.md).
+Am Ende dieser Datei: SEO-/Marketing-Leitfaden, Bildauftrag und Projektgedaechtnis.
 
 ## Versionsstand
 
@@ -12,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.14.1 | 2026-07-02 | Doku-Konsolidierung: AGENTS.md als zentrale Uebergabe, `docs/Tasks.md`, `docs/documentation.md` |
 | v1.14.0 | 2026-07-02 | Branding-Refresh: neues Brand-Symbol, Favicon, Hero-Logo-Modul und groessere Hero-Servicebilder |
 | v1.13.0 | 2026-07-02 | UX-/Grafik-Ausbau: Service-Finder auf der Startseite, Energietechnik-Hero-/Kartenbild, neuer kanonischer Gewerbe-Ordner |
 | v1.12.0 | 2026-07-02 | Marketing-/UX-Ausbau Startseite: nutzenorientierter Hero, Angebots-Teaser, Warum-Band, Kontakt-/Footer-Ausbau |
@@ -63,8 +71,15 @@ Wichtige Dateien:
 - `assets/js/main.js`: Navigation, Scroll-Header, Reveal-Animationen, Formular-Betreff
 - `assets/js/theme.js`: Dark Mode als Standard und lokal gespeicherte Theme-Auswahl
 - `assets/images/`: lokale Bild- und Logoassets
+- `3d-druck.html`, `datenrettung.html`, `energietechnik.html`: weitere Angebotsseiten (Service-Layoutklassen wiederverwendet)
+- `ueber-mich.html`: persoenliche Profil-/Vertrauensseite
 - `robots.txt` und `sitemap.xml`: Suchmaschinen-Hinweise
 - `.nojekyll`: sorgt dafuer, dass GitHub Pages die Dateien unveraendert ausliefert
+- `AGENTS.md` (Projektstamm): zentrale Uebergabe und Regeln fuer alle Agenten
+- `README.md` (Projektstamm): oeffentlicher Projektueberblick
+- `docs/Tasks.md`: primaere Aufgabenquelle (offen / in Arbeit / abgeschlossen)
+- `docs/documentation.md`: diese Datei
+- `tasks.docx` (Projektstamm, gitignored): lokaler Aufgaben-Eingang fuer private Screenshots
 
 ## Design- und Inhaltsentscheidungen
 
@@ -222,6 +237,24 @@ Nach dem Veröffentlichen:
 - Commit-Kuerzel in dieser Dokumentation im Aenderungsprotokoll ergaenzen
 
 ## Bisheriges Aenderungsprotokoll
+
+### 2. Juli 2026 - Doku-Konsolidierung (v1.14.1)
+
+- Neue Doku-Struktur auf Wunsch von Jakob: Ausser `README.md` und `AGENTS.md` (bleiben im
+  Projektstamm, weil GitHub bzw. Agenten-Tools sie dort erwarten) liegen alle MD-Dateien
+  unter `docs/`.
+- `docs/CODEX_PROJECT_DOCUMENTATION.md` per `git mv` in `docs/documentation.md` umbenannt
+  und zur zentralen Wissensbasis fuer Firma + Projekte erweitert.
+- `CODEX_HANDOVER.md` vollstaendig in `AGENTS.md` integriert und geloescht; `AGENTS.md` ist
+  jetzt die einzige Uebergabedatei fuer alle Mitarbeiter/Agenten.
+- `docs/SEO_MARKETING_GUIDE.md` und `docs/BILDAUFTRAG_PROJEKTBILDER.md` als Abschnitte in
+  diese Datei uebernommen und als Einzeldateien geloescht (Inhalte unveraendert, Git-Historie
+  bleibt erhalten).
+- Neu: `docs/Tasks.md` als **primaere Aufgabenquelle** (offen / in Arbeit / abgeschlossen mit
+  Datum, Version, Bearbeiter) inkl. Nutzungskontingent-Regel fuer KI-Agenten. `tasks.docx`
+  bleibt nur lokaler Eingang fuer Aufgaben mit privaten Screenshots (gitignored).
+- Neu: Abschnitt "Projektgedaechtnis und Firmenkontext" am Ende dieser Datei.
+- Keine Aenderung an der Website selbst (nur Markdown, daher Patch-Version).
 
 ### 2. Juli 2026 - Branding-Refresh mit neuer Bildmarke (v1.14.0)
 
@@ -673,27 +706,26 @@ Commit-Titel: `Refine dark mode and header contrast`
 - Fotorealistisches Bild `assets/images/vhs-digitalisierung-hero.webp` lokal eingebunden.
 - Produkt- und VHS-Seite in die Sitemap aufgenommen.
 
-## Aufgabenwarteschlange `tasks.docx`
+## Aufgabenverwaltung
 
-`tasks.docx` im Projektstamm ist die verbindliche priorisierte Warteschlange fuer neue
-Nutzeraufgaben. Die Word-Datei ersetzt die fruehere Textdatei, weil dort auch Screenshots zu
-Aufgaben abgelegt werden koennen.
+Seit dem 02.07.2026 ist [`docs/Tasks.md`](Tasks.md) die **primaere Aufgabenquelle** mit den
+Bereichen "In Arbeit", "Offen" und "Abgeschlossen" (mit Datum, Version, Bearbeiter) sowie den
+Pflege- und Nutzungskontingent-Regeln.
 
-1. Datei vor jeder anderen Arbeit lesen.
-2. Aufgaben anhand von Absaetzen/Leerzeilen in Bloecke aufteilen; eingebettete Bilder gehoeren zur
-   jeweiligen Aufgabe.
-3. Nur den obersten nicht leeren Block bearbeiten.
-4. Aufgabe vollstaendig implementieren, dokumentieren, testen, committen, pushen und live pruefen.
-5. Datei unmittelbar vor dem Entfernen erneut lesen.
-6. Nur die erledigte erste Aufgabe samt zugehoeriger Bilder entfernen; spaetere Aufgaben erhalten.
-7. Bei Aenderung, Blockade oder fehlender Live-Pruefung nichts entfernen.
-8. Die Datei bleibt auch leer im Repository bestehen.
+`tasks.docx` im Projektstamm bleibt als **lokaler Eingang** fuer Aufgaben mit privaten
+Screenshots bestehen (gitignored, nie committen). Fuer `tasks.docx` gilt weiterhin:
 
-## Regeln fuer kuenftige Codex-Aenderungen
+1. Datei zu Beginn jeder Arbeitssitzung lesen (Lese-Snippet in `AGENTS.md`).
+2. Neue Eintraege ohne private Details nach `docs/Tasks.md` spiegeln.
+3. Erledigte Aufgaben erst nach Live-Pruefung entfernen; vorher erneut lesen, damit
+   zwischenzeitlich ergaenzte Aufgaben erhalten bleiben.
+4. Die Datei bleibt auch leer im Projektordner bestehen.
 
-Wenn Codex kuenftig an diesem Projekt arbeitet:
+## Regeln fuer kuenftige Aenderungen (alle Agenten)
 
-- Vor allen anderen Schritten `tasks.docx` nach der oben dokumentierten Warteschlangenregel pruefen.
+Wenn Codex, Claude oder ein anderer Agent an diesem Projekt arbeitet:
+
+- Vor allen anderen Schritten `docs/Tasks.md` (und `tasks.docx`) pruefen.
 - Diese Datei vor groesseren Aenderungen lesen.
 - Nach relevanten Aenderungen den Abschnitt "Bisheriges Aenderungsprotokoll" ergaenzen.
 - Bei visuellen Aenderungen lokale Browserpruefung machen.
@@ -701,3 +733,234 @@ Wenn Codex kuenftig an diesem Projekt arbeitet:
 - Keine fremden oder unsicheren externen Assets einbinden, wenn lokale Assets ausreichen.
 - Kontakt- und Rechtstexte nur bewusst und nachvollziehbar aendern.
 - Bestehende Backup-Branches nicht loeschen, solange sie als Rueckfallpunkt dienen.
+
+---
+
+## SEO- und Marketing-Leitfaden
+
+(uebernommen aus der frueheren `docs/SEO_MARKETING_GUIDE.md`, Stand 24. Juni 2026)
+
+### Zielbegriffe der Website
+
+Die Startseite ist bewusst auf diese Suchabsichten ausgerichtet:
+
+- Sawazki Electronics / Sawazki-Electronics
+- IT-Service Freudenstadt
+- PC-Reparatur Freudenstadt
+- Laptop-Reparatur Freudenstadt
+- Computerhilfe Freudenstadt
+- Windows-Einrichtung, Datensicherung, WLAN und IT-Beratung
+
+Die Begriffe werden in Seitentitel, Beschreibung, Ueberschriften, Fliesstext und
+strukturierten Daten natuerlich verwendet. Ein `meta keywords`-Tag wird nicht eingesetzt,
+weil Google ihn nicht fuer das Ranking verwendet.
+
+### Google-Unternehmensprofil
+
+Bei der Pruefung am 10. Juni 2026 war das Unternehmensprofil gut sichtbar. Als Beschreibung
+wurde jedoch ein alter Impressums-/Datenschutztext angezeigt. Empfohlener Beschreibungstext:
+
+> Sawazki Electronics bietet persoenlichen IT-Service in Freudenstadt fuer Privatkunden,
+> Selbststaendige und kleine Unternehmen. Zum Angebot gehoeren PC- und Laptop-Reparatur,
+> Fehlerdiagnose, Windows- und Geraete-Einrichtung, Datensicherung und Datenuebernahme,
+> Hilfe bei WLAN, Netzwerk und Druckern sowie verstaendliche IT-Beratung. Unterstuetzung ist
+> je nach Anliegen remote oder vor Ort nach Absprache moeglich. Im Mittelpunkt stehen
+> transparente Empfehlungen, sorgfaeltige Umsetzung und Loesungen, die im Alltag zuverlaessig
+> funktionieren.
+
+Im Profil ausserdem regelmaessig pruefen:
+
+- Hauptkategorie `Computersupport und -dienste` beibehalten, wenn sie das Kerngeschaeft trifft.
+- Weitere Kategorien nur ergaenzen, wenn die jeweilige Leistung tatsaechlich angeboten wird.
+- Leistungen einzeln mit denselben Namen wie auf der Website hinterlegen.
+- Neues Logo, Titelbild und echte Arbeitsfotos hochladen.
+- Nach abgeschlossenen Auftraegen sachlich um ehrliche Bewertungen bitten, ohne Anreize anzubieten.
+- Gelegentlich kurze Beitraege zu Reparatur, Datensicherung, Windows oder WLAN veroeffentlichen.
+
+### Einheitliche Firmendaten
+
+Name, Adresse und Telefonnummer sollten auf allen Portalen identisch sein:
+
+```text
+Sawazki Electronics
+Jakob Sawazki
+Moerikestrasse 15
+72250 Freudenstadt
++49 1520 2967632
+sawazki.electronics@googlemail.com
+```
+
+Bei der Pruefung waren ausserhalb des Google-Profils teils abweichende Telefonnummern
+sichtbar (Freudenstaedter Unternehmensverzeichnis, Branchenportale). Alte oder falsche
+Angaben dort korrigieren, damit Google das Unternehmen eindeutig zuordnen kann.
+
+### Google Search Console
+
+1. URL-Praefix `https://jakobsawazki.github.io/sawazki-electronics/` als Property anlegen.
+2. `https://jakobsawazki.github.io/sawazki-electronics/sitemap.xml` einreichen.
+3. Die Startseite mit der URL-Pruefung testen und eine Indexierung beantragen.
+4. Nach einigen Tagen pruefen, ob Seitentitel und Beschreibung uebernommen wurden.
+5. Abdeckungs-, Nutzerfreundlichkeits- und Strukturierte-Daten-Berichte regelmaessig kontrollieren.
+
+### Eigene Domain (naechster strategischer Schritt)
+
+Eine eigene kurze Domain wirkt professioneller und ist leichter zu merken als die
+GitHub-Pages-URL. Empfehlung: eigene Domain statt Kurzlink (Bitly u. ae. nur fuer Kampagnen,
+Flyer, QR-Codes). Gute Zielvarianten: `sawazki-electronics.de`, `sawazki-electronics.com`.
+GitHub Pages kann weiterhin hosten (DNS/CNAME auf die bestehende Seite).
+
+Bei einem Domainwechsel gemeinsam aendern:
+
+1. GitHub-Pages-Custom-Domain und DNS einrichten.
+2. Canonical-URLs, `sitemap.xml`, Open-Graph-URLs und strukturierte Daten aktualisieren.
+3. Google-Unternehmensprofil und Search Console auf die neue Domain umstellen.
+4. Alte GitHub-Pages-URL als funktionierenden Fallback bestehen lassen.
+
+Quellen: GitHub Docs zu Custom Domains
+(<https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site>),
+Bitly Support (<https://support.bitly.com/hc/en-us>).
+
+### Dropshipping-/Shopify-Einschaetzung
+
+Ein generisches Dropshipping-Modell passt aktuell nur begrenzt zur lokalen Vertrauensmarke,
+erzeugt zusaetzliche Pflichten im Onlinehandel und konkurriert schnell ueber Preis,
+Lieferzeit und Support. Staerker waere ein service-naher Produktansatz:
+
+- kleine 3D-gedruckte Technikhelfer nach Bedarf (Kabelhalter, Adapterhalter, Wandhalterungen,
+  Ordnungssysteme fuer Schreibtisch/Netzwerk/Backup)
+- Ersatz- und Funktionsteile, die aus konkreten Kundenproblemen entstehen
+- kleine Sets rund um Datensicherung, Kabelmanagement oder Arbeitsplatz-Einrichtung
+- erst Nachfrage lokal testen, dann wiederkehrende Produkte als Shop-Kategorie aufnehmen
+
+Shopify kann spaeter sinnvoll sein, wenn es mindestens ein klar validiertes Produkt mit
+wiederholbarer Nachfrage, belastbarer Marge, sauberem Lieferprozess und rechtlich geklaerten
+Shop-Texten gibt. Bis dahin behandelt die Website die Produktkategorie bewusst als
+"spaetere ausgewaehlte Produkte".
+
+Quellen: Shopify Dropshipping-Guide (<https://www.shopify.com/blog/dropshipping-guide>),
+Shopify DE Produktbeschaffung (<https://www.shopify.com/de/blog/produktbeschaffung>),
+IHK Stuttgart E-Commerce-Recht
+(<https://www.ihk.de/stuttgart/fuer-unternehmen/recht-und-steuern/it-recht/ecommerce/ecommerce-impressum-4633698>).
+
+---
+
+## Bildauftrag: Einheitliche Projekt- und Servicebilder (erledigt)
+
+(uebernommen aus der frueheren `docs/BILDAUFTRAG_PROJEKTBILDER.md`, Stand 2. Juli 2026,
+Status: **erledigt und eingebaut** – bleibt als Stil- und Prompt-Dokumentation erhalten)
+
+Die Projektkacheln auf der Startseite (`#projekte`) und die Service-Seiten fuer 3D-Druck,
+Datenrettung und Energietechnik haben echte, fotorealistische Bilder in einheitlichem Stil.
+Die ersten Bilder entstanden am 24.06.2026 mit dem integrierten Codex-Bildgenerator, das
+Energietechnik-Bild am 02.07.2026. Alle finalen Bilder sind als WebP optimiert und liegen
+lokal unter `assets/images/`.
+
+### Einheitlicher Stil (fuer ALLE Bilder gleich)
+
+Gemeinsamer Stil-Baustein (an jeden Prompt anhaengen):
+
+> Premium product photography, single hero subject centered, dark navy studio backdrop
+> (#041d34 to #0a4a73 gradient), cyan rim light (#20bfd2), soft cinematic lighting,
+> shallow depth of field, subtle tech bokeh, glossy modern finish, high detail,
+> photorealistic, 1:1 square composition, no text, no letters, no logos, no watermark.
+
+Verbindliche Vorgaben:
+
+- Projektkacheln **1:1**, mindestens **1024x1024**; Service-Heros **16:9** (final 1672x941 px).
+- Format **WebP** (Qualitaet ~82), Kacheln idealerweise < 80 KB.
+- Farbwelt strikt: Navy `#082f57`, Logo-Blau, Cyan `#20bfd2`.
+- **Kein Text, keine Buchstaben, keine Logos** im Bild.
+- Gleicher Bildausschnitt, gleiche Lichtstimmung und gleicher Blickwinkel bei allen Kacheln.
+
+### Motiv-Prompts je Projekt
+
+| Projekt | Motiv-Prompt (Englisch) |
+| --- | --- |
+| PythonLab | `A sleek dark tablet on a studio surface displaying colorful flowing program code and a clean flowchart diagram, glowing cyan accents` |
+| WorkbenchLab | `Three glowing translucent database cylinders stacked and connected by thin light nodes and lines, futuristic data concept` |
+| BM-Lab | `A tidy modern office flat-lay: a neat folder, a few documents, a pen and a small calculator, organized and minimal` |
+| Games Lab | `A premium matte game controller glowing softly with cyan light, a few floating geometric game tokens, playful but elegant` |
+| EC-Lernstudio | `A small clean cardboard parcel with a glowing scan line and floating data points, modern e-commerce logistics concept` |
+| 3D-Druck (Hero) | `A precise FDM 3D printer mid-print creating a smooth object on the print bed, glowing cyan rim light, dark workshop, 16:9 cinematic` |
+| Datenrettung (Hero) | `An opened hard drive (HDD) on a clean workbench with a soft glowing cyan data stream rising from the platter, dark studio, 16:9 cinematic` |
+| Energietechnik (Hero) | `A neat LiFePO4 battery storage unit with a solar panel and a charge controller, glowing cyan accents, off-grid energy concept, dark studio, 16:9 cinematic` |
+
+### Dateinamen und Einbau
+
+- Kacheln: `assets/images/project-pythonlab.webp`, `project-workbenchlab.webp`,
+  `project-bmlab.webp`, `project-gameslab.webp`, `project-eclernstudio.webp`
+  (eingebaut in `index.html` `#projekte` und `projekte.html`; CSS-Plate
+  `.side-project-card img`, 78x78, `object-fit: cover`).
+- Service-Heros: `3d-druck-hero.webp`, `datenrettung-hero.webp`, `energietechnik-hero.webp`
+  als `.vhs-hero-image` in der jeweiligen Angebotsseite sowie als Kartenbild auf
+  `produkte.html`; `og:image` zeigt jeweils auf das Hero-Bild.
+- Bestehende Logos bleiben als Rueckfall erhalten.
+
+---
+
+## Projektgedaechtnis und Firmenkontext
+
+Dieser Abschnitt fasst den Kontext zusammen, der sonst nur in Chats mit den KI-Agenten
+steckt, damit jeder Mitarbeiter/Agent ohne Vorwissen einsteigen kann. Stand: 02.07.2026.
+
+### Firma
+
+- **Sawazki Electronics**, Inhaber Jakob Sawazki, Moerikestrasse 15, 72250 Freudenstadt
+  (Kleingewerbe neben dem Hauptberuf). Oeffentliches Profil siehe `ueber-mich.html`:
+  Elektroniker fuer Geraete und Systeme (Industrie), Ingenieurstudium
+  Elektrotechnik/Informationstechnik, Lehrer fuer Elektrotechnik und Informatik an einer
+  beruflichen Schule.
+- Leistungen: IT-Service (PC/Laptop, Windows, Datensicherung, WLAN, Beratung),
+  VHS-/Camcorder-Digitalisierung, 3D-Druck nach Kundenwunsch, professionelle Datenrettung
+  (physische Schaeden ueber Partnerlabore), Energietechnik = Batteriespeicher (z. B. LiFePO4)
+  und Inselnetz-/Off-Grid-Loesungen. **Wichtig:** netzgekoppelte PV-Anlagen werden bewusst
+  NICHT als eigene Leistung versprochen (regulatorisch: eingetragener Installateur +
+  Netzbetreiber-Anmeldung), sondern nur "in Zusammenarbeit/Absprache".
+- Positionierung/Tonalitaet: persoenlich, lokal, verstaendlich ("IT-Hilfe in Freudenstadt,
+  die man versteht."), Du-Ansprache, ruhig-professionelles Blau-Design, keine Spieleseiten-Optik.
+
+### Arbeitsmodell
+
+- Jakob arbeitet mit mehreren KI-Agenten am selben Repo: **Codex/ChatGPT** (hat einen
+  integrierten Bildgenerator – alle fotorealistischen Bilder stammen daher) und
+  **Claude (Claude Code)** (kein Bildgenerator, dafuer lokale Browser-Verifikation,
+  Godot-/Web-Entwicklung, Doku). Bildwuensche gehen deshalb immer als Prompt-Paket an Codex
+  (siehe Bildauftrag oben).
+- Einstieg fuer jeden Agenten: `AGENTS.md` → `docs/Tasks.md` → diese Datei.
+- Veroeffentlichung: Commit + Push auf `main`, GitHub Pages deployt automatisch.
+  Bekannte Stoerung am 02.07.2026: Deployment blieb in `deployment_queued` haengen;
+  Loesung war `gh run rerun <id>` bzw. ein kleiner Trigger-Commit.
+- Google Drive synchronisiert den Projektordner zwischen Geraeten; daher die
+  `desktop.ini`-Falle (siehe `AGENTS.md`, Technik-Hinweise).
+
+### Grundsatzentscheidungen (mit Begruendung)
+
+- **Statische Website ohne Backend/Framework:** wartungsarm, datensparsam, kostenlos auf
+  GitHub Pages; Formulare ueber FormSubmit statt eigenem Server.
+- **Keine externen Fonts/CDNs:** Datenschutz und Ladezeit.
+- **Dark Mode als Standard** mit persistentem Umschalter.
+- **Keine erfundenen Inhalte:** Testimonials, Referenzfotos und Portraet warten auf echtes
+  Material von Jakob; keine Fantasiepreise oder Reaktionszeit-Versprechen.
+- **Versionierung** MAJOR.MINOR.PATCH seit 24.06.2026, rueckwirkend ab v1.0.0 (20.05.2026).
+- **Ordner-Historie:** Der Doppelstand `...\Codex\sawazki-electronics` wurde am 02.07.2026
+  geloescht; `...\Gewerbe\Sawazki Electronics Website` wurde in
+  `...\Gewerbe\Sawazki Electronics` umbenannt – einzige lokale Kopie.
+
+### Verwandte Projekte (eigene Repos, auf der Website verlinkt)
+
+| Projekt | Inhalt | Live |
+| --- | --- | --- |
+| PythonLab | Python lernen, Struktogramme | <https://jakobsawazki.github.io/PythonLab/> |
+| WorkbenchLab | Datenbanken/SQL ueben | <https://jakobsawazki.github.io/WorkbenchLab/> |
+| BM-Lab | Bueromanagement-Lernportal | <https://jakobsawazki.github.io/bm-lernportal/> |
+| Games Lab | Spiele und Experimente | <https://jakobsawazki.github.io/games-lab/> |
+| EC-Lernstudio | E-Commerce-Lernfelder (LF2/LF7) | <https://jakobsawazki.github.io/ec-lernstudio-lf7/> |
+
+Alle Kacheln tragen einheitlich "Designed by Sawazki Electronics". Neue Projekte: Karte im
+Projektbereich der Startseite + Vorstellung auf `projekte.html`, nicht im Footer duplizieren.
+
+### Offene strategische Themen
+
+Siehe `docs/Tasks.md` (Abschnitt "Offen"): eigene Domain, Google-Unternehmensprofil,
+Search Console, echte Testimonials/Fotos, rechtliche Pruefung der Datenschutzerklaerung
+bei konkretem Geschaeftsbetrieb.
