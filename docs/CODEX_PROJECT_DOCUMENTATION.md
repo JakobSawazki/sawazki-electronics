@@ -1,6 +1,6 @@
 # Sawazki Electronics Website - Codex Projektdokumentation
 
-Stand: 24. Juni 2026 · Version: v1.10.0
+Stand: 2. Juli 2026 · Version: v1.11.0
 
 Diese Dokumentation dient als Arbeitsgrundlage fuer Codex und fuer die Weiterarbeit auf einem anderen Laptop. Sie soll bei kuenftigen Aenderungen fortgeschrieben werden: Was wurde geaendert, warum, in welchen Dateien und wie wurde geprueft.
 
@@ -12,6 +12,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.11.0 | 2026-07-02 | 404-Fehlerseite, vollstaendiges Service-Schema, CLS-/Performance-Politur, Ordner-Konsolidierung |
 | v1.10.0 | 2026-06-24 | Energietechnik-Service (Batteriespeicher & Inselnetz) inkl. Produkte-/Anfrage-/Sitemap-Integration |
 | v1.9.0 | 2026-06-24 | Schwebender WhatsApp-Kontaktbutton auf allen Seiten (direkter Draht zu Jakob) |
 | v1.8.0 | 2026-06-24 | Neue Seite `ueber-mich.html` (Vertrauen/Profil) inkl. Footer-Verlinkung auf allen Seiten |
@@ -35,7 +36,7 @@ steht weiter unten.
 - GitHub Repository: `JakobSawazki/sawazki-electronics`
 - Live-Seite: <https://jakobsawazki.github.io/sawazki-electronics/>
 - Lokaler Arbeitsordner (Acer Nitro 5, via Google Drive Desktop synchronisiert): `D:\Google Drive\Gewerbe\Sawazki Electronics Website`
-- Aelterer Pfad auf einem anderen Geraet: `G:\Meine Ablage\Codex\sawazki-electronics` (kann je nach Laptop abweichen)
+- Einzige lokale Kopie. Der aeltere Doppelstand `...\Codex\sawazki-electronics` (Commit `335a5f1`, Vorfahr von `main`) wurde am 02.07.2026 geprueft und geloescht. Auf anderen Geraeten gilt der Google-Drive-Pfad dieses Gewerbe-Ordners (z. B. `G:\Meine Ablage\Gewerbe\Sawazki Electronics Website`).
 - Standard-Branch: `main`
 - Backup-Branch vor der Hero-/Hintergrund-Ueberarbeitung: `codex/backup-startseite-2026-05-20`
 
@@ -54,6 +55,7 @@ Wichtige Dateien:
 - `datenschutz.html`: Datenschutzerklaerung
 - `agb.html`: Allgemeine Geschaeftsbedingungen
 - `danke.html`: Zielseite nach erfolgreichem Formularversand
+- `404.html`: gebrandete Fehlerseite fuer GitHub Pages (absolute URLs, noindex, nicht in der Sitemap)
 - `assets/css/styles.css`: gesamtes Layout, Farben, Responsive Design, Hover-Effekte
 - `assets/js/main.js`: Navigation, Scroll-Header, Reveal-Animationen, Formular-Betreff
 - `assets/js/theme.js`: Dark Mode als Standard und lokal gespeicherte Theme-Auswahl
@@ -212,6 +214,32 @@ Nach dem Veröffentlichen:
 - Commit-Kuerzel in dieser Dokumentation im Aenderungsprotokoll ergaenzen
 
 ## Bisheriges Aenderungsprotokoll
+
+### 2. Juli 2026 - 404-Seite, Service-Schema komplett, Performance-Politur (v1.11.0)
+
+- Ordner-Konsolidierung: Der alte Doppelstand `...\Codex\sawazki-electronics` (Commit
+  `335a5f1`, Vorfahr von `main`) wurde nach Pruefung durch Codex von Jakob geloescht.
+  Einzige lokale Kopie ist seitdem dieser Gewerbe-Ordner (in AGENTS.md, CODEX_HANDOVER.md
+  und Kurzueberblick dokumentiert).
+- Neue `404.html` als gebrandete Fehlerseite fuer GitHub Pages: nutzt die vorhandenen
+  `thank-you`-Klassen, noindex, WhatsApp-Button. **Absolute URLs mit Absicht**, weil
+  GitHub Pages die Seite auch fuer verschachtelte fehlende Pfade ausliefert und relative
+  Pfade dann brechen wuerden. Bewusst nicht in `sitemap.xml` aufgenommen.
+- LocalBusiness-`OfferCatalog` auf der Startseite um die drei neueren Dienstleistungen
+  ergaenzt: 3D-Druck nach Kundenwunsch, Professionelle Datenrettung sowie
+  Batteriespeicher- und Inselnetzloesungen (JSON-LD mit JSON.parse geprueft).
+- CLS-/Ladezeit-Politur auf der Startseite: alle 16 Bilder haben jetzt `width`/`height`-
+  Attribute (Seitenverhaeltnis vor dem Laden bekannt, weniger Layout-Shift), das
+  Hero-Bild laedt mit `fetchpriority="high"`, unterhalb liegende Bilder mit
+  `loading="lazy" decoding="async"`; die Projektkacheln laden jetzt ebenfalls lazy.
+- Neue Basisregeln in `styles.css`: `img:where([width][height]) { height: auto; }`
+  (CLS-Schutz; `:where()` haelt die Spezifitaet bei 0, Komponentenregeln behalten
+  Vorrang) und `text-wrap: balance` fuer `h1`-`h3` (ruhigere Umbrueche, progressive
+  Enhancement).
+- Stylesheet-/Theme-Cache-Token auf allen Seiten einheitlich auf `20260702-polish`
+  angehoben. `main.js` blieb unveraendert (Token unveraendert).
+- `.gitignore` ergaenzt: `desktop.ini` (Windows-/Google-Drive-Sync-Artefakte) bleibt
+  kuenftig aus `git status` heraus.
 
 ### 24. Juni 2026 - Energietechnik-Service: Batteriespeicher & Inselnetz (v1.10.0)
 

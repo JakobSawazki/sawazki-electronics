@@ -23,7 +23,8 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - Vereinheitlichte Projektkacheln mit einheitlichem „App-Icon"-Framing
 - Leistungsübersicht für PC, Laptop, Sicherheit, Backup, Netzwerk und Beratung
 - Unsichtbare lokale SEO-Ausrichtung auf IT-Service sowie PC- und Laptop-Reparatur in Freudenstadt
-- Strukturierte Unternehmensdaten, Canonical-URLs und optimierte Social-Media-Vorschauen
+- Strukturierte Unternehmensdaten (inkl. vollständigem Service-Katalog), Canonical-URLs und optimierte Social-Media-Vorschauen
+- Gebrandete 404-Fehlerseite und Performance-Feinschliff (Bildmaße gegen Layout-Shift, priorisiertes Hero-Bild, Lazy-Loading)
 - Visuell geführter Ablaufbereich mit großen Ziffern und Pfeilen für Anfrage, Analyse, Umsetzung und Übergabe
 - Kontaktformular und geführter `Anfrage-Assistent` über FormSubmit
 - Einheitlicher Projektbereich mit PythonLab, WorkbenchLab, BM-Lab, Games Lab und EC-Lernstudio
@@ -43,6 +44,7 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - Über mich: `ueber-mich.html`
 - Anfrage-Assistent: `anfrage-assistent.html`
 - Danke-Seite nach Formularversand: `danke.html`
+- Fehlerseite (GitHub Pages): `404.html`
 - Impressum: `impressum.html`
 - Datenschutz: `datenschutz.html`
 - AGB: `agb.html`

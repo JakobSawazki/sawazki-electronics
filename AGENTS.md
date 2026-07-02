@@ -7,6 +7,9 @@ Dienstleistungen). Diese Datei sagt dir in Kürze, was zu tun ist. Details stehe
 - **Live:** https://jakobsawazki.github.io/sawazki-electronics/
 - **Repo:** https://github.com/JakobSawazki/sawazki-electronics · Branch `main`
 - **Lokal (Acer Nitro 5, Google-Drive-Sync):** `D:\Google Drive\Gewerbe\Sawazki Electronics Website`
+  – dies ist die **einzige** lokale Kopie. Der frühere Doppelstand
+  `…\Codex\sawazki-electronics` wurde am 02.07.2026 nach Prüfung (veralteter Vorfahr von
+  `main`) endgültig gelöscht. Nicht neu anlegen, nicht referenzieren.
 - **Technik:** rein statisch – HTML, CSS, JS. Kein Build, kein Framework, keine Paketabhängigkeiten.
 
 ## So startest du (Reihenfolge)
