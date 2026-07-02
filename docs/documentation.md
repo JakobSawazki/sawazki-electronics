@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 2. Juli 2026 · Version: v1.16.0
+Stand: 2. Juli 2026 · Version: v1.16.1
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.16.1 | 2026-07-02 | Brand-Asset-Konsolidierung: alte Sawazki-Logo-/Icon-Dateien in `assets/images/brand/` archiviert |
 | v1.16.0 | 2026-07-02 | Interaktiver Preis-Schaetzer auf der VHS-Digitalisierungsseite (Staffel, Laufzeit, USB-Option) |
 | v1.15.0 | 2026-07-02 | Vollstaendiges Firmenlogo als Hero-Modul der Startseite (optimierte WebP-Variante) |
 | v1.14.1 | 2026-07-02 | Doku-Konsolidierung: AGENTS.md als zentrale Uebergabe, `docs/tasks.md`, `docs/documentation.md` |
@@ -101,10 +102,11 @@ Wichtige Dateien:
 
 Aktiv genutzt:
 
-- `assets/images/brand/sawazki-brand-symbol.webp`: optimierte aktuelle Bildmarke, genutzt in Navigation und Hero-Modul
+- `assets/images/brand/sawazki-brand-logo.webp`: optimiertes vollstaendiges Firmenlogo, genutzt im Hero-Modul der Startseite
+- `assets/images/brand/sawazki-brand-logo.png`: PNG-Variante des vollstaendigen Firmenlogos, genutzt fuer OpenGraph-/Twitter-Social-Previews
+- `assets/images/brand/sawazki-brand-symbol.webp`: optimierte aktuelle Bildmarke, genutzt in Navigation und kleinen Brand-Modulen
 - `assets/images/brand/sawazki-brand-symbol.png`: PNG-Variante der aktuellen Bildmarke, genutzt in strukturierten Daten
 - `assets/images/brand/favicon.ico` und `assets/images/brand/favicon.png`: aktuelles Browser-Favicon
-- `assets/images/sawazki-electronics-logo.png`: breites Unternehmenslogo, weiterhin als OpenGraph-/Social-Vorschau genutzt
 - `assets/images/customer-consulting.jpg`: Beratung/Kundengespraech, Hero-Hintergrund und Diagnosebereich
 - `assets/images/repair-laptop.jpg`: neu generiertes Laptop-Reparaturfoto, Praxisbereich und Detailband
 - `assets/images/smartphone-repair.jpg`: Elektronik/Kleingeraete
@@ -120,7 +122,6 @@ Aktiv genutzt:
 Noch vorhanden als moegliche Rueckfall- oder Alternativassets:
 
 - `assets/images/hero-workbench.png`
-- `assets/images/sawazki-electronics-mark.png`
 - `assets/images/support-dashboard.png`
 - `assets/images/hardware-detail.png`
 - `assets/images/games-lab-logo.png`
@@ -128,7 +129,9 @@ Noch vorhanden als moegliche Rueckfall- oder Alternativassets:
 - `assets/images/workbenchlab-logo.webp`
 - `assets/images/bm-lernportal-logo.svg`
 - `assets/images/ec-lernstudio-logo.svg`
-- `assets/icons/favicon.svg`
+- `assets/images/brand/legacy-sawazki-electronics-logo.png`: frueheres breites Website-Logo
+- `assets/images/brand/legacy-sawazki-electronics-mark.png`: fruehere quadratische Bildmarke
+- `assets/images/brand/legacy-favicon.svg`: frueheres SVG-Favicon
 - `assets/images/brand/brand.png` und `assets/images/brand/brand_symbol.png` als Roh-Exports der neuen Bildmarke
 
 Originale Logoquellen auf dem aktuellen Laptop:
@@ -239,6 +242,18 @@ Nach dem Veröffentlichen:
 - Commit-Kuerzel in dieser Dokumentation im Aenderungsprotokoll ergaenzen
 
 ## Bisheriges Aenderungsprotokoll
+
+### 2. Juli 2026 - Brand-Asset-Konsolidierung (v1.16.1)
+
+- Alte ersetzte Sawazki-Brand-Dateien aus den Root-Asset-Ordnern in den zentralen Brand-Bereich
+  verschoben: `legacy-sawazki-electronics-logo.png`, `legacy-sawazki-electronics-mark.png`
+  und `legacy-favicon.svg` liegen jetzt unter `assets/images/brand/`.
+- Neue Social-Preview-PNG `assets/images/brand/sawazki-brand-logo.png` aus dem optimierten
+  vollstaendigen Logo erzeugt (1200x400 px) und die OpenGraph-/Twitter-Referenzen auf
+  `index.html`, `projekte.html` und `ueber-mich.html` darauf umgestellt.
+- Ergebnis: aktive und historische Sawazki-Logo-/Favicon-Dateien sind konsistent im
+  Brand-Ordner gebuendelt; der alte Root-Pfad `assets/images/sawazki-electronics-logo.png`
+  wird nicht mehr verwendet.
 
 ### 2. Juli 2026 - VHS-Preis-Schaetzer (v1.16.0)
 
