@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 2. Juli 2026 · Version: v1.14.1
+Stand: 2. Juli 2026 · Version: v1.15.0
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.15.0 | 2026-07-02 | Vollstaendiges Firmenlogo als Hero-Modul der Startseite (optimierte WebP-Variante) |
 | v1.14.1 | 2026-07-02 | Doku-Konsolidierung: AGENTS.md als zentrale Uebergabe, `docs/Tasks.md`, `docs/documentation.md` |
 | v1.14.0 | 2026-07-02 | Branding-Refresh: neues Brand-Symbol, Favicon, Hero-Logo-Modul und groessere Hero-Servicebilder |
 | v1.13.0 | 2026-07-02 | UX-/Grafik-Ausbau: Service-Finder auf der Startseite, Energietechnik-Hero-/Kartenbild, neuer kanonischer Gewerbe-Ordner |
@@ -237,6 +238,28 @@ Nach dem Veröffentlichen:
 - Commit-Kuerzel in dieser Dokumentation im Aenderungsprotokoll ergaenzen
 
 ## Bisheriges Aenderungsprotokoll
+
+### 2. Juli 2026 - Vollstaendiges Firmenlogo im Hero (v1.15.0)
+
+- Wunsch von Jakob: Das komplette Logo `assets/images/brand/brand.png` soll oben auf der
+  Startseite erscheinen. Aus der 901-KB-Rohdatei (2172x724) wurde die optimierte
+  Web-Variante `assets/images/brand/sawazki-brand-logo.webp` erzeugt
+  (1200x400, WebP q82, ~21 KB; per Python/Pillow).
+- Hero-Modul `.hero-brand-card` zeigt jetzt das vollflaechige Logo statt Symbol+Text:
+  neue Klasse `.hero-brand-logo`, Karte ohne Innenabstand mit weissem Hintergrund
+  (Logo hat weissen Hintergrund), 430px Desktop / 330px mobil, 3:1-Seitenverhaeltnis,
+  `width`/`height`-Attribute (CLS-Schutz) und `fetchpriority="high"`. Lichtlauf-,
+  Rahmen- und Hover-Effekte bleiben erhalten; Hover-Zoom dezenter (scale 1.03 statt
+  1.065 mit Rotation).
+- Nicht mehr genutzte CSS-Regeln `.hero-brand-symbol`/`.hero-brand-text` inkl.
+  Mobile-Varianten entfernt.
+- Eyebrow unter dem Logo zu "IT, PC & Laptop · Service & Support" geaendert - der
+  Markenname steht jetzt gross im Logo, doppelte Nennung vermieden.
+- Header-Symbol, Favicon und strukturierte Daten unveraendert; `brand.png` bleibt als
+  Rohquelle erhalten und wurde mitversioniert.
+- Stylesheet-Cache-Token auf allen 14 Seiten auf `20260702-hero-logo` angehoben.
+- Lokal geprueft: Logo laedt (1200x400 nativ), Karte 430x145 Desktop / 330x111 mobil,
+  kein horizontaler Overflow, Konsole ohne Fehler.
 
 ### 2. Juli 2026 - Doku-Konsolidierung (v1.14.1)
 

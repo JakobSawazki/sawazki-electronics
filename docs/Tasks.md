@@ -27,6 +27,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-07-02 | v1.15.0 | Vollständiges Firmenlogo (`brand.png` → optimiertes `sawazki-brand-logo.webp`, 21 KB) als Hero-Modul der Startseite | Claude |
 | 2026-07-02 | v1.14.1 | Doku-Konsolidierung: AGENTS.md als zentrale Übergabe (inkl. CODEX_HANDOVER), `docs/Tasks.md`, `docs/documentation.md` (inkl. SEO-Leitfaden, Bildauftrag, Projektgedächtnis) | Claude |
 | 2026-07-02 | v1.14.0 | Branding-Refresh: neues Brand-Symbol, Favicon, Hero-Logo-Modul, größere Hero-Servicebilder | Codex |
 | 2026-07-02 | v1.13.0 | Service-Finder auf der Startseite, Energietechnik-Hero-/Kartenbild, kanonischer Gewerbe-Ordner | Codex |

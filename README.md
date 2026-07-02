@@ -10,7 +10,7 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - Footer mit direktem Telefon- und E-Mail-Kontakt auf allen Seiten; WhatsApp zusätzlich im Kontaktbereich
 - Dezente Leiterbahn-/Knotenpunktmuster auf den hellen Flächen statt leerem Weiß
 - Interaktives Hero-Logo mit Lichtlauf und direktem Sprung zu den Leistungen
-- Neues einheitliches Brand-Symbol aus `assets/images/brand/` in Header, Hero-Bereich und Browser-Favicon
+- Vollständiges Firmenlogo als interaktives Hero-Modul (optimierte WebP-Variante aus `assets/images/brand/`); Brand-Symbol in Header und Browser-Favicon
 - Größere Hero-Servicebilder auf der Startseite, damit das Kundengespräch stärker wirkt
 - Projektkarten mit einheitlichen fotorealistischen Bildkacheln für PythonLab, WorkbenchLab, BM-Lab, Games Lab und EC-Lernstudio
 - Direkter Navigationspunkt `Projekte` mit Sprung zum Projektbereich der Startseite
