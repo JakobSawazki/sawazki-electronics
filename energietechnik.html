@@ -4,8 +4,8 @@
   Schwerpunkt Batteriespeicher (z. B. LiFePO4) und Inselnetz-/Off-Grid-Loesungen.
   Bewusst KEIN netzgekoppelter PV-Anschluss als Versprechen (regulatorisch: Elektrofachkraft/
   Netzbetreiber-Anmeldung) - das ist nur in Zusammenarbeit/Absprache moeglich (siehe FAQ).
-  Nutzt die vorhandenen Service-Layoutklassen; Hero-Klasse .energy-hero nutzt den gemeinsamen
-  gebrandeten Verlauf. OFFEN: Hero-Foto assets/images/energietechnik-hero.webp (Bildauftrag).
+  Nutzt die vorhandenen Service-Layoutklassen; Hero-Klasse .energy-hero nutzt das lokale
+  Hero-Foto assets/images/energietechnik-hero.webp mit gebrandetem Overlay.
 -->
 <html lang="de">
   <head>
@@ -36,12 +36,12 @@
     <meta property="og:locale" content="de_DE" />
     <meta
       property="og:image"
-      content="https://jakobsawazki.github.io/sawazki-electronics/assets/images/sawazki-electronics-logo.png"
+      content="https://jakobsawazki.github.io/sawazki-electronics/assets/images/energietechnik-hero.webp"
     />
     <meta property="og:image:alt" content="Sawazki Electronics – Batteriespeicher und Inselnetz" />
     <link rel="icon" href="assets/images/sawazki-electronics-mark.png" type="image/png" />
     <script src="assets/js/theme.js?v=20260702-marketing"></script>
-    <link rel="stylesheet" href="assets/css/styles.css?v=20260702-marketing" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260702-ux-graphics" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -142,6 +142,7 @@
 
     <main id="main">
       <section class="vhs-hero energy-hero" aria-labelledby="energy-title">
+        <img class="vhs-hero-image" src="assets/images/energietechnik-hero.webp" alt="" aria-hidden="true" width="1672" height="941" />
         <div class="vhs-hero-overlay" aria-hidden="true"></div>
         <div class="vhs-hero-content">
           <p class="eyebrow reveal">Energietechnik · Batteriespeicher &amp; Inselnetz</p>

@@ -6,6 +6,7 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 
 - Professionelle Startseite mit nutzenorientiertem Hero („IT-Hilfe in Freudenstadt, die man versteht."), lokalen Bildassets und blauem Sawazki-Electronics-Branding
 - Vertrauensband „Warum Sawazki Electronics" und direkter Angebots-Teaser zu allen vier Service-Seiten auf der Startseite
+- Dunkler Service-Finder auf der Startseite, damit Besucher schneller zum passenden Einstieg kommen
 - Footer mit direktem Telefon- und E-Mail-Kontakt auf allen Seiten; WhatsApp zusätzlich im Kontaktbereich
 - Dezente Leiterbahn-/Knotenpunktmuster auf den hellen Flächen statt leerem Weiß
 - Interaktives Hero-Logo mit Lichtlauf und direktem Sprung zu den Leistungen
@@ -19,7 +20,7 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - Eigene Angebotsseite für VHS-, VHS-C- und Camcorder-Kassetten-Digitalisierung
 - Eigene Angebotsseite für 3D-Druck nach Kundenwunsch (individuelle Drucke, Hilfe bei 3D-Modellen, Prototypen, Ersatzteile)
 - Eigene Angebotsseite für professionelle Datenrettung (logische und physische Schäden, Partnerlabore für defekte Datenträger)
-- Eigene Angebotsseite für Batteriespeicher und Inselnetzlösungen (Energietechnik, netzunabhängig/Off-Grid)
+- Eigene Angebotsseite für Batteriespeicher und Inselnetzlösungen (Energietechnik, netzunabhängig/Off-Grid) mit eigenem Hero-/Kartenbild
 - „Über mich"-Seite mit beruflichem Profil (Industrie-Elektronik, Energietechnik, Lehre)
 - Schwebender WhatsApp-Kontaktbutton auf allen Seiten (direkt an Jakob, kein Bot)
 - Vereinheitlichte Projektkacheln mit einheitlichem „App-Icon"-Framing

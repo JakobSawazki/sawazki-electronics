@@ -1,6 +1,6 @@
 # Sawazki Electronics Website - Codex Projektdokumentation
 
-Stand: 2. Juli 2026 · Version: v1.12.0
+Stand: 2. Juli 2026 · Version: v1.13.0
 
 Diese Dokumentation dient als Arbeitsgrundlage fuer Codex und fuer die Weiterarbeit auf einem anderen Laptop. Sie soll bei kuenftigen Aenderungen fortgeschrieben werden: Was wurde geaendert, warum, in welchen Dateien und wie wurde geprueft.
 
@@ -12,6 +12,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.13.0 | 2026-07-02 | UX-/Grafik-Ausbau: Service-Finder auf der Startseite, Energietechnik-Hero-/Kartenbild, neuer kanonischer Gewerbe-Ordner |
 | v1.12.0 | 2026-07-02 | Marketing-/UX-Ausbau Startseite: nutzenorientierter Hero, Angebots-Teaser, Warum-Band, Kontakt-/Footer-Ausbau |
 | v1.11.0 | 2026-07-02 | 404-Fehlerseite, vollstaendiges Service-Schema, CLS-/Performance-Politur, Ordner-Konsolidierung |
 | v1.10.0 | 2026-06-24 | Energietechnik-Service (Batteriespeicher & Inselnetz) inkl. Produkte-/Anfrage-/Sitemap-Integration |
@@ -36,8 +37,8 @@ steht weiter unten.
 - Zweck: professionelle Homepage fuer IT-, PC-, Laptop-, Support- und Elektronikdienstleistungen
 - GitHub Repository: `JakobSawazki/sawazki-electronics`
 - Live-Seite: <https://jakobsawazki.github.io/sawazki-electronics/>
-- Lokaler Arbeitsordner (Acer Nitro 5, via Google Drive Desktop synchronisiert): `D:\Google Drive\Gewerbe\Sawazki Electronics Website`
-- Einzige lokale Kopie. Der aeltere Doppelstand `...\Codex\sawazki-electronics` (Commit `335a5f1`, Vorfahr von `main`) wurde am 02.07.2026 geprueft und geloescht. Auf anderen Geraeten gilt der Google-Drive-Pfad dieses Gewerbe-Ordners (z. B. `G:\Meine Ablage\Gewerbe\Sawazki Electronics Website`).
+- Lokaler Arbeitsordner (Acer Nitro 5, via Google Drive Desktop synchronisiert): `D:\Google Drive\Gewerbe\Sawazki Electronics`
+- Einzige lokale Kopie. Der aeltere Doppelstand `...\Codex\sawazki-electronics` (Commit `335a5f1`, Vorfahr von `main`) wurde am 02.07.2026 geprueft und geloescht. Der fruehere Ordner `...\Gewerbe\Sawazki Electronics Website` wurde am 02.07.2026 in den obigen Gewerbe-Ordner umbenannt. Auf anderen Geraeten gilt der Google-Drive-Pfad dieses Gewerbe-Ordners (z. B. `G:\Meine Ablage\Gewerbe\Sawazki Electronics`).
 - Standard-Branch: `main`
 - Backup-Branch vor der Hero-/Hintergrund-Ueberarbeitung: `codex/backup-startseite-2026-05-20`
 
@@ -91,6 +92,7 @@ Aktiv genutzt:
   Videokassetten-Digitalisierung
 - `assets/images/3d-druck-hero.webp`: fotorealistisches Hero-Bild fuer die 3D-Druck-Dienstleistung
 - `assets/images/datenrettung-hero.webp`: fotorealistisches Hero-Bild fuer die Datenrettung
+- `assets/images/energietechnik-hero.webp`: fotorealistisches Hero- und Kartenbild fuer Batteriespeicher und Inselnetzloesungen
 - `assets/images/project-pythonlab.webp`, `project-workbenchlab.webp`, `project-bmlab.webp`,
   `project-gameslab.webp`, `project-eclernstudio.webp`: einheitliche, fotorealistische
   Projektbilder fuer Startseite und `projekte.html`
@@ -216,6 +218,27 @@ Nach dem Veröffentlichen:
 
 ## Bisheriges Aenderungsprotokoll
 
+### 2. Juli 2026 - UX-/Grafik-Ausbau und neuer Gewerbe-Ordner (v1.13.0)
+
+- Kanonischer Arbeitsordner ist jetzt `D:\Google Drive\Gewerbe\Sawazki Electronics`.
+  Der fruehere Ordner `D:\Google Drive\Gewerbe\Sawazki Electronics Website` wurde in
+  diesen Zielordner umbenannt, damit kuenftig nur noch ein Gewerbe-Pfad verwendet wird.
+- Neues lokales Bild `assets/images/energietechnik-hero.webp` mit dem integrierten
+  Codex-Bildgenerator erzeugt, als WebP optimiert (1672x941 px, ca. 65 KB) und in
+  `energietechnik.html` als Hero-Bild sowie OpenGraph-Bild eingebunden.
+- Energietechnik-Karte auf `produkte.html` nutzt jetzt ebenfalls das neue Bild; der alte
+  CSS-Platzhalter (`.featured-product-image.is-placeholder`, `.featured-placeholder-label`)
+  wurde aus `assets/css/styles.css` entfernt.
+- Startseite um den dunklen Service-Finder `.service-finder` erweitert: Besucher koennen
+  schneller zwischen PC/Laptop-Hilfe, VHS-Digitalisierung, 3D-Druck, Datenrettung und
+  Energietechnik navigieren. Ziel: weniger Ratlosigkeit vor dem Formular und direktere
+  Wege zu den passenden Angebotsseiten.
+- Neue CSS-Bausteine: `.service-finder`, `.service-finder-copy`, `.service-finder-grid`,
+  `.finder-card`, `.finder-icon` inkl. Hover-, Grid- und Mobile-Regeln.
+- Stylesheet-Cache-Token auf allen HTML-Seiten auf `20260702-ux-graphics` angehoben.
+- `docs/BILDAUFTRAG_PROJEKTBILDER.md`, `AGENTS.md`, `CODEX_HANDOVER.md`, README und diese
+  Projektdokumentation wurden auf den neuen Stand gebracht.
+
 ### 2. Juli 2026 - Marketing-/UX-Ausbau der Startseite (v1.12.0)
 
 - Hero nutzenorientiert umgebaut: Das Eyebrow traegt jetzt die Marke
@@ -278,9 +301,9 @@ Nach dem Veröffentlichen:
   „Energietechnik" im Anfrage-Assistenten, Eintrag in `sitemap.xml`. `Service`- und
   `FAQPage`-Structured-Data ergaenzt (mit ConvertFrom-Json geprueft).
 - Platzhalter-CSS (`.featured-product-image.is-placeholder`/`.featured-placeholder-label`)
-  fuer die Energie-Servicekarte wieder eingefuehrt (noch kein Foto). Stylesheet-Cache-Token auf
-  `20260624-energie` angehoben (alle Seiten konsistent).
-- **Offen:** Hero-/Kartenbild `energietechnik-hero.webp` (im Bildauftrag ergaenzt).
+  fuer die Energie-Servicekarte wieder eingefuehrt (damals noch kein Foto). Stylesheet-Cache-Token auf
+  `20260624-energie` angehoben (alle Seiten konsistent). Der Platzhalter wurde in v1.13.0
+  durch `assets/images/energietechnik-hero.webp` ersetzt.
 
 ### 24. Juni 2026 - WhatsApp-Kontaktbutton (v1.9.0)
 

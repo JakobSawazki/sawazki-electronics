@@ -1,6 +1,6 @@
 # Codex-Übergabe: Sawazki Electronics Website
 
-Stand: 2. Juli 2026 · Version: v1.12.0
+Stand: 2. Juli 2026 · Version: v1.13.0
 
 Diese Datei ist der Einstiegspunkt für einen neuen Codex-Agenten. Vor Änderungen zuerst diese
 Übergabe, anschließend bei Bedarf die ausführliche Projektdokumentation unter
@@ -16,9 +16,9 @@ Diese Datei ist der Einstiegspunkt für einen neuen Codex-Agenten. Vor Änderung
 - Zweck: professionelle Firmen-Homepage für IT-, PC-, Laptop- und Support-Dienstleistungen
 - Repository: <https://github.com/JakobSawazki/sawazki-electronics>
 - Live-Seite: <https://jakobsawazki.github.io/sawazki-electronics/>
-- Lokaler Projektordner (Acer Nitro 5, via Google Drive Desktop synchronisiert): `D:\Google Drive\Gewerbe\Sawazki Electronics Website` — **einzige lokale Kopie.** Der frühere Doppelstand unter `…\Codex\sawazki-electronics` (Commit `335a5f1`, Vorfahr von `main`) wurde am 02.07.2026 geprüft und gelöscht; auf anderen Geräten entspricht der Ordner dem Google-Drive-Pfad dieses Gewerbe-Ordners (z. B. `G:\Meine Ablage\Gewerbe\Sawazki Electronics Website`).
+- Lokaler Projektordner (Acer Nitro 5, via Google Drive Desktop synchronisiert): `D:\Google Drive\Gewerbe\Sawazki Electronics` — **einzige lokale Kopie.** Der frühere Doppelstand unter `…\Codex\sawazki-electronics` (Commit `335a5f1`, Vorfahr von `main`) wurde am 02.07.2026 geprüft und gelöscht; der frühere Ordner `…\Gewerbe\Sawazki Electronics Website` wurde in diesen Gewerbe-Ordner umbenannt. Auf anderen Geräten entspricht der Ordner dem Google-Drive-Pfad dieses Gewerbe-Ordners (z. B. `G:\Meine Ablage\Gewerbe\Sawazki Electronics`).
 - Standard-Branch: `main`
-- Zuletzt geprüfter Funktionsstand: Marketing-/UX-Ausbau der Startseite (nutzenorientierter Hero, Angebots-Teaser, „Warum"-Band, Kontakt-/Footer-Ausbau) vom 2. Juli 2026 (v1.12.0)
+- Zuletzt geprüfter Funktionsstand: UX-/Grafik-Ausbau mit Service-Finder auf der Startseite und echtem Energietechnik-Hero-/Kartenbild vom 2. Juli 2026 (v1.13.0)
 - Hosting: GitHub Pages direkt aus dem Repository
 
 Die Website ist statisch. Es gibt keinen Build-Prozess, kein Framework und keine Paketabhängigkeiten.
@@ -236,6 +236,10 @@ Für neue öffentliche HTML-Seiten außerdem `sitemap.xml`, Navigation, Footer u
   auf diese Seite.
 - Der Hauptmenüpunkt `Services` führt zum erweiterbaren Service- und Angebotsbereich unter `produkte.html`.
 - Der Hauptmenüpunkt `Projekte` führt auf allen Seiten direkt zum Projektbereich der Startseite.
+- Die Startseite enthält zusätzlich einen dunklen Service-Finder (`.service-finder`) als schnelle
+  Orientierung: PC/Laptop, VHS, 3D-Druck, Datenrettung und Energietechnik führen direkt zum passenden Einstieg.
+- Energietechnik nutzt jetzt das lokale Bild `assets/images/energietechnik-hero.webp` als Hero,
+  OpenGraph-Bild und Kartenmotiv auf `produkte.html`; der frühere Platzhalter ist entfernt.
 - Ein kompakter, barrierearm beschrifteter Theme-Schalter bietet einen persistenten Light- und
   Dark-Mode. Dark Mode ist die Standardansicht.
 - `vhs-digitalisierung.html` beschreibt Formate, Ablauf, Preisstaffeln, FAQ und Anfrageweg.

@@ -6,10 +6,11 @@ Dienstleistungen). Diese Datei sagt dir in Kürze, was zu tun ist. Details stehe
 
 - **Live:** https://jakobsawazki.github.io/sawazki-electronics/
 - **Repo:** https://github.com/JakobSawazki/sawazki-electronics · Branch `main`
-- **Lokal (Acer Nitro 5, Google-Drive-Sync):** `D:\Google Drive\Gewerbe\Sawazki Electronics Website`
+- **Lokal (Acer Nitro 5, Google-Drive-Sync):** `D:\Google Drive\Gewerbe\Sawazki Electronics`
   – dies ist die **einzige** lokale Kopie. Der frühere Doppelstand
   `…\Codex\sawazki-electronics` wurde am 02.07.2026 nach Prüfung (veralteter Vorfahr von
-  `main`) endgültig gelöscht. Nicht neu anlegen, nicht referenzieren.
+  `main`) endgültig gelöscht. Der frühere Ordner `…\Gewerbe\Sawazki Electronics Website`
+  wurde am 02.07.2026 in den obigen Gewerbe-Ordner umbenannt. Nicht neu anlegen, nicht referenzieren.
 - **Technik:** rein statisch – HTML, CSS, JS. Kein Build, kein Framework, keine Paketabhängigkeiten.
 
 ## So startest du (Reihenfolge)
@@ -58,7 +59,7 @@ Bei neuen HTML-Seiten zusätzlich `sitemap.xml`, Navigation, Footer und README p
 
 - Vor jeder neuen Arbeit `tasks.docx` prüfen. Wenn dort keine Aufgabe steht, gibt es keinen
   bekannten Queue-Auftrag.
-- Erzeugte Projekt-, 3D-Druck- und Datenrettungsbilder sind eingebaut; Prompts und Assets stehen in
+- Erzeugte Projekt-, 3D-Druck-, Datenrettungs- und Energietechnikbilder sind eingebaut; Prompts und Assets stehen in
   [`docs/BILDAUFTRAG_PROJEKTBILDER.md`](docs/BILDAUFTRAG_PROJEKTBILDER.md).
 - Die Datenschutzerklärung enthält eine Passage für Reparatur, Datensicherung, Datenrettung und
   Partnerlabore. Bei konkretem Geschäftsbetrieb rechtlich prüfen lassen.

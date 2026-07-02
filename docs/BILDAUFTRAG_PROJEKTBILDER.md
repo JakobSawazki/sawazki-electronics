@@ -1,16 +1,18 @@
 # Bildauftrag: Einheitliche Projekt- und Servicebilder
 
-Stand: 24. Juni 2026 · Status: **erledigt und eingebaut**
+Stand: 2. Juli 2026 · Status: **erledigt und eingebaut**
 
 ## Worum es geht
 
 Die Projektkacheln auf der Startseite (`index.html`, Abschnitt `#projekte`) und die
-Service-Seiten für 3D-Druck (`3d-druck.html`) sowie Datenrettung (`datenrettung.html`)
-haben echte, fotorealistische Bilder in einem einheitlichen Stil erhalten.
+Service-Seiten für 3D-Druck (`3d-druck.html`), Datenrettung (`datenrettung.html`) sowie
+Energietechnik (`energietechnik.html`) haben echte, fotorealistische Bilder in einem
+einheitlichen Stil erhalten.
 
-Die Bilder wurden am 24. Juni 2026 mit dem integrierten Codex-Bildgenerator erzeugt, als
-WebP optimiert und lokal unter `assets/images/` eingebunden. Diese Datei bleibt als
-Stil- und Prompt-Dokumentation erhalten.
+Die ersten Bilder wurden am 24. Juni 2026 mit dem integrierten Codex-Bildgenerator erzeugt.
+Das Energietechnik-Bild wurde am 2. Juli 2026 ergänzt. Alle finalen Bilder sind als WebP
+optimiert und lokal unter `assets/images/` eingebunden. Diese Datei bleibt als Stil- und
+Prompt-Dokumentation erhalten.
 
 ---
 
@@ -72,8 +74,8 @@ als Rückfall erhalten):
 | `3d-druck-hero.webp` | 3D-Karte auf `produkte.html` | wird auch dort als Kartenbild genutzt |
 | `datenrettung-hero.webp` | Datenrettung-Hero | wie 3D-Hero, in `datenrettung.html` (Klasse `.recovery-hero`) |
 | `datenrettung-hero.webp` | Datenrettung-Karte auf `produkte.html` | wird auch dort als Kartenbild genutzt |
-| `energietechnik-hero.webp` | Energietechnik-Hero | in `energietechnik.html` als `.vhs-hero-image` einsetzen (Klasse `.energy-hero`) |
-| `energietechnik-hero.webp` | Energietechnik-Karte auf `produkte.html` | Platzhalter `.is-placeholder` durch `<a class="featured-product-image"><img ...></a>` ersetzen |
+| `energietechnik-hero.webp` | Energietechnik-Hero | in `energietechnik.html` als `.vhs-hero-image` eingebaut (Klasse `.energy-hero`) |
+| `energietechnik-hero.webp` | Energietechnik-Karte auf `produkte.html` | nutzt dieselbe bildbasierte Variante wie 3D-Druck und Datenrettung |
 
 ### Einbau Projektkacheln (`index.html`, Abschnitt `#projekte`)
 
@@ -101,8 +103,8 @@ Das Bild liegt hinter dem `.vhs-hero-overlay`; der `og:image`-Meta-Tag zeigt ebe
 
 ### Einbau Servicekarten (`produkte.html`)
 
-Die früheren Platzhalter für 3D-Druck und Datenrettung wurden durch bildbasierte Varianten
-ersetzt. Für die 3D-Karte wird das Hero-Bild wiederverwendet:
+Die früheren Platzhalter für 3D-Druck, Datenrettung und Energietechnik wurden durch
+bildbasierte Varianten ersetzt. Für die Karten werden jeweils die Hero-Bilder wiederverwendet:
 
 ```html
 <a class="featured-product-image" href="3d-druck.html" aria-label="Zum 3D-Druck-Angebot">
@@ -119,6 +121,7 @@ ersetzt. Für die 3D-Karte wird das Hero-Bild wiederverwendet:
 - [x] Kein Text/Logo im Bild.
 - [x] `src`-Pfade in `index.html` und `projekte.html` umgestellt.
 - [x] 3D-Druck-Hero und Datenrettungs-Hero eingebaut.
+- [x] Energietechnik-Hero und Energietechnik-Servicekarte eingebaut.
 - [x] Servicekarten auf `produkte.html` auf echte Bilder umgestellt.
 - [x] Cache-Buster (`?v=20260624-services-images`) auf den geänderten Seiten hochgesetzt.
 - [x] Änderungsprotokoll in `docs/CODEX_PROJECT_DOCUMENTATION.md` ergänzt.
