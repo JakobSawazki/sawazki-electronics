@@ -19,7 +19,7 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - Eigene Projektseite mit Zweck, Zielgruppe und Ziel jedes Labs
 - Footer-Link zur zentralen Projektübersicht ohne doppelte Einzelprojektlinks
 - Zentraler Servicebereich für Dienstleistungen, Angebote und spätere ausgewählte Produkte
-- Eigene Angebotsseite für VHS-, VHS-C- und Camcorder-Kassetten-Digitalisierung
+- Eigene Angebotsseite für VHS-, VHS-C- und Camcorder-Kassetten-Digitalisierung inkl. interaktivem Preis-Schätzer nach veröffentlichter Staffel
 - Eigene Angebotsseite für 3D-Druck nach Kundenwunsch (individuelle Drucke, Hilfe bei 3D-Modellen, Prototypen, Ersatzteile)
 - Eigene Angebotsseite für professionelle Datenrettung (logische und physische Schäden, Partnerlabore für defekte Datenträger)
 - Eigene Angebotsseite für Batteriespeicher und Inselnetzlösungen (Energietechnik, netzunabhängig/Off-Grid) mit eigenem Hero-/Kartenbild

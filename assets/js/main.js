@@ -98,3 +98,60 @@ if (contactForm && formStatus) {
     formStatus.textContent = "Anfrage wird gesendet...";
   });
 }
+
+const priceCalc = document.querySelector("[data-price-calc]");
+
+if (priceCalc) {
+  const qtyField = priceCalc.querySelector("[data-calc-qty]");
+  const runtimeField = priceCalc.querySelector("[data-calc-runtime]");
+  const usbField = priceCalc.querySelector("[data-calc-usb]");
+  const resultField = priceCalc.querySelector("[data-calc-result]");
+
+  const euro = (value) => value.toLocaleString("de-DE", { style: "currency", currency: "EUR" });
+
+  // Staffel muss der veroeffentlichten Preistabelle auf der Seite entsprechen.
+  function baseTotal(qty) {
+    if (qty === 1) return 19.9;
+    if (qty === 2) return 37.8;
+    if (qty === 3) return 53.7;
+    if (qty <= 5) return qty * 16.9;
+    return qty * 15.9;
+  }
+
+  function updateEstimate() {
+    const qty = Math.floor(Number(qtyField.value));
+
+    if (!Number.isFinite(qty) || qty < 1) {
+      resultField.textContent = "Bitte eine Kassettenanzahl ab 1 angeben.";
+      return;
+    }
+
+    if (qty > 10) {
+      resultField.textContent =
+        "Ab 11 Kassetten lohnt sich ein individuelles Angebot – einfach unverbindlich anfragen.";
+      return;
+    }
+
+    if (runtimeField.value === "check") {
+      resultField.textContent =
+        "Über 240 Minuten je Kassette: Preis nach kurzer technischer Prüfung – bitte unverbindlich anfragen.";
+      return;
+    }
+
+    let total = baseTotal(qty) + qty * Number(runtimeField.value);
+    const usbSelected = usbField.checked;
+    if (usbSelected) {
+      total += 12.9;
+    }
+
+    const cassetteWord = qty === 1 ? "Kassette" : "Kassetten";
+    const prefix = usbSelected ? "ab" : "ca.";
+    resultField.textContent = `Geschätzter Preis für ${qty} ${cassetteWord}: ${prefix} ${euro(total)}`;
+  }
+
+  [qtyField, runtimeField, usbField].forEach((field) => {
+    field.addEventListener("input", updateEstimate);
+  });
+
+  updateEstimate();
+}

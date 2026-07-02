@@ -27,6 +27,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-07-02 | v1.16.0 | Interaktiver VHS-Preis-Schätzer (Staffel, Laufzeitaufschläge, USB-Option; barrierearm, progressive Enhancement) | Claude |
 | 2026-07-02 | – | Aufgaben-Dateien sortiert: `tasks.docx` nach `docs/` verschoben, `Tasks.md` → `tasks.md`; alle Verweise und `.gitignore` nachgezogen | Jakob + Claude |
 | 2026-07-02 | v1.15.0 | Vollständiges Firmenlogo (`brand.png` → optimiertes `sawazki-brand-logo.webp`, 21 KB) als Hero-Modul der Startseite | Claude |
 | 2026-07-02 | v1.14.1 | Doku-Konsolidierung: AGENTS.md als zentrale Übergabe (inkl. CODEX_HANDOVER), `docs/tasks.md`, `docs/documentation.md` (inkl. SEO-Leitfaden, Bildauftrag, Projektgedächtnis) | Claude |

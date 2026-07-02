@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 2. Juli 2026 · Version: v1.15.0
+Stand: 2. Juli 2026 · Version: v1.16.0
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.16.0 | 2026-07-02 | Interaktiver Preis-Schaetzer auf der VHS-Digitalisierungsseite (Staffel, Laufzeit, USB-Option) |
 | v1.15.0 | 2026-07-02 | Vollstaendiges Firmenlogo als Hero-Modul der Startseite (optimierte WebP-Variante) |
 | v1.14.1 | 2026-07-02 | Doku-Konsolidierung: AGENTS.md als zentrale Uebergabe, `docs/tasks.md`, `docs/documentation.md` |
 | v1.14.0 | 2026-07-02 | Branding-Refresh: neues Brand-Symbol, Favicon, Hero-Logo-Modul und groessere Hero-Servicebilder |
@@ -238,6 +239,28 @@ Nach dem Veröffentlichen:
 - Commit-Kuerzel in dieser Dokumentation im Aenderungsprotokoll ergaenzen
 
 ## Bisheriges Aenderungsprotokoll
+
+### 2. Juli 2026 - VHS-Preis-Schaetzer (v1.16.0)
+
+- Neuer interaktiver **Preis-Schaetzer** im Preisbereich von `vhs-digitalisierung.html`
+  (`.price-calc`, `data-price-calc`): Kunden waehlen Kassettenanzahl, Aufnahmezeit je
+  Kassette und optional einen neuen USB-Speicher und sehen sofort eine unverbindliche
+  Schaetzung - weniger Huerden vor der Anfrage.
+- Rechenlogik in `assets/js/main.js` (mit Element-Guard, laeuft nur auf der VHS-Seite):
+  exakt die veroeffentlichte Staffel (1: 19,90 / 2: 37,80 / 3: 53,70 / 4-5: 16,90 je /
+  6-10: 15,90 je), Laufzeitaufschlaege (+5 bzw. +10 Euro je Kassette), USB ab 12,90 Euro
+  (Ergebnis dann als "ab"-Preis). Mehr als 10 Kassetten oder ueber 240 Minuten verweisen
+  auf die unverbindliche Anfrage. **Wichtig:** Bei Preisaenderungen auf der Seite muss
+  `baseTotal()` in `main.js` mitgezogen werden.
+- Ausgabe barrierearm (`role="status"`, `aria-live="polite"`), CTA fuehrt in den
+  Anfrage-Assistenten mit vorbefuelltem Thema. Ohne JavaScript bleibt die statische
+  Preistabelle unveraendert nutzbar (progressive Enhancement).
+- Neue CSS-Bausteine `.price-calc*` im Stil der bestehenden Preiskarten inkl.
+  Dark-Mode-Gruppe; responsive (Desktop dreispaltig, mobil einspaltig).
+- Cache-Token fuer `styles.css` und `main.js` auf allen 14 Seiten auf
+  `20260702-preisrechner` angehoben; `node --check` fuer `main.js` bestanden.
+- Lokal geprueft: fuenf Rechenfaelle exakt (19,90 / 87,60 / 194,20 "ab" / individuell /
+  nach Pruefung), Dark-/Light-Mode, mobil und Desktop ohne Overflow, Konsole sauber.
 
 ### 2. Juli 2026 - Vollstaendiges Firmenlogo im Hero (v1.15.0)
 
