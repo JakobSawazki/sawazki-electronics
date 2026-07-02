@@ -27,7 +27,7 @@ Dienstleistungen in Freudenstadt). Diese Datei ist die **einzige Einstiegs- und
 | --- | --- |
 | `AGENTS.md` (diese Datei, Projektstamm) | Übergabe, Regeln, Arbeitsablauf |
 | `README.md` (Projektstamm) | öffentlicher Projektüberblick auf GitHub |
-| [`docs/Tasks.md`](docs/Tasks.md) | **primäre Aufgabenquelle**: offen / in Arbeit / abgeschlossen (mit Datum + Version) |
+| [`docs/tasks.md`](docs/tasks.md) | **primäre Aufgabenquelle**: offen / in Arbeit / abgeschlossen (mit Datum + Version) |
 | [`docs/documentation.md`](docs/documentation.md) | ausführliche Projekt- und Firmendoku: Versionsstand, Änderungsprotokoll, Design-/Technikentscheidungen, SEO-/Marketing-Leitfaden, Bildauftrag, Projektgedächtnis |
 
 `AGENTS.md` und `README.md` bleiben bewusst im Projektstamm (Werkzeuge und GitHub erwarten
@@ -35,15 +35,15 @@ sie dort); alle übrigen MD-Dateien liegen unter `docs/`.
 
 ## So startest du (Reihenfolge)
 
-1. [`docs/Tasks.md`](docs/Tasks.md) lesen: erst „In Arbeit" (nichts doppelt anfangen),
+1. [`docs/tasks.md`](docs/tasks.md) lesen: erst „In Arbeit" (nichts doppelt anfangen),
    dann die oberste offene Aufgabe übernehmen und dort eintragen.
-2. Zusätzlich `tasks.docx` im Projektstamm prüfen (lokaler Eingang für Aufgaben mit
-   privaten Screenshots; gitignored, nie committen). Neue Einträge dort nach `docs/Tasks.md`
+2. Zusätzlich `docs/tasks.docx` prüfen (lokaler Eingang für Aufgaben mit
+   privaten Screenshots; gitignored, nie committen). Neue Einträge dort nach `docs/tasks.md`
    spiegeln (ohne private Details). `.docx` lesen per PowerShell:
 
    ```powershell
    Add-Type -AssemblyName System.IO.Compression.FileSystem
-   $zip = [System.IO.Compression.ZipFile]::OpenRead("tasks.docx")
+   $zip = [System.IO.Compression.ZipFile]::OpenRead("docs/tasks.docx")
    $e = $zip.Entries | Where-Object { $_.FullName -eq 'word/document.xml' }
    $sr = New-Object System.IO.StreamReader($e.Open()); $xml = $sr.ReadToEnd(); $sr.Close()
    [System.Text.RegularExpressions.Regex]::Replace(($xml -replace '</w:p>', "`n"), '<[^>]+>', '')
@@ -52,15 +52,15 @@ sie dort); alle übrigen MD-Dateien liegen unter `docs/`.
 
 3. Immer nur **ein** Arbeitspaket gleichzeitig. Vollständig umsetzen:
    Code → Doku (`docs/documentation.md`-Änderungsprotokoll) → lokal testen → committen →
-   pushen → live prüfen → `docs/Tasks.md` umtragen.
-4. Bei Blockade: Aufgabe bleibt in `docs/Tasks.md` unter „In Arbeit" stehen, mit Notiz, was fehlt.
+   pushen → live prüfen → `docs/tasks.md` umtragen.
+4. Bei Blockade: Aufgabe bleibt in `docs/tasks.md` unter „In Arbeit" stehen, mit Notiz, was fehlt.
 
 ## Nutzungskontingent (für KI-Agenten)
 
 Das verbleibende Kontingent ist programmatisch nicht abfragbar. Deshalb: Pakete klein und
-abschließbar schneiden, nach jedem Schritt `docs/Tasks.md` aktualisieren, bei absehbarem
+abschließbar schneiden, nach jedem Schritt `docs/tasks.md` aktualisieren, bei absehbarem
 Limit kein neues Paket beginnen, sondern den laufenden Stand konsistent machen und pushen.
-Details: `docs/Tasks.md`, Abschnitt „Nutzungskontingent-Regel".
+Details: `docs/tasks.md`, Abschnitt „Nutzungskontingent-Regel".
 
 ## Grundregeln
 
@@ -135,6 +135,6 @@ beides hat am 02.07.2026 funktioniert.
 ## Aktueller Stand & offene Punkte
 
 Versionsstand, Änderungsprotokoll und Entwicklungsstand: [`docs/documentation.md`](docs/documentation.md).
-Offene Aufgaben: [`docs/Tasks.md`](docs/Tasks.md). Die Datenschutzerklärung enthält eine
+Offene Aufgaben: [`docs/tasks.md`](docs/tasks.md). Die Datenschutzerklärung enthält eine
 Passage für Reparatur/Datensicherung/Datenrettung/Partnerlabore – bei konkretem
 Geschäftsbetrieb rechtlich prüfen lassen.

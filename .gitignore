@@ -1,4 +1,5 @@
-# Interne Aufgabenwarteschlange – bleibt lokal, nicht ins oeffentliche Repo
+# Interner Aufgaben-Eingang (liegt unter docs/, Muster greift in jedem Ordner) –
+# bleibt lokal, nicht ins oeffentliche Repo
 tasks.docx
 
 # Windows-/Google-Drive-Sync-Artefakte

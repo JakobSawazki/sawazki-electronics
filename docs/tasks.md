@@ -27,8 +27,9 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-07-02 | – | Aufgaben-Dateien sortiert: `tasks.docx` nach `docs/` verschoben, `Tasks.md` → `tasks.md`; alle Verweise und `.gitignore` nachgezogen | Jakob + Claude |
 | 2026-07-02 | v1.15.0 | Vollständiges Firmenlogo (`brand.png` → optimiertes `sawazki-brand-logo.webp`, 21 KB) als Hero-Modul der Startseite | Claude |
-| 2026-07-02 | v1.14.1 | Doku-Konsolidierung: AGENTS.md als zentrale Übergabe (inkl. CODEX_HANDOVER), `docs/Tasks.md`, `docs/documentation.md` (inkl. SEO-Leitfaden, Bildauftrag, Projektgedächtnis) | Claude |
+| 2026-07-02 | v1.14.1 | Doku-Konsolidierung: AGENTS.md als zentrale Übergabe (inkl. CODEX_HANDOVER), `docs/tasks.md`, `docs/documentation.md` (inkl. SEO-Leitfaden, Bildauftrag, Projektgedächtnis) | Claude |
 | 2026-07-02 | v1.14.0 | Branding-Refresh: neues Brand-Symbol, Favicon, Hero-Logo-Modul, größere Hero-Servicebilder | Codex |
 | 2026-07-02 | v1.13.0 | Service-Finder auf der Startseite, Energietechnik-Hero-/Kartenbild, kanonischer Gewerbe-Ordner | Codex |
 | 2026-07-02 | – | GitHub-Pages-Deployment-Hänger analysiert (deployment_queued) und per Rerun/Trigger-Commit gelöst | Claude + Codex |
@@ -52,7 +53,7 @@ Details zu jeder Version stehen im Änderungsprotokoll in [`documentation.md`](d
 
 ## Pflege-Regeln
 
-1. Diese Datei ist die **primäre Aufgabenquelle**. `tasks.docx` im Projektstamm bleibt nur als
+1. Diese Datei ist die **primäre Aufgabenquelle**. `docs/tasks.docx` bleibt nur als
    lokaler Eingang für Aufgaben mit privaten Screenshots (gitignored, nie committen);
    solche Aufgaben werden hier ohne private Details gespiegelt.
 2. Immer nur **ein** Arbeitspaket gleichzeitig beginnen (oberste offene Aufgabe zuerst,

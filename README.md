@@ -61,7 +61,7 @@ Seit dem 02.07.2026 gibt es eine konsolidierte Doku-Struktur (nur noch vier MD-D
 - [`AGENTS.md`](AGENTS.md) (Projektstamm): zentrale Übergabe für alle Mitarbeiter und
   KI-Agenten – Regeln, Arbeitsablauf, Prüfungen, Veröffentlichung. Die frühere
   `CODEX_HANDOVER.md` ist hier integriert.
-- [`docs/Tasks.md`](docs/Tasks.md): primäre Aufgabenquelle – offene, laufende und
+- [`docs/tasks.md`](docs/tasks.md): primäre Aufgabenquelle – offene, laufende und
   abgeschlossene Aufgaben mit Datum, Version und Bearbeiter.
 - [`docs/documentation.md`](docs/documentation.md): ausführliche Projekt- und Firmendoku –
   Versionsstand, Änderungsprotokoll, Design-/Technikentscheidungen, SEO-/Marketing-Leitfaden,
@@ -70,10 +70,10 @@ Seit dem 02.07.2026 gibt es eine konsolidierte Doku-Struktur (nur noch vier MD-D
 
 ## Aufgabenwarteschlange
 
-Aufgaben werden in [`docs/Tasks.md`](docs/Tasks.md) geführt (offen / in Arbeit /
-abgeschlossen). `tasks.docx` im Projektstamm bleibt als lokaler, nicht versionierter
+Aufgaben werden in [`docs/tasks.md`](docs/tasks.md) geführt (offen / in Arbeit /
+abgeschlossen). `docs/tasks.docx` bleibt als lokaler, nicht versionierter
 Eingang für Aufgaben mit privaten Screenshots; solche Aufgaben werden ohne private Details
-in `docs/Tasks.md` gespiegelt. Details und Regeln stehen in `AGENTS.md`.
+in `docs/tasks.md` gespiegelt. Details und Regeln stehen in `AGENTS.md`.
 
 ## Kontaktformulare
 

@@ -8,7 +8,7 @@ Aenderung fortgeschrieben: Was wurde geaendert, warum, in welchen Dateien und wi
 (Bis 02.07.2026 hiess diese Datei `CODEX_PROJECT_DOCUMENTATION.md`.)
 
 Weitere Doku: Einstieg/Uebergabe in [`../AGENTS.md`](../AGENTS.md) ·
-Aufgaben in [`Tasks.md`](Tasks.md) · oeffentlicher Ueberblick in [`../README.md`](../README.md).
+Aufgaben in [`tasks.md`](tasks.md) · oeffentlicher Ueberblick in [`../README.md`](../README.md).
 Am Ende dieser Datei: SEO-/Marketing-Leitfaden, Bildauftrag und Projektgedaechtnis.
 
 ## Versionsstand
@@ -20,7 +20,7 @@ steht weiter unten.
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
 | v1.15.0 | 2026-07-02 | Vollstaendiges Firmenlogo als Hero-Modul der Startseite (optimierte WebP-Variante) |
-| v1.14.1 | 2026-07-02 | Doku-Konsolidierung: AGENTS.md als zentrale Uebergabe, `docs/Tasks.md`, `docs/documentation.md` |
+| v1.14.1 | 2026-07-02 | Doku-Konsolidierung: AGENTS.md als zentrale Uebergabe, `docs/tasks.md`, `docs/documentation.md` |
 | v1.14.0 | 2026-07-02 | Branding-Refresh: neues Brand-Symbol, Favicon, Hero-Logo-Modul und groessere Hero-Servicebilder |
 | v1.13.0 | 2026-07-02 | UX-/Grafik-Ausbau: Service-Finder auf der Startseite, Energietechnik-Hero-/Kartenbild, neuer kanonischer Gewerbe-Ordner |
 | v1.12.0 | 2026-07-02 | Marketing-/UX-Ausbau Startseite: nutzenorientierter Hero, Angebots-Teaser, Warum-Band, Kontakt-/Footer-Ausbau |
@@ -78,9 +78,9 @@ Wichtige Dateien:
 - `.nojekyll`: sorgt dafuer, dass GitHub Pages die Dateien unveraendert ausliefert
 - `AGENTS.md` (Projektstamm): zentrale Uebergabe und Regeln fuer alle Agenten
 - `README.md` (Projektstamm): oeffentlicher Projektueberblick
-- `docs/Tasks.md`: primaere Aufgabenquelle (offen / in Arbeit / abgeschlossen)
+- `docs/tasks.md`: primaere Aufgabenquelle (offen / in Arbeit / abgeschlossen)
 - `docs/documentation.md`: diese Datei
-- `tasks.docx` (Projektstamm, gitignored): lokaler Aufgaben-Eingang fuer private Screenshots
+- `docs/tasks.docx` (gitignored, nur lokal): Aufgaben-Eingang fuer private Screenshots
 
 ## Design- und Inhaltsentscheidungen
 
@@ -273,7 +273,7 @@ Nach dem Veröffentlichen:
 - `docs/SEO_MARKETING_GUIDE.md` und `docs/BILDAUFTRAG_PROJEKTBILDER.md` als Abschnitte in
   diese Datei uebernommen und als Einzeldateien geloescht (Inhalte unveraendert, Git-Historie
   bleibt erhalten).
-- Neu: `docs/Tasks.md` als **primaere Aufgabenquelle** (offen / in Arbeit / abgeschlossen mit
+- Neu: `docs/tasks.md` als **primaere Aufgabenquelle** (offen / in Arbeit / abgeschlossen mit
   Datum, Version, Bearbeiter) inkl. Nutzungskontingent-Regel fuer KI-Agenten. `tasks.docx`
   bleibt nur lokaler Eingang fuer Aufgaben mit privaten Screenshots (gitignored).
 - Neu: Abschnitt "Projektgedaechtnis und Firmenkontext" am Ende dieser Datei.
@@ -731,15 +731,16 @@ Commit-Titel: `Refine dark mode and header contrast`
 
 ## Aufgabenverwaltung
 
-Seit dem 02.07.2026 ist [`docs/Tasks.md`](Tasks.md) die **primaere Aufgabenquelle** mit den
+Seit dem 02.07.2026 ist [`docs/tasks.md`](tasks.md) die **primaere Aufgabenquelle** mit den
 Bereichen "In Arbeit", "Offen" und "Abgeschlossen" (mit Datum, Version, Bearbeiter) sowie den
 Pflege- und Nutzungskontingent-Regeln.
 
-`tasks.docx` im Projektstamm bleibt als **lokaler Eingang** fuer Aufgaben mit privaten
-Screenshots bestehen (gitignored, nie committen). Fuer `tasks.docx` gilt weiterhin:
+`docs/tasks.docx` bleibt als **lokaler Eingang** fuer Aufgaben mit privaten
+Screenshots bestehen (gitignored, nie committen; am 02.07.2026 von Jakob aus dem
+Projektstamm nach `docs/` verschoben). Fuer die Datei gilt weiterhin:
 
 1. Datei zu Beginn jeder Arbeitssitzung lesen (Lese-Snippet in `AGENTS.md`).
-2. Neue Eintraege ohne private Details nach `docs/Tasks.md` spiegeln.
+2. Neue Eintraege ohne private Details nach `docs/tasks.md` spiegeln.
 3. Erledigte Aufgaben erst nach Live-Pruefung entfernen; vorher erneut lesen, damit
    zwischenzeitlich ergaenzte Aufgaben erhalten bleiben.
 4. Die Datei bleibt auch leer im Projektordner bestehen.
@@ -748,7 +749,7 @@ Screenshots bestehen (gitignored, nie committen). Fuer `tasks.docx` gilt weiterh
 
 Wenn Codex, Claude oder ein anderer Agent an diesem Projekt arbeitet:
 
-- Vor allen anderen Schritten `docs/Tasks.md` (und `tasks.docx`) pruefen.
+- Vor allen anderen Schritten `docs/tasks.md` (und `tasks.docx`) pruefen.
 - Diese Datei vor groesseren Aenderungen lesen.
 - Nach relevanten Aenderungen den Abschnitt "Bisheriges Aenderungsprotokoll" ergaenzen.
 - Bei visuellen Aenderungen lokale Browserpruefung machen.
@@ -949,7 +950,7 @@ steckt, damit jeder Mitarbeiter/Agent ohne Vorwissen einsteigen kann. Stand: 02.
   **Claude (Claude Code)** (kein Bildgenerator, dafuer lokale Browser-Verifikation,
   Godot-/Web-Entwicklung, Doku). Bildwuensche gehen deshalb immer als Prompt-Paket an Codex
   (siehe Bildauftrag oben).
-- Einstieg fuer jeden Agenten: `AGENTS.md` → `docs/Tasks.md` → diese Datei.
+- Einstieg fuer jeden Agenten: `AGENTS.md` → `docs/tasks.md` → diese Datei.
 - Veroeffentlichung: Commit + Push auf `main`, GitHub Pages deployt automatisch.
   Bekannte Stoerung am 02.07.2026: Deployment blieb in `deployment_queued` haengen;
   Loesung war `gh run rerun <id>` bzw. ein kleiner Trigger-Commit.
@@ -984,6 +985,6 @@ Projektbereich der Startseite + Vorstellung auf `projekte.html`, nicht im Footer
 
 ### Offene strategische Themen
 
-Siehe `docs/Tasks.md` (Abschnitt "Offen"): eigene Domain, Google-Unternehmensprofil,
+Siehe `docs/tasks.md` (Abschnitt "Offen"): eigene Domain, Google-Unternehmensprofil,
 Search Console, echte Testimonials/Fotos, rechtliche Pruefung der Datenschutzerklaerung
 bei konkretem Geschaeftsbetrieb.
