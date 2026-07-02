@@ -1,6 +1,6 @@
 # Sawazki Electronics Website - Codex Projektdokumentation
 
-Stand: 2. Juli 2026 · Version: v1.13.0
+Stand: 2. Juli 2026 · Version: v1.14.0
 
 Diese Dokumentation dient als Arbeitsgrundlage fuer Codex und fuer die Weiterarbeit auf einem anderen Laptop. Sie soll bei kuenftigen Aenderungen fortgeschrieben werden: Was wurde geaendert, warum, in welchen Dateien und wie wurde geprueft.
 
@@ -12,6 +12,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.14.0 | 2026-07-02 | Branding-Refresh: neues Brand-Symbol, Favicon, Hero-Logo-Modul und groessere Hero-Servicebilder |
 | v1.13.0 | 2026-07-02 | UX-/Grafik-Ausbau: Service-Finder auf der Startseite, Energietechnik-Hero-/Kartenbild, neuer kanonischer Gewerbe-Ordner |
 | v1.12.0 | 2026-07-02 | Marketing-/UX-Ausbau Startseite: nutzenorientierter Hero, Angebots-Teaser, Warum-Band, Kontakt-/Footer-Ausbau |
 | v1.11.0 | 2026-07-02 | 404-Fehlerseite, vollstaendiges Service-Schema, CLS-/Performance-Politur, Ordner-Konsolidierung |
@@ -83,8 +84,10 @@ Wichtige Dateien:
 
 Aktiv genutzt:
 
-- `assets/images/sawazki-electronics-logo.png`: breites Unternehmenslogo, genutzt im Hero und als OpenGraph-Bild
-- `assets/images/sawazki-electronics-mark.png`: quadratisches Logo/Marke, genutzt in Navigation und Favicon
+- `assets/images/brand/sawazki-brand-symbol.webp`: optimierte aktuelle Bildmarke, genutzt in Navigation und Hero-Modul
+- `assets/images/brand/sawazki-brand-symbol.png`: PNG-Variante der aktuellen Bildmarke, genutzt in strukturierten Daten
+- `assets/images/brand/favicon.ico` und `assets/images/brand/favicon.png`: aktuelles Browser-Favicon
+- `assets/images/sawazki-electronics-logo.png`: breites Unternehmenslogo, weiterhin als OpenGraph-/Social-Vorschau genutzt
 - `assets/images/customer-consulting.jpg`: Beratung/Kundengespraech, Hero-Hintergrund und Diagnosebereich
 - `assets/images/repair-laptop.jpg`: neu generiertes Laptop-Reparaturfoto, Praxisbereich und Detailband
 - `assets/images/smartphone-repair.jpg`: Elektronik/Kleingeraete
@@ -100,6 +103,7 @@ Aktiv genutzt:
 Noch vorhanden als moegliche Rueckfall- oder Alternativassets:
 
 - `assets/images/hero-workbench.png`
+- `assets/images/sawazki-electronics-mark.png`
 - `assets/images/support-dashboard.png`
 - `assets/images/hardware-detail.png`
 - `assets/images/games-lab-logo.png`
@@ -108,6 +112,7 @@ Noch vorhanden als moegliche Rueckfall- oder Alternativassets:
 - `assets/images/bm-lernportal-logo.svg`
 - `assets/images/ec-lernstudio-logo.svg`
 - `assets/icons/favicon.svg`
+- `assets/images/brand/brand.png` und `assets/images/brand/brand_symbol.png` als Roh-Exports der neuen Bildmarke
 
 Originale Logoquellen auf dem aktuellen Laptop:
 
@@ -217,6 +222,24 @@ Nach dem Veröffentlichen:
 - Commit-Kuerzel in dieser Dokumentation im Aenderungsprotokoll ergaenzen
 
 ## Bisheriges Aenderungsprotokoll
+
+### 2. Juli 2026 - Branding-Refresh mit neuer Bildmarke (v1.14.0)
+
+- Neue Logo-Rohdateien unter `assets/images/brand/` geprueft: optisch passend fuer den
+  edlen, technischen Sawazki-Electronics-Auftritt, aber als Website-Asset zu gross und mit
+  eingebettetem Checkerboard-Hintergrund.
+- Aus `assets/images/brand/brand_symbol.png` optimierte Web-Assets erzeugt:
+  `sawazki-brand-symbol.webp` fuer Header/Hero, `sawazki-brand-symbol.png` fuer
+  strukturierte Daten sowie `favicon.ico` und `favicon.png` fuer den Browser-Tab.
+- Header-Logo auf allen HTML-Seiten auf die neue Bildmarke umgestellt; Favicon-Links
+  ueberall auf die neuen Brand-Dateien aktualisiert. Die 404-Seite nutzt weiterhin absolute
+  URLs, damit verschachtelte Fehlerpfade auf GitHub Pages funktionieren.
+- Startseiten-Hero: altes breites Logo-Bild durch ein neues Symbol-plus-Text-Modul ersetzt.
+  Der Markenname nutzt feste dunkle Brand-Farben, damit er auch im Dark Mode auf der hellen
+  Karte lesbar bleibt.
+- Hero-Servicebilder auf der Startseite vergroessert, besonders die Kundengespraech-Kachel;
+  die Bildgruppe wurde hoeher positioniert, damit sie nicht an das Faktenband stoesst.
+- Stylesheet-Cache-Token auf allen HTML-Seiten auf `20260702-brand-refresh` angehoben.
 
 ### 2. Juli 2026 - UX-/Grafik-Ausbau und neuer Gewerbe-Ordner (v1.13.0)
 

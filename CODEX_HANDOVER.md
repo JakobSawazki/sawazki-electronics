@@ -1,6 +1,6 @@
 # Codex-Übergabe: Sawazki Electronics Website
 
-Stand: 2. Juli 2026 · Version: v1.13.0
+Stand: 2. Juli 2026 · Version: v1.14.0
 
 Diese Datei ist der Einstiegspunkt für einen neuen Codex-Agenten. Vor Änderungen zuerst diese
 Übergabe, anschließend bei Bedarf die ausführliche Projektdokumentation unter
@@ -18,7 +18,7 @@ Diese Datei ist der Einstiegspunkt für einen neuen Codex-Agenten. Vor Änderung
 - Live-Seite: <https://jakobsawazki.github.io/sawazki-electronics/>
 - Lokaler Projektordner (Acer Nitro 5, via Google Drive Desktop synchronisiert): `D:\Google Drive\Gewerbe\Sawazki Electronics` — **einzige lokale Kopie.** Der frühere Doppelstand unter `…\Codex\sawazki-electronics` (Commit `335a5f1`, Vorfahr von `main`) wurde am 02.07.2026 geprüft und gelöscht; der frühere Ordner `…\Gewerbe\Sawazki Electronics Website` wurde in diesen Gewerbe-Ordner umbenannt. Auf anderen Geräten entspricht der Ordner dem Google-Drive-Pfad dieses Gewerbe-Ordners (z. B. `G:\Meine Ablage\Gewerbe\Sawazki Electronics`).
 - Standard-Branch: `main`
-- Zuletzt geprüfter Funktionsstand: UX-/Grafik-Ausbau mit Service-Finder auf der Startseite und echtem Energietechnik-Hero-/Kartenbild vom 2. Juli 2026 (v1.13.0)
+- Zuletzt geprüfter Funktionsstand: Branding-Refresh mit neuem Brand-Symbol aus `assets/images/brand/`, neuem Favicon und größeren Hero-Servicebildern vom 2. Juli 2026 (v1.14.0)
 - Hosting: GitHub Pages direkt aus dem Repository
 
 Die Website ist statisch. Es gibt keinen Build-Prozess, kein Framework und keine Paketabhängigkeiten.
@@ -53,7 +53,7 @@ Regeln (wie zuvor, nur Quelle ist jetzt `tasks.docx`):
   `tasks.docx` entfernen.
 - Vor dem Entfernen `tasks.docx` erneut lesen, damit zwischenzeitlich ergänzte Aufgaben erhalten bleiben.
 - Wenn die Aufgabe blockiert oder nicht vollständig abgeschlossen ist, bleibt sie unverändert stehen.
-- Eine leere `tasks.docx` bleibt als Warteschlangendatei im Repository erhalten.
+- Eine leere `tasks.docx` bleibt als lokale Warteschlangendatei im Projektordner erhalten.
 
 > Einträge aus `tasks.docx` (Stand 24. Juni 2026): keine bekannte offene Aufgabe nach Abschluss
 > der v1.7.0-Arbeiten.
@@ -78,6 +78,7 @@ Regeln (wie zuvor, nur Quelle ist jetzt `tasks.docx`):
 - `assets/js/main.js`: Scroll-Header, mobile Navigation, Reveal-Effekte und Formularbetreff
 - `assets/js/theme.js`: standardmäßiger Dark Mode und lokal gespeicherte Theme-Auswahl
 - `assets/images/`: Logos und lokale Website-Bilder
+- `assets/images/brand/`: aktuelle Brand-Quellen und optimierte Logo-/Favicon-Assets
 - `sitemap.xml`, `robots.txt`, `.nojekyll`: GitHub-Pages- und Suchmaschinenkonfiguration
 - `AGENTS.md`: kompakte Sofort-Anleitung für KI-Agenten (Schnelleinstieg)
 - `README.md`: öffentlicher Projektüberblick
@@ -137,7 +138,10 @@ Datenschutzerklärung.
 - Firmen-Seite nicht wie eine Spieleseite gestalten; Hover-Effekte bleiben dezent
 - CTA `Anfrage starten` soll seinen Blau-Cyan-Verlauf auch im Scroll-Header behalten
 - Das Firmenlogo oben links führt zur Startseite und hat einen professionellen Hover-Zustand
-- Das große Hero-Logo führt zu `#leistungen` und besitzt Lichtlauf, Tiefeneffekt und Fokuszustand
+- Das Firmenlogo oben links nutzt `assets/images/brand/sawazki-brand-symbol.webp`; Favicon-Links nutzen
+  `assets/images/brand/favicon.ico` und `assets/images/brand/favicon.png`.
+- Das große Hero-Logo ist ein Symbol-plus-Text-Modul, führt zu `#leistungen` und besitzt Lichtlauf,
+  Tiefeneffekt und Fokuszustand.
 - Desktop, Tablet und Smartphone berücksichtigen
 - Der Hauptmenüpunkt `Projekte` springt direkt zum Projektbereich `#projekte` der Startseite
 - Der Theme-Schalter steht rechts neben `Impressum` und bleibt auf allen Seiten verfügbar
@@ -230,6 +234,8 @@ Für neue öffentliche HTML-Seiten außerdem `sitemap.xml`, Navigation, Footer u
 - Der Ablauf verwendet größere Nummern, kontrastreiche Titel und Pfeile auf dem Desktop.
 - Ablauf- und Kontaktüberschrift bleiben ab Tabletbreite einzeilig.
 - Hero-Servicebilder sind größer und überdecken das Faktenband nicht.
+- Header, Hero und Browser-Favicon nutzen das neue Brand-Symbol aus `assets/images/brand/`; die
+  Rohdateien `brand.png` und `brand_symbol.png` bleiben als lokale Quell-Exports erhalten.
 - Projektkarten verwenden einheitlich `Designed by Sawazki Electronics`.
 - Die Projektübersicht enthält PythonLab, WorkbenchLab, BM-Lab, Games Lab und EC-Lernstudio.
 - `projekte.html` erklärt für jedes Lab Zweck, Zielgruppe und Ziel; der Footer verweist zentral

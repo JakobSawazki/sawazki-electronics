@@ -12,6 +12,8 @@ Dienstleistungen). Diese Datei sagt dir in Kürze, was zu tun ist. Details stehe
   `main`) endgültig gelöscht. Der frühere Ordner `…\Gewerbe\Sawazki Electronics Website`
   wurde am 02.07.2026 in den obigen Gewerbe-Ordner umbenannt. Nicht neu anlegen, nicht referenzieren.
 - **Technik:** rein statisch – HTML, CSS, JS. Kein Build, kein Framework, keine Paketabhängigkeiten.
+- **Aktives Branding:** Header, Hero-Modul und Favicon nutzen die optimierten Dateien unter
+  `assets/images/brand/` (`sawazki-brand-symbol.webp`, `favicon.ico`, `favicon.png`).
 
 ## So startest du (Reihenfolge)
 
@@ -61,5 +63,7 @@ Bei neuen HTML-Seiten zusätzlich `sitemap.xml`, Navigation, Footer und README p
   bekannten Queue-Auftrag.
 - Erzeugte Projekt-, 3D-Druck-, Datenrettungs- und Energietechnikbilder sind eingebaut; Prompts und Assets stehen in
   [`docs/BILDAUFTRAG_PROJEKTBILDER.md`](docs/BILDAUFTRAG_PROJEKTBILDER.md).
+- Neues Brand-Symbol und Favicon sind eingebaut; die Roh-Exports liegen weiter unter
+  `assets/images/brand/`.
 - Die Datenschutzerklärung enthält eine Passage für Reparatur, Datensicherung, Datenrettung und
   Partnerlabore. Bei konkretem Geschäftsbetrieb rechtlich prüfen lassen.
