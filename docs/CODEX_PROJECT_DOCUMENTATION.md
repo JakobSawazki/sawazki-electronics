@@ -1,6 +1,6 @@
 # Sawazki Electronics Website - Codex Projektdokumentation
 
-Stand: 2. Juli 2026 · Version: v1.11.0
+Stand: 2. Juli 2026 · Version: v1.12.0
 
 Diese Dokumentation dient als Arbeitsgrundlage fuer Codex und fuer die Weiterarbeit auf einem anderen Laptop. Sie soll bei kuenftigen Aenderungen fortgeschrieben werden: Was wurde geaendert, warum, in welchen Dateien und wie wurde geprueft.
 
@@ -12,6 +12,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.12.0 | 2026-07-02 | Marketing-/UX-Ausbau Startseite: nutzenorientierter Hero, Angebots-Teaser, Warum-Band, Kontakt-/Footer-Ausbau |
 | v1.11.0 | 2026-07-02 | 404-Fehlerseite, vollstaendiges Service-Schema, CLS-/Performance-Politur, Ordner-Konsolidierung |
 | v1.10.0 | 2026-06-24 | Energietechnik-Service (Batteriespeicher & Inselnetz) inkl. Produkte-/Anfrage-/Sitemap-Integration |
 | v1.9.0 | 2026-06-24 | Schwebender WhatsApp-Kontaktbutton auf allen Seiten (direkter Draht zu Jakob) |
@@ -214,6 +215,30 @@ Nach dem Veröffentlichen:
 - Commit-Kuerzel in dieser Dokumentation im Aenderungsprotokoll ergaenzen
 
 ## Bisheriges Aenderungsprotokoll
+
+### 2. Juli 2026 - Marketing-/UX-Ausbau der Startseite (v1.12.0)
+
+- Hero nutzenorientiert umgebaut: Das Eyebrow traegt jetzt die Marke
+  (`Sawazki Electronics · IT, PC & Laptop`), die H1 lautet **"IT-Hilfe in Freudenstadt,
+  die man versteht."** (lokales Keyword + Kundennutzen statt doppeltem Markennamen direkt
+  unter dem Logo). Hero-Text waermer und konkreter formuliert. Der primaere Hero-CTA
+  fuehrt jetzt wie der Header-CTA in den gefuehrten Anfrage-Assistenten.
+- Neuer Teaser `.service-links` unter der Leistungsuebersicht: Die vier Angebotsseiten
+  (VHS-Digitalisierung, 3D-Druck, Datenrettung, Batteriespeicher & Inselnetz) und
+  `produkte.html` sind damit direkt von der Startseite erreichbar - vorher gab es dorthin
+  keinen sichtbaren Weg aus dem Leistungsbereich.
+- Neues Vertrauensband **"Warum Sawazki Electronics"** (`#warum`, Klasse `.why-band`) mit
+  drei ehrlichen Nutzenversprechen (persoenlich & lokal, verstaendlich erklaert, ehrlich
+  beraten) unter Wiederverwendung der `vhs-value-card`-Klassen; darunter Link zur
+  "Ueber mich"-Seite (`.why-more`). Bewusst **keine** erfundenen Testimonials, Preise
+  oder Reaktionszeit-Versprechen.
+- Kontaktbereich der Startseite: WhatsApp als sichtbarer dritter Kontaktweg in der
+  Kontakt-Seitenleiste (gleicher `wa.me`-Link wie der Float-Button).
+- Footer aller Seiten: neue Zeile `.footer-contact` mit direktem Telefon- und
+  E-Mail-Link (weniger Klicks bis zur Kontaktaufnahme).
+- Neue CSS-Bausteine: `.service-links`, `.service-links > p`, `.service-links-row`,
+  `.why-more`, `.footer-contact` (alle mit vorhandenen Farb-/Layout-Tokens).
+- Cache-Token auf allen Seiten (inkl. `404.html`) auf `20260702-marketing` angehoben.
 
 ### 2. Juli 2026 - 404-Seite, Service-Schema komplett, Performance-Politur (v1.11.0)
 

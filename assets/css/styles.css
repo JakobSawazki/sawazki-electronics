@@ -843,6 +843,26 @@ h3 {
   gap: 1rem;
 }
 
+.service-links {
+  width: min(100% - 2rem, var(--max));
+  margin: 2.4rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.service-links > p {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 650;
+}
+
+.service-links-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
 .service-card,
 .step,
 .contact-form,
@@ -1545,6 +1565,15 @@ select:focus {
   display: block;
 }
 
+.footer-contact {
+  margin-top: 0.45rem;
+  font-size: 0.95rem;
+}
+
+.footer-contact a {
+  font-weight: 700;
+}
+
 .site-footer nav {
   display: flex;
   flex-wrap: wrap;
@@ -2084,6 +2113,12 @@ select:focus {
 
 .vhs-value-grid {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.why-more {
+  width: min(100% - 2rem, var(--max));
+  margin: 1.6rem auto 0;
+  display: flex;
 }
 
 .vhs-value-card {

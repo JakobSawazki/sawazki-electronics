@@ -4,7 +4,9 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 
 ## Inhalt
 
-- Professionelle Startseite mit Hero-Bereich, lokalen Bildassets und blauem Sawazki-Electronics-Branding
+- Professionelle Startseite mit nutzenorientiertem Hero („IT-Hilfe in Freudenstadt, die man versteht."), lokalen Bildassets und blauem Sawazki-Electronics-Branding
+- Vertrauensband „Warum Sawazki Electronics" und direkter Angebots-Teaser zu allen vier Service-Seiten auf der Startseite
+- Footer mit direktem Telefon- und E-Mail-Kontakt auf allen Seiten; WhatsApp zusätzlich im Kontaktbereich
 - Dezente Leiterbahn-/Knotenpunktmuster auf den hellen Flächen statt leerem Weiß
 - Interaktives Hero-Logo mit Lichtlauf und direktem Sprung zu den Leistungen
 - Projektkarten mit einheitlichen fotorealistischen Bildkacheln für PythonLab, WorkbenchLab, BM-Lab, Games Lab und EC-Lernstudio

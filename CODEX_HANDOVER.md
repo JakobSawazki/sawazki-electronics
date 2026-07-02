@@ -1,6 +1,6 @@
 # Codex-Übergabe: Sawazki Electronics Website
 
-Stand: 2. Juli 2026 · Version: v1.11.0
+Stand: 2. Juli 2026 · Version: v1.12.0
 
 Diese Datei ist der Einstiegspunkt für einen neuen Codex-Agenten. Vor Änderungen zuerst diese
 Übergabe, anschließend bei Bedarf die ausführliche Projektdokumentation unter
@@ -18,7 +18,7 @@ Diese Datei ist der Einstiegspunkt für einen neuen Codex-Agenten. Vor Änderung
 - Live-Seite: <https://jakobsawazki.github.io/sawazki-electronics/>
 - Lokaler Projektordner (Acer Nitro 5, via Google Drive Desktop synchronisiert): `D:\Google Drive\Gewerbe\Sawazki Electronics Website` — **einzige lokale Kopie.** Der frühere Doppelstand unter `…\Codex\sawazki-electronics` (Commit `335a5f1`, Vorfahr von `main`) wurde am 02.07.2026 geprüft und gelöscht; auf anderen Geräten entspricht der Ordner dem Google-Drive-Pfad dieses Gewerbe-Ordners (z. B. `G:\Meine Ablage\Gewerbe\Sawazki Electronics Website`).
 - Standard-Branch: `main`
-- Zuletzt geprüfter Funktionsstand: 404-Fehlerseite, vollständiges Service-Schema und CLS-/Performance-Politur vom 2. Juli 2026 (v1.11.0)
+- Zuletzt geprüfter Funktionsstand: Marketing-/UX-Ausbau der Startseite (nutzenorientierter Hero, Angebots-Teaser, „Warum"-Band, Kontakt-/Footer-Ausbau) vom 2. Juli 2026 (v1.12.0)
 - Hosting: GitHub Pages direkt aus dem Repository
 
 Die Website ist statisch. Es gibt keinen Build-Prozess, kein Framework und keine Paketabhängigkeiten.
