@@ -254,6 +254,8 @@ Nach dem Veröffentlichen:
   erzeugt und für schnelle Darstellung auf 1024 × 1024 Pixel optimiert.
 - Dark Mode als Standardstart geprüft: Ohne gespeicherte individuelle Auswahl startet die Website
   dunkel; manuell gespeicherte Nutzerentscheidungen bleiben absichtlich erhalten.
+- Mit Commit `42f464f` auf `main` veröffentlicht; GitHub Pages sowie Startseite, Projektseite und
+  Bilddatei anschließend mit HTTP 200 live geprüft.
 
 ### 2. Juli 2026 - Brand-Asset-Konsolidierung (v1.16.1)
 

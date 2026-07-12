@@ -9,7 +9,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| 2026-07-12 | Solarsystem als neues Teilprojekt auf Start- und Projektseite ergänzen, eigenes lokales Projektbild einbinden und Dark-Mode-Standard prüfen | Codex | In Arbeit |
+| – | derzeit nichts | – | – |
 
 ## Offen (priorisiert)
 
@@ -27,6 +27,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-07-12 | v1.17.0 | Solarsystem als sechstes Teilprojekt auf Start- und Projektseite ergänzt, eigenes lokales Bild eingebunden, Dark-Mode-Standard bestätigt und GitHub Pages live geprüft | Codex |
 | 2026-07-02 | v1.16.1 | Alte ersetzte Sawazki-Logo-/Favicon-Dateien in `assets/images/brand/` konsolidiert; Social-Preview auf neue Brand-PNG umgestellt; GitHub Pages nach temporärem Deploy-Fehler live bestätigt | Codex |
 | 2026-07-02 | v1.16.0 | Interaktiver VHS-Preis-Schätzer (Staffel, Laufzeitaufschläge, USB-Option; barrierearm, progressive Enhancement) | Claude |
 | 2026-07-02 | – | Aufgaben-Dateien sortiert: `tasks.docx` nach `docs/` verschoben, `Tasks.md` → `tasks.md`; alle Verweise und `.gitignore` nachgezogen | Jakob + Claude |
