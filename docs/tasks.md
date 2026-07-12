@@ -9,7 +9,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| – | derzeit nichts | – | – |
+| 2026-07-12 | Solarsystem als neues Teilprojekt auf Start- und Projektseite ergänzen, eigenes lokales Projektbild einbinden und Dark-Mode-Standard prüfen | Codex | In Arbeit |
 
 ## Offen (priorisiert)
 

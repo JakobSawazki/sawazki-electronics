@@ -13,10 +13,10 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - Vollständiges Firmenlogo als interaktives Hero-Modul (optimierte WebP-Variante aus `assets/images/brand/`); Brand-Symbol in Header und Browser-Favicon
 - Zentrale Brand-Ablage: aktive und historische Sawazki-Logo-/Favicon-Dateien liegen unter `assets/images/brand/`
 - Größere Hero-Servicebilder auf der Startseite, damit das Kundengespräch stärker wirkt
-- Projektkarten mit einheitlichen fotorealistischen Bildkacheln für PythonLab, WorkbenchLab, BM-Lab, Games Lab und EC-Lernstudio
+- Projektkarten mit einheitlichen fotorealistischen Bildkacheln für PythonLab, WorkbenchLab, BM-Lab, Games Lab, Solarsystem und EC-Lernstudio
 - Direkter Navigationspunkt `Projekte` mit Sprung zum Projektbereich der Startseite
 - Dark Mode als Standard sowie persistent umschaltbarer Light-/Dark-Mode
-- PythonLab, WorkbenchLab und EC-Lernstudio sind auf ihren GitHub-Pages-Lernportalen verlinkt
+- PythonLab, WorkbenchLab, Games Lab, Solarsystem und EC-Lernstudio sind auf ihren GitHub-Pages-Projekten verlinkt
 - Eigene Projektseite mit Zweck, Zielgruppe und Ziel jedes Labs
 - Footer-Link zur zentralen Projektübersicht ohne doppelte Einzelprojektlinks
 - Zentraler Servicebereich für Dienstleistungen, Angebote und spätere ausgewählte Produkte
@@ -33,7 +33,7 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - Gebrandete 404-Fehlerseite und Performance-Feinschliff (Bildmaße gegen Layout-Shift, priorisiertes Hero-Bild, Lazy-Loading)
 - Visuell geführter Ablaufbereich mit großen Ziffern und Pfeilen für Anfrage, Analyse, Umsetzung und Übergabe
 - Kontaktformular und geführter `Anfrage-Assistent` über FormSubmit
-- Einheitlicher Projektbereich mit PythonLab, WorkbenchLab, BM-Lab, Games Lab und EC-Lernstudio
+- Einheitlicher Projektbereich mit PythonLab, WorkbenchLab, BM-Lab, Games Lab, Solarsystem und EC-Lernstudio
 - Responsive Layout für Desktop, Tablet und Smartphone
 - Lokale Bildassets, keine externen Bildabhängigkeiten
 - Unternehmenslogo als lokales Website-Asset in Navigation, Favicon, strukturierten Daten und Hero-Bereich
