@@ -254,6 +254,8 @@ Nach dem Veröffentlichen:
   Seitentitel, Beschreibung, OpenGraph-Text und strukturierte Projektdaten aktualisiert.
 - Neues lokales Projektbild `assets/images/project-cyberpedia.webp` im bestehenden
   Navy-Cyan-Fotostil erzeugt, auf 1024 × 1024 Pixel und rund 67 KB optimiert.
+- Mit Commit `ae68344` auf `main` veröffentlicht; GitHub Pages, Startseitenkarte,
+  Projektprofil, Zielseite und Bilddatei anschließend live mit HTTP 200 geprüft.
 
 ### 12. Juli 2026 - Solarsystem als Teilprojekt (v1.17.0)
 
