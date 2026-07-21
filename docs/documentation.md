@@ -252,6 +252,8 @@ Nach dem Veröffentlichen:
 - Startseitenkarten neu angeordnet: PythonLab und WorkbenchLab, BM-Lab und EC-Lernstudio,
   Cyberpedia und Solarsystem sowie Games Lab als abschließende Karte.
 - Inhalte, Bilder und Ziel-Links der sieben Projektkarten unverändert beibehalten.
+- Mit Commit `d65de8b` auf `main` veröffentlicht; die gewünschte Reihenfolge anschließend
+  auf GitHub Pages live bestätigt.
 
 ### 21. Juli 2026 - Cyberpedia als Teilprojekt (v1.18.0)
 

@@ -9,7 +9,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| 2026-07-21 | Projektkarten auf der Startseite in die gewünschte Reihenfolge bringen | Codex | In Umsetzung |
+| – | derzeit nichts | – | – |
 
 ## Offen (priorisiert)
 
@@ -27,6 +27,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-07-21 | v1.18.1 | Projektkarten neu geordnet: Cyberpedia unter BM-Lab, Solarsystem rechts daneben und Games Lab zuletzt; GitHub Pages live geprüft | Codex |
 | 2026-07-21 | v1.18.0 | Cyberpedia als siebtes Teilprojekt auf Start- und Projektseite ergänzt, eigenes Projektbild eingebunden und GitHub Pages live geprüft | Codex |
 | 2026-07-12 | v1.17.0 | Solarsystem als sechstes Teilprojekt auf Start- und Projektseite ergänzt, eigenes lokales Bild eingebunden, Dark-Mode-Standard bestätigt und GitHub Pages live geprüft | Codex |
 | 2026-07-02 | v1.16.1 | Alte ersetzte Sawazki-Logo-/Favicon-Dateien in `assets/images/brand/` konsolidiert; Social-Preview auf neue Brand-PNG umgestellt; GitHub Pages nach temporärem Deploy-Fehler live bestätigt | Codex |
