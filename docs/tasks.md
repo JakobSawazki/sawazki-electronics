@@ -9,7 +9,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| – | derzeit nichts | – | – |
+| 2026-07-21 | Projektkarten auf der Startseite in die gewünschte Reihenfolge bringen | Codex | In Umsetzung |
 
 ## Offen (priorisiert)
 

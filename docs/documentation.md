@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 21. Juli 2026 · Version: v1.18.0
+Stand: 21. Juli 2026 · Version: v1.18.1
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.18.1 | 2026-07-21 | Reihenfolge der Projektkarten auf der Startseite nach inhaltlicher Gruppierung angepasst |
 | v1.18.0 | 2026-07-21 | Cyberpedia als siebtes Projekt mit eigenem Bild auf Start- und Projektseite integriert |
 | v1.17.0 | 2026-07-12 | Solarsystem als sechstes Projekt integriert, eigenes Bild ergänzt und Dark-Mode-Standard bestätigt |
 | v1.16.1 | 2026-07-02 | Brand-Asset-Konsolidierung: alte Sawazki-Logo-/Icon-Dateien in `assets/images/brand/` archiviert |
@@ -245,6 +246,12 @@ Nach dem Veröffentlichen:
 - Commit-Kuerzel in dieser Dokumentation im Aenderungsprotokoll ergaenzen
 
 ## Bisheriges Aenderungsprotokoll
+
+### 21. Juli 2026 - Reihenfolge der Projektkarten (v1.18.1)
+
+- Startseitenkarten neu angeordnet: PythonLab und WorkbenchLab, BM-Lab und EC-Lernstudio,
+  Cyberpedia und Solarsystem sowie Games Lab als abschließende Karte.
+- Inhalte, Bilder und Ziel-Links der sieben Projektkarten unverändert beibehalten.
 
 ### 21. Juli 2026 - Cyberpedia als Teilprojekt (v1.18.0)
 
