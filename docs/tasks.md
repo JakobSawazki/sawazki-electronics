@@ -9,7 +9,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| – | derzeit nichts | – | – |
+| 2026-07-21 | Cyberpedia als siebtes Projekt auf Start- und Projektseite mit eigenem Bild einbinden | Codex | In Umsetzung |
 
 ## Offen (priorisiert)
 

@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 12. Juli 2026 · Version: v1.17.0
+Stand: 21. Juli 2026 · Version: v1.18.0
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.18.0 | 2026-07-21 | Cyberpedia als siebtes Projekt mit eigenem Bild auf Start- und Projektseite integriert |
 | v1.17.0 | 2026-07-12 | Solarsystem als sechstes Projekt integriert, eigenes Bild ergänzt und Dark-Mode-Standard bestätigt |
 | v1.16.1 | 2026-07-02 | Brand-Asset-Konsolidierung: alte Sawazki-Logo-/Icon-Dateien in `assets/images/brand/` archiviert |
 | v1.16.0 | 2026-07-02 | Interaktiver Preis-Schaetzer auf der VHS-Digitalisierungsseite (Staffel, Laufzeit, USB-Option) |
@@ -62,7 +63,7 @@ Die Website ist bewusst statisch gehalten. Es gibt keinen Build-Prozess, keine F
 Wichtige Dateien:
 
 - `index.html`: Startseite mit Hero, Leistungen, Diagnose, Praxisbildern, Ablauf, Detailband, Kontaktformular und Projects-/Sub-Projects-Hinweis
-- `projekte.html`: zentrale Projektseite mit PythonLab, WorkbenchLab, BM-Lab, Games Lab, Solarsystem und EC-Lernstudio
+- `projekte.html`: zentrale Projektseite mit PythonLab, WorkbenchLab, BM-Lab, Games Lab, Solarsystem, EC-Lernstudio und Cyberpedia
 - `produkte.html`: sichtbarer Bereich „Services & Angebote" fuer Dienstleistungen, Angebote und spaetere physische Produkte
 - `vhs-digitalisierung.html`: eigenstaendige Angebotsseite fuer alte Videokassetten
 - `anfrage-assistent.html`: gefuehrter Anfrage-Assistent als statische, datensparsame Alternative zu einem echten Live-Chatbot
@@ -117,7 +118,8 @@ Aktiv genutzt:
 - `assets/images/datenrettung-hero.webp`: fotorealistisches Hero-Bild fuer die Datenrettung
 - `assets/images/energietechnik-hero.webp`: fotorealistisches Hero- und Kartenbild fuer Batteriespeicher und Inselnetzloesungen
 - `assets/images/project-pythonlab.webp`, `project-workbenchlab.webp`, `project-bmlab.webp`,
-  `project-gameslab.webp`, `project-solarsystem.jpg`, `project-eclernstudio.webp`: einheitliche, fotorealistische
+  `project-gameslab.webp`, `project-solarsystem.jpg`, `project-eclernstudio.webp`,
+  `project-cyberpedia.webp`: einheitliche, fotorealistische
   Projektbilder fuer Startseite und `projekte.html`
 
 Noch vorhanden als moegliche Rueckfall- oder Alternativassets:
@@ -243,6 +245,15 @@ Nach dem Veröffentlichen:
 - Commit-Kuerzel in dieser Dokumentation im Aenderungsprotokoll ergaenzen
 
 ## Bisheriges Aenderungsprotokoll
+
+### 21. Juli 2026 - Cyberpedia als Teilprojekt (v1.18.0)
+
+- Cyberpedia als siebte Projektkarte am Ende des Startseitenbereichs `#projekte` ergänzt und
+  direkt mit `https://jakobsawazki.github.io/Cyberpedia-EK2/` verlinkt.
+- Ausführliches Projektprofil auf `projekte.html` mit Zweck, Zielgruppe und Lernziel ergänzt;
+  Seitentitel, Beschreibung, OpenGraph-Text und strukturierte Projektdaten aktualisiert.
+- Neues lokales Projektbild `assets/images/project-cyberpedia.webp` im bestehenden
+  Navy-Cyan-Fotostil erzeugt, auf 1024 × 1024 Pixel und rund 67 KB optimiert.
 
 ### 12. Juli 2026 - Solarsystem als Teilprojekt (v1.17.0)
 
@@ -958,6 +969,7 @@ Verbindliche Vorgaben:
 | Games Lab | `A premium matte game controller glowing softly with cyan light, a few floating geometric game tokens, playful but elegant` |
 | Solarsystem | `A radiant warm sun with eight recognizable planets on delicate orbital arcs, midnight navy studio background, cyan rim light, cinematic astronomy scene` |
 | EC-Lernstudio | `A small clean cardboard parcel with a glowing scan line and floating data points, modern e-commerce logistics concept` |
+| Cyberpedia | `A sleek open dark laptop displaying an abstract glowing network topology, with a modern security key and magnifying lens, educational cybersecurity and media-literacy concept` |
 | 3D-Druck (Hero) | `A precise FDM 3D printer mid-print creating a smooth object on the print bed, glowing cyan rim light, dark workshop, 16:9 cinematic` |
 | Datenrettung (Hero) | `An opened hard drive (HDD) on a clean workbench with a soft glowing cyan data stream rising from the platter, dark studio, 16:9 cinematic` |
 | Energietechnik (Hero) | `A neat LiFePO4 battery storage unit with a solar panel and a charge controller, glowing cyan accents, off-grid energy concept, dark studio, 16:9 cinematic` |
@@ -965,7 +977,8 @@ Verbindliche Vorgaben:
 ### Dateinamen und Einbau
 
 - Kacheln: `assets/images/project-pythonlab.webp`, `project-workbenchlab.webp`,
-  `project-bmlab.webp`, `project-gameslab.webp`, `project-eclernstudio.webp`
+  `project-bmlab.webp`, `project-gameslab.webp`, `project-eclernstudio.webp`,
+  `project-solarsystem.jpg`, `project-cyberpedia.webp`
   (eingebaut in `index.html` `#projekte` und `projekte.html`; CSS-Plate
   `.side-project-card img`, 78x78, `object-fit: cover`).
 - Service-Heros: `3d-druck-hero.webp`, `datenrettung-hero.webp`, `energietechnik-hero.webp`
@@ -1033,6 +1046,7 @@ steckt, damit jeder Mitarbeiter/Agent ohne Vorwissen einsteigen kann. Stand: 02.
 | Games Lab | Spiele und Experimente | <https://jakobsawazki.github.io/games-lab/> |
 | Solarsystem | Interaktive 3D-Entdeckung von Sonne und Planeten | <https://jakobsawazki.github.io/solarsystem/> |
 | EC-Lernstudio | E-Commerce-Lernfelder (LF2/LF7) | <https://jakobsawazki.github.io/ec-lernstudio-lf7/> |
+| Cyberpedia | Netzwerke, Cybersicherheit und Medienkompetenz | <https://jakobsawazki.github.io/Cyberpedia-EK2/> |
 
 Alle Kacheln tragen einheitlich "Designed by Sawazki Electronics". Neue Projekte: Karte im
 Projektbereich der Startseite + Vorstellung auf `projekte.html`, nicht im Footer duplizieren.
