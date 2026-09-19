@@ -9,7 +9,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| – | derzeit nichts | – | – |
+| 2026-09-19 | Excel-Lab auf Start- und Projektseite integrieren und beide Websites veröffentlichen | Codex | Umsetzung und Veröffentlichung |
 
 ## Offen (priorisiert)
 

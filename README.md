@@ -17,6 +17,7 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - Direkter Navigationspunkt `Projekte` mit Sprung zum Projektbereich der Startseite
 - Dark Mode als Standard sowie persistent umschaltbarer Light-/Dark-Mode
 - PythonLab, WorkbenchLab, Games Lab, Solarsystem, EC-Lernstudio und Cyberpedia sind auf ihren GitHub-Pages-Projekten verlinkt
+- Excel-Lab für Tabellenkalkulation mit eigener Projektkarte, dem grünen Tabellen-Symbol und direktem Link zur Lernplattform
 - Eigene Projektseite mit Zweck, Zielgruppe und Ziel jedes Labs
 - Footer-Link zur zentralen Projektübersicht ohne doppelte Einzelprojektlinks
 - Zentraler Servicebereich für Dienstleistungen, Angebote und spätere ausgewählte Produkte

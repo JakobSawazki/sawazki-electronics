@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 21. Juli 2026 · Version: v1.18.1
+Stand: 19. September 2026 · Version: v1.19.0
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.19.0 | 2026-09-19 | Excel-Lab als achtes Projekt auf Startseite und Projektübersicht integriert |
 | v1.18.1 | 2026-07-21 | Reihenfolge der Projektkarten auf der Startseite nach inhaltlicher Gruppierung angepasst |
 | v1.18.0 | 2026-07-21 | Cyberpedia als siebtes Projekt mit eigenem Bild auf Start- und Projektseite integriert |
 | v1.17.0 | 2026-07-12 | Solarsystem als sechstes Projekt integriert, eigenes Bild ergänzt und Dark-Mode-Standard bestätigt |
@@ -246,6 +247,16 @@ Nach dem Veröffentlichen:
 - Commit-Kuerzel in dieser Dokumentation im Aenderungsprotokoll ergaenzen
 
 ## Bisheriges Aenderungsprotokoll
+
+### 19. September 2026 – Excel-Lab als Teilprojekt (v1.19.0)
+
+- Neue Projektkarte vor Games Lab im bestehenden Layout; andere Karten behalten ihre Reihenfolge.
+- Eigenes Profil auf `projekte.html#excel-lab` mit Zweck, Zielgruppe, Lernzielen und direktem Link.
+- Vorhandenes grünes Excel-Lab-Symbol als lokales SVG übernommen; keine externe Bildabhängigkeit.
+- Acht Projekte im Seitentext und Excel-Lab in den strukturierten Daten; Cache-Buster auf allen Seiten vereinheitlicht.
+- Excel-Lab umfasst nun eigene Lernseiten L1.1 bis L1.5, aufklappbare Informationen und Aufgaben sowie die temporäre Entwicklervorschau.
+- Veröffentlichung ausdrücklich von Jakob beauftragt. Lokale Prüfung und GitHub-Pages-Kontrolle werden im Aufgabenlog dokumentiert.
+
 
 ### 21. Juli 2026 - Reihenfolge der Projektkarten (v1.18.1)
 

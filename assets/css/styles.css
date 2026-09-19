@@ -2668,6 +2668,7 @@ select:focus {
 }
 
 .project-profile {
+  scroll-margin-top: 7rem;
   position: relative;
   padding: clamp(1.35rem, 3vw, 2rem);
   overflow: hidden;
