@@ -255,7 +255,11 @@ Nach dem Veröffentlichen:
 - Vorhandenes grünes Excel-Lab-Symbol als lokales SVG übernommen; keine externe Bildabhängigkeit.
 - Acht Projekte im Seitentext und Excel-Lab in den strukturierten Daten; Cache-Buster auf allen Seiten vereinheitlicht.
 - Excel-Lab umfasst nun eigene Lernseiten L1.1 bis L1.5, aufklappbare Informationen und Aufgaben sowie die temporäre Entwicklervorschau.
-- Veröffentlichung ausdrücklich von Jakob beauftragt. Lokale Prüfung und GitHub-Pages-Kontrolle werden im Aufgabenlog dokumentiert.
+- Veröffentlichung ausdrücklich von Jakob beauftragt: Website-Commit `699853f`, Excel-Lab-Commit `fe43558`; beide Pages-Deployments erfolgreich.
+- Lokal: Desktop/Mobil, Hell/Dunkel, 1440/768/390/320 Pixel ohne Überbreite, Bilder und interne Links, acht Projektkarten, JSON-LD und eindeutige IDs geprüft.
+- Live: Projektkarte und Projektprofil sichtbar, grünes Symbol eingebunden, Excel-Lab 0.7.0 sowie L1.5 mit sieben Abschnitten und fünf Ausgangsdatensätzen geprüft. Entwicklervorschau öffnet L1.5 schreibgeschützt und endet beim Reload.
+- Öffentliche Browserprüfung über das Browserwerkzeug abgeschlossen; ein zuvor versuchter Shell-Browseraufruf wurde automatisch blockiert.
+- Durch Google Drive erzeugte desktop.ini-Dateien innerhalb der lokalen Git-Metadaten wurden außerhalb der Repositories gesichert; Fetch funktioniert wieder. Kanonische Arbeitsordner bleiben maßgeblich.
 
 
 ### 21. Juli 2026 - Reihenfolge der Projektkarten (v1.18.1)
