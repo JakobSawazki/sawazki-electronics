@@ -9,7 +9,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| – | derzeit nichts | – | – |
+| 2026-09-20 | Excel-Lab in der Projektübersicht an die erste Stelle setzen, neues fotorealistisches Projektbild einbinden und Nummerierung angleichen | Codex | Reihenfolge am 26.09. präzisiert: Excel-Lab, WorkbenchLab, PythonLab; Veröffentlichung in Arbeit |
 
 ## Offen (priorisiert)
 

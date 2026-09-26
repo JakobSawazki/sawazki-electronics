@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 19. September 2026 · Version: v1.19.0
+Stand: 26. September 2026 · Version: v1.19.1
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.19.1 | 2026-09-26 | Excel-Lab zuerst, WorkbenchLab danach, PythonLab an dritter Stelle; vorbereitetes Excel-Projektbild übernommen |
 | v1.19.0 | 2026-09-19 | Excel-Lab als achtes Projekt auf Startseite und Projektübersicht integriert |
 | v1.18.1 | 2026-07-21 | Reihenfolge der Projektkarten auf der Startseite nach inhaltlicher Gruppierung angepasst |
 | v1.18.0 | 2026-07-21 | Cyberpedia als siebtes Projekt mit eigenem Bild auf Start- und Projektseite integriert |
@@ -65,7 +66,7 @@ Die Website ist bewusst statisch gehalten. Es gibt keinen Build-Prozess, keine F
 Wichtige Dateien:
 
 - `index.html`: Startseite mit Hero, Leistungen, Diagnose, Praxisbildern, Ablauf, Detailband, Kontaktformular und Projects-/Sub-Projects-Hinweis
-- `projekte.html`: zentrale Projektseite mit PythonLab, WorkbenchLab, BM-Lab, Games Lab, Solarsystem, EC-Lernstudio und Cyberpedia
+- `projekte.html`: zentrale Projektseite mit Excel-Lab, WorkbenchLab, PythonLab, BM-Lab, Games Lab, Solarsystem, EC-Lernstudio und Cyberpedia
 - `produkte.html`: sichtbarer Bereich „Services & Angebote" fuer Dienstleistungen, Angebote und spaetere physische Produkte
 - `vhs-digitalisierung.html`: eigenstaendige Angebotsseite fuer alte Videokassetten
 - `anfrage-assistent.html`: gefuehrter Anfrage-Assistent als statische, datensparsame Alternative zu einem echten Live-Chatbot
@@ -119,7 +120,7 @@ Aktiv genutzt:
 - `assets/images/3d-druck-hero.webp`: fotorealistisches Hero-Bild fuer die 3D-Druck-Dienstleistung
 - `assets/images/datenrettung-hero.webp`: fotorealistisches Hero-Bild fuer die Datenrettung
 - `assets/images/energietechnik-hero.webp`: fotorealistisches Hero- und Kartenbild fuer Batteriespeicher und Inselnetzloesungen
-- `assets/images/project-pythonlab.webp`, `project-workbenchlab.webp`, `project-bmlab.webp`,
+- `assets/images/project-excellab.webp`, `project-pythonlab.webp`, `project-workbenchlab.webp`, `project-bmlab.webp`,
   `project-gameslab.webp`, `project-solarsystem.jpg`, `project-eclernstudio.webp`,
   `project-cyberpedia.webp`: einheitliche, fotorealistische
   Projektbilder fuer Startseite und `projekte.html`
@@ -247,6 +248,13 @@ Nach dem Veröffentlichen:
 - Commit-Kuerzel in dieser Dokumentation im Aenderungsprotokoll ergaenzen
 
 ## Bisheriges Aenderungsprotokoll
+
+### 26. September 2026 – Projekt-Reihenfolge und Excel-Projektbild (v1.19.1)
+
+- Excel-Lab auf der Startseite an die erste Position gesetzt; WorkbenchLab steht oben rechts, PythonLab in der nächsten Zeile links.
+- Excel-Lab auch auf der ausführlichen Projektseite an die erste Position verschoben und die sichtbare Projektnummerierung angepasst.
+- Neues fotorealistisches 1024×1024-WebP `assets/images/project-excellab.webp` im bestehenden dunkelblauen Projektstil eingebunden; das frühere SVG bleibt als unreferenziertes Bestandsasset erhalten.
+- Linkziel bleibt die öffentliche Excel-Lab-Seite. Veröffentlichung am 26. September auf ausdrücklichen Wunsch beauftragt.
 
 ### 19. September 2026 – Excel-Lab als Teilprojekt (v1.19.0)
 
