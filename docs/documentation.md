@@ -254,7 +254,7 @@ Nach dem Veröffentlichen:
 - Excel-Lab auf der Startseite an die erste Position gesetzt; WorkbenchLab steht oben rechts, PythonLab in der nächsten Zeile links.
 - Excel-Lab auch auf der ausführlichen Projektseite an die erste Position verschoben und die sichtbare Projektnummerierung angepasst.
 - Neues fotorealistisches 1024×1024-WebP `assets/images/project-excellab.webp` im bestehenden dunkelblauen Projektstil eingebunden; das frühere SVG bleibt als unreferenziertes Bestandsasset erhalten.
-- Linkziel bleibt die öffentliche Excel-Lab-Seite. Veröffentlichung am 26. September auf ausdrücklichen Wunsch beauftragt.
+- Linkziel bleibt die öffentliche Excel-Lab-Seite. Am 26. September veröffentlicht (2d4ffca); GitHub-Pages-Deployment erfolgreich. Live-Reihenfolge und Desktop-Positionen im Browser bestätigt; lokale Referenzen, mobile Reihenfolge und heller/dunkler Modus geprüft.
 
 ### 19. September 2026 – Excel-Lab als Teilprojekt (v1.19.0)
 
