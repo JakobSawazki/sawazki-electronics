@@ -9,6 +9,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
+| 2026-10-07 | Alle Projektgruppen standardmäßig öffnen und globale Minus-/Plus-Buttons ergänzen | Codex | Umgesetzt und lokal geprüft; Veröffentlichung und Live-Abnahme offen |
 
 ## Offen (priorisiert)
 

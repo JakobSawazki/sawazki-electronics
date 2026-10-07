@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 7. Oktober 2026 · Version: v1.20.0
+Stand: 7. Oktober 2026 · Version: v1.21.0
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.21.0 | 2026-10-07 | Alle Projektgruppen standardmäßig geöffnet; globale Minus-/Plus-Buttons |
 | v1.20.0 | 2026-10-07 | AlgoLab als neuntes Projekt; fünf aufklappbare Gruppen, größere Icons und einheitlicher Bereich IT-Projekte |
 | v1.19.1 | 2026-09-26 | Excel-Lab zuerst, WorkbenchLab danach, PythonLab an dritter Stelle; vorbereitetes Excel-Projektbild übernommen |
 | v1.19.0 | 2026-09-19 | Excel-Lab als achtes Projekt auf Startseite und Projektübersicht integriert |
@@ -249,6 +250,15 @@ Nach dem Veröffentlichen:
 - Commit-Kuerzel in dieser Dokumentation im Aenderungsprotokoll ergaenzen
 
 ## Bisheriges Aenderungsprotokoll
+
+### 7. Oktober 2026 – v1.21.0: Globale Gruppensteuerung
+
+- Alle fünf Projektgruppen starten auf `index.html` und `projekte.html` geöffnet, auch ohne JavaScript. Der frühere Einstieg mit nur geöffneten Lern-Labs ist damit ersetzt.
+- Zwei dezente 40-px-Buttons oberhalb der Gruppen: Minus für „Alle Gruppen zuklappen“, Plus für „Alle Gruppen aufklappen“. Beschriftungen als zugänglicher Name und Tooltip; Fokusmarkierung und Navy-/Cyan-Metalloptik im bestehenden Stil.
+- Gemeinsame Zustandssteuerung für einzelne und globale Aktionen verwendet die vorhandene Animation. Bereits passende Zustände bleiben unverändert; schnelle Richtungswechsel funktionieren. Enter/Leertaste, reduzierte Bewegung und Browser ohne Animation-API werden unterstützt. Globale Buttons werden ohne JavaScript verborgen; einzelne native Gruppen bleiben bedienbar.
+- Cache-Version für CSS und Skripte auf allen HTML-Seiten: `20261007-it-project-controls`.
+- Lokal geprüft: beide Seiten mit fünf offenen Gruppen beim Laden; alle schließen/öffnen; gemischte Zustände und schnelle Mehrfachklicks; Enter/Leertaste; Desktop und 390-px-Smartphone, Hell-/Dunkelmodus ohne horizontales Überlaufen; keine JavaScript-Fehler; Syntaxprüfung, lokale HTML-Verweise/Bilder, IDs, JSON-LD und `git diff --check`. Veröffentlichung und Live-Abnahme noch offen.
+
 
 ### 7. Oktober 2026 – v1.20.0: IT-Projekte und AlgoLab
 

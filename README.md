@@ -34,7 +34,7 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - Gebrandete 404-Fehlerseite und Performance-Feinschliff (Bildmaße gegen Layout-Shift, priorisiertes Hero-Bild, Lazy-Loading)
 - Visuell geführter Ablaufbereich mit großen Ziffern und Pfeilen für Anfrage, Analyse, Umsetzung und Übergabe
 - Kontaktformular und geführter `Anfrage-Assistent` über FormSubmit
-- IT-Projekte in fünf aufklappbaren Gruppen: Lern-Labs, Berufsschule, Schülerprojekte, Gaming und Wissen & Bildung; Tastaturbedienung und reduzierte Bewegung unterstützt
+- IT-Projekte in fünf aufklappbaren Gruppen: Lern-Labs, Berufsschule, Schülerprojekte, Gaming und Wissen & Bildung; standardmäßig geöffnet, mit globalen Minus-/Plus-Buttons; Tastaturbedienung und reduzierte Bewegung unterstützt
 - Größere Projekticons und einmaliger zentraler Urheberhinweis; AlgoLab für BPE7 direkt neben PythonLab
 - Responsive Layout für Desktop, Tablet und Smartphone
 - Lokale Bildassets, keine externen Bildabhängigkeiten

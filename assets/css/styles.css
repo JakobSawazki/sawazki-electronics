@@ -3536,3 +3536,11 @@ select:focus {
 @media (prefers-reduced-motion: reduce) {
   .project-group-chevron, .project-group > summary { transition: none; }
 }
+
+/* Small global project controls; hide non-functional controls without JavaScript. */
+.project-group-controls { display: flex; justify-content: flex-end; gap: .45rem; }
+.project-group-controls[hidden] { display: none; }
+.project-group-control { display: grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--line); border-radius: 9px; color: var(--teal); background: linear-gradient(145deg, rgba(20,123,184,.12), rgba(32,191,210,.04)); box-shadow: inset 0 1px rgba(255,255,255,.18); cursor: pointer; }
+.project-group-control:hover { border-color: var(--teal); background: linear-gradient(145deg, rgba(20,123,184,.2), rgba(32,191,210,.1)); }
+.project-group-control:focus-visible { outline: 3px solid var(--cyan); outline-offset: 3px; }
+:root[data-theme="dark"] .project-group-control { color: #83d9f0; }

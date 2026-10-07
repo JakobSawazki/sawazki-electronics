@@ -10,10 +10,11 @@ const topicField = document.querySelector('select[name="topic"]');
 document.documentElement.classList.add("js-ready");
 
 // Native details remain usable without JavaScript; enhance both directions.
+const projectGroupControllers = new Map();
 document.querySelectorAll("[data-project-group]").forEach((group) => {
   const summary = group.querySelector("summary");
   const content = group.querySelector(".project-group-content");
-  if (!summary || !content || !content.animate) return;
+  if (!summary || !content) return;
   let animation = null;
   let targetOpen = group.open;
   summary.setAttribute("aria-expanded", String(targetOpen));
@@ -23,14 +24,14 @@ document.querySelectorAll("[data-project-group]").forEach((group) => {
       summary.setAttribute("aria-expanded", String(targetOpen));
     }
   });
-  summary.addEventListener("click", (event) => {
-    event.preventDefault();
+  function setOpen(nextOpen) {
+    if (nextOpen === targetOpen) return;
     const from = group.open ? content.getBoundingClientRect().height : 0;
     animation?.cancel();
-    targetOpen = !targetOpen;
+    targetOpen = nextOpen;
     summary.setAttribute("aria-expanded", String(targetOpen));
     group.classList.toggle("is-closing", !targetOpen);
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    if (!content.animate || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       animation = null;
       group.open = targetOpen;
       group.classList.remove("is-closing");
@@ -48,6 +49,23 @@ document.querySelectorAll("[data-project-group]").forEach((group) => {
       animation = null;
       group.classList.remove("is-closing");
     }).catch(() => {}); // A new click intentionally cancels the old transition.
+  }
+  projectGroupControllers.set(group, setOpen);
+  summary.addEventListener("click", (event) => {
+    event.preventDefault();
+    setOpen(!targetOpen);
+  });
+});
+
+document.querySelectorAll("[data-project-group-controls]").forEach((controls) => {
+  const groups = controls.closest(".project-groups")?.querySelectorAll("[data-project-group]");
+  if (!groups?.length) return;
+  controls.hidden = false;
+  controls.querySelectorAll("[data-project-groups-action]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const open = button.dataset.projectGroupsAction === "expand";
+      groups.forEach((group) => projectGroupControllers.get(group)?.(open));
+    });
   });
 });
 
