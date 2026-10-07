@@ -9,7 +9,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| – | derzeit nichts | – | – |
+| 2026-10-07 | AlgoLab ergänzen und IT-Projekte in aufklappbare Themenbereiche gruppieren | Codex | Fünf Gruppen, größere Icons und AlgoLab-Motiv fertig; lokale Browser-/Linkprüfung bestanden, Veröffentlichung und Live-Abnahme offen |
 
 ## Offen (priorisiert)
 

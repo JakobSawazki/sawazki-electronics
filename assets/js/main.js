@@ -9,6 +9,48 @@ const topicField = document.querySelector('select[name="topic"]');
 
 document.documentElement.classList.add("js-ready");
 
+// Native details remain usable without JavaScript; enhance both directions.
+document.querySelectorAll("[data-project-group]").forEach((group) => {
+  const summary = group.querySelector("summary");
+  const content = group.querySelector(".project-group-content");
+  if (!summary || !content || !content.animate) return;
+  let animation = null;
+  let targetOpen = group.open;
+  summary.setAttribute("aria-expanded", String(targetOpen));
+  group.addEventListener("toggle", () => {
+    if (!animation) {
+      targetOpen = group.open;
+      summary.setAttribute("aria-expanded", String(targetOpen));
+    }
+  });
+  summary.addEventListener("click", (event) => {
+    event.preventDefault();
+    const from = group.open ? content.getBoundingClientRect().height : 0;
+    animation?.cancel();
+    targetOpen = !targetOpen;
+    summary.setAttribute("aria-expanded", String(targetOpen));
+    group.classList.toggle("is-closing", !targetOpen);
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      animation = null;
+      group.open = targetOpen;
+      group.classList.remove("is-closing");
+      return;
+    }
+    group.open = true;
+    const transition = content.animate(
+      [{ height: `${from}px`, opacity: from ? 1 : 0 }, { height: targetOpen ? `${content.scrollHeight}px` : "0px", opacity: targetOpen ? 1 : 0 }],
+      { duration: 300, easing: "cubic-bezier(.22,1,.36,1)" }
+    );
+    animation = transition;
+    transition.finished.then(() => {
+      if (animation !== transition) return;
+      group.open = targetOpen;
+      animation = null;
+      group.classList.remove("is-closing");
+    }).catch(() => {}); // A new click intentionally cancels the old transition.
+  });
+});
+
 function updateHeader() {
   if (!header) return;
   const forceSolidHeader = document.body.classList.contains("legal-body");

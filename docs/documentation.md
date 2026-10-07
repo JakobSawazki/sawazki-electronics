@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 26. September 2026 · Version: v1.19.1
+Stand: 7. Oktober 2026 · Version: v1.20.0
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.20.0 | 2026-10-07 | AlgoLab als neuntes Projekt; fünf aufklappbare Gruppen, größere Icons und einheitlicher Bereich IT-Projekte |
 | v1.19.1 | 2026-09-26 | Excel-Lab zuerst, WorkbenchLab danach, PythonLab an dritter Stelle; vorbereitetes Excel-Projektbild übernommen |
 | v1.19.0 | 2026-09-19 | Excel-Lab als achtes Projekt auf Startseite und Projektübersicht integriert |
 | v1.18.1 | 2026-07-21 | Reihenfolge der Projektkarten auf der Startseite nach inhaltlicher Gruppierung angepasst |
@@ -66,7 +67,7 @@ Die Website ist bewusst statisch gehalten. Es gibt keinen Build-Prozess, keine F
 Wichtige Dateien:
 
 - `index.html`: Startseite mit Hero, Leistungen, Diagnose, Praxisbildern, Ablauf, Detailband, Kontaktformular und Projects-/Sub-Projects-Hinweis
-- `projekte.html`: zentrale Projektseite mit Excel-Lab, WorkbenchLab, PythonLab, BM-Lab, Games Lab, Solarsystem, EC-Lernstudio und Cyberpedia
+- `projekte.html`: zentrale Projektseite mit neun Angeboten in den aufklappbaren Gruppen Lern-Labs, Berufsschule, Schülerprojekte, Gaming sowie Wissen & Bildung
 - `produkte.html`: sichtbarer Bereich „Services & Angebote" fuer Dienstleistungen, Angebote und spaetere physische Produkte
 - `vhs-digitalisierung.html`: eigenstaendige Angebotsseite fuer alte Videokassetten
 - `anfrage-assistent.html`: gefuehrter Anfrage-Assistent als statische, datensparsame Alternative zu einem echten Live-Chatbot
@@ -76,7 +77,7 @@ Wichtige Dateien:
 - `danke.html`: Zielseite nach erfolgreichem Formularversand
 - `404.html`: gebrandete Fehlerseite fuer GitHub Pages (absolute URLs, noindex, nicht in der Sitemap)
 - `assets/css/styles.css`: gesamtes Layout, Farben, Responsive Design, Hover-Effekte
-- `assets/js/main.js`: Navigation, Scroll-Header, Reveal-Animationen, Formular-Betreff
+- `assets/js/main.js`: Navigation, Scroll-Header, Reveal-Animationen, animierte Projektgruppen, Formular-Betreff
 - `assets/js/theme.js`: Dark Mode als Standard und lokal gespeicherte Theme-Auswahl
 - `assets/images/`: lokale Bild- und Logoassets
 - `3d-druck.html`, `datenrettung.html`, `energietechnik.html`: weitere Angebotsseiten (Service-Layoutklassen wiederverwendet)
@@ -248,6 +249,18 @@ Nach dem Veröffentlichen:
 - Commit-Kuerzel in dieser Dokumentation im Aenderungsprotokoll ergaenzen
 
 ## Bisheriges Aenderungsprotokoll
+
+### 7. Oktober 2026 – v1.20.0: IT-Projekte und AlgoLab
+
+- Auf Startseite und `projekte.html` neun Projekte in fünf unabhängige, aufklappbare Bereiche geordnet: Lern-Labs (Excel-Lab, WorkbenchLab, PythonLab, AlgoLab), Berufsschule (EC-Lernstudio, BM-Lab), Schülerprojekte (Cyberpedia), Gaming (GamesLab) und Wissen & Bildung (Solarsystem). Lern-Labs ist beim Einstieg geöffnet, die übrigen Gruppen geschlossen.
+- Überschrift „IT-Projekte“; Beschreibung „Digitale Lernangebote, Software-Entwicklung, IT-Engineering“ mit einmaligem zentralem „Designed by Sawazki Electronics“. Wiederholte Urheberzeilen aus den Kacheln entfernt. Excel-Lab behält den Bindestrich; GamesLab wird als zusammenhängender Name angezeigt, die Zieladresse bleibt bestehen.
+- AlgoLab rechts neben PythonLab auf dem Desktop verlinkt. Eigenes Profil auf der Projektseite, neun Einträge im CollectionPage-Schema. Bestehende Profiltexte erhalten.
+- Größere Projekticons: 112 px auf dem Desktop, 90 px auf der mobilen Startseite und 100 px in mobilen Profilen. Kategoriezeilen mit blauen Metalleffekten, Mengenanzeige und rotierendem Pfeil. Native `details`/`summary` funktionieren ohne JavaScript; JavaScript ergänzt 300-ms-Höhen-/Deckkraftanimationen, schnelle Richtungswechsel, `aria-expanded` und Unterstützung für reduzierte Bewegung. Enter und Leertaste bedienen die Gruppen.
+- Neues Motiv `assets/images/project-algolab.webp` (1254 × 1254, ca. 120 KiB). Mit eingebautem Imagegen im Referenzmodus aus dem bestehenden PythonLab-Icon als Stilvorlage erzeugt, anschließend nur als WebP komprimiert. Das Motiv zeigt geordnete Metallbausteine und ein leuchtendes Knotenmodell; keine Schrift. Lokales Original: `C:/Users/Jakob/.codex/generated_images/01a112ba-3602-7e33-a3d1-93f851c588b6/exec-ae85bfe9-7778-4083-887e-ad34365b2062.png`.
+- Bildprompt: “Use case: product-mockup. Asset type: square website project app icon for AlgoLab, matching an existing family of photorealistic navy and cyan technology icons. Reference image: existing PythonLab tablet image used as style reference only. Create a distinct photorealistic premium 3D still life of a small brushed-metal algorithm and data-structure model on a dark reflective laboratory desk: five ordered blue and silver blocks of differing heights in the foreground and a compact branching tree of polished silver connecting rods and cyan-blue nodes behind. Main objects large and readable at 112 pixels, centered with safe margin. Deep navy background, restrained cyan edge lighting, blue glow and shallow depth of field, realistic polished metal texture, cinematic professional tech product photography. The scene must clearly differ from the tablet icon and suggest ordering data and connections. Full square image, no built-in rounded border (CSS will round corners), no letters, no text, no logo, no watermark, no people. The model is symbolic, not a specific mathematical tree diagram.”
+- Cache-Version für CSS, Theme und Hauptskript auf allen HTML-Seiten vereinheitlicht: `20261007-it-projects`.
+- Lokal geprüft: Start- und Projektseite mit 1440/390 px, hell/dunkel, ohne horizontales Überlaufen; Maus, Enter, Leertaste und schnelle Mehrfachklicks; Gruppenzuordnung und AlgoLab-Link; Bildladung; JavaScript-Syntax; alle lokalen HTML-Verweise, eindeutige IDs und JSON-LD; `git diff --check`. Kein Kontaktformular abgesendet. Veröffentlichung und Live-Abnahme stehen noch aus.
+
 
 ### 26. September 2026 – Projekt-Reihenfolge und Excel-Projektbild (v1.19.1)
 
@@ -1075,9 +1088,10 @@ steckt, damit jeder Mitarbeiter/Agent ohne Vorwissen einsteigen kann. Stand: 02.
 | Projekt | Inhalt | Live |
 | --- | --- | --- |
 | PythonLab | Python lernen, Struktogramme | <https://jakobsawazki.github.io/PythonLab/> |
+| AlgoLab | BPE7: Algorithmen und Datenstrukturen | <https://jakobsawazki.github.io/AlgoLab/> |
 | WorkbenchLab | Datenbanken/SQL ueben | <https://jakobsawazki.github.io/WorkbenchLab/> |
 | BM-Lab | Bueromanagement-Lernportal | <https://jakobsawazki.github.io/bm-lernportal/> |
-| Games Lab | Spiele und Experimente | <https://jakobsawazki.github.io/games-lab/> |
+| GamesLab | Spiele und Experimente | <https://jakobsawazki.github.io/games-lab/> |
 | Solarsystem | Interaktive 3D-Entdeckung von Sonne und Planeten | <https://jakobsawazki.github.io/solarsystem/> |
 | EC-Lernstudio | E-Commerce-Lernfelder (LF2/LF7) | <https://jakobsawazki.github.io/ec-lernstudio-lf7/> |
 | Cyberpedia | Netzwerke, Cybersicherheit und Medienkompetenz | <https://jakobsawazki.github.io/Cyberpedia-EK2/> |
