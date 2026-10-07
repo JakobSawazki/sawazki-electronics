@@ -9,7 +9,6 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| 2026-10-07 | Alle Projektgruppen standardmäßig öffnen und globale Minus-/Plus-Buttons ergänzen | Codex | Umgesetzt und lokal geprüft; Veröffentlichung und Live-Abnahme offen |
 
 ## Offen (priorisiert)
 
@@ -27,6 +26,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-10-07 | v1.21.0 | Alle Projektgruppen auf Start-/Projektseite standardmäßig geöffnet; dezente globale Minus-/Plus-Buttons mit Animation und Tastaturbedienung; lokal und live geprüft, GitHub Pages erfolgreich | Codex |
 | 2026-10-07 | v1.20.0 | AlgoLab mit passendem Icon ergänzt; IT-Projekte auf Start-/Projektseite in fünf animierte Gruppen geordnet, Icons vergrößert, zentraler Urheberhinweis und GamesLab-Name; lokal und live geprüft, GitHub Pages erfolgreich | Codex |
 | 2026-09-26 | v1.19.1 | Excel-Lab oben links, WorkbenchLab rechts daneben, PythonLab darunter; Projektseite angeglichen und vorbereitetes Excel-Bild veröffentlicht; GitHub Pages erfolgreich und live geprüft | Codex |
 | 2026-09-19 | v1.19.0 | Excel-Lab als achtes Projekt auf Start- und Projektseite integriert; beide Websites nach GitHub gepusht und live geprüft | Codex |

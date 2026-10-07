@@ -257,7 +257,7 @@ Nach dem Veröffentlichen:
 - Zwei dezente 40-px-Buttons oberhalb der Gruppen: Minus für „Alle Gruppen zuklappen“, Plus für „Alle Gruppen aufklappen“. Beschriftungen als zugänglicher Name und Tooltip; Fokusmarkierung und Navy-/Cyan-Metalloptik im bestehenden Stil.
 - Gemeinsame Zustandssteuerung für einzelne und globale Aktionen verwendet die vorhandene Animation. Bereits passende Zustände bleiben unverändert; schnelle Richtungswechsel funktionieren. Enter/Leertaste, reduzierte Bewegung und Browser ohne Animation-API werden unterstützt. Globale Buttons werden ohne JavaScript verborgen; einzelne native Gruppen bleiben bedienbar.
 - Cache-Version für CSS und Skripte auf allen HTML-Seiten: `20261007-it-project-controls`.
-- Lokal geprüft: beide Seiten mit fünf offenen Gruppen beim Laden; alle schließen/öffnen; gemischte Zustände und schnelle Mehrfachklicks; Enter/Leertaste; Desktop und 390-px-Smartphone, Hell-/Dunkelmodus ohne horizontales Überlaufen; keine JavaScript-Fehler; Syntaxprüfung, lokale HTML-Verweise/Bilder, IDs, JSON-LD und `git diff --check`. Veröffentlichung und Live-Abnahme noch offen.
+- Lokal geprüft: beide Seiten mit fünf offenen Gruppen beim Laden; alle schließen/öffnen; gemischte Zustände und schnelle Mehrfachklicks; Enter/Leertaste; Desktop und 390-px-Smartphone, Hell-/Dunkelmodus ohne horizontales Überlaufen; keine JavaScript-Fehler; Syntaxprüfung, lokale HTML-Verweise/Bilder, IDs, JSON-LD und `git diff --check`. GitHub Pages erfolgreich veröffentlicht (Code `7dfd435`, Lauf `37677624626`); live auf beiden Seiten fünf offene Gruppen und beide globale Aktionen inklusive Tastatursteuerung bestätigt, keine JavaScript-Fehler.
 
 
 ### 7. Oktober 2026 – v1.20.0: IT-Projekte und AlgoLab
