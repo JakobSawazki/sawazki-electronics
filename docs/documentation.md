@@ -254,6 +254,15 @@ Nach dem Veröffentlichen:
 - pruefen, ob HTML/CSS die neuen Klassen oder Inhalte enthalten
 - Commit-Kuerzel in dieser Dokumentation im Aenderungsprotokoll ergaenzen
 
+## Gestaltungsvorschlag Startseiten-Einstieg (8. Oktober 2026, noch nicht umgesetzt)
+
+- Eigene lokale Vorschau außerhalb des veröffentlichten Repositorys erstellt und auf Desktop (1440 px) sowie Mobil (390 px) kontrolliert.
+- IT-Hilfe in Freudenstadt bleibt Kernbotschaft; bestehende H1 beibehalten, Absatz verkürzt: „Persönliche Hilfe bei PC- und Laptop-Problemen – verständlich erklärt, vor Ort oder per Fernhilfe nach Absprache."
+- Ein einzelnes Beratungsbild neben dem Text, mehr Freiraum, eine primäre Anfrage-Schaltfläche und ein dezenter Link zu den Leistungen.
+- Große zusätzliche Logo-Karte, drei Bildkarten und Faktenbox im Hero entfallen im Vorschlag. Inhalte zu Arbeitsweise und Service bleiben in den passenden Abschnitten vorhanden.
+- Laufband durch eine ruhige Leistungszeile ersetzt. Markenlogo bleibt im Header.
+- Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
+
 ## Bisheriges Aenderungsprotokoll
 
 ### 8. Oktober 2026 – v1.22.1: Webdesign-Motiv
