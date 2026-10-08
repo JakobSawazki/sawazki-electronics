@@ -271,6 +271,8 @@ Nach dem Veröffentlichen:
 
 ### 8. Oktober 2026 – v1.24.2: Leistungsmenü verfeinert
 
+- Veröffentlichung: `b024053`, GitHub Pages erfolgreich (Lauf 37840815962); Menü und Cache-Stand online bestätigt.
+
 - Jakobs Wunsch: Das Leistungsmenü öffnet beim Darüberfahren mit der Maus (Desktop). Kurze Schließverzögerung verhindert versehentliches Zuklappen beim Wechsel in die Liste. Touch bleibt per Tippen bedienbar; Escape und Tastatursteuerung bleiben erhalten.
 - Feiner abgerundeter Chevron mit dezenter Drehung, ruhige Menüfläche, klare Spaltentrennung, zurückhaltende Typografie und mobile Plus/Minus-Gruppensteuerung. Bewegungsreduktion berücksichtigt.
 - Einheitlicher Cache-Stand `20261008-menu-polish` auf allen 16 Seiten. JavaScript-Syntax, interne Links/FAQ-Schema, lokale Desktop-/Mobilansicht, Dark/Light und Event-Tests für Hover, Touch-Abgrenzung, Schließverzögerung und Escape geprüft.
