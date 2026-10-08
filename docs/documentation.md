@@ -284,6 +284,8 @@ Nach dem Veröffentlichen:
 - Cache-Buster auf allen Seiten: 20261008-anfrage. Neuer Schritt-Controller: assets/js/anfrage.js.
 
 
+- Veröffentlichung: `8e5609f`, GitHub Pages erfolgreich und live geprüft.
+
 ### 8. Oktober 2026 – v1.25.2: Projektübersicht mit kompakten Kacheln
 
 - Veröffentlichung: `a0406ab`, GitHub Pages erfolgreich (Lauf 37842809643); neun Kacheln, geschlossene Informationsbereiche und entfernte Öffnen-Buttons online bestätigt.
