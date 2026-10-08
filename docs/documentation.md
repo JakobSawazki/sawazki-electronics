@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 8. Oktober 2026 · Version: v1.25.1
+Stand: 8. Oktober 2026 · Version: v1.25.2
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.25.2 | 2026-10-08 | Projektübersicht mit kompakten Kacheln |
 | v1.25.1 | 2026-10-08 | Fotorealistischer Einstieg für IT-Projekte |
 | v1.25.0 | 2026-10-08 | Kompakte Leistungsübersicht (Paket 2) |
 | v1.24.2 | 2026-10-08 | Leistungsmenü: Hover und verfeinerte Gestaltung |
@@ -270,6 +271,15 @@ Nach dem Veröffentlichen:
 - Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
 
 ## Bisheriges Aenderungsprotokoll
+
+### 8. Oktober 2026 – v1.25.2: Projektübersicht mit kompakten Kacheln
+
+- Jakobs Wunsch: Die neun Projekte erscheinen als kompakte Kacheln mit Grafik, Name und kurzer Beschreibung, zweispaltig am Desktop und einspaltig mobil. Die fünf Gruppen bleiben sichtbar zugeordnet und einzeln/global aufklappbar.
+- Grafik und Kurzbeschreibung führen direkt zum jeweiligen Projekt (neuer Tab). Die bisherigen separaten Öffnen-Buttons entfallen.
+- Alle ausführlichen Texte bleiben in nativen, standardmäßig geschlossenen Details erhalten, erreichbar über ein dezentes Info-Symbol mit Mehr Informationen. Ohne JavaScript und per Tastatur bedienbar.
+- Einheitlicher Cache-Stand `20261008-projektkacheln` auf allen Seiten.
+- Prüfung: alle neun vollständigen Beschreibungen und Ziel-URLs erhalten, Details zunächst geschlossen; Desktop/Mobil und Dark/Light, Tastaturbedienung und Gruppensteuerung geprüft. Klick auf Excel-Grafik öffnet Excel-Lab im neuen Tab.
+
 
 ### 8. Oktober 2026 – v1.25.1: Fotorealistischer Einstieg für IT-Projekte
 
