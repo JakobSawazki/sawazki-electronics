@@ -9,6 +9,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
+| 2026-10-08 | Codex 2: Startseiten-Einstieg entschlacken und edler gestalten | Codex | Desktop-/Mobilvorschau erstellt; kurze IT-Kernbotschaft, ein Bild, mehr Freiraum, ruhige Leistungszeile; wartet auf Jakobs Freigabe |
 
 ## Offen (priorisiert)
 
