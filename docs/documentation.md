@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 8. Oktober 2026 · Version: v1.22.1
+Stand: 8. Oktober 2026 · Version: v1.23.0
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.23.0 | 2026-10-08 | Einheitliche Sie-Ansprache auf allen Kundenseiten |
 | v1.22.1 | 2026-10-08 | Fotorealistisches Webdesign-Motiv in Hero, Servicekarte und Social-Vorschau |
 | v1.22.0 | 2026-10-08 | Neues Geschäftsfeld „Webdesign & Digitale Lösungen": Landingpage, Servicekarte, Startseiten-Einbindung, themenabhängiger Anfrage-Assistent |
 | v1.21.1 | 2026-10-08 | Projektbereich kompakter; Minus/Plus neben der Überschrift, mobil ohne Überlagerung |
@@ -264,6 +265,12 @@ Nach dem Veröffentlichen:
 - Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
 
 ## Bisheriges Aenderungsprotokoll
+
+### 8. Oktober 2026 – v1.23.0: Sie-Ansprache (Paket 0)
+
+- Kundentexte, Formularhinweise, Metadaten, FAQ-Antworten und Bestätigungs-/Fehlerseiten auf Sie umgestellt. Datenschutzerklärung nur in der Ansprache angepasst, ohne Änderung der Verarbeitung.
+- Prüfung: Suche nach verbliebener Du-Ansprache und Konjugationen; Schema/FAQ-Abgleich, lokale Desktop-/Mobilansicht. Cache-Version vereinheitlicht.
+
 
 ### 8. Oktober 2026 – v1.22.1: Webdesign-Motiv
 

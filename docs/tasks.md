@@ -9,13 +9,13 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
+| 2026-10-08 | Paket 0: Sie-Ansprache | Codex | Umsetzung und Prüfung |
 
 
 ## Offen (priorisiert)
 
 | Aufgabe | Kontext / Quelle |
 | --- | --- |
-| Paket 0: Einheitliche Sie-Ansprache auf allen Seiten, Formularen, Metadaten und FAQ-Schema | claude2code.md §§ 6, 8; final von Jakob freigegeben |
 | Paket 1b: IT-Betreuung mit Diagnosepauschale und AGB-Ergänzung | vor Menü umsetzen; 50 € Endpreis, Anrechnung bei Reparatur |
 | Paket 1: Einheitliches Menü mit drei Gruppen und gemeinsamer Footer | alle Seiten, mobile und Tastaturbedienung |
 | Paket 2: Kompakte Leistungsübersicht mit drei Gruppen | bestehende URL produkte.html bleibt |
