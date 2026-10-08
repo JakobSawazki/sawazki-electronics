@@ -289,6 +289,8 @@ Nach dem Veröffentlichen:
 - Interne Links und Schema, Bilddimensionen, Desktop/Mobil und Dark/Light vor Veröffentlichung geprüft.
 
 
+- Veröffentlichung: `b80f541`, GitHub Pages erfolgreich und live geprüft.
+
 ### 8. Oktober 2026 – v1.24.1: Einheitliches Menü und Footer (Paket 1)
 
 - Alle Seiten mit identischem Hauptmenü und Footer, Unterzeile IT · Web · Technik, direktem Projektlink und Über-mich-Einstieg. 404 bleibt mit absoluten URLs ausgestattet.

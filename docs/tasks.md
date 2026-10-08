@@ -9,7 +9,6 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| 2026-10-08 | Paket 2: Leistungsübersicht mit drei Gruppen und fotorealistischem Einstieg (Jakobs Ergänzung) | Codex | Bildgenerierung, Integration und Prüfung |
 
 ## Offen (priorisiert)
 
@@ -40,6 +39,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-10-08 | v1.25.0 | Paket 2 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (b80f541) | Codex |
 | 2026-10-08 | v1.24.2 | Leistungsmenü: Maus-Hover, feiner drehbarer Pfeil, ruhige Spalten und mobile Gruppenauswahl; Desktop/Mobil, Dark/Light, Escape und Hover-Verhalten geprüft; b024053 gepusht, GitHub Pages erfolgreich und live bestätigt | Codex |
 | 2026-10-08 | v1.24.1 | Paket 1 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (7831032) | Codex |
 | 2026-10-08 | v1.24.0 | Paket 1b umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (cd7d2aa) | Codex |
