@@ -9,7 +9,6 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| 2026-10-08 | Neues Geschäftsfeld „Webdesign & Digitale Lösungen" (v1.22.0), Pakete P1-A bis P1-E: Landingpage `webdesign.html`, Einbindung in `produkte.html`/Startseite, Webdesign-Anfragefluss im Anfrage-Assistenten, SEO/Sitemap/README/Doku, QS + Veröffentlichung | Claude | P1-A begonnen |
 
 ## Offen (priorisiert)
 
@@ -30,6 +29,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-10-08 | v1.22.0 | Neues Geschäftsfeld „Webdesign & Digitale Lösungen": Landingpage `webdesign.html`, fünfte Servicekarte, Startseiten-Einbindung (Service-Finder, Angebotsleiste, Schema), themenabhängige Zusatzfelder im Anfrage-Assistenten, Sitemap/README/Doku; `tasks.docx` abgeschafft. Lokal (Desktop/Mobil, Dark/Light) und live geprüft, GitHub Pages erfolgreich; kein Formular abgesendet | Claude |
 | 2026-10-08 | v1.21.1 | Projektbereich nach oben; Minus/Plus neben der Überschrift, Desktop/Mobil und Dark/Light sowie Gruppensteuerung lokal und online geprüft; GitHub Pages erfolgreich | Codex |
 | 2026-10-07 | v1.21.0 | Alle Projektgruppen auf Start-/Projektseite standardmäßig geöffnet; dezente globale Minus-/Plus-Buttons mit Animation und Tastaturbedienung; lokal und live geprüft, GitHub Pages erfolgreich | Codex |
 | 2026-10-07 | v1.20.0 | AlgoLab mit passendem Icon ergänzt; IT-Projekte auf Start-/Projektseite in fünf animierte Gruppen geordnet, Icons vergrößert, zentraler Urheberhinweis und GamesLab-Name; lokal und live geprüft, GitHub Pages erfolgreich | Codex |

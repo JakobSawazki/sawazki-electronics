@@ -357,6 +357,10 @@ Unternehmenswebsites anbieten. Umsetzung als Ergaenzung der bestehenden Seite, k
   lokale Links, Anker, Bilder und eindeutige IDs per Skript geprueft, `git diff --check`.
   `node --check` war nicht moeglich (Node.js ist auf diesem Geraet nicht installiert);
   `main.js` lief stattdessen im Browser auf allen vier Seiten fehlerfrei.
+- Veroeffentlicht: Code-Stand `1505253`, GitHub-Pages-Lauf `37810530314` erfolgreich. Live geprueft:
+  `webdesign.html` laedt mit Illustration und neuem CSS, `produkte.html`, `index.html`,
+  `sitemap.xml` und `main.js` enthalten die Aenderungen; Klick auf den Hero-CTA oeffnet den
+  Anfrage-Assistenten mit vorbelegtem Thema und Webdesign-Feldern; keine Konsolenfehler.
 
 ### 8. Oktober 2026 – v1.21.1: Kompakter Projektbereich
 
