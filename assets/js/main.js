@@ -107,7 +107,7 @@ if (topicField) {
     const topic = topicField.value;
     topicBlocks.forEach((block) => {
       const visible = block.hasAttribute("data-topic-show")
-        ? topic === block.dataset.topicShow
+        ? block.dataset.topicShow.split("|").includes(topic)
         : topic !== block.dataset.topicHide;
       block.hidden = !visible;
       block.querySelectorAll("input, select, textarea").forEach((control) => {
@@ -118,6 +118,13 @@ if (topicField) {
       field.placeholder = topic === field.dataset.topicPlaceholderFor
         ? field.dataset.topicPlaceholder
         : field.dataset.defaultPlaceholder;
+      const topicHints = {
+        "VHS-Digitalisierung": "Welche Kassettenformate und wie viele Kassetten möchten Sie digitalisieren?",
+        "3D-Druck": "Was möchten Sie drucken lassen? Nennen Sie Größe, Stückzahl und vorhandene Druckdateien.",
+        "Energietechnik": "Welche Geräte möchten Sie versorgen? Gibt es bereits einen Speicher oder eine Anlage?",
+        "Datenrettung": "Welcher Datenträger ist betroffen? Was ist passiert und welche Daten benötigen Sie?",
+      };
+      if (topicHints[topic]) field.placeholder = topicHints[topic];
     });
   }
 
@@ -172,6 +179,7 @@ function getFormValue(data, key) {
 
 if (contactForm && formStatus) {
   contactForm.addEventListener("submit", (event) => {
+    if (event.defaultPrevented) return;
     if (!contactForm.reportValidity()) {
       event.preventDefault();
       return;

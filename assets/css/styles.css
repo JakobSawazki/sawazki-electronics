@@ -3693,3 +3693,27 @@ select:focus {
 @media(max-width:600px){.project-tile-link{padding:18px;gap:16px;align-items:flex-start}.project-tile-link img{width:84px;height:84px}.project-tile-link h3{font-size:1.15rem}.project-info{margin:0 18px 14px}.project-directory .project-group-title{flex:1;flex-basis:auto}.project-directory .project-group-count{margin-left:auto}.project-directory .project-group-chevron{margin-left:0}}
 
 @media(max-width:600px){.project-directory .project-group>summary{display:grid;grid-template-columns:36px minmax(0,1fr) auto 18px;gap:8px;padding:14px}.project-directory .project-group-label{font-size:1.05rem}.project-directory .project-group-title{min-width:0}.project-directory .project-group-count,.project-directory .project-group-chevron{margin:0}}
+/* Geführte Anfrage: dieselben Felder, eine übersichtliche Folge. */
+.wizard-progress { margin-bottom: 1.6rem; scroll-margin-top: 120px; }
+.wizard-progress ol { display: grid; grid-template-columns: repeat(4, 1fr); gap: .5rem; list-style: none; padding: 0; margin: 0; }
+.wizard-progress li { border-bottom: 2px solid var(--line); padding: .5rem 0; color: var(--ink-2); font-size: .85rem; }
+.wizard-progress li[aria-current="step"] { border-color: var(--cyan); color: var(--ink); font-weight: 700; }
+.wizard-progress p { color: var(--muted); font-size: .8rem; margin: .5rem 0 0; }
+.wizard-controls { display: flex; justify-content: space-between; gap: .8rem; margin: 1rem 0; }
+.wizard-controls [data-wizard-next] { margin-left: auto; }
+.assistant-form [data-wizard-step] { padding: 1rem; border-color: var(--line); }
+.assistant-form [data-wizard-step] legend { font-size: 1.05rem; color: var(--ink); text-transform: none; font-weight: 700; }
+.assistant-form [data-wizard-step] legend:focus-visible { outline: 2px solid var(--cyan); outline-offset: 4px; }
+.wizard-summary { display: grid; grid-template-columns: minmax(100px, .6fr) minmax(0, 1.4fr); gap: .7rem 1rem; margin: 1.2rem 0; }
+.wizard-summary dt { color: var(--muted); }
+.wizard-summary dd { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.contact-request-card { padding: 2rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface-2); }
+.contact-request-card h3 { margin-top: 0; }
+.contact-request-card .button { margin: 1rem 0; }
+@media (max-width: 520px) {
+  .wizard-summary { grid-template-columns: 1fr; gap: .2rem; }
+  .wizard-summary dd { margin-bottom: .8rem; }
+  .wizard-progress ol { gap: .25rem; }
+  .wizard-progress li { font-size: .75rem; }
+  .contact-request-card { padding: 1.3rem; }
+}

@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 8. Oktober 2026 · Version: v1.25.2
+Stand: 8. Oktober 2026 · Version: v1.26.0
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.26.0 | 2026-10-08 | Gemeinsamer geführter Anfrage-Assistent (Paket 4) |
 | v1.25.2 | 2026-10-08 | Projektübersicht mit kompakten Kacheln |
 | v1.25.1 | 2026-10-08 | Fotorealistischer Einstieg für IT-Projekte |
 | v1.25.0 | 2026-10-08 | Kompakte Leistungsübersicht (Paket 2) |
@@ -271,6 +272,17 @@ Nach dem Veröffentlichen:
 - Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
 
 ## Bisheriges Aenderungsprotokoll
+
+### 8. Oktober 2026 – v1.26.0: Gemeinsamer geführter Anfrage-Assistent (Paket 4)
+
+- Ein einziger Anfrageweg: Das Startseiten-Formular ist durch einen Einstieg in den Assistenten ersetzt. Die Themenliste wird ausschließlich dort gepflegt.
+- Vier Schritte: Thema → Anliegen → Kontakt → Prüfen. Zurückgehen erhält Eingaben, Pflichtfelder werden pro Schritt geprüft. Erst im letzten Schritt erscheint der Versandbutton.
+- Webdesign zeigt seine Vorhabenfelder, IT seine Geräte- und Hilfeangaben. VHS, 3D-Druck und Energietechnik erhalten passende Beschreibungsfragen ohne irrelevante Geräte-/Remote-Felder. Ausgeblendete Themenfelder bleiben deaktiviert und fehlen in der Sendung.
+- Zusammenfassung mit sicheren Textknoten, keine Interpretation von eingegebenem HTML. Fokus und Fortschrittsanzeige bleiben nach einem Schrittwechsel unterhalb des fixierten Headers sichtbar.
+- Formularziel, Betreffpräfix, Honeypot und danke.html-Rückleitung erhalten. Keine neue Datenspeicherung. Ohne JavaScript bleibt das vollständige Formular verwendbar; optionale Themenfelder werden dann gemeinsam angezeigt.
+- Geprüft: alle zwölf Themen, vorbelegter Webdesign-Link, leeres Thema/Beschreibung, ungültige E-Mail, Hin-/Zurückwechsel und Ausschluss fremder Themenfelder in FormData; Tastatur, Desktop 1440 und Mobil 390, Dark/Light ohne Überlauf. Keine echte Anfrage versendet. 16 HTML-Seiten und 35 FAQ-Schemaeinträge ohne Link-/Inhaltsfehler; beide JS-Syntaxprüfungen bestanden.
+- Cache-Buster auf allen Seiten: 20261008-anfrage. Neuer Schritt-Controller: assets/js/anfrage.js.
+
 
 ### 8. Oktober 2026 – v1.25.2: Projektübersicht mit kompakten Kacheln
 
