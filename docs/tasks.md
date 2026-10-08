@@ -9,14 +9,12 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| 2026-10-08 | Paket 0: Sie-Ansprache | Codex | Umsetzung und Prüfung |
-
+| 2026-10-08 | Paket 1b: IT-Betreuung und Diagnosepauschale | Codex | Umsetzung und Prüfung |
 
 ## Offen (priorisiert)
 
 | Aufgabe | Kontext / Quelle |
 | --- | --- |
-| Paket 1b: IT-Betreuung mit Diagnosepauschale und AGB-Ergänzung | vor Menü umsetzen; 50 € Endpreis, Anrechnung bei Reparatur |
 | Paket 1: Einheitliches Menü mit drei Gruppen und gemeinsamer Footer | alle Seiten, mobile und Tastaturbedienung |
 | Paket 2: Kompakte Leistungsübersicht mit drei Gruppen | bestehende URL produkte.html bleibt |
 | Paket 4: Gemeinsamer geführter Anfrage-Assistent | vor Startseiten-Kontaktbereich; Ziel, Honeypot und Rückleitung erhalten |
@@ -44,6 +42,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-10-08 | v1.23.0 | Paket 0 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (e1af8db) | Codex |
 | 2026-10-08 | v1.22.1 | Codex 1: Fotorealistisches Webdesign-Motiv erstellt; Hero, Servicekarte und Social-Bild umgestellt, SVGs entfernt; Desktop/Mobil, Dark/Light und Live-Bild geprüft; GitHub Pages erfolgreich | Codex |
 | 2026-10-08 | v1.22.0 | Neues Geschäftsfeld „Webdesign & Digitale Lösungen": Landingpage `webdesign.html`, fünfte Servicekarte, Startseiten-Einbindung (Service-Finder, Angebotsleiste, Schema), themenabhängige Zusatzfelder im Anfrage-Assistenten, Sitemap/README/Doku; `tasks.docx` abgeschafft. Lokal (Desktop/Mobil, Dark/Light) und live geprüft, GitHub Pages erfolgreich; kein Formular abgesendet | Claude |
 | 2026-10-08 | v1.21.1 | Projektbereich nach oben; Minus/Plus neben der Überschrift, Desktop/Mobil und Dark/Light sowie Gruppensteuerung lokal und online geprüft; GitHub Pages erfolgreich | Codex |

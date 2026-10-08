@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 8. Oktober 2026 · Version: v1.23.0
+Stand: 8. Oktober 2026 · Version: v1.24.0
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.24.0 | 2026-10-08 | IT-Betreuung und Diagnosepauschale (Paket 1b) |
 | v1.23.0 | 2026-10-08 | Einheitliche Sie-Ansprache auf allen Kundenseiten |
 | v1.22.1 | 2026-10-08 | Fotorealistisches Webdesign-Motiv in Hero, Servicekarte und Social-Vorschau |
 | v1.22.0 | 2026-10-08 | Neues Geschäftsfeld „Webdesign & Digitale Lösungen": Landingpage, Servicekarte, Startseiten-Einbindung, themenabhängiger Anfrage-Assistent |
@@ -266,11 +267,22 @@ Nach dem Veröffentlichen:
 
 ## Bisheriges Aenderungsprotokoll
 
+### 8. Oktober 2026 – v1.24.0: IT-Betreuung und Diagnosepauschale (Paket 1b)
+
+- Neue IT-Betreuungsseite für Privatkunden und Betriebe, sechs Abschnitte, eigenes Thema und Sitemap-Eintrag. Bestehendes hochwertiges Laptopmotiv verwendet.
+- Diagnosepauschale wortgleich auf IT-Seite und in den AGB: kostenlose erste Einschätzung, ausdrücklich beauftragte Diagnose 50 € Endpreis, Angebot vor weiteren Arbeiten, vollständige Anrechnung bei Reparatur.
+- AGB gezielt um Website-Projekte (Umfang, Abnahme, Materialrechte, Drittanbieter, Betreuung) ergänzt; keine Einschränkung gesetzlicher Rechte und keine Erfolgsversprechen.
+- Der bisherige AGB-/Impressum-Stand enthielt keinen §-19-Hinweis. Preisabschnitt der AGB und IT-Seite jetzt mit dem von Jakob bestätigten Kleinunternehmerstatus; Impressum inhaltlich erhalten.
+- Amtliche Quellen geprüft: https://www.gesetze-im-internet.de/ustg_1980/__19.html, https://www.gesetze-im-internet.de/bgb/__632.html und https://www.gesetze-im-internet.de/pangv_2022/__3.html. Die öffentliche Anfrage bleibt unverbindlich; eine kostenpflichtige Diagnose bedarf gesonderter Beauftragung.
+
+
 ### 8. Oktober 2026 – v1.23.0: Sie-Ansprache (Paket 0)
 
 - Kundentexte, Formularhinweise, Metadaten, FAQ-Antworten und Bestätigungs-/Fehlerseiten auf Sie umgestellt. Datenschutzerklärung nur in der Ansprache angepasst, ohne Änderung der Verarbeitung.
 - Prüfung: Suche nach verbliebener Du-Ansprache und Konjugationen; Schema/FAQ-Abgleich, lokale Desktop-/Mobilansicht. Cache-Version vereinheitlicht.
 
+
+- Veröffentlichung: `e1af8db`, GitHub Pages erfolgreich und live geprüft.
 
 ### 8. Oktober 2026 – v1.22.1: Webdesign-Motiv
 

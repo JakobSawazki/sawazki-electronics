@@ -3591,3 +3591,22 @@ select:focus {
 .project-group-control:hover { border-color: var(--teal); background: linear-gradient(145deg, rgba(20,123,184,.2), rgba(32,191,210,.1)); }
 .project-group-control:focus-visible { outline: 3px solid var(--cyan); outline-offset: 3px; }
 :root[data-theme="dark"] .project-group-control { color: #83d9f0; }
+
+/* Gemeinsame kompakte Angebotsseiten */
+.service-hero .vhs-hero-content {min-height:580px;padding:130px 0 60px;}
+.service-hero .vhs-hero-content h1 {max-width:660px;font-size:clamp(2.8rem,4.5vw,4.2rem);color:#fff;background:none;}
+.service-hero .vhs-hero-content>p:not(.eyebrow) {max-width:560px;}
+.offer-steps {width:min(100% - 2rem,var(--max));margin:0 auto;list-style:none;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:30px;counter-reset:steps;}
+.offer-steps li {counter-increment:steps;border-top:1px solid var(--line);padding-top:20px;}
+.offer-steps li::before {content:counter(steps);color:var(--navy-2);display:block;font-size:.85rem;margin-bottom:12px;}
+.offer-steps h3 {font-size:1.15rem;}.offer-steps p,.section-footnote {color:var(--muted);}
+.section-footnote {width:min(100% - 2rem,var(--max));margin:28px auto 0;font-size:.92rem;}
+.section-footnote a,.price-panel a {color:var(--navy-2);text-decoration:underline;}
+.price-panel {width:min(100% - 2rem,820px);margin:auto;padding:32px;border:1px solid var(--line);border-radius:var(--radius);background:var(--white);}
+.diagnosis-terms {padding-left:24px;}.diagnosis-terms li {margin-bottom:16px;padding-left:8px;}.price-panel>p{font-size:.95rem;color:var(--muted);}
+.offer-alt {background:rgba(20,123,184,.04);}.offer-cta .button{margin-top:18px;}
+:root[data-theme="dark"] .price-panel {background:#102430;}:root[data-theme="dark"] .offer-steps li::before,:root[data-theme="dark"] .section-footnote a,:root[data-theme="dark"] .price-panel a{color:#53c9d7;}
+@media(max-width:760px){.service-hero .vhs-hero-content{min-height:0;padding:125px 0 50px}.offer-steps{grid-template-columns:1fr 1fr;gap:24px}.price-panel{padding:24px}}
+@media(max-width:480px){.offer-steps{grid-template-columns:1fr}.service-hero .vhs-hero-content h1{font-size:2.6rem}}
+
+.service-hero {min-height:0;}
