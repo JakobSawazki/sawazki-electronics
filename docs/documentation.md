@@ -282,8 +282,10 @@ Nach dem Veröffentlichen:
 - Projektverzeichnis mit fünf Gruppen und neun Kacheln auf projekte.html inhaltlich unverändert. Alte gruppen-/inhalt-Sprunglinks auf index.html werden dort hin weitergeleitet. Alle bisherigen IDs bleiben als Ankerersatz vorhanden; ohne JS führen alte Projektanker zum Hinweis mit Projektlink.
 - OfferCatalog an die drei Gruppen und sechs eigenständigen Angebotsseiten angepasst. Keine neuen Preise, Referenzen oder Leistungsversprechen. Sachliche Texte, einfarbige Überschriften, ruhige Flächen und Bilder ohne Wiederholung.
 - Lokale Prüfung: 1440 px Desktop, 390 und 320 px Mobil, Dark/Light; Tastaturlink zur Leistungsgruppe, Kontaktanker sowie zwei Projektgruppen-Weiterleitungen im Browser bestätigt. Alle bisherigen IDs und alle zehn Weiterleitungsziele geprüft. 16 Seiten/35 FAQ-Schemaeinträge ohne Link- oder Konsistenzfehler; JS-Syntax fehlerfrei.
-- Cache-Buster auf allen Seiten: 20261008-startseite. Git-Pull zunächst durch Drive-desktop.ini unter .git blockiert; nur diese OS-Dateien in eine temporäre Sicherung verschoben, Pull danach erfolgreich.
+- Cache-Buster auf allen Seiten: 20261008-startseite2. Unsichtbare alte Projektanker nehmen keinen Platz im Projekthinweis ein. Git-Pull zunächst durch Drive-desktop.ini unter .git blockiert; nur diese OS-Dateien in eine temporäre Sicherung verschoben, Pull danach erfolgreich.
 
+
+- Veröffentlichung: `6f419bb`, GitHub Pages erfolgreich und live geprüft.
 
 ### 8. Oktober 2026 – v1.26.0: Gemeinsamer geführter Anfrage-Assistent (Paket 4)
 

@@ -9,7 +9,6 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| 2026-10-08 | Paket 3 + 2b: Startseite mit sechs Abschnitten und Projektverweis | Codex | Umsetzung und Prüfung |
 
 ## Offen (priorisiert)
 
@@ -38,6 +37,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-10-08 | v1.27.0 | Paket 3 + 2b umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (6f419bb) | Codex |
 | 2026-10-08 | v1.26.0 | Paket 4 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (8e5609f) | Codex |
 | 2026-10-08 | v1.25.2 | Kompakte Projektkacheln mit Direktlinks und optionalen Informationen; Desktop/Mobil, Dark/Light und Bedienung geprüft; a0406ab gepusht und live bestätigt | Codex |
 | 2026-10-08 | v1.25.1 | Fotorealistisches Projektmotiv integriert; Desktop/Mobil, Dark/Light und Gruppensteuerung geprüft; eb1f50f gepusht und GitHub Pages live bestätigt | Codex |
