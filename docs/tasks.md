@@ -9,13 +9,12 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| 2026-10-08 | Paket 1b: IT-Betreuung und Diagnosepauschale | Codex | Umsetzung und Prüfung |
+| 2026-10-08 | Paket 1: Gemeinsames Menü und Footer | Codex | Umsetzung und Prüfung |
 
 ## Offen (priorisiert)
 
 | Aufgabe | Kontext / Quelle |
 | --- | --- |
-| Paket 1: Einheitliches Menü mit drei Gruppen und gemeinsamer Footer | alle Seiten, mobile und Tastaturbedienung |
 | Paket 2: Kompakte Leistungsübersicht mit drei Gruppen | bestehende URL produkte.html bleibt |
 | Paket 4: Gemeinsamer geführter Anfrage-Assistent | vor Startseiten-Kontaktbereich; Ziel, Honeypot und Rückleitung erhalten |
 | Paket 3 + 2b: Startseite mit sechs Abschnitten; Projekte auf eigener Seite | bestehender Hero-Entwurf angepasst; alle Anker erhalten |
@@ -42,6 +41,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-10-08 | v1.24.0 | Paket 1b umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (cd7d2aa) | Codex |
 | 2026-10-08 | v1.23.0 | Paket 0 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (e1af8db) | Codex |
 | 2026-10-08 | v1.22.1 | Codex 1: Fotorealistisches Webdesign-Motiv erstellt; Hero, Servicekarte und Social-Bild umgestellt, SVGs entfernt; Desktop/Mobil, Dark/Light und Live-Bild geprüft; GitHub Pages erfolgreich | Codex |
 | 2026-10-08 | v1.22.0 | Neues Geschäftsfeld „Webdesign & Digitale Lösungen": Landingpage `webdesign.html`, fünfte Servicekarte, Startseiten-Einbindung (Service-Finder, Angebotsleiste, Schema), themenabhängige Zusatzfelder im Anfrage-Assistenten, Sitemap/README/Doku; `tasks.docx` abgeschafft. Lokal (Desktop/Mobil, Dark/Light) und live geprüft, GitHub Pages erfolgreich; kein Formular abgesendet | Claude |

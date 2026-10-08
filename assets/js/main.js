@@ -79,6 +79,7 @@ function closeMenu() {
   if (!navToggle || !navLinks) return;
   navToggle.setAttribute("aria-expanded", "false");
   navLinks.classList.remove("is-open");
+  setServicesOpen(false);
 }
 
 updateHeader();
@@ -245,4 +246,37 @@ if (priceCalc) {
   });
 
   updateEstimate();
+}
+
+// A normal overview link remains available without JavaScript.
+const servicesToggle = document.querySelector('[data-services-toggle]');
+const servicesPanel = document.querySelector('[data-services-panel]');
+function setServicesOpen(open) {
+  if (!servicesToggle || !servicesPanel) return;
+  servicesToggle.setAttribute('aria-expanded', String(open));
+  servicesToggle.setAttribute('aria-label', open ? 'Leistungen zuklappen' : 'Leistungen aufklappen');
+  servicesPanel.hidden = !open;
+}
+if (servicesToggle && servicesPanel) {
+  servicesToggle.hidden = false;
+  servicesPanel.querySelectorAll('details').forEach(group => {
+    group.open = !window.matchMedia('(max-width: 1080px)').matches;
+  });
+  servicesToggle.addEventListener('click', () => setServicesOpen(servicesPanel.hidden));
+  document.addEventListener('click', event => {
+    if (!event.target.closest('.nav-services')) setServicesOpen(false);
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key !== 'Escape') return;
+    if (!servicesPanel.hidden) {
+      setServicesOpen(false);
+      servicesToggle.focus();
+    } else if (navLinks?.classList.contains('is-open')) {
+      closeMenu();
+      navToggle?.focus();
+    }
+  });
+  document.addEventListener('focusin', event => {
+    if (!event.target.closest('.nav-services')) setServicesOpen(false);
+  });
 }
