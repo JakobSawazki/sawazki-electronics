@@ -3755,11 +3755,12 @@ select:focus {
 .home-contact aside a { display: block; padding: 6px 0; overflow-wrap: anywhere; color: var(--ink); }
 .home-contact aside a:hover { text-decoration: underline; }
 .home-contact aside p { color: var(--muted); font-size: .85rem; margin-bottom: 0; }
-.home-project-hint { display: flex; gap: 40px; justify-content: space-between; align-items: center; padding: 36px 0; }
+.home-project-hint { position: relative; display: flex; gap: 40px; justify-content: space-between; align-items: center; padding: 36px 0; }
 .home-project-hint h2 { font-size: 1.3rem; margin-bottom: 8px; }
 .home-project-hint p { margin: 0; font-size: .9rem; }
 .home-project-hint > a { flex-shrink: 0; }
 .home-anchor-alias { display: block; height: 0; scroll-margin-top: 100px; }
+.home-project-hint > .home-anchor-alias { position: absolute; top: 0; left: 0; width: 0; }
 .home-page .button.primary { box-shadow: none; }
 @media (max-width: 1000px) {
  .home-hero { gap: 36px; padding-top: 140px; }
