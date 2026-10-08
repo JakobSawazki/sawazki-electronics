@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jakobsawazki.github.io/sawazki-electronics/</loc>
-    <lastmod>2026-07-12</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://jakobsawazki.github.io/sawazki-electronics/anfrage-assistent.html</loc>
-    <lastmod>2026-06-10</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -17,7 +17,7 @@
   </url>
   <url>
     <loc>https://jakobsawazki.github.io/sawazki-electronics/produkte.html</loc>
-    <lastmod>2026-06-10</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
@@ -43,6 +43,11 @@
   <url>
     <loc>https://jakobsawazki.github.io/sawazki-electronics/energietechnik.html</loc>
     <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jakobsawazki.github.io/sawazki-electronics/webdesign.html</loc>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>
