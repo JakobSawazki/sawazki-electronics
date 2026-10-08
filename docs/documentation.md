@@ -252,6 +252,14 @@ Nach dem Veröffentlichen:
 
 ## Bisheriges Aenderungsprotokoll
 
+### 8. Oktober 2026 – v1.21.1: Kompakter Projektbereich
+
+Die Minus-/Plus-Steuerung steht auf der Startseite rechts neben der Projektueberschrift.
+Damit entfaellt die eigene Werkzeugzeile und die Lern-Labs ruecken nach oben.
+Mobil bleibt die Steuerung unter dem Text, damit nichts ueberlappt.
+Gruppensteuerung auf Start- und Projektseite, Desktop/Mobil und Dark/Light lokal
+und live geprueft; Pages-Deployment des Codes c4c83bd erfolgreich.
+
 ### 7. Oktober 2026 – v1.21.0: Globale Gruppensteuerung
 
 - Alle fünf Projektgruppen starten auf `index.html` und `projekte.html` geöffnet, auch ohne JavaScript. Der frühere Einstieg mit nur geöffneten Lern-Labs ist damit ersetzt.
