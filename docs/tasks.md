@@ -41,6 +41,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-10-08 | v1.24.2 | Leistungsmenü: Maus-Hover, feiner drehbarer Pfeil, ruhige Spalten und mobile Gruppenauswahl; Desktop/Mobil, Dark/Light, Escape und Hover-Verhalten geprüft | Codex |
 | 2026-10-08 | v1.24.0 | Paket 1b umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (cd7d2aa) | Codex |
 | 2026-10-08 | v1.23.0 | Paket 0 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (e1af8db) | Codex |
 | 2026-10-08 | v1.22.1 | Codex 1: Fotorealistisches Webdesign-Motiv erstellt; Hero, Servicekarte und Social-Bild umgestellt, SVGs entfernt; Desktop/Mobil, Dark/Light und Live-Bild geprüft; GitHub Pages erfolgreich | Codex |

@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 8. Oktober 2026 · Version: v1.24.1
+Stand: 8. Oktober 2026 · Version: v1.24.2
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.24.2 | 2026-10-08 | Leistungsmenü: Hover und verfeinerte Gestaltung |
 | v1.24.1 | 2026-10-08 | Einheitliches Menü und Footer (Paket 1) |
 | v1.24.0 | 2026-10-08 | IT-Betreuung und Diagnosepauschale (Paket 1b) |
 | v1.23.0 | 2026-10-08 | Einheitliche Sie-Ansprache auf allen Kundenseiten |
@@ -267,6 +268,14 @@ Nach dem Veröffentlichen:
 - Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
 
 ## Bisheriges Aenderungsprotokoll
+
+### 8. Oktober 2026 – v1.24.2: Leistungsmenü verfeinert
+
+- Jakobs Wunsch: Das Leistungsmenü öffnet beim Darüberfahren mit der Maus (Desktop). Kurze Schließverzögerung verhindert versehentliches Zuklappen beim Wechsel in die Liste. Touch bleibt per Tippen bedienbar; Escape und Tastatursteuerung bleiben erhalten.
+- Feiner abgerundeter Chevron mit dezenter Drehung, ruhige Menüfläche, klare Spaltentrennung, zurückhaltende Typografie und mobile Plus/Minus-Gruppensteuerung. Bewegungsreduktion berücksichtigt.
+- Einheitlicher Cache-Stand `20261008-menu-polish` auf allen 16 Seiten. JavaScript-Syntax, interne Links/FAQ-Schema, lokale Desktop-/Mobilansicht, Dark/Light und Event-Tests für Hover, Touch-Abgrenzung, Schließverzögerung und Escape geprüft.
+
+
 
 ### 8. Oktober 2026 – v1.24.1: Einheitliches Menü und Footer (Paket 1)
 

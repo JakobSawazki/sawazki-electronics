@@ -251,7 +251,9 @@ if (priceCalc) {
 // A normal overview link remains available without JavaScript.
 const servicesToggle = document.querySelector('[data-services-toggle]');
 const servicesPanel = document.querySelector('[data-services-panel]');
+let servicesCloseTimer;
 function setServicesOpen(open) {
+  window.clearTimeout(servicesCloseTimer);
   if (!servicesToggle || !servicesPanel) return;
   servicesToggle.setAttribute('aria-expanded', String(open));
   servicesToggle.setAttribute('aria-label', open ? 'Leistungen zuklappen' : 'Leistungen aufklappen');
@@ -263,6 +265,19 @@ if (servicesToggle && servicesPanel) {
     group.open = !window.matchMedia('(max-width: 1080px)').matches;
   });
   servicesToggle.addEventListener('click', () => setServicesOpen(servicesPanel.hidden));
+  const servicesNavigation = servicesToggle.closest('.nav-services');
+  const desktopHover = window.matchMedia('(min-width: 1081px) and (hover: hover) and (pointer: fine)');
+  servicesNavigation.addEventListener('pointerenter', event => {
+    if (event.pointerType === 'mouse' && desktopHover.matches) setServicesOpen(true);
+  });
+  servicesNavigation.addEventListener('pointerleave', event => {
+    if (event.pointerType !== 'mouse' || !desktopHover.matches) return;
+    servicesCloseTimer = window.setTimeout(() => {
+      if (!servicesNavigation.contains(document.activeElement)) setServicesOpen(false);
+    }, 180);
+  });
+  desktopHover.addEventListener('change', () => setServicesOpen(false));
+
   document.addEventListener('click', event => {
     if (!event.target.closest('.nav-services')) setServicesOpen(false);
   });
