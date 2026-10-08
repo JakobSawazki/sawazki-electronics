@@ -93,6 +93,37 @@ if (topicField) {
   if (matchingOption) {
     topicField.value = requestedTopic;
   }
+
+  // Themenabhängige Bereiche (z. B. Webdesign-Angaben im Anfrage-Assistenten):
+  // ausgeblendete Felder werden deaktiviert und damit nicht mitgesendet.
+  const topicBlocks = document.querySelectorAll("[data-topic-show], [data-topic-hide]");
+  const topicPlaceholderFields = document.querySelectorAll("[data-topic-placeholder]");
+  topicPlaceholderFields.forEach((field) => {
+    field.dataset.defaultPlaceholder = field.placeholder;
+  });
+
+  function updateTopicBlocks() {
+    const topic = topicField.value;
+    topicBlocks.forEach((block) => {
+      const visible = block.hasAttribute("data-topic-show")
+        ? topic === block.dataset.topicShow
+        : topic !== block.dataset.topicHide;
+      block.hidden = !visible;
+      block.querySelectorAll("input, select, textarea").forEach((control) => {
+        control.disabled = !visible;
+      });
+    });
+    topicPlaceholderFields.forEach((field) => {
+      field.placeholder = topic === field.dataset.topicPlaceholderFor
+        ? field.dataset.topicPlaceholder
+        : field.dataset.defaultPlaceholder;
+    });
+  }
+
+  if (topicBlocks.length || topicPlaceholderFields.length) {
+    updateTopicBlocks();
+    topicField.addEventListener("change", updateTopicBlocks);
+  }
 }
 
 if (navToggle && navLinks) {
