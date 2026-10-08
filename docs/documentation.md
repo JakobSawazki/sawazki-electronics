@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 8. Oktober 2026 · Version: v1.24.2
+Stand: 8. Oktober 2026 · Version: v1.25.0
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.25.0 | 2026-10-08 | Kompakte Leistungsübersicht (Paket 2) |
 | v1.24.2 | 2026-10-08 | Leistungsmenü: Hover und verfeinerte Gestaltung |
 | v1.24.1 | 2026-10-08 | Einheitliches Menü und Footer (Paket 1) |
 | v1.24.0 | 2026-10-08 | IT-Betreuung und Diagnosepauschale (Paket 1b) |
@@ -279,12 +280,23 @@ Nach dem Veröffentlichen:
 
 
 
+### 8. Oktober 2026 – v1.25.0: Kompakte Leistungsübersicht (Paket 2)
+
+- Bestehende URL produkte.html erhalten; drei Leistungsgruppen und sieben kompakte Bildkarten (IT-Betreuung zusätzlich für Betriebe). Keine Neu-Labels, Portfolio-Kästen oder internen Ausbauankündigungen.
+- Suchmaschinen-ItemList mit sechs eindeutigen Leistungen aktualisiert; Bilder bleiben lokal.
+- Jakobs Ergänzung: fotorealistisches Einstiegsmotiv `assets/images/leistungen-hero.webp` (1672 × 941), mit dem integrierten Imagegen-Werkzeug erzeugt und als WebP optimiert. Generierungs-Prompt: [`leistungen-bildprompt.md`](leistungen-bildprompt.md). Symbolischer Arbeitsplatz mit Laptop/Smartphone für Webdesign, offenem Gerät und Werkzeugen für IT-Service sowie 3D-Drucker für technische Projekte. Keine Personen, Logos oder dargestellten Kundenreferenzen.
+- Kurzer Text links, großzügiges Bild rechts; mobil untereinander. Alle drei Leistungsbereiche mit Sprunglinks erreichbar. Das neue Motiv dient auch als Social-Vorschaubild. Einheitlicher Cache-Stand `20261008-leistungen-hero`.
+- Interne Links und Schema, Bilddimensionen, Desktop/Mobil und Dark/Light vor Veröffentlichung geprüft.
+
+
 ### 8. Oktober 2026 – v1.24.1: Einheitliches Menü und Footer (Paket 1)
 
 - Alle Seiten mit identischem Hauptmenü und Footer, Unterzeile IT · Web · Technik, direktem Projektlink und Über-mich-Einstieg. 404 bleibt mit absoluten URLs ausgestattet.
 - Drei Leistungsgruppen im aufklappbaren Bereich; normaler Übersichtslink bleibt ohne JavaScript erreichbar. Mobile Gruppen als native Details, Escape/Tab/Fokus und geschlossener Zustand berücksichtigt.
 - Header-Kontrast in beiden Farbschemata korrigiert.
 
+
+- Veröffentlichung: `7831032`, GitHub Pages erfolgreich und live geprüft.
 
 ### 8. Oktober 2026 – v1.24.0: IT-Betreuung und Diagnosepauschale (Paket 1b)
 
