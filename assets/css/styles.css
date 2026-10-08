@@ -916,7 +916,7 @@ h3 {
 
 .service-finder-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.9rem;
 }
 
@@ -1451,6 +1451,13 @@ select:focus {
   border-color: rgba(20, 123, 184, 0.68);
   box-shadow: 0 0 0 4px rgba(32, 191, 210, 0.13);
   outline: none;
+}
+
+/* Themenabhängige Formularbereiche: label/.form-row setzen display,
+   deshalb muss das hidden-Attribut ausdrücklich gewinnen. */
+.assistant-form [hidden],
+.assistant-panel [hidden] {
+  display: none;
 }
 
 .honeypot {
@@ -2050,6 +2057,7 @@ select:focus {
 /* Gebrandeter Service-Hero: das Foto liegt unter dem Verlauf, der als
    markentypische Abdunklung und Fallback-Hintergrund dient. */
 .print-hero,
+.web-hero,
 .recovery-hero,
 .about-hero,
 .energy-hero {
@@ -2275,6 +2283,24 @@ select:focus {
   grid-template-columns: repeat(4, 1fr);
 }
 
+/* Rastervarianten für sechs Karten/Schritte (webdesign.html); die
+   Responsive-Regeln weiter unten greifen unverändert. */
+.format-grid--three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.format-grid p + p {
+  margin-top: 0.6rem;
+}
+
+.format-grid .product-label {
+  display: block;
+}
+
+.web-hero .vhs-hero-content h1 {
+  font-size: clamp(2.6rem, 5vw, 4.6rem);
+}
+
 .format-grid article {
   padding: 1.3rem;
   border: 1px solid rgba(20, 123, 184, 0.2);
@@ -2478,6 +2504,10 @@ select:focus {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.vhs-process-grid--three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .vhs-process-grid article {
   position: relative;
   padding: 1.35rem;
@@ -2497,6 +2527,10 @@ select:focus {
   font-size: 1.55rem;
   font-weight: 900;
   transform: translateY(-50%);
+}
+
+.vhs-process-grid--three article:nth-child(3n)::after {
+  content: none;
 }
 
 .vhs-process-grid span {
