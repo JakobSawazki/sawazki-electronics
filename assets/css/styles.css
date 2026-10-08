@@ -3663,3 +3663,8 @@ select:focus {
 @media(max-width:700px){.overview-intro{grid-template-columns:1fr;gap:24px;margin-bottom:32px}.overview-copy h1{font-size:2.4rem}.overview-jumps{font-size:.85rem;gap:12px}.overview-visual img{aspect-ratio:16/9}}
 
 :root .products-body{background:#f3f7fa;}:root[data-theme="dark"] .products-body{background:#0b151d;}
+
+/* Fotorealistischer Einstieg in die eigenen digitalen Projekte */
+.projects-main{padding-top:64px;}
+.projects-intro{width:min(100% - 3rem,var(--max));margin:0 auto 32px;}
+:root .projects-body{background:#f3f7fa;}:root[data-theme="dark"] .projects-body{background:#0b151d;}

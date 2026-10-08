@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 8. Oktober 2026 · Version: v1.25.0
+Stand: 8. Oktober 2026 · Version: v1.25.1
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.25.1 | 2026-10-08 | Fotorealistischer Einstieg für IT-Projekte |
 | v1.25.0 | 2026-10-08 | Kompakte Leistungsübersicht (Paket 2) |
 | v1.24.2 | 2026-10-08 | Leistungsmenü: Hover und verfeinerte Gestaltung |
 | v1.24.1 | 2026-10-08 | Einheitliches Menü und Footer (Paket 1) |
@@ -269,6 +270,15 @@ Nach dem Veröffentlichen:
 - Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
 
 ## Bisheriges Aenderungsprotokoll
+
+### 8. Oktober 2026 – v1.25.1: Fotorealistischer Einstieg für IT-Projekte
+
+- Jakobs Wunsch: Eigenes fotorealistisches Motiv für die Projektseite. Der bisherige Logo-Kasten wird durch ein symbolisches Entwicklungs- und Lernstudio ersetzt.
+- Gleiche ruhige Einstiegsstruktur wie auf der Leistungsübersicht; mobil untereinander. Alle fünf Projektgruppen, neun Projekte und die Auf-/Zuklappsteuerung bleiben erhalten.
+- Hero und Social-Vorschaubild verwenden `assets/images/projekte-hero.webp` (1672 × 941, 142 KB). Bildauftrag/Prompt: [`projekte-bildprompt.md`](projekte-bildprompt.md). Generierung über das integrierte Imagegen-Werkzeug; keine Personen, Fremdmarken oder erfundenen Kundenreferenzen.
+- Einheitlicher Cache-Stand `20261008-projekte-hero` auf allen Seiten.
+- Geprüft: Desktop/Mobil, Dark/Light, Bild geladen, kein horizontaler Überlauf, Gruppen ein-/ausklappen, interne Links und Schema. Projektverzeichnis per Vergleich unverändert (fünf Gruppen, neun Projekte).
+
 
 ### 8. Oktober 2026 – v1.24.2: Leistungsmenü verfeinert
 

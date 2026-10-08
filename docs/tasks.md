@@ -9,6 +9,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
+| 2026-10-08 | Fotorealistischer Einstieg für die Projektseite | Codex | Bildgenerierung, Einbau und Prüfung |
 
 ## Offen (priorisiert)
 
