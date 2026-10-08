@@ -262,7 +262,7 @@ Nach dem Veröffentlichen:
 - Finales Asset: `assets/images/webdesign-hero.webp`, 1672 × 941, WebP-Qualität 82. Hero in `webdesign.html`, Servicekarte in `produkte.html`, Open-Graph-Bild und Bildmaße angepasst.
 - Ersetzte SVG-Motive entfernt; Cache-Version auf allen HTML-Seiten vereinheitlicht.
 - Bildgenerator-Prompt: "Premium modern workspace with unbranded laptop and smartphone showing the same corporate website using abstract layout blocks. Devices in the right half, calm dark navy left half; cyan rim light, cinematic product photography, 16:9. No text, letters, logos, people, identifiable company or watermark."
-- Lokal geprüft: Hero auf Desktop/Mobil, Dark/Light, geladenes Kartenbild und interne Verweise; keine Formularsendung. Veröffentlichung und Live-Prüfung folgen.
+- Lokal geprüft: Hero auf Desktop/Mobil, Dark/Light, geladenes Kartenbild und interne Verweise; keine Formularsendung. Veröffentlicht mit `bfa5e6e`; GitHub Pages erfolgreich, Live-Hero mit 1672 × 941 und Social-Bild bestätigt.
 
 ### 8. Oktober 2026 – v1.22.0: Geschaeftsfeld „Webdesign & Digitale Lösungen"
 

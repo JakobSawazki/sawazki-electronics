@@ -14,7 +14,6 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Aufgabe | Kontext / Quelle |
 | --- | --- |
-| **Codex 2:** Startseiten-Einstieg entschlacken und edler gestalten: weniger Text im ersten Bildschirm, klarere Hierarchie, mehr Weißraum; Vorschlag an Jakob, dann Umsetzung | Wunsch von Jakob vom 08.10.2026 („am Anfang zu viel Text, edler, kundenfreundlicher“). Heute stehen im Hero: Logo-Karte, Eyebrow, H1, Absatz, 2 Buttons, 3 Bildkarten, 3 Fakten, direkt danach Laufband. IT-Service bleibt Kernbotschaft |
 | **Codex 3:** Gesamte Website gestalterisch durchgehen (alle Unterseiten): Textmenge, Abstände, Bildsprache, Einheitlichkeit; Verbesserungen paketweise vorschlagen und umsetzen | Wunsch von Jakob vom 08.10.2026; bestehende Farbwelt und Regeln aus `AGENTS.md` beibehalten, keine erfundenen Inhalte |
 | Webdesign: Rechtstexte prüfen lassen (AGB/Datenschutz für Website-Projekte, Hosting/Domain/Wartung, Nutzungs- und Bildrechte, Abnahme) | Review-Punkte in `documentation.md`, v1.22.0; keine eigenmächtigen Änderungen |
 | Webdesign-Backlog (P2): Demo-Website für fiktiven Musterbetrieb, Erklärseite Hosting/Domain/Wartung, Referenzen nur mit Erlaubnis, CMS/Shop/Buchung nach Prüfung, ggf. Navigation „Für Unternehmen" | Briefing vom 08.10.2026; erst nach Freigabe durch Jakob |
@@ -30,6 +29,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-10-08 | v1.22.1 | Codex 1: Fotorealistisches Webdesign-Motiv erstellt; Hero, Servicekarte und Social-Bild umgestellt, SVGs entfernt; Desktop/Mobil, Dark/Light und Live-Bild geprüft; GitHub Pages erfolgreich | Codex |
 | 2026-10-08 | v1.22.0 | Neues Geschäftsfeld „Webdesign & Digitale Lösungen": Landingpage `webdesign.html`, fünfte Servicekarte, Startseiten-Einbindung (Service-Finder, Angebotsleiste, Schema), themenabhängige Zusatzfelder im Anfrage-Assistenten, Sitemap/README/Doku; `tasks.docx` abgeschafft. Lokal (Desktop/Mobil, Dark/Light) und live geprüft, GitHub Pages erfolgreich; kein Formular abgesendet | Claude |
 | 2026-10-08 | v1.21.1 | Projektbereich nach oben; Minus/Plus neben der Überschrift, Desktop/Mobil und Dark/Light sowie Gruppensteuerung lokal und online geprüft; GitHub Pages erfolgreich | Codex |
 | 2026-10-07 | v1.21.0 | Alle Projektgruppen auf Start-/Projektseite standardmäßig geöffnet; dezente globale Minus-/Plus-Buttons mit Animation und Tastaturbedienung; lokal und live geprüft, GitHub Pages erfolgreich | Codex |
