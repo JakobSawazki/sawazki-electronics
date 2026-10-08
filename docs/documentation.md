@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 8. Oktober 2026 · Version: v1.27.0
+Stand: 8. Oktober 2026 · Version: v1.28.0
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.28.0 | 2026-10-08 | Angebotsseiten vereinheitlicht und gekürzt |
 | v1.27.0 | 2026-10-08 | Startseite mit sechs Abschnitten (Pakete 3 + 2b) |
 | v1.26.0 | 2026-10-08 | Gemeinsamer geführter Anfrage-Assistent (Paket 4) |
 | v1.25.2 | 2026-10-08 | Projektübersicht mit kompakten Kacheln |
@@ -273,6 +274,16 @@ Nach dem Veröffentlichen:
 - Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
 
 ## Bisheriges Aenderungsprotokoll
+
+### 8. Oktober 2026 – v1.28.0: Angebotsseiten vereinheitlicht und gekürzt
+
+- Paket 5: Alle sechs Angebote folgen Hero → Leistungen → Ablauf → Preis & Aufwand → FAQ → Anfrage. Doppelte Einführungen und Vertrauensleisten entfernt; Bilder und konkrete Leistungsinformationen bleiben erhalten.
+- Ein kurzer Hero mit einer Hauptaktion und einem Preislink. Bei 1440 × 768 liegt die erste Inhaltsüberschrift auf allen sechs Seiten bei rund 651 px; mobil bleibt der Einstieg übersichtlich.
+- Webdesign-Beispiele und Leistungsmodelle sind optional aufklappbar. Ergänzende Hinweise zu Originalkassetten, Datenverlust und Netzanschluss bleiben sichtbar. Alle bisherigen Anker bleiben vorhanden.
+- Keine Änderung an Preistabellen, Diagnosebedingungen oder FAQ-Antworten; FAQ-Schema weiterhin identisch mit sichtbaren Antworten. Zwei verbliebene VHS-Hinweise auf Sie korrigiert.
+- Prüfung: sechs Abschnitte je Seite, sämtliche alten IDs erhalten, Preistabellen und FAQ-Texte gegen Git-Stand verglichen, 16 HTML-Seiten/35 FAQ ohne Link-/Schemafehler. Desktop 1440 × 768 und Mobil 390 × 844 in Dark/Light ohne horizontalen Überlauf. Aufklappen per Maus/Enter und VHS-Rechner geprüft: drei Kassetten + Laufzeitaufschlag + USB ergeben 81,60 €, ab elf Kassetten individuelles Angebot. Kein Formular versendet.
+- Einheitlicher Cache-Buster: `20261008-angebote`.
+
 
 ### 8. Oktober 2026 – v1.27.0: Startseite mit sechs Abschnitten (Pakete 3 + 2b)
 

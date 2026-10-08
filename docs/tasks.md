@@ -9,12 +9,12 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
+| 2026-10-08 | Paket 5: Angebotsseiten auf gemeinsames Muster kürzen | Codex | Umsetzung und Prüfung |
 
 ## Offen (priorisiert)
 
 | Aufgabe | Kontext / Quelle |
 | --- | --- |
-| Paket 5: Angebotsseiten auf gemeinsames Muster kürzen | höchstens sechs Hauptabschnitte; Preis/Aufwand klar |
 | Paket 6: Texte straffen, Oberflächen und Typografie beruhigen | hochwertige Bilder erhalten; Dark/Light gleichwertig |
 | Paket 7: Ungenutzte CSS-Regeln und Assets, README und Doku aufräumen | Referenzen und Funktionsprüfungen |
 | Webdesign: Rechtstexte prüfen lassen (AGB/Datenschutz für Website-Projekte, Hosting/Domain/Wartung, Nutzungs- und Bildrechte, Abnahme) | Review-Punkte in `documentation.md`, v1.22.0; keine eigenmächtigen Änderungen |
