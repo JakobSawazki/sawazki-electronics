@@ -9,7 +9,6 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| 2026-10-08 | Paket 5: Angebotsseiten auf gemeinsames Muster kürzen | Codex | Umsetzung und Prüfung |
 
 ## Offen (priorisiert)
 
@@ -37,6 +36,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-10-08 | v1.28.0 | Paket 5 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (e1b184c) | Codex |
 | 2026-10-08 | v1.27.0 | Paket 3 + 2b umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (6f419bb) | Codex |
 | 2026-10-08 | v1.26.0 | Paket 4 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (8e5609f) | Codex |
 | 2026-10-08 | v1.25.2 | Kompakte Projektkacheln mit Direktlinks und optionalen Informationen; Desktop/Mobil, Dark/Light und Bedienung geprüft; a0406ab gepusht und live bestätigt | Codex |

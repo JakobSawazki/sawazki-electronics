@@ -285,6 +285,8 @@ Nach dem Veröffentlichen:
 - Einheitlicher Cache-Buster: `20261008-angebote`.
 
 
+- Veröffentlichung: `e1b184c`, GitHub Pages erfolgreich und live geprüft.
+
 ### 8. Oktober 2026 – v1.27.0: Startseite mit sechs Abschnitten (Pakete 3 + 2b)
 
 - Vereinfachter Hero auf Basis des bestehenden Entwurfs: eine H1, ein Satz, ein Anfragebutton, ein Beratungsbild. IT bleibt Kernbotschaft; Logo im Header. Logo-Karte, Bildsammlung, Faktenband und Laufband entfallen.
