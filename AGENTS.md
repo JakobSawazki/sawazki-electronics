@@ -27,7 +27,7 @@ Dienstleistungen in Freudenstadt). Diese Datei ist die **einzige Einstiegs- und
 | --- | --- |
 | `AGENTS.md` (diese Datei, Projektstamm) | Übergabe, Regeln, Arbeitsablauf |
 | `README.md` (Projektstamm) | öffentlicher Projektüberblick auf GitHub |
-| [`docs/claude2code.md`](docs/claude2code.md) | Leitbild, Gestaltungsbefunde, Pakete 0–7, Jakobs Entscheidungen und Codex-Rückmeldungen zum Umbau vom 08.10.2026 |
+| [`docs/claude2codex.md`](docs/claude2codex.md) | Leitbild, Gestaltungsbefunde, Pakete 0–7, Jakobs Entscheidungen und Codex-Rückmeldungen zum Umbau vom 08.10.2026 |
 | [`docs/tasks.md`](docs/tasks.md) | **primäre Aufgabenquelle**: offen / in Arbeit / abgeschlossen (mit Datum + Version) |
 | [`docs/documentation.md`](docs/documentation.md) | ausführliche Projekt- und Firmendoku: Versionsstand, Änderungsprotokoll, Design-/Technikentscheidungen, SEO-/Marketing-Leitfaden, Bildauftrag, Projektgedächtnis |
 
