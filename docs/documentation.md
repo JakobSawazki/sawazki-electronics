@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 8. Oktober 2026 · Version: v1.22.0
+Stand: 8. Oktober 2026 · Version: v1.22.1
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.22.1 | 2026-10-08 | Fotorealistisches Webdesign-Motiv in Hero, Servicekarte und Social-Vorschau |
 | v1.22.0 | 2026-10-08 | Neues Geschäftsfeld „Webdesign & Digitale Lösungen": Landingpage, Servicekarte, Startseiten-Einbindung, themenabhängiger Anfrage-Assistent |
 | v1.21.1 | 2026-10-08 | Projektbereich kompakter; Minus/Plus neben der Überschrift, mobil ohne Überlagerung |
 | v1.21.0 | 2026-10-07 | Alle Projektgruppen standardmäßig geöffnet; globale Minus-/Plus-Buttons |
@@ -124,9 +125,8 @@ Aktiv genutzt:
 - `assets/images/3d-druck-hero.webp`: fotorealistisches Hero-Bild fuer die 3D-Druck-Dienstleistung
 - `assets/images/datenrettung-hero.webp`: fotorealistisches Hero-Bild fuer die Datenrettung
 - `assets/images/energietechnik-hero.webp`: fotorealistisches Hero- und Kartenbild fuer Batteriespeicher und Inselnetzloesungen
-- `assets/images/webdesign-hero.svg` (1600 × 1000) und `webdesign-card.svg` (1200 × 1000):
-  handgeschriebene SVG-Illustration (Browserfenster, Smartphone, Checkliste) in Navy/Cyan fuer
-  Hero von `webdesign.html` bzw. Servicekarte auf `produkte.html`; je ca. 6,5 KB, ohne Schrift
+- `assets/images/webdesign-hero.webp` (1672 × 941, ca. 67 KB): fotorealistischer Arbeitsplatz
+  mit Laptop und Smartphone in Navy/Cyan; Hero, Servicekarte und Social-Vorschau
 - `assets/images/project-excellab.webp`, `project-pythonlab.webp`, `project-workbenchlab.webp`, `project-bmlab.webp`,
   `project-gameslab.webp`, `project-solarsystem.jpg`, `project-eclernstudio.webp`,
   `project-cyberpedia.webp`: einheitliche, fotorealistische
@@ -255,6 +255,14 @@ Nach dem Veröffentlichen:
 - Commit-Kuerzel in dieser Dokumentation im Aenderungsprotokoll ergaenzen
 
 ## Bisheriges Aenderungsprotokoll
+
+### 8. Oktober 2026 – v1.22.1: Webdesign-Motiv
+
+- Eingebauter Bildgenerator: moderner Arbeitsplatz mit Laptop und Smartphone, dieselbe abstrakte Unternehmenswebsite in Desktop-/Mobilansicht; Navy/Cyan, linke Hälfte ruhig und dunkel; ohne Schrift, Logos oder Personen.
+- Finales Asset: `assets/images/webdesign-hero.webp`, 1672 × 941, WebP-Qualität 82. Hero in `webdesign.html`, Servicekarte in `produkte.html`, Open-Graph-Bild und Bildmaße angepasst.
+- Ersetzte SVG-Motive entfernt; Cache-Version auf allen HTML-Seiten vereinheitlicht.
+- Bildgenerator-Prompt: "Premium modern workspace with unbranded laptop and smartphone showing the same corporate website using abstract layout blocks. Devices in the right half, calm dark navy left half; cyan rim light, cinematic product photography, 16:9. No text, letters, logos, people, identifiable company or watermark."
+- Lokal geprüft: Hero auf Desktop/Mobil, Dark/Light, geladenes Kartenbild und interne Verweise; keine Formularsendung. Veröffentlichung und Live-Prüfung folgen.
 
 ### 8. Oktober 2026 – v1.22.0: Geschaeftsfeld „Webdesign & Digitale Lösungen"
 
