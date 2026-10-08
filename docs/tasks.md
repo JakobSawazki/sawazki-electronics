@@ -9,6 +9,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
+| 2026-10-08 | Projektbereich nach oben; Minus/Plus neben der Überschrift | Codex | Umsetzung und Prüfung |
 
 ## Offen (priorisiert)
 

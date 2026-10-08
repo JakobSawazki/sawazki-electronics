@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 7. Oktober 2026 · Version: v1.21.0
+Stand: 8. Oktober 2026 · Version: v1.21.1
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.21.1 | 2026-10-08 | Projektbereich kompakter; Minus/Plus neben der Überschrift, mobil ohne Überlagerung |
 | v1.21.0 | 2026-10-07 | Alle Projektgruppen standardmäßig geöffnet; globale Minus-/Plus-Buttons |
 | v1.20.0 | 2026-10-07 | AlgoLab als neuntes Projekt; fünf aufklappbare Gruppen, größere Icons und einheitlicher Bereich IT-Projekte |
 | v1.19.1 | 2026-09-26 | Excel-Lab zuerst, WorkbenchLab danach, PythonLab an dritter Stelle; vorbereitetes Excel-Projektbild übernommen |

@@ -1531,7 +1531,20 @@ select:focus {
 
 .side-project-heading {
   width: min(100% - 2rem, var(--max));
-  margin: 0 auto 1.35rem;
+  margin: 0 auto .85rem;
+  position: relative;
+  padding-right: 120px;
+}
+
+.side-project-heading .project-group-controls {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .side-project-heading { padding-right: 0; }
+  .side-project-heading .project-group-controls { position: static; margin-top: .75rem; }
 }
 
 .side-project-heading small {

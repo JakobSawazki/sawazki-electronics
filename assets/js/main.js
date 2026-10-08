@@ -58,7 +58,7 @@ document.querySelectorAll("[data-project-group]").forEach((group) => {
 });
 
 document.querySelectorAll("[data-project-group-controls]").forEach((controls) => {
-  const groups = controls.closest(".project-groups")?.querySelectorAll("[data-project-group]");
+  const groups = controls.closest(".project-groups, .side-project")?.querySelectorAll("[data-project-group]");
   if (!groups?.length) return;
   controls.hidden = false;
   controls.querySelectorAll("[data-project-groups-action]").forEach((button) => {
