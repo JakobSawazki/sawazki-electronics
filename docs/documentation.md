@@ -273,6 +273,8 @@ Nach dem Veröffentlichen:
 
 ### 8. Oktober 2026 – v1.25.1: Fotorealistischer Einstieg für IT-Projekte
 
+- Veröffentlichung: `eb1f50f`, GitHub Pages erfolgreich (Lauf 37842076588); Bild und Projektgruppen online bestätigt.
+
 - Jakobs Wunsch: Eigenes fotorealistisches Motiv für die Projektseite. Der bisherige Logo-Kasten wird durch ein symbolisches Entwicklungs- und Lernstudio ersetzt.
 - Gleiche ruhige Einstiegsstruktur wie auf der Leistungsübersicht; mobil untereinander. Alle fünf Projektgruppen, neun Projekte und die Auf-/Zuklappsteuerung bleiben erhalten.
 - Hero und Social-Vorschaubild verwenden `assets/images/projekte-hero.webp` (1672 × 941, 142 KB). Bildauftrag/Prompt: [`projekte-bildprompt.md`](projekte-bildprompt.md). Generierung über das integrierte Imagegen-Werkzeug; keine Personen, Fremdmarken oder erfundenen Kundenreferenzen.
