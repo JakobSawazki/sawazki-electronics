@@ -9,13 +9,21 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| 2026-10-08 | Codex 2: Startseiten-Einstieg entschlacken und edler gestalten | Codex | Desktop-/Mobilvorschau erstellt; kurze IT-Kernbotschaft, ein Bild, mehr Freiraum, ruhige Leistungszeile; wartet auf Jakobs Freigabe |
+
 
 ## Offen (priorisiert)
 
 | Aufgabe | Kontext / Quelle |
 | --- | --- |
-| **Codex 3:** Gesamte Website gestalterisch durchgehen (alle Unterseiten): Textmenge, Abstände, Bildsprache, Einheitlichkeit; Verbesserungen paketweise vorschlagen und umsetzen | Wunsch von Jakob vom 08.10.2026; bestehende Farbwelt und Regeln aus `AGENTS.md` beibehalten, keine erfundenen Inhalte |
+| Paket 0: Einheitliche Sie-Ansprache auf allen Seiten, Formularen, Metadaten und FAQ-Schema | claude2code.md §§ 6, 8; final von Jakob freigegeben |
+| Paket 1b: IT-Betreuung mit Diagnosepauschale und AGB-Ergänzung | vor Menü umsetzen; 50 € Endpreis, Anrechnung bei Reparatur |
+| Paket 1: Einheitliches Menü mit drei Gruppen und gemeinsamer Footer | alle Seiten, mobile und Tastaturbedienung |
+| Paket 2: Kompakte Leistungsübersicht mit drei Gruppen | bestehende URL produkte.html bleibt |
+| Paket 4: Gemeinsamer geführter Anfrage-Assistent | vor Startseiten-Kontaktbereich; Ziel, Honeypot und Rückleitung erhalten |
+| Paket 3 + 2b: Startseite mit sechs Abschnitten; Projekte auf eigener Seite | bestehender Hero-Entwurf angepasst; alle Anker erhalten |
+| Paket 5: Angebotsseiten auf gemeinsames Muster kürzen | höchstens sechs Hauptabschnitte; Preis/Aufwand klar |
+| Paket 6: Texte straffen, Oberflächen und Typografie beruhigen | hochwertige Bilder erhalten; Dark/Light gleichwertig |
+| Paket 7: Ungenutzte CSS-Regeln und Assets, README und Doku aufräumen | Referenzen und Funktionsprüfungen |
 | Webdesign: Rechtstexte prüfen lassen (AGB/Datenschutz für Website-Projekte, Hosting/Domain/Wartung, Nutzungs- und Bildrechte, Abnahme) | Review-Punkte in `documentation.md`, v1.22.0; keine eigenmächtigen Änderungen |
 | Webdesign-Backlog (P2): Demo-Website für fiktiven Musterbetrieb, Erklärseite Hosting/Domain/Wartung, Referenzen nur mit Erlaubnis, CMS/Shop/Buchung nach Prüfung, ggf. Navigation „Für Unternehmen" | Briefing vom 08.10.2026; erst nach Freigabe durch Jakob |
 | Porträtfoto für `ueber-mich.html` (`assets/images/jakob-sawazki.webp`) | wartet auf Foto von Jakob |
@@ -23,8 +31,14 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 | Referenz-Galerie mit echten Arbeitsfotos | wartet auf Fotos |
 | Google-Unternehmensprofil: Beschreibungstext aktualisieren, Leistungen pflegen | Vorlage in `documentation.md`, Abschnitt SEO |
 | Google Search Console einrichten bzw. Status prüfen, Sitemap einreichen | Anleitung in `documentation.md`, Abschnitt SEO |
-| Eigene Domain (z. B. `sawazki-electronics.de`) evaluieren | Checkliste in `documentation.md`, Abschnitt SEO |
+
 | Datenschutzerklärung bei konkretem Geschäftsbetrieb rechtlich prüfen lassen | Hinweis aus AGENTS.md |
+
+## Zurückgestellt
+
+| Aufgabe | Entscheidung |
+| --- | --- |
+| Eigene Domain | Jakob am 08.10.2026: GitHub Pages und t1p.de/sawazki genügen vorerst |
 
 ## Abgeschlossen
 
