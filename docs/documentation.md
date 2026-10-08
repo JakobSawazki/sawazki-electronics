@@ -274,6 +274,8 @@ Nach dem Veröffentlichen:
 
 ### 8. Oktober 2026 – v1.25.2: Projektübersicht mit kompakten Kacheln
 
+- Veröffentlichung: `a0406ab`, GitHub Pages erfolgreich (Lauf 37842809643); neun Kacheln, geschlossene Informationsbereiche und entfernte Öffnen-Buttons online bestätigt.
+
 - Jakobs Wunsch: Die neun Projekte erscheinen als kompakte Kacheln mit Grafik, Name und kurzer Beschreibung, zweispaltig am Desktop und einspaltig mobil. Die fünf Gruppen bleiben sichtbar zugeordnet und einzeln/global aufklappbar.
 - Grafik und Kurzbeschreibung führen direkt zum jeweiligen Projekt (neuer Tab). Die bisherigen separaten Öffnen-Buttons entfallen.
 - Alle ausführlichen Texte bleiben in nativen, standardmäßig geschlossenen Details erhalten, erreichbar über ein dezentes Info-Symbol mit Mehr Informationen. Ohne JavaScript und per Tastatur bedienbar.
