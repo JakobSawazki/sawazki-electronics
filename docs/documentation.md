@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 8. Oktober 2026 · Version: v1.26.0
+Stand: 8. Oktober 2026 · Version: v1.27.0
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.27.0 | 2026-10-08 | Startseite mit sechs Abschnitten (Pakete 3 + 2b) |
 | v1.26.0 | 2026-10-08 | Gemeinsamer geführter Anfrage-Assistent (Paket 4) |
 | v1.25.2 | 2026-10-08 | Projektübersicht mit kompakten Kacheln |
 | v1.25.1 | 2026-10-08 | Fotorealistischer Einstieg für IT-Projekte |
@@ -272,6 +273,17 @@ Nach dem Veröffentlichen:
 - Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
 
 ## Bisheriges Aenderungsprotokoll
+
+### 8. Oktober 2026 – v1.27.0: Startseite mit sechs Abschnitten (Pakete 3 + 2b)
+
+- Vereinfachter Hero auf Basis des bestehenden Entwurfs: eine H1, ein Satz, ein Anfragebutton, ein Beratungsbild. IT bleibt Kernbotschaft; Logo im Header. Logo-Karte, Bildsammlung, Faktenband und Laufband entfallen.
+- Drei Bildkarten ersetzen Leistungskarten, Button-Leiste und Service-Finder. Sie verlinken die drei Gruppen der Leistungsübersicht; individuelle Angebote werden nicht mehrfach aufgezählt.
+- Insgesamt sechs Abschnitte: Hero, Leistungsgruppen, drei Vertrauenspunkte, vier Ablauf-Schritte, Kontakt und schmaler Projektverweis. Diagnose-/Praxis-/Detailbänder und Projektkachelverzeichnis entfallen auf der Startseite.
+- Projektverzeichnis mit fünf Gruppen und neun Kacheln auf projekte.html inhaltlich unverändert. Alte gruppen-/inhalt-Sprunglinks auf index.html werden dort hin weitergeleitet. Alle bisherigen IDs bleiben als Ankerersatz vorhanden; ohne JS führen alte Projektanker zum Hinweis mit Projektlink.
+- OfferCatalog an die drei Gruppen und sechs eigenständigen Angebotsseiten angepasst. Keine neuen Preise, Referenzen oder Leistungsversprechen. Sachliche Texte, einfarbige Überschriften, ruhige Flächen und Bilder ohne Wiederholung.
+- Lokale Prüfung: 1440 px Desktop, 390 und 320 px Mobil, Dark/Light; Tastaturlink zur Leistungsgruppe, Kontaktanker sowie zwei Projektgruppen-Weiterleitungen im Browser bestätigt. Alle bisherigen IDs und alle zehn Weiterleitungsziele geprüft. 16 Seiten/35 FAQ-Schemaeinträge ohne Link- oder Konsistenzfehler; JS-Syntax fehlerfrei.
+- Cache-Buster auf allen Seiten: 20261008-startseite. Git-Pull zunächst durch Drive-desktop.ini unter .git blockiert; nur diese OS-Dateien in eine temporäre Sicherung verschoben, Pull danach erfolgreich.
+
 
 ### 8. Oktober 2026 – v1.26.0: Gemeinsamer geführter Anfrage-Assistent (Paket 4)
 

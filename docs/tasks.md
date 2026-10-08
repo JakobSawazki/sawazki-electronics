@@ -9,12 +9,12 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
+| 2026-10-08 | Paket 3 + 2b: Startseite mit sechs Abschnitten und Projektverweis | Codex | Umsetzung und Prüfung |
 
 ## Offen (priorisiert)
 
 | Aufgabe | Kontext / Quelle |
 | --- | --- |
-| Paket 3 + 2b: Startseite mit sechs Abschnitten; Projekte auf eigener Seite | bestehender Hero-Entwurf angepasst; alle Anker erhalten |
 | Paket 5: Angebotsseiten auf gemeinsames Muster kürzen | höchstens sechs Hauptabschnitte; Preis/Aufwand klar |
 | Paket 6: Texte straffen, Oberflächen und Typografie beruhigen | hochwertige Bilder erhalten; Dark/Light gleichwertig |
 | Paket 7: Ungenutzte CSS-Regeln und Assets, README und Doku aufräumen | Referenzen und Funktionsprüfungen |

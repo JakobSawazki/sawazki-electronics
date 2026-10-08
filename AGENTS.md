@@ -17,9 +17,8 @@ Dienstleistungen in Freudenstadt). Diese Datei ist die **einzige Einstiegs- und
   Auf anderen Geräten gilt der Google-Drive-Pfad (z. B. `G:\Meine Ablage\Gewerbe\Sawazki Electronics`).
 - **Technik:** rein statisch – HTML, CSS, JS. Kein Build, kein Framework, keine Paketabhängigkeiten.
 - **Aktives Branding:** alles unter `assets/images/brand/` – Header/Favicon nutzen
-  `sawazki-brand-symbol.webp` bzw. `favicon.ico`/`favicon.png`; das Hero-Modul der
-  Startseite zeigt das vollständige Logo `sawazki-brand-logo.webp` (optimiert aus der
-  Rohquelle `brand.png`).
+  `sawazki-brand-symbol.webp` bzw. `favicon.ico`/`favicon.png`; die Startseite zeigt im Hero ein Beratungsbild. Das vollständige Logo
+  `sawazki-brand-logo.webp` bleibt als Markenasset erhalten (optimiert aus `brand.png`).
 
 ## Doku-Landkarte (Stand 02.07.2026)
 

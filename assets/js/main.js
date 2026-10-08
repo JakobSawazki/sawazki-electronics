@@ -9,6 +9,21 @@ const topicField = document.querySelector('select[name="topic"]');
 
 document.documentElement.classList.add("js-ready");
 
+// Keep old project-group links useful after moving the directory off the homepage.
+if (document.body.classList.contains("home-page")) {
+  const projectAnchors = new Set([
+    "gruppe-lern-labs", "inhalt-lern-labs", "gruppe-berufsschule", "inhalt-berufsschule",
+    "gruppe-schuelerprojekte", "inhalt-schuelerprojekte", "gruppe-gaming", "inhalt-gaming",
+    "gruppe-wissen-bildung", "inhalt-wissen-bildung",
+  ]);
+  function redirectProjectAnchor() {
+    const anchor = window.location.hash.slice(1);
+    if (projectAnchors.has(anchor)) window.location.replace(`projekte.html#${anchor}`);
+  }
+  redirectProjectAnchor();
+  window.addEventListener("hashchange", redirectProjectAnchor);
+}
+
 // Native details remain usable without JavaScript; enhance both directions.
 const projectGroupControllers = new Map();
 document.querySelectorAll("[data-project-group]").forEach((group) => {
