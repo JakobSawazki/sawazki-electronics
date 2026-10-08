@@ -37,19 +37,9 @@ sie dort); alle übrigen MD-Dateien liegen unter `docs/`.
 
 1. [`docs/tasks.md`](docs/tasks.md) lesen: erst „In Arbeit" (nichts doppelt anfangen),
    dann die oberste offene Aufgabe übernehmen und dort eintragen.
-2. Zusätzlich `docs/tasks.docx` prüfen (lokaler Eingang für Aufgaben mit
-   privaten Screenshots; gitignored, nie committen). Neue Einträge dort nach `docs/tasks.md`
-   spiegeln (ohne private Details). `.docx` lesen per PowerShell:
-
-   ```powershell
-   Add-Type -AssemblyName System.IO.Compression.FileSystem
-   $zip = [System.IO.Compression.ZipFile]::OpenRead("docs/tasks.docx")
-   $e = $zip.Entries | Where-Object { $_.FullName -eq 'word/document.xml' }
-   $sr = New-Object System.IO.StreamReader($e.Open()); $xml = $sr.ReadToEnd(); $sr.Close()
-   [System.Text.RegularExpressions.Regex]::Replace(($xml -replace '</w:p>', "`n"), '<[^>]+>', '')
-   $zip.Dispose()
-   ```
-
+2. Es gibt nur noch **eine** Aufgabenquelle: `docs/tasks.md`. Der frühere lokale Eingang
+   `docs/tasks.docx` wurde am 08.10.2026 gelöscht; nicht neu anlegen. Alles Weitere wird
+   zentral in `docs/documentation.md` dokumentiert.
 3. Immer nur **ein** Arbeitspaket gleichzeitig. Vollständig umsetzen:
    Code → Doku (`docs/documentation.md`-Änderungsprotokoll) → lokal testen → committen →
    pushen → live prüfen → `docs/tasks.md` umtragen.
@@ -80,6 +70,10 @@ Details: `docs/tasks.md`, Abschnitt „Nutzungskontingent-Regel".
   `sawazki.electronics@googlemail.com` – beim Testen **nicht** unnötig echt absenden.
 - Öffentliche Kontaktdaten: Sawazki Electronics, Jakob Sawazki, Mörikestraße 15,
   72250 Freudenstadt · +49 1520 2967632. Formular-Weiterleitung nach Versand: `danke.html`.
+- Geschäftsfeld „Webdesign & Digitale Lösungen" (`webdesign.html`, seit v1.22.0): keine
+  Euro-Preise, keine Kundenreferenzen, keine Ranking-/Umsatzversprechen ohne ausdrückliche
+  Freigabe von Jakob. Themenwert im Anfrage-Assistenten: `Webdesign & Digitale Lösungen`
+  (in Links als `?topic=Webdesign%20%26%20Digitale%20L%C3%B6sungen` kodieren).
 - Neue öffentliche HTML-Seiten: zusätzlich `sitemap.xml`, Navigation, Footer und README pflegen.
   Neue Projekte als `.side-project-card` im Projektbereich ergänzen und auf `projekte.html`
   vorstellen; keine Einzelprojektlinks im Footer.
@@ -92,7 +86,9 @@ Details: `docs/tasks.md`, Abschnitt „Nutzungskontingent-Regel".
   `sawazki-electronics-theme` im localStorage. Theme-Schalter steht rechts neben `Impressum`.
 - `assets/js/main.js`: Scroll-Header (`is-scrolled`), mobile Navigation, Reveal-Animationen
   (`.reveal`/`.is-visible` – Formulare nicht unnötig verstecken), Query-Parameter `topic`
-  füllt das Anfrage-Thema vor (z. B. `?topic=VHS-Digitalisierung`).
+  füllt das Anfrage-Thema vor (z. B. `?topic=VHS-Digitalisierung`). Themenabhängige
+  Formularbereiche: `data-topic-show="<Thema>"` / `data-topic-hide="<Thema>"`; ausgeblendete
+  Felder werden deaktiviert und nicht mitgesendet.
 - Bilder: erste sichtbare Ansicht nicht lazy laden; weiter unten `loading="lazy"
   decoding="async"`. Bilder haben `width`/`height`-Attribute (CLS-Schutz) – bei neuen
   Bildern beibehalten.

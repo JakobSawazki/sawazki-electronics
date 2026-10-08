@@ -9,11 +9,15 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
+| 2026-10-08 | Neues Geschäftsfeld „Webdesign & Digitale Lösungen" (v1.22.0), Pakete P1-A bis P1-E: Landingpage `webdesign.html`, Einbindung in `produkte.html`/Startseite, Webdesign-Anfragefluss im Anfrage-Assistenten, SEO/Sitemap/README/Doku, QS + Veröffentlichung | Claude | P1-A begonnen |
 
 ## Offen (priorisiert)
 
 | Aufgabe | Kontext / Quelle |
 | --- | --- |
+| Webdesign: fotorealistisches Hero-/Kartenbild (`webdesign-hero.webp`) als Ersatz für die SVG-Illustration | Bildauftrag an Codex (Bildgenerator); Stilvorgaben in `documentation.md`, Abschnitt Bildauftrag |
+| Webdesign: Rechtstexte prüfen lassen (AGB/Datenschutz für Website-Projekte, Hosting/Domain/Wartung, Nutzungs- und Bildrechte, Abnahme) | Review-Punkte in `documentation.md`, v1.22.0; keine eigenmächtigen Änderungen |
+| Webdesign-Backlog (P2): Demo-Website für fiktiven Musterbetrieb, Erklärseite Hosting/Domain/Wartung, Referenzen nur mit Erlaubnis, CMS/Shop/Buchung nach Prüfung, ggf. Navigation „Für Unternehmen" | Briefing vom 08.10.2026; erst nach Freigabe durch Jakob |
 | Porträtfoto für `ueber-mich.html` (`assets/images/jakob-sawazki.webp`) | wartet auf Foto von Jakob |
 | Echte Kundenstimmen/Testimonials einholen und einbauen | keine erfundenen Inhalte verwenden |
 | Referenz-Galerie mit echten Arbeitsfotos | wartet auf Fotos |
@@ -62,9 +66,9 @@ Details zu jeder Version stehen im Änderungsprotokoll in [`documentation.md`](d
 
 ## Pflege-Regeln
 
-1. Diese Datei ist die **primäre Aufgabenquelle**. `docs/tasks.docx` bleibt nur als
-   lokaler Eingang für Aufgaben mit privaten Screenshots (gitignored, nie committen);
-   solche Aufgaben werden hier ohne private Details gespiegelt.
+1. Diese Datei ist die **einzige Aufgabenquelle**. Der frühere lokale Eingang
+   `docs/tasks.docx` wurde am 08.10.2026 gelöscht; Hintergründe und Entscheidungen stehen
+   zentral in `documentation.md`.
 2. Immer nur **ein** Arbeitspaket gleichzeitig beginnen (oberste offene Aufgabe zuerst,
    sofern Jakob nichts anderes vorgibt).
 3. Ein Paket gilt erst als abgeschlossen nach: Umsetzung → Doku → lokalem Test → Commit →

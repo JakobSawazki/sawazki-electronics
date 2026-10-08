@@ -5,7 +5,7 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 ## Inhalt
 
 - Professionelle Startseite mit nutzenorientiertem Hero („IT-Hilfe in Freudenstadt, die man versteht."), lokalen Bildassets und blauem Sawazki-Electronics-Branding
-- Vertrauensband „Warum Sawazki Electronics" und direkter Angebots-Teaser zu allen vier Service-Seiten auf der Startseite
+- Vertrauensband „Warum Sawazki Electronics" und direkter Angebots-Teaser zu allen fünf Service-Seiten auf der Startseite
 - Dunkler Service-Finder auf der Startseite, damit Besucher schneller zum passenden Einstieg kommen
 - Footer mit direktem Telefon- und E-Mail-Kontakt auf allen Seiten; WhatsApp zusätzlich im Kontaktbereich
 - Dezente Leiterbahn-/Knotenpunktmuster auf den hellen Flächen statt leerem Weiß
@@ -25,6 +25,7 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - Eigene Angebotsseite für 3D-Druck nach Kundenwunsch (individuelle Drucke, Hilfe bei 3D-Modellen, Prototypen, Ersatzteile)
 - Eigene Angebotsseite für professionelle Datenrettung (logische und physische Schäden, Partnerlabore für defekte Datenträger)
 - Eigene Angebotsseite für Batteriespeicher und Inselnetzlösungen (Energietechnik, netzunabhängig/Off-Grid) mit eigenem Hero-/Kartenbild
+- Eigene Angebotsseite „Webdesign & Digitale Lösungen" für kleine Unternehmen, Handwerk, Handel und Selbstständige (Website-Erstellung, Modernisierung, Mobiloptimierung, SEO-Basis, Pflege) mit themenabhängigen Zusatzfeldern im Anfrage-Assistenten
 - „Über mich"-Seite mit beruflichem Profil (Industrie-Elektronik, Energietechnik, Lehre)
 - Schwebender WhatsApp-Kontaktbutton auf allen Seiten (direkt an Jakob, kein Bot)
 - Vereinheitlichte Projektkacheln mit einheitlichem „App-Icon"-Framing
@@ -49,6 +50,7 @@ Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Di
 - 3D-Druck: `3d-druck.html`
 - Datenrettung: `datenrettung.html`
 - Energietechnik (Batteriespeicher & Inselnetz): `energietechnik.html`
+- Webdesign & Digitale Lösungen: `webdesign.html`
 - Über mich: `ueber-mich.html`
 - Anfrage-Assistent: `anfrage-assistent.html`
 - Danke-Seite nach Formularversand: `danke.html`
@@ -74,9 +76,8 @@ Seit dem 02.07.2026 gibt es eine konsolidierte Doku-Struktur (nur noch vier MD-D
 ## Aufgabenwarteschlange
 
 Aufgaben werden in [`docs/tasks.md`](docs/tasks.md) geführt (offen / in Arbeit /
-abgeschlossen). `docs/tasks.docx` bleibt als lokaler, nicht versionierter
-Eingang für Aufgaben mit privaten Screenshots; solche Aufgaben werden ohne private Details
-in `docs/tasks.md` gespiegelt. Details und Regeln stehen in `AGENTS.md`.
+abgeschlossen). Es gibt keinen zweiten Aufgaben-Eingang mehr;
+die ausführliche Dokumentation steht in `docs/documentation.md`. Details und Regeln stehen in `AGENTS.md`.
 
 ## Kontaktformulare
 

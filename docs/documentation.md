@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 8. Oktober 2026 · Version: v1.21.1
+Stand: 8. Oktober 2026 · Version: v1.22.0
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.22.0 | 2026-10-08 | Neues Geschäftsfeld „Webdesign & Digitale Lösungen": Landingpage, Servicekarte, Startseiten-Einbindung, themenabhängiger Anfrage-Assistent |
 | v1.21.1 | 2026-10-08 | Projektbereich kompakter; Minus/Plus neben der Überschrift, mobil ohne Überlagerung |
 | v1.21.0 | 2026-10-07 | Alle Projektgruppen standardmäßig geöffnet; globale Minus-/Plus-Buttons |
 | v1.20.0 | 2026-10-07 | AlgoLab als neuntes Projekt; fünf aufklappbare Gruppen, größere Icons und einheitlicher Bereich IT-Projekte |
@@ -83,6 +84,7 @@ Wichtige Dateien:
 - `assets/js/theme.js`: Dark Mode als Standard und lokal gespeicherte Theme-Auswahl
 - `assets/images/`: lokale Bild- und Logoassets
 - `3d-druck.html`, `datenrettung.html`, `energietechnik.html`: weitere Angebotsseiten (Service-Layoutklassen wiederverwendet)
+- `webdesign.html`: Angebotsseite „Webdesign & Digitale Lösungen" fuer gewerbliche Kunden (gleiche Service-Layoutklassen, SVG-Illustration statt Foto)
 - `ueber-mich.html`: persoenliche Profil-/Vertrauensseite
 - `robots.txt` und `sitemap.xml`: Suchmaschinen-Hinweise
 - `.nojekyll`: sorgt dafuer, dass GitHub Pages die Dateien unveraendert ausliefert
@@ -90,7 +92,6 @@ Wichtige Dateien:
 - `README.md` (Projektstamm): oeffentlicher Projektueberblick
 - `docs/tasks.md`: primaere Aufgabenquelle (offen / in Arbeit / abgeschlossen)
 - `docs/documentation.md`: diese Datei
-- `docs/tasks.docx` (gitignored, nur lokal): Aufgaben-Eingang fuer private Screenshots
 
 ## Design- und Inhaltsentscheidungen
 
@@ -123,6 +124,9 @@ Aktiv genutzt:
 - `assets/images/3d-druck-hero.webp`: fotorealistisches Hero-Bild fuer die 3D-Druck-Dienstleistung
 - `assets/images/datenrettung-hero.webp`: fotorealistisches Hero-Bild fuer die Datenrettung
 - `assets/images/energietechnik-hero.webp`: fotorealistisches Hero- und Kartenbild fuer Batteriespeicher und Inselnetzloesungen
+- `assets/images/webdesign-hero.svg` (1600 × 1000) und `webdesign-card.svg` (1200 × 1000):
+  handgeschriebene SVG-Illustration (Browserfenster, Smartphone, Checkliste) in Navy/Cyan fuer
+  Hero von `webdesign.html` bzw. Servicekarte auf `produkte.html`; je ca. 6,5 KB, ohne Schrift
 - `assets/images/project-excellab.webp`, `project-pythonlab.webp`, `project-workbenchlab.webp`, `project-bmlab.webp`,
   `project-gameslab.webp`, `project-solarsystem.jpg`, `project-eclernstudio.webp`,
   `project-cyberpedia.webp`: einheitliche, fotorealistische
@@ -251,6 +255,108 @@ Nach dem Veröffentlichen:
 - Commit-Kuerzel in dieser Dokumentation im Aenderungsprotokoll ergaenzen
 
 ## Bisheriges Aenderungsprotokoll
+
+### 8. Oktober 2026 – v1.22.0: Geschaeftsfeld „Webdesign & Digitale Lösungen"
+
+Auftrag von Jakob (Briefing vom 08.10.2026): Sawazki Electronics soll wirtschaftlich breiter
+aufgestellt werden und kuenftig Erstellung, Modernisierung und Betreuung von
+Unternehmenswebsites anbieten. Umsetzung als Ergaenzung der bestehenden Seite, kein Relaunch.
+
+**Neu: `webdesign.html`**
+
+- Aufbau: Hero → Leistungsversprechen → Zielgruppen → sechs Leistungskarten → drei
+  beispielhafte Ausgangslagen (ausdruecklich als Szenarien gekennzeichnet, keine
+  Kundenprojekte) → Zusammenarbeit in sechs Schritten → vier Leistungsmodelle (Website-Start,
+  Website-Modernisierung, Individuelle Unternehmenslösung, Pflege & Betreuung) → Vertrauen →
+  acht FAQ → CTA.
+- Wiederverwendet: `vhs-hero`, `vhs-trust-strip`, `vhs-intro`/`vhs-value-grid`, `vhs-formats`/
+  `format-grid`, `vhs-pricing`, `vhs-process-grid`, `vhs-faq`/`faq-grid`, `vhs-cta`,
+  `product-label`, `why-more`. Neu in `styles.css` nur: `.web-hero` (Marken-Verlauf wie die
+  anderen Service-Heros, kleinere H1), die Rastervarianten `.format-grid--three` und
+  `.vhs-process-grid--three` fuer sechs Elemente sowie eine `[hidden]`-Regel fuer den
+  Anfrage-Assistenten. Die Varianten stehen direkt hinter den Basisregeln, damit die
+  bestehenden Responsive-Regeln weiter greifen.
+- Metadaten: eigener Titel/Description, Canonical, Open Graph (Social-Bild = Firmenlogo-PNG,
+  da SVG von Vorschau-Diensten nicht unterstuetzt wird), `Service`- und `FAQPage`-Schema.
+- Bild: Claude hat keinen Bildgenerator, deshalb eine eigene SVG-Illustration. Ein
+  fotorealistisches Motiv im Stil der anderen Service-Seiten ist als offene Aufgabe fuer Codex
+  in `tasks.md` eingetragen.
+
+**Inhaltliche Leitplanken (bewusst so entschieden)**
+
+- Keine Euro-Preise und keine Inklusivleistungen: ueberall „individuelles Angebot nach Aufwand".
+- Keine Referenzkunden, keine Testimonials, keine Ranking-, Umsatz- oder Reaktionszeit-
+  Versprechen. Der Vertrauensabschnitt nennt offen, dass Webdesign ein neuer Geschaeftsbereich
+  ist und verweist auf die eigenen Webprojekte (`projekte.html`).
+- Online-Shop, Buchungssystem, Redaktionssystem und Schnittstellen sind nur als Erweiterung
+  „nach Pruefung, gesondert kalkuliert" erwaehnt, nicht als Standardleistung.
+- Das Unternehmen, das Anlass der Geschaeftsidee war, wird nirgends genannt oder abgebildet.
+- Du-Ansprache wie auf der uebrigen Website (einheitliche Tonalitaet). Falls fuer
+  Geschaeftskunden „Sie" gewuenscht ist, betrifft das nur `webdesign.html` und die
+  Webdesign-Texte auf `produkte.html`/`index.html`.
+
+**Einbindung**
+
+- `produkte.html`: fuenfte Servicekarte mit „Angebot ansehen" und „Direkt anfragen"
+  (vorbelegtes Thema), `ItemList` um Position 5 ergaenzt, Meta-Description aktualisiert.
+- `index.html`: Hero unveraendert. Neuer Button „Webdesign für Unternehmen" in der Leiste der
+  Angebotsseiten, sechste Karte im Service-Finder (Raster deshalb von 5 auf 3 Spalten →
+  zwei gleichmaessige Reihen), `OfferCatalog` um den Service ergaenzt, Thema im
+  Kontaktformular waehlbar.
+- Navigation: kein neuer Top-Level-Punkt; Erreichbarkeit ueber „Services", Startseite und
+  Service-Finder. Footer unveraendert.
+- `sitemap.xml`: neue URL; `lastmod` von Startseite, `produkte.html` und
+  `anfrage-assistent.html` auf 2026-10-08.
+
+**Anfrage-Assistent**
+
+- Neues Thema mit dem Wert `Webdesign & Digitale Lösungen`; Links kodieren es als
+  `?topic=Webdesign%20%26%20Digitale%20L%C3%B6sungen#assistent`. Die vorhandene
+  Vorbelegung ueber `URLSearchParams` dekodiert `&` und Umlaut korrekt (geprueft).
+- Themenabhaengige Bereiche ueber `data-topic-show` / `data-topic-hide` in `main.js`. Bei
+  Webdesign erscheinen „Art des Vorhabens", „Unternehmen", „Bestehende Website / Domain",
+  „Wichtigste Ziele" und „Zeitrahmen" (alle optional); „Gerät", „Dringlichkeit" und
+  „Gewünschte Hilfe" werden ausgeblendet. Ausgeblendete Felder sind `disabled` und werden
+  nicht mitgesendet. Platzhalter der Beschreibung und die Hinweisliste rechts wechseln mit.
+- Ohne JavaScript bleiben die Zusatzfelder verborgen; das Formular funktioniert wie bisher.
+- Unveraendert: FormSubmit-Ziel, `_next` auf `danke.html`, Honeypot, Pflichtfelder Name,
+  E-Mail, Thema, Beschreibung, Datenschutz-Hinweis. Fieldset-Titel jetzt neutral
+  „Anliegen & Details", Seitentitel/Description nennen zusaetzlich Webdesign.
+
+**Rechtliche Review-Punkte (nichts eigenmaechtig geaendert)**
+
+- `impressum.html`: kein Aenderungsbedarf erkennbar (Anbieterangaben gelten unveraendert).
+- `datenschutz.html`: Das Formular nutzt weiterhin nur FormSubmit; keine neuen Drittanbieter,
+  kein Tracking, keine Cookies. Neu erhoben werden optional Unternehmensname, Domain, Ziele
+  und Zeitrahmen. Pruefen lassen, ob die Formular-Passage das abdeckt.
+- `agb.html`: auf IT-/Reparaturleistungen zugeschnitten. Fuer Website-Projekte fehlen
+  Regelungen zu Abnahme, Nutzungsrechten, Mitwirkungspflichten (Texte/Bilder/Bildrechte),
+  Domain/Hosting, Wartung und Backups. Bis zur Klaerung gehoeren diese Punkte in das jeweilige
+  Einzelangebot.
+- Die Seite sagt ausdruecklich, dass Rechtstexte in der Verantwortung des Website-Betreibers
+  liegen und keine Rechtsberatung erfolgt.
+- BFSG: fuer Kundenprojekte je nach Geschaeftsmodell und Unternehmensgroesse im Einzelfall
+  zu pruefen.
+
+**Organisation**
+
+- `docs/tasks.docx` wurde von Jakob geloescht. `docs/tasks.md` ist die einzige
+  Aufgabenquelle, diese Datei die zentrale Dokumentation. Verweise in `AGENTS.md`, `README.md`,
+  `tasks.md` und `.gitignore` angepasst; `.claude/` (lokale Vorschauserver-Konfiguration) ist
+  gitignored.
+- Cache-Version fuer CSS und Skripte auf allen HTML-Seiten: `20261008-webdesign`.
+
+**Geprueft (lokal, `http://localhost:4177`)**
+
+- `webdesign.html`, `produkte.html`, `index.html`, `anfrage-assistent.html` bei 1440, 1280,
+  1024 und 360 px ohne horizontales Ueberlaufen; Dark und Light Mode; keine Konsolenfehler.
+- Weg Landingpage → Anfrage-Assistent mit einem Klick, Thema vorbelegt, Zusatzfelder sichtbar.
+  Themenwechsel auf „3D-Druck" und zurueck auf leer stellt die Geraetefelder wieder her; die
+  gesendeten Feldnamen wurden ueber `FormData` kontrolliert. **Kein Formular abgesendet.**
+- JSON-LD aller geaenderten Seiten geparst (5 Eintraege im `ItemList`, 10 im `OfferCatalog`),
+  lokale Links, Anker, Bilder und eindeutige IDs per Skript geprueft, `git diff --check`.
+  `node --check` war nicht moeglich (Node.js ist auf diesem Geraet nicht installiert);
+  `main.js` lief stattdessen im Browser auf allen vier Seiten fehlerfrei.
 
 ### 8. Oktober 2026 – v1.21.1: Kompakter Projektbereich
 
@@ -864,21 +970,15 @@ Seit dem 02.07.2026 ist [`docs/tasks.md`](tasks.md) die **primaere Aufgabenquell
 Bereichen "In Arbeit", "Offen" und "Abgeschlossen" (mit Datum, Version, Bearbeiter) sowie den
 Pflege- und Nutzungskontingent-Regeln.
 
-`docs/tasks.docx` bleibt als **lokaler Eingang** fuer Aufgaben mit privaten
-Screenshots bestehen (gitignored, nie committen; am 02.07.2026 von Jakob aus dem
-Projektstamm nach `docs/` verschoben). Fuer die Datei gilt weiterhin:
-
-1. Datei zu Beginn jeder Arbeitssitzung lesen (Lese-Snippet in `AGENTS.md`).
-2. Neue Eintraege ohne private Details nach `docs/tasks.md` spiegeln.
-3. Erledigte Aufgaben erst nach Live-Pruefung entfernen; vorher erneut lesen, damit
-   zwischenzeitlich ergaenzte Aufgaben erhalten bleiben.
-4. Die Datei bleibt auch leer im Projektordner bestehen.
+Seit dem 08.10.2026 gibt es keinen zweiten Aufgaben-Eingang mehr: `docs/tasks.docx` wurde
+geloescht. Aufgaben stehen ausschliesslich in `docs/tasks.md`, Hintergruende und
+Entscheidungen in dieser Datei.
 
 ## Regeln fuer kuenftige Aenderungen (alle Agenten)
 
 Wenn Codex, Claude oder ein anderer Agent an diesem Projekt arbeitet:
 
-- Vor allen anderen Schritten `docs/tasks.md` (und `tasks.docx`) pruefen.
+- Vor allen anderen Schritten `docs/tasks.md` pruefen.
 - Diese Datei vor groesseren Aenderungen lesen.
 - Nach relevanten Aenderungen den Abschnitt "Bisheriges Aenderungsprotokoll" ergaenzen.
 - Bei visuellen Aenderungen lokale Browserpruefung machen.
@@ -1067,6 +1167,8 @@ steckt, damit jeder Mitarbeiter/Agent ohne Vorwissen einsteigen kann. Stand: 02.
   Elektrotechnik/Informationstechnik, Lehrer fuer Elektrotechnik und Informatik an einer
   beruflichen Schule.
 - Leistungen: IT-Service (PC/Laptop, Windows, Datensicherung, WLAN, Beratung),
+  Webdesign & Digitale Lösungen fuer gewerbliche Kunden (seit v1.22.0, neuer Bereich –
+  keine Referenzen/Preise veroeffentlichen, solange Jakob sie nicht freigibt),
   VHS-/Camcorder-Digitalisierung, 3D-Druck nach Kundenwunsch, professionelle Datenrettung
   (physische Schaeden ueber Partnerlabore), Energietechnik = Batteriespeicher (z. B. LiFePO4)
   und Inselnetz-/Off-Grid-Loesungen. **Wichtig:** netzgekoppelte PV-Anlagen werden bewusst

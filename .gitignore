@@ -1,6 +1,5 @@
-# Interner Aufgaben-Eingang (liegt unter docs/, Muster greift in jedem Ordner) –
-# bleibt lokal, nicht ins oeffentliche Repo
-tasks.docx
+# Lokale Werkzeug-Konfiguration (Vorschauserver der KI-Agenten)
+.claude/
 
 # Windows-/Google-Drive-Sync-Artefakte
 desktop.ini
