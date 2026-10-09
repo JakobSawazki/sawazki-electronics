@@ -244,6 +244,8 @@ Nach dem Veröffentlichen:
 - Geprüft: 19 HTML-Dateien/35 FAQ ohne Link-/Schemafehler; Webdesign, Muster und Ratgeber bei 1280 und 390 px jeweils Dark/Light ohne horizontalen Überlauf, je eine H1. Hinweis sichtbar unter festem Header; Ratgeber-Details per Enter bedienbar, Bild geladen.
 
 
+- Veröffentlichung: `e154005`, GitHub Pages erfolgreich und live geprüft.
+
 ### 9. Oktober 2026 – v1.31.1: Google Search Console vorbereiten
 
 - Öffentliche Google-HTML-Bestätigungsdatei für die vorhandene Website und Jakobs angemeldetes Konto ergänzt. Kein Analytics oder Tag Manager eingebunden. Sitemap-Änderungsdaten an den tatsächlichen Umbau angeglichen. Inhaberschaft nach Deployment erfolgreich bestätigt; Sitemap eingereicht (Google-Erfolgsmeldung). Erster Abrufstatus noch „Sitemap konnte nicht gelesen werden“; öffentliche Datei HTTP 200/application/xml, XML gültig, 11 URLs, kein robots-Verbot. Offener Folgepunkt zur Verarbeitung bei Google, keine Indexierungszusage.

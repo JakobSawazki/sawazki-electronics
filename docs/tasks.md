@@ -9,7 +9,6 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| 2026-10-09 | Paket 11: Webdesign-Musterwebsite und verständliche Betriebsinformationen | Codex | Umsetzung und Prüfung |
 
 ## Offen (priorisiert)
 
@@ -33,6 +32,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-10-09 | v1.32.0 | Paket 11 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (e154005) | Codex |
 | 2026-10-09 | – | Google-Unternehmensprofil: Beschreibung aktualisiert und acht Website-Leistungen gespeichert; Überprüfung durch Google ausstehend | Codex |
 | 2026-10-09 | v1.31.1 | Paket 9 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (6db730c) | Codex |
 | 2026-10-09 | v1.31.0 | Paket 8 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (5981ca7) | Codex |
