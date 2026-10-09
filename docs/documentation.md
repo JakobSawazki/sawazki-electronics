@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 9. Oktober 2026 · Version: v1.32.0
+Stand: 9. Oktober 2026 · Version: v1.32.1
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.32.1 | 2026-10-09 | Abschlussprüfung und Reststatus |
 | v1.32.0 | 2026-10-09 | Webdesign-Muster und Erklärung zum Website-Betrieb |
 | v1.31.1 | 2026-10-09 | Google Search Console vorbereiten |
 | v1.31.0 | 2026-10-09 | Datenschutzhinweise und Website-Vertragsumfang präzisiert |
@@ -233,6 +234,17 @@ Nach dem Veröffentlichen:
 - Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
 
 ## Bisheriges Aenderungsprotokoll
+
+### 9. Oktober 2026 – v1.32.1: Abschlussprüfung und Reststatus
+
+- Gesamter Website-Umbau einschließlich Claude-Paketen 0–7, Webdesign-Motiv, Leistungsmenü, Übersichts-/Projektmotiven und kompakten Projektkacheln ist veröffentlicht. Webdesign-Ergänzungen aus P2 sind ebenfalls fertig.
+- Datenschutz nennt die vier tatsächlich erforderlichen Formularangaben ausdrücklich; Zusatzangaben freiwillig. Diagnosebedingungen auf IT-Seite und AGB unverändert identisch. Alle drei JavaScript-Dateien syntaxgeprüft.
+- Abschluss: 48 echte Live-URLs einschließlich Seiten, CSS/JS, Bilddateien, Sitemap und robots.txt HTTP 200. 19 HTML-Dateien/35 FAQ ohne interne Link-/Schemafehler. Neue Inhalte bei 1280/390 px Dark/Light geprüft. Repo vor Abschluss sauber.
+- Frühere WorkbenchLab-Profilwünsche zusätzlich live bestätigt: Profilbutton 140 px breit, Abschluss „Ok“ mit Häkchen, separates Hilfefenster mit eigenem Schließen; Hilfe/Profil ohne Änderung von Eingaben wieder geschlossen.
+- Search Console: Inhaberschaft erfolgreich bestätigt, Sitemap nach finalem Ausbau erneut eingereicht. Google meldet beim Abruf weiterhin einen Fehler; öffentliche Datei ist korrekt erreichbar (12 URLs), robots.txt erlaubt Abruf. Kein Erfolg des Google-Crawlings behauptet.
+- Unternehmensprofil: neuer Beschreibungstext übernommen; acht Leistungen gespeichert, Google-Freigabe noch ausstehend.
+- Restaufgaben bewusst als abhängig geführt: echte Fotos, freigegebene Kundenstimmen, FormSubmit-Vertragsunterlagen sowie Verarbeitung/Freigabe durch Google. Keine erfundenen Referenzen, kein eigenständiger Versand an Kunden/Anbieter. Eigene Domain bleibt gemäß Jakobs Entscheidung zurückgestellt.
+
 
 ### 9. Oktober 2026 – v1.32.0: Webdesign-Muster und Erklärung zum Website-Betrieb
 
@@ -1163,7 +1175,7 @@ weil Google ihn nicht fuer das Ranking verwendet.
 
 ### Google-Unternehmensprofil
 
-Aktualisierung 09.10.2026: Das vorhandene bestätigte Profil ist zugänglich. Die bisherige IT-Beschreibung war bereits gepflegt; ergänzt wurden die aktuellen Bereiche Webdesign und technische Spezialleistungen. Acht eigene Dienstleistungen gespeichert: IT-Betreuung, Netzwerk & WLAN, Datensicherung, Datenrettung, Webdesign & Digitale Lösungen, 3D-Druck, VHS-Digitalisierung, Batteriespeicher & Inselnetz – Beratung. Die Verwaltung zeigt die Änderungen als ausstehend zur Google-Prüfung. Keine Preise, neuen Kategorien oder Öffnungszeiten geändert.
+Aktualisierung 09.10.2026: Das vorhandene bestätigte Profil ist zugänglich. Die bisherige IT-Beschreibung war bereits gepflegt; ergänzt wurden die aktuellen Bereiche Webdesign und technische Spezialleistungen. Acht eigene Dienstleistungen gespeichert: IT-Betreuung, Netzwerk & WLAN, Datensicherung, Datenrettung, Webdesign & Digitale Lösungen, 3D-Druck, VHS-Digitalisierung, Batteriespeicher & Inselnetz – Beratung. Die Beschreibung wurde bei der erneuten Prüfung bereits von Google übernommen. Die acht Leistungen wurden gespeichert; deren Freigabe bleibt zu prüfen. Keine Preise, neuen Kategorien oder Öffnungszeiten geändert.
 
 Bei der Pruefung am 10. Juni 2026 war das Unternehmensprofil gut sichtbar. Als Beschreibung
 wurde jedoch ein alter Impressums-/Datenschutztext angezeigt. Empfohlener Beschreibungstext:

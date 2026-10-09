@@ -132,6 +132,4 @@ beides hat am 02.07.2026 funktioniert.
 ## Aktueller Stand & offene Punkte
 
 Versionsstand, Änderungsprotokoll und Entwicklungsstand: [`docs/documentation.md`](docs/documentation.md).
-Offene Aufgaben: [`docs/tasks.md`](docs/tasks.md). Die Datenschutzerklärung enthält eine
-Passage für Reparatur/Datensicherung/Datenrettung/Partnerlabore – bei konkretem
-Geschäftsbetrieb rechtlich prüfen lassen.
+Offene Aufgaben: [`docs/tasks.md`](docs/tasks.md). AGB und Datenschutz wurden am 09.10.2026 gezielt an den aktuellen Website-Stand angepasst. Konkrete offene Anbieterunterlagen zu FormSubmit sowie fehlende freigegebene Originalfotos/Kundenstimmen stehen dort getrennt vom fertig veröffentlichten Umbau.

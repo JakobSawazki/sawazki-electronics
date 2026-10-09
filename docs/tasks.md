@@ -9,16 +9,17 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
+| 2026-10-09 | Paket 12: Abschlussprüfung und präziser Reststatus | Codex | Umsetzung und Prüfung |
 
-## Offen (priorisiert)
+## Offen (abhängig von Material, Unterlagen oder externem Status)
 
 | Aufgabe | Kontext / Quelle |
 | --- | --- |
 | Porträtfoto für `ueber-mich.html` (`assets/images/jakob-sawazki.webp`) | wartet auf Foto von Jakob |
-| Echte Kundenstimmen/Testimonials einholen und einbauen | keine erfundenen Inhalte verwenden |
+| Echte Kundenstimmen/Testimonials einholen und einbauen | wartet auf freigegebene Originalaussagen und Erlaubnis zur Veröffentlichung; keine Kunden kontaktiert |
 | Referenz-Galerie mit echten Arbeitsfotos | wartet auf Fotos |
-| Google-Unternehmensprofil: Freigabe der eingereichten Änderungen nachprüfen | Beschreibung und acht Leistungen am 09.10.2026 gespeichert; Google prüft Beschreibung (bis 10 Minuten laut UI) und Leistungen (bis ein Tag). |
-| Search Console: ersten Sitemap-Abruf nachprüfen | Inhaberschaft bestätigt, Sitemap am 09.10.2026 eingereicht. Google meldet zunächst „Sitemap konnte nicht gelesen werden“; echte URL korrekt, HTTP 200, application/xml, 11 gültige URLs und robots.txt erlaubt Abruf. |
+| Google-Unternehmensprofil: Freigabe der eingereichten Änderungen nachprüfen | Beschreibung am 09.10.2026 von Google übernommen. Acht Leistungseinträge gespeichert; deren Prüfung kann laut Google bis einen Tag dauern. |
+| Search Console: ersten Sitemap-Abruf nachprüfen | Inhaberschaft bestätigt, Sitemap am 09.10.2026 eingereicht. Google meldet zunächst „Sitemap konnte nicht gelesen werden“; echte URL korrekt, HTTP 200, application/xml, inzwischen 12 gültige URLs und robots.txt erlaubt Abruf. |
 
 | FormSubmit: Anbieter-Vertrag und Datenverarbeitung klären | Öffentlich nicht belegt: vollständiger Vertragspartner/Anschrift, AVV, Verarbeitungsorte/Unterauftragnehmer und gegebenenfalls Grundlage von Drittlandtransfers. Kein Nachweis im Repo; kein Anbieter kontaktiert. |
 
