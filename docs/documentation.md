@@ -242,9 +242,11 @@ Nach dem Veröffentlichen:
 - Abschluss: 48 echte Live-URLs einschließlich Seiten, CSS/JS, Bilddateien, Sitemap und robots.txt HTTP 200. 19 HTML-Dateien/35 FAQ ohne interne Link-/Schemafehler. Neue Inhalte bei 1280/390 px Dark/Light geprüft. Repo vor Abschluss sauber.
 - Frühere WorkbenchLab-Profilwünsche zusätzlich live bestätigt: Profilbutton 140 px breit, Abschluss „Ok“ mit Häkchen, separates Hilfefenster mit eigenem Schließen; Hilfe/Profil ohne Änderung von Eingaben wieder geschlossen.
 - Search Console: Inhaberschaft erfolgreich bestätigt, Sitemap nach finalem Ausbau erneut eingereicht. Google meldet beim Abruf weiterhin einen Fehler; öffentliche Datei ist korrekt erreichbar (12 URLs), robots.txt erlaubt Abruf. Kein Erfolg des Google-Crawlings behauptet.
-- Unternehmensprofil: neuer Beschreibungstext übernommen; acht Leistungen gespeichert, Google-Freigabe noch ausstehend.
-- Restaufgaben bewusst als abhängig geführt: echte Fotos, freigegebene Kundenstimmen, FormSubmit-Vertragsunterlagen sowie Verarbeitung/Freigabe durch Google. Keine erfundenen Referenzen, kein eigenständiger Versand an Kunden/Anbieter. Eigene Domain bleibt gemäß Jakobs Entscheidung zurückgestellt.
+- Unternehmensprofil: neuer Beschreibungstext übernommen; acht Leistungen übernommen, bei erneuter Prüfung kein ausstehender Prüfhinweis mehr.
+- Restaufgaben bewusst als abhängig geführt: echte Fotos, freigegebene Kundenstimmen, FormSubmit-Vertragsunterlagen sowie Sitemap-Verarbeitung durch Google. Keine erfundenen Referenzen, kein eigenständiger Versand an Kunden/Anbieter. Eigene Domain bleibt gemäß Jakobs Entscheidung zurückgestellt.
 
+
+- Veröffentlichung: `b6e5c80`, GitHub Pages erfolgreich und live geprüft.
 
 ### 9. Oktober 2026 – v1.32.0: Webdesign-Muster und Erklärung zum Website-Betrieb
 
@@ -1175,7 +1177,7 @@ weil Google ihn nicht fuer das Ranking verwendet.
 
 ### Google-Unternehmensprofil
 
-Aktualisierung 09.10.2026: Das vorhandene bestätigte Profil ist zugänglich. Die bisherige IT-Beschreibung war bereits gepflegt; ergänzt wurden die aktuellen Bereiche Webdesign und technische Spezialleistungen. Acht eigene Dienstleistungen gespeichert: IT-Betreuung, Netzwerk & WLAN, Datensicherung, Datenrettung, Webdesign & Digitale Lösungen, 3D-Druck, VHS-Digitalisierung, Batteriespeicher & Inselnetz – Beratung. Die Beschreibung wurde bei der erneuten Prüfung bereits von Google übernommen. Die acht Leistungen wurden gespeichert; deren Freigabe bleibt zu prüfen. Keine Preise, neuen Kategorien oder Öffnungszeiten geändert.
+Aktualisierung 09.10.2026: Das vorhandene bestätigte Profil ist zugänglich. Die bisherige IT-Beschreibung war bereits gepflegt; ergänzt wurden die aktuellen Bereiche Webdesign und technische Spezialleistungen. Acht eigene Dienstleistungen gespeichert: IT-Betreuung, Netzwerk & WLAN, Datensicherung, Datenrettung, Webdesign & Digitale Lösungen, 3D-Druck, VHS-Digitalisierung, Batteriespeicher & Inselnetz – Beratung. Die Beschreibung wurde bei der erneuten Prüfung bereits von Google übernommen. Alle acht Leistungen waren bei der abschließenden erneuten Prüfung vorhanden; der ausstehende Prüfhinweis war entfernt. Keine Preise, neuen Kategorien oder Öffnungszeiten geändert.
 
 Bei der Pruefung am 10. Juni 2026 war das Unternehmensprofil gut sichtbar. Als Beschreibung
 wurde jedoch ein alter Impressums-/Datenschutztext angezeigt. Empfohlener Beschreibungstext:

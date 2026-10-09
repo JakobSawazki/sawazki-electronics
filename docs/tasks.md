@@ -9,7 +9,6 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| 2026-10-09 | Paket 12: Abschlussprüfung und präziser Reststatus | Codex | Umsetzung und Prüfung |
 
 ## Offen (abhängig von Material, Unterlagen oder externem Status)
 
@@ -18,7 +17,6 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 | Porträtfoto für `ueber-mich.html` (`assets/images/jakob-sawazki.webp`) | wartet auf Foto von Jakob |
 | Echte Kundenstimmen/Testimonials einholen und einbauen | wartet auf freigegebene Originalaussagen und Erlaubnis zur Veröffentlichung; keine Kunden kontaktiert |
 | Referenz-Galerie mit echten Arbeitsfotos | wartet auf Fotos |
-| Google-Unternehmensprofil: Freigabe der eingereichten Änderungen nachprüfen | Beschreibung am 09.10.2026 von Google übernommen. Acht Leistungseinträge gespeichert; deren Prüfung kann laut Google bis einen Tag dauern. |
 | Search Console: ersten Sitemap-Abruf nachprüfen | Inhaberschaft bestätigt, Sitemap am 09.10.2026 eingereicht. Google meldet zunächst „Sitemap konnte nicht gelesen werden“; echte URL korrekt, HTTP 200, application/xml, inzwischen 12 gültige URLs und robots.txt erlaubt Abruf. |
 
 | FormSubmit: Anbieter-Vertrag und Datenverarbeitung klären | Öffentlich nicht belegt: vollständiger Vertragspartner/Anschrift, AVV, Verarbeitungsorte/Unterauftragnehmer und gegebenenfalls Grundlage von Drittlandtransfers. Kein Nachweis im Repo; kein Anbieter kontaktiert. |
@@ -33,8 +31,9 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-10-09 | v1.32.1 | Paket 12 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (b6e5c80) | Codex |
 | 2026-10-09 | v1.32.0 | Paket 11 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (e154005) | Codex |
-| 2026-10-09 | – | Google-Unternehmensprofil: Beschreibung aktualisiert und acht Website-Leistungen gespeichert; Überprüfung durch Google ausstehend | Codex |
+| 2026-10-09 | – | Google-Unternehmensprofil: Beschreibung und acht Website-Leistungen gespeichert, erneute Prüfung bestätigt Übernahme ohne ausstehenden Prüfhinweis | Codex |
 | 2026-10-09 | v1.31.1 | Paket 9 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (6db730c) | Codex |
 | 2026-10-09 | v1.31.0 | Paket 8 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (5981ca7) | Codex |
 | 2026-10-09 | v1.30.0 | Paket 7 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (ca4194b) | Codex |
