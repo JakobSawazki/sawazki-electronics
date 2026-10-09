@@ -9,6 +9,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
+| 2026-10-09 | Paket 9: Search Console bestätigen und Sitemap einreichen | Codex | Umsetzung und Prüfung |
 
 ## Offen (priorisiert)
 

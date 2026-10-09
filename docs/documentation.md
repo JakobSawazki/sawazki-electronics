@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 9. Oktober 2026 · Version: v1.31.0
+Stand: 9. Oktober 2026 · Version: v1.31.1
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.31.1 | 2026-10-09 | Google Search Console vorbereiten |
 | v1.31.0 | 2026-10-09 | Datenschutzhinweise und Website-Vertragsumfang präzisiert |
 | v1.30.0 | 2026-10-09 | CSS, Bildablage und Dokumentation bereinigt |
 | v1.29.0 | 2026-10-09 | Ruhigere Gestaltung und klarere Texte |
@@ -231,6 +232,11 @@ Nach dem Veröffentlichen:
 - Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
 
 ## Bisheriges Aenderungsprotokoll
+
+### 9. Oktober 2026 – v1.31.1: Google Search Console vorbereiten
+
+- Öffentliche Google-HTML-Bestätigungsdatei für die vorhandene Website und Jakobs angemeldetes Konto ergänzt. Kein Analytics oder Tag Manager eingebunden. Sitemap-Änderungsdaten an den tatsächlichen Umbau angeglichen. Bestätigung und Einreichung werden nach dem Deployment in Search Console geprüft.
+
 
 ### 9. Oktober 2026 – v1.31.0: Datenschutzhinweise und Website-Vertragsumfang präzisiert
 
