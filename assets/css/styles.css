@@ -2,7 +2,7 @@
   color-scheme: light;
   --ink: #10283f;
   --ink-2: #344d61;
-  --muted: #667b8b;
+  --muted: #536b7e;
   --surface: #f4f8fb;
   --surface-2: #e9f1f6;
   --white: #ffffff;
@@ -3814,4 +3814,53 @@ select:focus {
  .offer-page .vhs-hero-content > p:not(.eyebrow) { font-size: 1rem; }
  .offer-page .section { padding-top: 40px; padding-bottom: 40px; }
  .offer-page .vhs-cta, .offer-page .offer-cta { padding: 24px; }
+}
+
+/* Ruhige Flächen: Bilder und Hauptaktionen tragen die Akzente. */
+:root[data-theme] body, :root[data-theme] .legal-body, :root[data-theme="dark"] body, :root[data-theme="dark"] .legal-body { background: var(--surface); background-image: none; }
+:root[data-theme] .site-footer { background: var(--surface-2); color: var(--ink); border-top: 1px solid var(--line); }
+:root[data-theme] .site-footer p, :root[data-theme] .site-footer nav a { color: var(--ink-2); }
+:root[data-theme] .site-footer strong { color: var(--ink); }
+:root[data-theme] .site-footer a { color: var(--ink-2); }
+:root[data-theme] .site-footer a:focus-visible, :root[data-theme] .wa-float:focus-visible { outline: 2px solid var(--cyan); outline-offset: 4px; }
+:root[data-theme] .brand-mark, :root[data-theme] .brand-mark:hover { box-shadow: none; transform: none; }
+:root[data-theme] .button.primary, :root[data-theme] .nav-links .nav-cta { background: var(--navy-2); box-shadow: none; }
+:root[data-theme] .button.primary:hover, :root[data-theme] .nav-links .nav-cta:hover { background: #126a9d; }
+:root[data-theme] .wa-float { background: var(--navy-2); box-shadow: 0 4px 16px #0002; }
+:root[data-theme] .wa-float:hover { background: #126a9d; box-shadow: 0 6px 20px #0003; }
+:root[data-theme] .vhs-hero-overlay { background: linear-gradient(90deg, rgba(3,20,37,.96), rgba(4,29,52,.82) 48%, rgba(5,31,54,.15)); }
+:root[data-theme] .about-hero { background: #082f57; }
+:root[data-theme] .about-hero .vhs-hero-overlay { background: none; }
+:root[data-theme] .offer-page .vhs-intro, :root[data-theme] .offer-page .vhs-formats, :root[data-theme] .offer-page .vhs-pricing, :root[data-theme] .offer-page .vhs-faq, :root[data-theme] .offer-page .offer-alt { background: var(--surface); }
+:root[data-theme] .offer-page .vhs-process { background: var(--surface-2); color: var(--ink); }
+:root[data-theme] .offer-page .vhs-process .section-heading p, :root[data-theme] .vhs-process-grid p { color: var(--ink-2); }
+:root[data-theme] .vhs-process-grid article { background: transparent; border: 0; border-top: 1px solid var(--line); border-radius: 0; padding: 20px 0 0; backdrop-filter: none; }
+:root[data-theme] .vhs-process-grid article::after { content: none; }
+:root[data-theme] .vhs-process-grid span { font-size: .9rem; font-weight: 500; color: var(--muted); }
+:root[data-theme] .format-grid article, :root[data-theme] .vhs-value-card, :root[data-theme] .price-card, :root[data-theme] .price-extras, :root[data-theme] .price-calc, :root[data-theme] .faq-grid details, :root[data-theme] .price-panel, :root[data-theme] .assistant-form, :root[data-theme] .assistant-panel, :root[data-theme] .legal-document, :root[data-theme] .thank-you { background: var(--surface-2); border-color: var(--line); box-shadow: none; }
+:root[data-theme] .format-grid strong, :root[data-theme] .price-extras h3, :root[data-theme] .faq-grid summary { color: var(--ink); }
+:root[data-theme] .offer-page .vhs-cta { box-shadow: none; }
+:root[data-theme] .assistant-hero { background: var(--surface-2); color: var(--ink); box-shadow: none; border: 1px solid var(--line); }
+:root[data-theme] .assistant-hero h1 { color: var(--ink); font-size: clamp(2rem, 4vw, 3rem); line-height: 1.2; text-shadow: none; margin: 0 0 20px; }
+:root[data-theme] .assistant-hero { width: min(100% - 2rem, var(--max)); padding: 32px; }
+:root[data-theme] .assistant-hero .eyebrow { font-size: .85rem; }
+:root[data-theme] .site-header .nav-links { background: transparent; box-shadow: none; }
+:root[data-theme] .site-header .nav-links .nav-cta { background: var(--navy-2); box-shadow: none; }
+:root[data-theme] .site-header .nav-links .nav-cta:hover { background: #126a9d; }
+:root[data-theme] .assistant-hero p { color: var(--ink-2); }
+:root[data-theme] .project-group, :root[data-theme] .project-group-icon, :root[data-theme] .project-group-control { box-shadow: none; }
+:root[data-theme] .project-group-icon, :root[data-theme] .project-group-control { background: var(--surface-2); }
+:root[data-theme] .project-group-control:hover { background: var(--surface); }
+.eyebrow { letter-spacing: .06em; font-weight: 650; }
+.legal-document { overflow-wrap: anywhere; hyphens: auto; }
+@media(max-width:700px) {
+ :root[data-theme] .vhs-hero-overlay { background: linear-gradient(180deg, rgba(3,20,37,.92), rgba(4,29,52,.84)); }
+}
+@media(max-width:1080px) {
+ :root[data-theme] .site-header .nav-links { background: var(--surface-2); }
+}
+
+:root[data-theme] .site-header.is-scrolled .nav-links, :root[data-theme] .legal-body .site-header .nav-links { background: transparent; box-shadow: none; }
+@media(max-width:1080px) {
+ :root[data-theme] .site-header.is-scrolled .nav-links, :root[data-theme] .legal-body .site-header .nav-links { background: var(--surface-2); }
 }

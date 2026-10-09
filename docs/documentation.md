@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 8. Oktober 2026 · Version: v1.28.0
+Stand: 8. Oktober 2026 · Version: v1.29.0
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.29.0 | 2026-10-09 | Ruhigere Gestaltung und klarere Texte |
 | v1.28.0 | 2026-10-08 | Angebotsseiten vereinheitlicht und gekürzt |
 | v1.27.0 | 2026-10-08 | Startseite mit sechs Abschnitten (Pakete 3 + 2b) |
 | v1.26.0 | 2026-10-08 | Gemeinsamer geführter Anfrage-Assistent (Paket 4) |
@@ -274,6 +275,16 @@ Nach dem Veröffentlichen:
 - Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
 
 ## Bisheriges Aenderungsprotokoll
+
+### 9. Oktober 2026 – v1.29.0: Ruhigere Gestaltung und klarere Texte
+
+- Paket 6: Rasterhintergründe, radiale Leuchteffekte und Kartenschatten auf den öffentlichen Seiten zurückgenommen. Fotos bleiben die visuellen Akzente; Hauptaktionen sind einfarbig in Logo-Blau. Nummerierte Abläufe bleiben als Orientierung erhalten, dekorative Zahlen im Profil entfallen.
+- Angebotsabläufe nutzen ruhige Trennlinien; FAQ, Formulare, Preisbereiche und Footer passen sich mit denselben Flächen und Textfarben an Dark/Light an. Kontrast der sekundären Texte im hellen Modus verbessert. Native Details, Fokusmarkierungen und Menübedienung bleiben erhalten.
+- Über-mich-Einstieg auf einen Satz und eine Hauptaktion gekürzt, Schlagwort- und Vertrauensleisten entfernt. Hintergrund und Arbeitsweise kürzer und sachlicher beschrieben. Ein echtes Porträt bleibt offen, bis entsprechendes Material vorliegt.
+- Projektüberschrift, Seitentitel und Schema einheitlich „Eigene IT-Projekte“. Doppelte FAQ-Vorüberschriften entfernt. Lange AGB-Überschrift bricht mobil ohne Überlauf um; Rechtstexte inhaltlich unverändert.
+- Prüfung: 15 lokal verlinkte Seiten bei 1280 px und 390 × 844 in Dark/Light, je eine H1 und kein horizontaler Überlauf; AGB-Überlauf entdeckt und in beiden Themes behoben. Sichtprüfung von Profil, Anfrage, Preis/FAQ und Menü. 16 HTML-Dateien/35 FAQ ohne Link-/Schemafehler, Rechtstext-Inhalte gegen Git verglichen. 404 verwendet absichtlich absolute Live-Assets und wird nach Veröffentlichung zusätzlich geprüft.
+- Cache-Buster einheitlich `20261009-gestaltung`.
+
 
 ### 8. Oktober 2026 – v1.28.0: Angebotsseiten vereinheitlicht und gekürzt
 
