@@ -241,6 +241,8 @@ Nach dem Veröffentlichen:
 - Offene Anbieterfakten werden nicht erfunden: FormSubmit-Vertragspartner/Anschrift, AVV, Regionen/Unterauftragnehmer und Transfergrundlage sind mit öffentlich vorliegenden Angaben nicht abschließend belegbar. Separater konkreter Restpunkt in tasks.md. Diese Textpflege ist keine Bestätigung vollständiger Rechtskonformität.
 
 
+- Veröffentlichung: `5981ca7`, GitHub Pages erfolgreich und live geprüft.
+
 ### 9. Oktober 2026 – v1.30.0: CSS, Bildablage und Dokumentation bereinigt
 
 - Paket 7: 312 CSS-Selektoren für entfernte Bereiche (alter Hero, Service-Finder, Laufband, Diagnose-/Galerieabschnitte, große Projektprofile und alte Produktübersicht) entfernt. Dynamisch verwendete Klassen und Zustände bleiben erhalten. CSS von 103.724 auf 66.450 Bytes reduziert (rund 36 %).

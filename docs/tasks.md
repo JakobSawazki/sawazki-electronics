@@ -9,7 +9,6 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| 2026-10-09 | Paket 8: AGB und Datenschutzhinweise für den aktuellen Website-Stand | Codex | Umsetzung und Prüfung |
 
 ## Offen (priorisiert)
 
@@ -34,6 +33,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-10-09 | v1.31.0 | Paket 8 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (5981ca7) | Codex |
 | 2026-10-09 | v1.30.0 | Paket 7 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (ca4194b) | Codex |
 | 2026-10-09 | v1.29.0 | Paket 6 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (5526cdb) | Codex |
 | 2026-10-08 | v1.28.0 | Paket 5 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (e1b184c) | Codex |
