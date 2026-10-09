@@ -9,7 +9,6 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| 2026-10-09 | Paket 9: Search Console bestätigen und Sitemap einreichen | Codex | Umsetzung und Prüfung |
 
 ## Offen (priorisiert)
 
@@ -20,7 +19,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 | Echte Kundenstimmen/Testimonials einholen und einbauen | keine erfundenen Inhalte verwenden |
 | Referenz-Galerie mit echten Arbeitsfotos | wartet auf Fotos |
 | Google-Unternehmensprofil: Beschreibungstext aktualisieren, Leistungen pflegen | Vorlage in `documentation.md`, Abschnitt SEO |
-| Google Search Console einrichten bzw. Status prüfen, Sitemap einreichen | Anleitung in `documentation.md`, Abschnitt SEO |
+| Search Console: ersten Sitemap-Abruf nachprüfen | Inhaberschaft bestätigt, Sitemap am 09.10.2026 eingereicht. Google meldet zunächst „Sitemap konnte nicht gelesen werden“; echte URL korrekt, HTTP 200, application/xml, 11 gültige URLs und robots.txt erlaubt Abruf. |
 
 | FormSubmit: Anbieter-Vertrag und Datenverarbeitung klären | Öffentlich nicht belegt: vollständiger Vertragspartner/Anschrift, AVV, Verarbeitungsorte/Unterauftragnehmer und gegebenenfalls Grundlage von Drittlandtransfers. Kein Nachweis im Repo; kein Anbieter kontaktiert. |
 
@@ -34,6 +33,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-10-09 | v1.31.1 | Paket 9 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (6db730c) | Codex |
 | 2026-10-09 | v1.31.0 | Paket 8 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (5981ca7) | Codex |
 | 2026-10-09 | v1.30.0 | Paket 7 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (ca4194b) | Codex |
 | 2026-10-09 | v1.29.0 | Paket 6 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (5526cdb) | Codex |

@@ -235,8 +235,10 @@ Nach dem Veröffentlichen:
 
 ### 9. Oktober 2026 – v1.31.1: Google Search Console vorbereiten
 
-- Öffentliche Google-HTML-Bestätigungsdatei für die vorhandene Website und Jakobs angemeldetes Konto ergänzt. Kein Analytics oder Tag Manager eingebunden. Sitemap-Änderungsdaten an den tatsächlichen Umbau angeglichen. Bestätigung und Einreichung werden nach dem Deployment in Search Console geprüft.
+- Öffentliche Google-HTML-Bestätigungsdatei für die vorhandene Website und Jakobs angemeldetes Konto ergänzt. Kein Analytics oder Tag Manager eingebunden. Sitemap-Änderungsdaten an den tatsächlichen Umbau angeglichen. Inhaberschaft nach Deployment erfolgreich bestätigt; Sitemap eingereicht (Google-Erfolgsmeldung). Erster Abrufstatus noch „Sitemap konnte nicht gelesen werden“; öffentliche Datei HTTP 200/application/xml, XML gültig, 11 URLs, kein robots-Verbot. Offener Folgepunkt zur Verarbeitung bei Google, keine Indexierungszusage.
 
+
+- Veröffentlichung: `6db730c`, GitHub Pages erfolgreich und live geprüft.
 
 ### 9. Oktober 2026 – v1.31.0: Datenschutzhinweise und Website-Vertragsumfang präzisiert
 
