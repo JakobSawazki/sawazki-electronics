@@ -248,6 +248,8 @@ Nach dem Veröffentlichen:
 
 - Veröffentlichung: `b6e5c80`, GitHub Pages erfolgreich und live geprüft.
 
+- Ergänzende Google-Diagnose 09.10.2026, 07:09: URL-Prüfung bestätigt „URL ist auf Google“ / „Seite ist indexiert“. Aktueller Live-Test erfolgreich: „URL ist für Google verfügbar“, „Seite kann indexiert werden“. Der erneute Indexierungsantrag für den überarbeiteten Stand wurde mit „Indexierung wurde beantragt“ bestätigt (bevorzugte Crawling-Warteschlange). Keine wiederholten Anträge; keine Rang-/Zeitgarantie. Sitemap-Fehler bleibt separat offen, kein allgemeiner Abrufblocker der Startseite.
+
 ### 9. Oktober 2026 – v1.32.0: Webdesign-Muster und Erklärung zum Website-Betrieb
 
 - `webdesign-muster.html`: klar fiktives Gestaltungsbeispiel für eine Holzwerkstatt, keine Kundenreferenz, keine Preise/Erfolgsbehauptungen oder fingierten Kontaktdaten. Ein fotorealistisches Motiv (integriertes Imagegen; Prompt in webdesign-muster-bildprompt.md), ruhige Typografie, drei kurze Leistungen, echter Anfrageweg zu Sawazki Electronics. Noindex, deshalb bewusst nicht in Sitemap.

@@ -17,7 +17,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 | Porträtfoto für `ueber-mich.html` (`assets/images/jakob-sawazki.webp`) | wartet auf Foto von Jakob |
 | Echte Kundenstimmen/Testimonials einholen und einbauen | wartet auf freigegebene Originalaussagen und Erlaubnis zur Veröffentlichung; keine Kunden kontaktiert |
 | Referenz-Galerie mit echten Arbeitsfotos | wartet auf Fotos |
-| Search Console: ersten Sitemap-Abruf nachprüfen | Inhaberschaft bestätigt, Sitemap am 09.10.2026 eingereicht. Google meldet zunächst „Sitemap konnte nicht gelesen werden“; echte URL korrekt, HTTP 200, application/xml, inzwischen 12 gültige URLs und robots.txt erlaubt Abruf. |
+| Search Console: ersten Sitemap-Abruf nachprüfen | Inhaberschaft bestätigt, Sitemap am 09.10.2026 eingereicht. Google meldet weiterhin „Sitemap konnte nicht gelesen werden“; echte URL korrekt, HTTP 200, application/xml, 12 gültige URLs. Startseite ist bereits indexiert; Google-Live-Test am 09.10.2026 erfolgreich („URL ist für Google verfügbar“, „Seite kann indexiert werden“). Erneute Indexierung des überarbeiteten Stands erfolgreich beantragt. |
 
 | FormSubmit: Anbieter-Vertrag und Datenverarbeitung klären | Öffentlich nicht belegt: vollständiger Vertragspartner/Anschrift, AVV, Verarbeitungsorte/Unterauftragnehmer und gegebenenfalls Grundlage von Drittlandtransfers. Kein Nachweis im Repo; kein Anbieter kontaktiert. |
 
@@ -31,6 +31,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-10-09 | – | Search Console: Startseite bereits indexiert, aktueller Google-Live-Test erfolgreich; erneute Indexierung erfolgreich beantragt und Warteschlangen-Bestätigung geprüft | Codex |
 | 2026-10-09 | v1.32.1 | Paket 12 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (b6e5c80) | Codex |
 | 2026-10-09 | v1.32.0 | Paket 11 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (e154005) | Codex |
 | 2026-10-09 | – | Google-Unternehmensprofil: Beschreibung und acht Website-Leistungen gespeichert, erneute Prüfung bestätigt Übernahme ohne ausstehenden Prüfhinweis | Codex |
