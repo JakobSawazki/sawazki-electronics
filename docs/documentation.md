@@ -241,6 +241,8 @@ Nach dem Veröffentlichen:
 - Cache-Buster einheitlich `20261009-cleanup`.
 
 
+- Veröffentlichung: `ca4194b`, GitHub Pages erfolgreich und live geprüft.
+
 ### 9. Oktober 2026 – v1.29.0: Ruhigere Gestaltung und klarere Texte
 
 - Paket 6: Rasterhintergründe, radiale Leuchteffekte und Kartenschatten auf den öffentlichen Seiten zurückgenommen. Fotos bleiben die visuellen Akzente; Hauptaktionen sind einfarbig in Logo-Blau. Nummerierte Abläufe bleiben als Orientierung erhalten, dekorative Zahlen im Profil entfallen.
