@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 9. Oktober 2026 · Version: v1.30.0
+Stand: 9. Oktober 2026 · Version: v1.31.0
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.31.0 | 2026-10-09 | Datenschutzhinweise und Website-Vertragsumfang präzisiert |
 | v1.30.0 | 2026-10-09 | CSS, Bildablage und Dokumentation bereinigt |
 | v1.29.0 | 2026-10-09 | Ruhigere Gestaltung und klarere Texte |
 | v1.28.0 | 2026-10-08 | Angebotsseiten vereinheitlicht und gekürzt |
@@ -230,6 +231,15 @@ Nach dem Veröffentlichen:
 - Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
 
 ## Bisheriges Aenderungsprotokoll
+
+### 9. Oktober 2026 – v1.31.0: Datenschutzhinweise und Website-Vertragsumfang präzisiert
+
+- AGB: Website-Pflege, Updates, Sicherung/Restore, Zugänge und erforderliche Auftragsverarbeitung ausdrücklich im vereinbarten Umfang; bestehende Abnahme-/Nutzungsrechte und gesetzliche Rechte bleiben erhalten. Diagnosebedingungen wortgleich zur IT-Seite.
+- Datenschutz: tatsächliche Anfragefelder, GitHub-Auslandsverarbeitung mit Anbieterlink, FormSubmit-Archiv (30 Tage laut Dokumentation), Spamprüfung nach Versand, lokale Theme-Auswahl, WhatsApp-Link und Website-Auftragsdaten ergänzt. Stand beider Texte 09.10.2026.
+- FormSubmit-Ziel, Honeypot, Danke-Weiterleitung und reCAPTCHA-Konfiguration unverändert; keine Testanfrage abgesendet.
+- Quellen geprüft am 09.10.2026: [FormSubmit-Dokumentation](https://formsubmit.co/documentation), [Anbieter-Privacy](https://formsubmit.co/privacy.pdf), [GitHub-Privacy](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement), [§ 25 TDDDG](https://www.gesetze-im-internet.de/ttdsg/__25.html), [LfDI BW zur Auftragsverarbeitung](https://www.baden-wuerttemberg.datenschutz.de/faq-zur-abgrenzung-der-verantwortlichkeiten-und-des-begriffs-der-auftragsverarbeitung/), [WhatsApp](https://www.whatsapp.com/legal/privacy-policy-eea).
+- Offene Anbieterfakten werden nicht erfunden: FormSubmit-Vertragspartner/Anschrift, AVV, Regionen/Unterauftragnehmer und Transfergrundlage sind mit öffentlich vorliegenden Angaben nicht abschließend belegbar. Separater konkreter Restpunkt in tasks.md. Diese Textpflege ist keine Bestätigung vollständiger Rechtskonformität.
+
 
 ### 9. Oktober 2026 – v1.30.0: CSS, Bildablage und Dokumentation bereinigt
 

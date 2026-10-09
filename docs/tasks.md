@@ -9,12 +9,12 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
+| 2026-10-09 | Paket 8: AGB und Datenschutzhinweise für den aktuellen Website-Stand | Codex | Umsetzung und Prüfung |
 
 ## Offen (priorisiert)
 
 | Aufgabe | Kontext / Quelle |
 | --- | --- |
-| Webdesign: Rechtstexte prüfen lassen (AGB/Datenschutz für Website-Projekte, Hosting/Domain/Wartung, Nutzungs- und Bildrechte, Abnahme) | Review-Punkte in `documentation.md`, v1.22.0; keine eigenmächtigen Änderungen |
 | Webdesign-Backlog (P2): Demo-Website für fiktiven Musterbetrieb, Erklärseite Hosting/Domain/Wartung, Referenzen nur mit Erlaubnis, CMS/Shop/Buchung nach Prüfung, ggf. Navigation „Für Unternehmen" | Briefing vom 08.10.2026; erst nach Freigabe durch Jakob |
 | Porträtfoto für `ueber-mich.html` (`assets/images/jakob-sawazki.webp`) | wartet auf Foto von Jakob |
 | Echte Kundenstimmen/Testimonials einholen und einbauen | keine erfundenen Inhalte verwenden |
@@ -22,7 +22,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 | Google-Unternehmensprofil: Beschreibungstext aktualisieren, Leistungen pflegen | Vorlage in `documentation.md`, Abschnitt SEO |
 | Google Search Console einrichten bzw. Status prüfen, Sitemap einreichen | Anleitung in `documentation.md`, Abschnitt SEO |
 
-| Datenschutzerklärung bei konkretem Geschäftsbetrieb rechtlich prüfen lassen | Hinweis aus AGENTS.md |
+| FormSubmit: Anbieter-Vertrag und Datenverarbeitung klären | Öffentlich nicht belegt: vollständiger Vertragspartner/Anschrift, AVV, Verarbeitungsorte/Unterauftragnehmer und gegebenenfalls Grundlage von Drittlandtransfers. Kein Nachweis im Repo; kein Anbieter kontaktiert. |
 
 ## Zurückgestellt
 
