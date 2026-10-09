@@ -9,12 +9,12 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
+| 2026-10-09 | Paket 11: Webdesign-Musterwebsite und verständliche Betriebsinformationen | Codex | Umsetzung und Prüfung |
 
 ## Offen (priorisiert)
 
 | Aufgabe | Kontext / Quelle |
 | --- | --- |
-| Webdesign-Backlog (P2): Demo-Website für fiktiven Musterbetrieb, Erklärseite Hosting/Domain/Wartung, Referenzen nur mit Erlaubnis, CMS/Shop/Buchung nach Prüfung, ggf. Navigation „Für Unternehmen" | Briefing vom 08.10.2026; erst nach Freigabe durch Jakob |
 | Porträtfoto für `ueber-mich.html` (`assets/images/jakob-sawazki.webp`) | wartet auf Foto von Jakob |
 | Echte Kundenstimmen/Testimonials einholen und einbauen | keine erfundenen Inhalte verwenden |
 | Referenz-Galerie mit echten Arbeitsfotos | wartet auf Fotos |

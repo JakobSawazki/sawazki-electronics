@@ -23,6 +23,8 @@ Statische Website für IT-Service, Webdesign und technische Dienstleistungen in 
 | IT-Betreuung | `it-betreuung.html` |
 | Datenrettung | `datenrettung.html` |
 | Webdesign & Digitale Lösungen | `webdesign.html` |
+| Domain, Hosting & Wartung | `website-betrieb.html` |
+| Fiktives Gestaltungsbeispiel (noindex) | `webdesign-muster.html` |
 | 3D-Druck | `3d-druck.html` |
 | VHS-Digitalisierung | `vhs-digitalisierung.html` |
 | Batteriespeicher & Inselnetz | `energietechnik.html` |

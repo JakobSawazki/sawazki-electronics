@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 9. Oktober 2026 · Version: v1.31.1
+Stand: 9. Oktober 2026 · Version: v1.32.0
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.32.0 | 2026-10-09 | Webdesign-Muster und Erklärung zum Website-Betrieb |
 | v1.31.1 | 2026-10-09 | Google Search Console vorbereiten |
 | v1.31.0 | 2026-10-09 | Datenschutzhinweise und Website-Vertragsumfang präzisiert |
 | v1.30.0 | 2026-10-09 | CSS, Bildablage und Dokumentation bereinigt |
@@ -232,6 +233,16 @@ Nach dem Veröffentlichen:
 - Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
 
 ## Bisheriges Aenderungsprotokoll
+
+### 9. Oktober 2026 – v1.32.0: Webdesign-Muster und Erklärung zum Website-Betrieb
+
+- `webdesign-muster.html`: klar fiktives Gestaltungsbeispiel für eine Holzwerkstatt, keine Kundenreferenz, keine Preise/Erfolgsbehauptungen oder fingierten Kontaktdaten. Ein fotorealistisches Motiv (integriertes Imagegen; Prompt in webdesign-muster-bildprompt.md), ruhige Typografie, drei kurze Leistungen, echter Anfrageweg zu Sawazki Electronics. Noindex, deshalb bewusst nicht in Sitemap.
+- `website-betrieb.html`: Domain, Hosting, Wartung, laufende Kosten, Zugänge, Sicherung und Rechtstexte verständlich erklärt. Details aufklappbar; in Sitemap und README ergänzt.
+- Beide Inhalte direkt von `webdesign.html` verlinkt, einheitlicher Header/Footer, kein zusätzlicher Hauptmenüpunkt. Die vorhandene Gruppe „Für Unternehmen“ erfüllt den optionalen Navigationswunsch bereits.
+- CMS/Shop/Buchung bleiben wie bereits auf der Angebotsseite erklärt eine Einzelprüfung ohne pauschale Zusage. Referenzen bleiben an echtes Material und Erlaubnis gebunden. Damit ist der umsetzbare P2-Backlog erledigt; keine unbeauftragten Systeme oder Anbieterabos eingerichtet.
+- Cache-Buster einheitlich 20261009-webbeispiele. Kein neuer externer Dienst, keine zusätzlichen Formulare.
+- Geprüft: 19 HTML-Dateien/35 FAQ ohne Link-/Schemafehler; Webdesign, Muster und Ratgeber bei 1280 und 390 px jeweils Dark/Light ohne horizontalen Überlauf, je eine H1. Hinweis sichtbar unter festem Header; Ratgeber-Details per Enter bedienbar, Bild geladen.
+
 
 ### 9. Oktober 2026 – v1.31.1: Google Search Console vorbereiten
 

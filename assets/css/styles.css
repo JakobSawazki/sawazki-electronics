@@ -2639,3 +2639,46 @@ html {
 :root[data-theme] .site-header.is-scrolled .nav-links,
 :root[data-theme] .legal-body .site-header .nav-links { background: var(--surface-2); }
 }
+
+/* Ergänzende Webdesign-Inhalte: ruhiger Ratgeber und ausdrücklich fiktives Muster. */
+.web-related{display:flex;gap:14px 28px;flex-wrap:wrap;margin-top:24px;font-weight:700;}
+.web-guide-intro{width:min(100% - 2rem,900px);margin:60px auto 36px;}
+.web-guide-intro h1{font-size:clamp(2rem,4.5vw,3.8rem);line-height:1.12;margin:20px 0;}
+.web-guide-intro>p:last-child{font-size:1.15rem;color:var(--muted);max-width:66ch;}
+.quiet-link{display:inline-block;margin-bottom:28px;font-size:.95rem;}
+.web-guide-grid{width:min(100% - 2rem,var(--max));display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:0 auto 28px;}
+.web-guide-grid article{padding:28px;border:1px solid var(--line);border-radius:12px;background:var(--surface-2);}
+.web-guide-grid h2{font-size:1.5rem;}
+.web-guide-grid p{color:var(--muted);line-height:1.75;}
+.web-guide-list{display:grid;gap:12px;max-width:900px;}
+.web-guide-list details{border:1px solid var(--line);border-radius:10px;padding:20px 24px;background:var(--surface-2);}
+.web-guide-list summary{font-weight:700;cursor:pointer;}
+.web-guide-list p{line-height:1.75;color:var(--muted);}
+.demo-notice{display:flex;align-items:center;flex-wrap:wrap;gap:10px 24px;width:min(100% - 2rem,var(--max));margin:32px auto;color:var(--muted);font-size:.9rem;}
+.demo-notice strong{color:var(--ink);}
+.demo-notice a{margin-left:auto;}
+.demo-hero{width:min(100% - 2rem,var(--max));margin:0 auto;display:grid;grid-template-columns:.85fr 1.15fr;background:var(--surface-2);border-radius:12px;overflow:hidden;}
+.demo-copy{padding:clamp(24px,4vw,60px);align-self:center;}
+.demo-wordmark{letter-spacing:.18em;font-weight:700;font-size:.95rem;}
+.demo-wordmark span{display:block;font-weight:400;font-size:.8rem;letter-spacing:.03em;color:var(--muted);margin-top:7px;}
+.demo-copy h1{font-family:Georgia,serif;font-weight:400;letter-spacing:-.045em;font-size:clamp(3rem,5.5vw,5.8rem);line-height:1.06;margin:36px 0 24px;}
+.demo-copy>p:not(.demo-wordmark){color:var(--muted);font-size:1.1rem;max-width:32ch;line-height:1.7;}
+.demo-link{display:inline-flex;gap:24px;margin-top:24px;padding:13px 0;border-bottom:1px solid currentColor;font-weight:700;}
+.demo-hero figure{margin:0;position:relative;min-width:0;}
+.demo-hero img{display:block;width:100%;height:100%;min-height:500px;object-fit:cover;}
+.demo-hero figcaption{position:absolute;bottom:0;right:0;background:#142b24;color:#fff;font-size:.7rem;padding:6px 10px;}
+.demo-services{width:min(100% - 2rem,var(--max));margin:72px auto;}
+.demo-section-heading{max-width:600px;margin-bottom:32px;}
+.demo-section-heading h2,.demo-end h2{font-family:Georgia,serif;font-weight:400;font-size:clamp(2rem,3.5vw,3rem);line-height:1.2;}
+.demo-service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px;}
+.demo-service-grid article{border-top:1px solid var(--line);padding-top:20px;}
+.demo-service-grid h3{font-size:1.25rem;}
+.demo-service-grid p,.demo-section-heading>p:last-child,.demo-end p:not(.eyebrow){color:var(--muted);line-height:1.75;}
+.demo-end{width:min(100% - 2rem,var(--max));margin:0 auto 64px;padding:36px;border:1px solid var(--line);border-radius:12px;display:flex;align-items:center;gap:36px;justify-content:space-between;}
+.demo-end>div{max-width:680px;}
+.demo-end .button{flex-shrink:0;}
+:root[data-theme] .demo-page .demo-end .button.primary{background:#24513e;border-color:#24513e;color:#fff;}
+@media(max-width:800px){.web-guide-grid,.demo-service-grid{grid-template-columns:1fr;}.demo-hero{grid-template-columns:1fr;}.demo-hero img{min-height:0;max-height:420px;aspect-ratio:3/2;}.demo-copy{padding:32px 24px;}.demo-copy h1{margin-top:24px;}.demo-end{display:block;padding:24px;}.demo-end .button{margin-top:20px;}.demo-notice a{margin-left:0;}.demo-services{margin:48px auto;}.web-guide-intro{margin-top:36px;}}
+
+.demo-page main,.web-guide-page main{padding-top:100px;}
+@media(max-width:800px){.demo-page main,.web-guide-page main{padding-top:80px;}}
