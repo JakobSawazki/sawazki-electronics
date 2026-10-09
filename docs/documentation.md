@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 9. Oktober 2026 · Version: v1.29.0
+Stand: 9. Oktober 2026 · Version: v1.30.0
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.30.0 | 2026-10-09 | CSS, Bildablage und Dokumentation bereinigt |
 | v1.29.0 | 2026-10-09 | Ruhigere Gestaltung und klarere Texte |
 | v1.28.0 | 2026-10-08 | Angebotsseiten vereinheitlicht und gekürzt |
 | v1.27.0 | 2026-10-08 | Startseite mit sechs Abschnitten (Pakete 3 + 2b) |
@@ -77,92 +78,46 @@ steht weiter unten.
 
 ## Aktueller technischer Aufbau
 
-Die Website ist bewusst statisch gehalten. Es gibt keinen Build-Prozess, keine Framework-Abhaengigkeiten und keine externen Schriftarten.
+Die Website ist statisch: HTML, CSS und JavaScript, ohne Build, Framework, Paketabhängigkeiten oder externe Schriftarten.
 
-Wichtige Dateien:
-
-- `index.html`: Startseite mit Hero, Leistungen, Diagnose, Praxisbildern, Ablauf, Detailband, Kontaktformular und Projects-/Sub-Projects-Hinweis
-- `projekte.html`: zentrale Projektseite mit neun Angeboten in den aufklappbaren Gruppen Lern-Labs, Berufsschule, Schülerprojekte, Gaming sowie Wissen & Bildung
-- `produkte.html`: sichtbarer Bereich „Services & Angebote" fuer Dienstleistungen, Angebote und spaetere physische Produkte
-- `vhs-digitalisierung.html`: eigenstaendige Angebotsseite fuer alte Videokassetten
-- `anfrage-assistent.html`: gefuehrter Anfrage-Assistent als statische, datensparsame Alternative zu einem echten Live-Chatbot
-- `impressum.html`: Impressum
-- `datenschutz.html`: Datenschutzerklaerung
-- `agb.html`: Allgemeine Geschaeftsbedingungen
-- `danke.html`: Zielseite nach erfolgreichem Formularversand
-- `404.html`: gebrandete Fehlerseite fuer GitHub Pages (absolute URLs, noindex, nicht in der Sitemap)
-- `assets/css/styles.css`: gesamtes Layout, Farben, Responsive Design, Hover-Effekte
-- `assets/js/main.js`: Navigation, Scroll-Header, Reveal-Animationen, animierte Projektgruppen, Formular-Betreff
-- `assets/js/theme.js`: Dark Mode als Standard und lokal gespeicherte Theme-Auswahl
-- `assets/images/`: lokale Bild- und Logoassets
-- `3d-druck.html`, `datenrettung.html`, `energietechnik.html`: weitere Angebotsseiten (Service-Layoutklassen wiederverwendet)
-- `webdesign.html`: Angebotsseite „Webdesign & Digitale Lösungen" fuer gewerbliche Kunden (gleiche Service-Layoutklassen, SVG-Illustration statt Foto)
-- `ueber-mich.html`: persoenliche Profil-/Vertrauensseite
-- `robots.txt` und `sitemap.xml`: Suchmaschinen-Hinweise
-- `.nojekyll`: sorgt dafuer, dass GitHub Pages die Dateien unveraendert ausliefert
-- `AGENTS.md` (Projektstamm): zentrale Uebergabe und Regeln fuer alle Agenten
-- `README.md` (Projektstamm): oeffentlicher Projektueberblick
-- `docs/tasks.md`: primaere Aufgabenquelle (offen / in Arbeit / abgeschlossen)
-- `docs/documentation.md`: diese Datei
+- `index.html`: sechs Bereiche – Hero, drei Leistungsgruppen, Arbeitsweise, Ablauf, Kontakt, Projekthinweis.
+- `produkte.html`: Leistungsübersicht in IT-Service, Für Unternehmen und Werkstatt & Spezial.
+- `it-betreuung.html`, `datenrettung.html`, `webdesign.html`, `3d-druck.html`, `vhs-digitalisierung.html`, `energietechnik.html`: sechs Angebotsseiten nach einem gemeinsamen Muster, mit unveränderten FAQ und den jeweils freigegebenen Preisangaben.
+- `projekte.html`: neun Projekte in fünf Gruppen; verlinkte kompakte Bildkacheln und optionale Detailinformationen.
+- `ueber-mich.html`: beruflicher Hintergrund und persönliche Arbeitsweise. Ein echtes Porträt ist noch nicht vorhanden.
+- `anfrage-assistent.html`: einziges Kontaktformular, geführte Schritte mit themenabhängigen Feldern; `danke.html` ist das Versandziel.
+- `impressum.html`, `datenschutz.html`, `agb.html`: Rechtstexte; `404.html`: Fehlerseite mit absoluten URLs, nicht in der Sitemap.
+- `assets/css/styles.css`: gemeinsame Komponenten, Dark/Light und Responsive-Regeln. Historische `vhs-*`-Klassennamen bleiben für das gemeinsame Angebotslayout erhalten.
+- `assets/js/main.js`: Navigation, Header, Einblendungen, Projektgruppen, Themenfelder, Formularbetreff und VHS-Rechner.
+- `assets/js/anfrage.js`: Schrittnavigation, Feldprüfung und sichere Anfragezusammenfassung.
+- `assets/js/theme.js`: dunkel als Standard, lokal gespeicherte Theme-Auswahl und Schalter vor „Anfrage starten“.
+- `robots.txt`, `sitemap.xml`, `.nojekyll`: Suchmaschinenhinweise und unveränderte statische Auslieferung durch GitHub Pages.
+- `AGENTS.md`, `README.md`, `docs/tasks.md`, `docs/claude2codex.md`: Einstieg, öffentlicher Überblick, Aufgabenstatus und abgestimmtes Umbaukonzept.
 
 ## Design- und Inhaltsentscheidungen
 
-- Die Seite soll modern, professionell, ruhig und kundenorientiert wirken.
-- Schwerpunkt der Startseite: IT-Service, Laptop-/PC-Dienstleistungen, Beratung, Reparatur und Support.
-- Farbwelt: dunkles Navy, Logo-Blau und Cyan auf weiss/blaugrauen Flaechen.
-- Dezente Leiterbahn- und Knotenpunktmuster beleben die hellen Bereiche, ohne Inhalte oder Fotos zu
-  ueberlagern.
-- Schrift: Systemschriften, fuer die Hero-Ueberschrift bevorzugt `Bahnschrift`, `Segoe UI Variable Display`, `Aptos Display`, `Segoe UI`.
-- Keine externen Bild-CDNs und keine externen Fonts. Das reduziert Datenschutz- und Ladezeitrisiken.
-- Die Startseite verwendet echte bzw. realistisch wirkende Servicebilder statt abstrakter Vektorgrafiken.
-- Das grosse Hero-Logo ist interaktiv und fuehrt mit Lichtlauf- und Tiefeneffekt zu den Leistungen.
-- Praxis-Karten verwenden CTA-aehnliche Titelbadges; der Ablauf zeigt grosse Nummern und Pfeile.
-- Der alte abstrakte Hintergrund mit moeglicher "Zigarette"-Assoziation wurde nicht geloescht, aber nicht mehr aktiv verwendet.
+- Leitbild: einfach, professionell und hochwertig. Eine klare Hauptaktion, kurze Einstiege, nachvollziehbare Gruppen.
+- IT-Service bleibt die Kernbotschaft der Startseite. Webdesign und technische Spezialleistungen sind über drei Gruppenkarten erreichbar.
+- Einheitliche Sie-Ansprache. Sachliche Überschriften statt austauschbarer Slogans.
+- Navy, Logo-Blau und Cyan; dunkel bleibt Standard, hell wird gleichwertig gepflegt. Ruhige Flächen ohne Raster und dekorative Leuchtverläufe. Bilder bleiben die wesentlichen visuellen Akzente.
+- Lokale Bilder und Systemschriften. Keine fremden Bild-CDNs oder Schriftendienste.
+- Keine erfundenen Kundenstimmen, Firmenreferenzen oder Erfolgsgarantien. Generierte Servicebilder sind Symbolbilder; sie ersetzen kein echtes Porträt oder echte Referenzfotos.
+- Eine Anfrage über den Assistenten; Telefon, E-Mail und WhatsApp ergänzen den Kontakt. Die Startseite enthält kein zweites Formular.
+- Eigene Domain ist nach Jakobs Entscheidung vom 08.10.2026 zurückgestellt; GitHub Pages und `t1p.de/sawazki` bleiben.
 
 ## Bild- und Logoassets
 
-Aktiv genutzt:
+Aktiv eingebunden:
 
-- `assets/images/brand/sawazki-brand-logo.webp`: optimiertes vollstaendiges Firmenlogo, genutzt im Hero-Modul der Startseite
-- `assets/images/brand/sawazki-brand-logo.png`: PNG-Variante des vollstaendigen Firmenlogos, genutzt fuer OpenGraph-/Twitter-Social-Previews
-- `assets/images/brand/sawazki-brand-symbol.webp`: optimierte aktuelle Bildmarke, genutzt in Navigation und kleinen Brand-Modulen
-- `assets/images/brand/sawazki-brand-symbol.png`: PNG-Variante der aktuellen Bildmarke, genutzt in strukturierten Daten
-- `assets/images/brand/favicon.ico` und `assets/images/brand/favicon.png`: aktuelles Browser-Favicon
-- `assets/images/customer-consulting.jpg`: Beratung/Kundengespraech, Hero-Hintergrund und Diagnosebereich
-- `assets/images/repair-laptop.jpg`: neu generiertes Laptop-Reparaturfoto, Praxisbereich und Detailband
-- `assets/images/smartphone-repair.jpg`: Elektronik/Kleingeraete
-- `assets/images/vhs-digitalisierung-hero.webp`: fotorealistisches Hero-Bild fuer die
-  Videokassetten-Digitalisierung
-- `assets/images/3d-druck-hero.webp`: fotorealistisches Hero-Bild fuer die 3D-Druck-Dienstleistung
-- `assets/images/datenrettung-hero.webp`: fotorealistisches Hero-Bild fuer die Datenrettung
-- `assets/images/energietechnik-hero.webp`: fotorealistisches Hero- und Kartenbild fuer Batteriespeicher und Inselnetzloesungen
-- `assets/images/webdesign-hero.webp` (1672 × 941, ca. 67 KB): fotorealistischer Arbeitsplatz
-  mit Laptop und Smartphone in Navy/Cyan; Hero, Servicekarte und Social-Vorschau
-- `assets/images/project-excellab.webp`, `project-pythonlab.webp`, `project-workbenchlab.webp`, `project-bmlab.webp`,
-  `project-gameslab.webp`, `project-solarsystem.jpg`, `project-eclernstudio.webp`,
-  `project-cyberpedia.webp`: einheitliche, fotorealistische
-  Projektbilder fuer Startseite und `projekte.html`
+- `brand/sawazki-brand-symbol.webp`, `brand/sawazki-brand-symbol.png`, `brand/favicon.ico`, `brand/favicon.png`: Header, strukturierte Daten und Browsericon.
+- `brand/sawazki-brand-logo.png`: Social-Vorschau. Das vollständige Logo als WebP und die originalen Brand-Exporte bleiben als Markenmaterial erhalten.
+- `customer-consulting.jpg`: Beratungsbild der Startseite.
+- `repair-laptop.jpg`: IT-Angebot und entsprechende Übersichtskarten.
+- `leistungen-hero.webp`, `projekte-hero.webp`: fotorealistische Einstiege der Übersichtsseiten.
+- `webdesign-hero.webp`, `vhs-digitalisierung-hero.webp`, `3d-druck-hero.webp`, `datenrettung-hero.webp`, `energietechnik-hero.webp`: Angebotsbilder und zugehörige Karten.
+- `project-excellab.webp`, `project-workbenchlab.webp`, `project-pythonlab.webp`, `project-algolab.webp`, `project-eclernstudio.webp`, `project-bmlab.webp`, `project-cyberpedia.webp`, `project-gameslab.webp`, `project-solarsystem.jpg`: neun Projekticons.
 
-Noch vorhanden als moegliche Rueckfall- oder Alternativassets:
-
-- `assets/images/hero-workbench.png`
-- `assets/images/support-dashboard.png`
-- `assets/images/hardware-detail.png`
-- `assets/images/games-lab-logo.png`
-- `assets/images/pythonlab-logo.webp`
-- `assets/images/workbenchlab-logo.webp`
-- `assets/images/bm-lernportal-logo.svg`
-- `assets/images/ec-lernstudio-logo.svg`
-- `assets/images/brand/legacy-sawazki-electronics-logo.png`: frueheres breites Website-Logo
-- `assets/images/brand/legacy-sawazki-electronics-mark.png`: fruehere quadratische Bildmarke
-- `assets/images/brand/legacy-favicon.svg`: frueheres SVG-Favicon
-- `assets/images/brand/brand.png` und `assets/images/brand/brand_symbol.png` als Roh-Exports der neuen Bildmarke
-
-Originale Logoquellen auf dem aktuellen Laptop:
-
-- `D:\Google Drive\Rechnungen\Kunden\Vorlagen\Logo\Sawazki-Electronics-Logo-Neu.jpg`
-- `D:\Google Drive\Rechnungen\Kunden\Vorlagen\Logo\Sawazki-Electronics-Logo-Neu-cropped.png`
-- `D:\Google Drive\Rechnungen\Kunden\Vorlagen\Logo\Sawazki-Electronics-Logo-Neu.png`
+Alle Bilder liegen unter `assets/images/`. Originale und historische Brand-Dateien bleiben in `assets/images/brand/`; ersetzte Projektlogos und ungenutzte frühere Servicebilder wurden aus dem aktuellen Arbeitsbaum entfernt. Sie sind über die Git-Historie wiederherstellbar. Frühere Bildaufträge und Dateinamen im Änderungsprotokoll dokumentieren historische Stände.
 
 ## Kontakt und Formular
 
@@ -172,13 +127,13 @@ Oeffentliche Kontaktdaten auf der Website:
 - Mobil: `+49 1520 2967632`
 - Anbieter: Sawazki Electronics, Jakob Sawazki, Moerikestrasse 15, 72250 Freudenstadt
 
-Kontaktformular:
+Gemeinsames Anfrageformular:
 
 - Formularanbieter: FormSubmit
 - Formularziel: `https://formsubmit.co/sawazki.electronics@googlemail.com`
 - Danke-Seite: `https://jakobsawazki.github.io/sawazki-electronics/danke.html`
 - Hinweis: Beim ersten echten Absenden kann FormSubmit eine Aktivierungs-E-Mail an die Zieladresse senden. Danach werden Anfragen direkt weitergeleitet.
-- Der neue Anfrage-Assistent nutzt ebenfalls FormSubmit, bleibt statisch und vermeidet deshalb Backend-, API- und Datenschutzkomplexitaet eines echten Chatbots.
+- Der Anfrage-Assistent ist das einzige Formular. Er nutzt FormSubmit, themenabhängige Felder, Honeypot und eine Vorschau vor dem Versand; es gibt keinen Chatbot.
 
 ## Rechtliche Seiten
 
@@ -275,6 +230,16 @@ Nach dem Veröffentlichen:
 - Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
 
 ## Bisheriges Aenderungsprotokoll
+
+### 9. Oktober 2026 – v1.30.0: CSS, Bildablage und Dokumentation bereinigt
+
+- Paket 7: 312 CSS-Selektoren für entfernte Bereiche (alter Hero, Service-Finder, Laufband, Diagnose-/Galerieabschnitte, große Projektprofile und alte Produktübersicht) entfernt. Dynamisch verwendete Klassen und Zustände bleiben erhalten. CSS von 103.724 auf 66.450 Bytes reduziert (rund 36 %).
+- Zehn nicht mehr referenzierte frühere Servicebilder, Projektlogos und das ersetzte Excel-SVG entfernt. Alle neun aktuellen Projekticons und aktuellen Hero-Bilder bleiben eingebunden. Originale und historische Brand-Exporte bleiben als Markenmaterial erhalten; entfernte Dateien sind über Git wiederherstellbar.
+- README neu auf den tatsächlichen Aufbau ausgerichtet: sechs Angebote, drei Gruppen, neun Projekte, ein Anfrageformular, ruhige Flächen. Aktuelle Technik-, Design-, Bild- und Formularabschnitte der Doku aktualisiert; historische Einträge bleiben als Verlauf bestehen. Domain-Überlegungen ausdrücklich als zurückgestellt gekennzeichnet.
+- AGENTS-Doku-Landkarte und Hinweise zu Projektkacheln und Theme-Schalter berichtigt. Historische `vhs-*`-Klassennamen bleiben für das gemeinsame Layout erhalten; kein zusätzlicher Build und keine Paketabhängigkeit.
+- Prüfung: berechnete Darstellungen von 2.576 Elementen auf 15 Seiten vor/nach CSS-Bereinigung verglichen (23 Eigenschaften je Element), keine Unterschiede bei Desktop/Dark. Alle 15 Seiten bei 390 px/Light ohne horizontalen Überlauf; Projektgruppen auf/zu und optionale Informationen per Enter geprüft. 16 HTML-Dateien/35 FAQ ohne Link-/Schemafehler. Keine verwaisten Nicht-Brand-Bilder, JavaScript-Syntax und `git diff --check` fehlerfrei.
+- Cache-Buster einheitlich `20261009-cleanup`.
+
 
 ### 9. Oktober 2026 – v1.29.0: Ruhigere Gestaltung und klarere Texte
 
@@ -1208,7 +1173,9 @@ Angaben dort korrigieren, damit Google das Unternehmen eindeutig zuordnen kann.
 4. Nach einigen Tagen pruefen, ob Seitentitel und Beschreibung uebernommen wurden.
 5. Abdeckungs-, Nutzerfreundlichkeits- und Strukturierte-Daten-Berichte regelmaessig kontrollieren.
 
-### Eigene Domain (naechster strategischer Schritt)
+### Eigene Domain (zurückgestellt)
+
+Entscheidung vom 08.10.2026: vorerst GitHub Pages und `t1p.de/sawazki`, kein Domainwechsel. Die folgenden Überlegungen sind für einen möglichen späteren Wechsel archiviert.
 
 Eine eigene kurze Domain wirkt professioneller und ist leichter zu merken als die
 GitHub-Pages-URL. Empfehlung: eigene Domain statt Kurzlink (Bitly u. ae. nur fuer Kampagnen,
@@ -1375,6 +1342,6 @@ Projektbereich der Startseite + Vorstellung auf `projekte.html`, nicht im Footer
 
 ### Offene strategische Themen
 
-Siehe `docs/tasks.md` (Abschnitt "Offen"): eigene Domain, Google-Unternehmensprofil,
+Siehe `docs/tasks.md`: Google-Unternehmensprofil,
 Search Console, echte Testimonials/Fotos, rechtliche Pruefung der Datenschutzerklaerung
 bei konkretem Geschaeftsbetrieb.

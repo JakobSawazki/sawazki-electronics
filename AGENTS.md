@@ -20,13 +20,14 @@ Dienstleistungen in Freudenstadt). Diese Datei ist die **einzige Einstiegs- und
   `sawazki-brand-symbol.webp` bzw. `favicon.ico`/`favicon.png`; die Startseite zeigt im Hero ein Beratungsbild. Das vollständige Logo
   `sawazki-brand-logo.webp` bleibt als Markenasset erhalten (optimiert aus `brand.png`).
 
-## Doku-Landkarte (Stand 02.07.2026)
+## Doku-Landkarte (Stand 09.10.2026)
 
 | Datei | Zweck |
 | --- | --- |
 | `AGENTS.md` (diese Datei, Projektstamm) | Übergabe, Regeln, Arbeitsablauf |
 | `README.md` (Projektstamm) | öffentlicher Projektüberblick auf GitHub |
 | [`docs/claude2codex.md`](docs/claude2codex.md) | Leitbild, Gestaltungsbefunde, Pakete 0–7, Jakobs Entscheidungen und Codex-Rückmeldungen zum Umbau vom 08.10.2026 |
+| [`docs/leistungen-bildprompt.md`](docs/leistungen-bildprompt.md), [`docs/projekte-bildprompt.md`](docs/projekte-bildprompt.md) | Bildaufträge für die Einstiege der Leistungs- und Projektübersicht |
 | [`docs/tasks.md`](docs/tasks.md) | **primäre Aufgabenquelle**: offen / in Arbeit / abgeschlossen (mit Datum + Version) |
 | [`docs/documentation.md`](docs/documentation.md) | ausführliche Projekt- und Firmendoku: Versionsstand, Änderungsprotokoll, Design-/Technikentscheidungen, SEO-/Marketing-Leitfaden, Bildauftrag, Projektgedächtnis |
 
@@ -75,7 +76,7 @@ Details: `docs/tasks.md`, Abschnitt „Nutzungskontingent-Regel".
   Freigabe von Jakob. Themenwert im Anfrage-Assistenten: `Webdesign & Digitale Lösungen`
   (in Links als `?topic=Webdesign%20%26%20Digitale%20L%C3%B6sungen` kodieren).
 - Neue öffentliche HTML-Seiten: zusätzlich `sitemap.xml`, Navigation, Footer und README pflegen.
-  Neue Projekte als `.side-project-card` im Projektbereich ergänzen und auf `projekte.html`
+  Neue Projekte als `.project-tile` in der passenden Gruppe ergänzen und auf `projekte.html`
   vorstellen; keine Einzelprojektlinks im Footer.
 - Bei Widerspruch zwischen Doku und Code gilt der **Code** als technische Wahrheit –
   danach die Doku aktualisieren.
@@ -83,7 +84,7 @@ Details: `docs/tasks.md`, Abschnitt „Nutzungskontingent-Regel".
 ## Technik-Hinweise
 
 - `assets/js/theme.js`: Dark Mode ist Standard; Auswahl liegt unter
-  `sawazki-electronics-theme` im localStorage. Theme-Schalter steht rechts neben `Impressum`.
+  `sawazki-electronics-theme` im localStorage. Theme-Schalter steht vor „Anfrage starten“.
 - `assets/js/main.js`: Scroll-Header (`is-scrolled`), mobile Navigation, Reveal-Animationen
   (`.reveal`/`.is-visible` – Formulare nicht unnötig verstecken), Query-Parameter `topic`
   füllt das Anfrage-Thema vor (z. B. `?topic=VHS-Digitalisierung`). Themenabhängige

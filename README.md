@@ -1,92 +1,52 @@
-# Sawazki Electronics Website
+# Sawazki Electronics
 
-Statische Homepage für Sawazki Electronics mit Fokus auf IT-, Laptop- und PC-Dienstleistungen.
+Statische Website für IT-Service, Webdesign und technische Dienstleistungen in Freudenstadt.
 
-## Inhalt
+[Website öffnen](https://jakobsawazki.github.io/sawazki-electronics/)
 
-- Professionelle Startseite mit nutzenorientiertem Hero („IT-Hilfe in Freudenstadt, die man versteht."), lokalen Bildassets und blauem Sawazki-Electronics-Branding
-- Vertrauensband „Warum Sawazki Electronics" und direkter Angebots-Teaser zu allen fünf Service-Seiten auf der Startseite
-- Dunkler Service-Finder auf der Startseite, damit Besucher schneller zum passenden Einstieg kommen
-- Footer mit direktem Telefon- und E-Mail-Kontakt auf allen Seiten; WhatsApp zusätzlich im Kontaktbereich
-- Dezente Leiterbahn-/Knotenpunktmuster auf den hellen Flächen statt leerem Weiß
-- Interaktives Hero-Logo mit Lichtlauf und direktem Sprung zu den Leistungen
-- Vollständiges Firmenlogo als interaktives Hero-Modul (optimierte WebP-Variante aus `assets/images/brand/`); Brand-Symbol in Header und Browser-Favicon
-- Zentrale Brand-Ablage: aktive und historische Sawazki-Logo-/Favicon-Dateien liegen unter `assets/images/brand/`
-- Größere Hero-Servicebilder auf der Startseite, damit das Kundengespräch stärker wirkt
-- Projektkarten mit einheitlichen fotorealistischen Bildkacheln für Excel-Lab, WorkbenchLab, PythonLab, AlgoLab, EC-Lernstudio, BM-Lab, Cyberpedia, GamesLab und Solarsystem
-- Direkter Navigationspunkt `Projekte` mit Sprung zum Projektbereich der Startseite
-- Dark Mode als Standard sowie persistent umschaltbarer Light-/Dark-Mode
-- PythonLab, AlgoLab, WorkbenchLab, GamesLab, Solarsystem, EC-Lernstudio und Cyberpedia sind auf ihren GitHub-Pages-Projekten verlinkt
-- Excel-Lab für Tabellenkalkulation mit eigener Projektkarte, dem grünen Tabellen-Symbol und direktem Link zur Lernplattform
-- Eigene Projektseite mit Zweck, Zielgruppe und Ziel jedes Labs
-- Footer-Link zur zentralen Projektübersicht ohne doppelte Einzelprojektlinks
-- Zentraler Servicebereich für Dienstleistungen, Angebote und spätere ausgewählte Produkte
-- Eigene Angebotsseite für VHS-, VHS-C- und Camcorder-Kassetten-Digitalisierung inkl. interaktivem Preis-Schätzer nach veröffentlichter Staffel
-- Eigene Angebotsseite für 3D-Druck nach Kundenwunsch (individuelle Drucke, Hilfe bei 3D-Modellen, Prototypen, Ersatzteile)
-- Eigene Angebotsseite für professionelle Datenrettung (logische und physische Schäden, Partnerlabore für defekte Datenträger)
-- Eigene Angebotsseite für Batteriespeicher und Inselnetzlösungen (Energietechnik, netzunabhängig/Off-Grid) mit eigenem Hero-/Kartenbild
-- Eigene Angebotsseite „Webdesign & Digitale Lösungen" für kleine Unternehmen, Handwerk, Handel und Selbstständige (Website-Erstellung, Modernisierung, Mobiloptimierung, SEO-Basis, Pflege) mit themenabhängigen Zusatzfeldern im Anfrage-Assistenten
-- „Über mich"-Seite mit beruflichem Profil (Industrie-Elektronik, Energietechnik, Lehre)
-- Schwebender WhatsApp-Kontaktbutton auf allen Seiten (direkt an Jakob, kein Bot)
-- Vereinheitlichte Projektkacheln mit einheitlichem „App-Icon"-Framing
-- Leistungsübersicht für PC, Laptop, Sicherheit, Backup, Netzwerk und Beratung
-- Unsichtbare lokale SEO-Ausrichtung auf IT-Service sowie PC- und Laptop-Reparatur in Freudenstadt
-- Strukturierte Unternehmensdaten (inkl. vollständigem Service-Katalog), Canonical-URLs und optimierte Social-Media-Vorschauen
-- Gebrandete 404-Fehlerseite und Performance-Feinschliff (Bildmaße gegen Layout-Shift, priorisiertes Hero-Bild, Lazy-Loading)
-- Visuell geführter Ablaufbereich mit großen Ziffern und Pfeilen für Anfrage, Analyse, Umsetzung und Übergabe
-- Kontaktformular und geführter `Anfrage-Assistent` über FormSubmit
-- IT-Projekte in fünf aufklappbaren Gruppen: Lern-Labs, Berufsschule, Schülerprojekte, Gaming und Wissen & Bildung; standardmäßig geöffnet, mit globalen Minus-/Plus-Buttons; Tastaturbedienung und reduzierte Bewegung unterstützt
-- Größere Projekticons und einmaliger zentraler Urheberhinweis; AlgoLab für BPE7 direkt neben PythonLab
-- Responsive Layout für Desktop, Tablet und Smartphone
-- Lokale Bildassets, keine externen Bildabhängigkeiten
-- Unternehmenslogo als lokales Website-Asset in Navigation, Favicon, strukturierten Daten und Hero-Bereich
+## Aufbau
 
-## Wichtige Seiten
+- Startseite mit kurzem Einstieg, drei Leistungsgruppen, Arbeitsweise, Ablauf, Kontakt und einem Hinweis auf eigene IT-Projekte.
+- Einheitliches Leistungsmenü mit Desktop-Hover und mobiler Gruppenauswahl; Dark Mode als Standard und gespeicherte Light-/Dark-Auswahl.
+- Sechs Angebotsseiten mit gemeinsamem Aufbau: Leistungen, Ablauf, Preis & Aufwand, FAQ und Anfrage. Die freigegebene IT-Diagnosepauschale beträgt 50 € Endpreis; VHS hat eine eigene Staffel und einen Preis-Schätzer.
+- Neun verlinkte Projekte in fünf aufklappbaren Gruppen. Grafik, Name und Kurzbeschreibung sind direkt sichtbar; weitere Informationen optional.
+- Ein Anfrageformular in vier Schritten: Thema, Anliegen, Kontakt und Prüfung. Themenlinks wählen passende Felder vor.
+- Lokale Bilder, Systemschriften und ruhige Navy-/Blau-Flächen. Kein Framework, kein Build-Prozess, keine Paketabhängigkeiten.
+- Responsive Darstellung, Tastaturbedienung, sichtbarer Fokus, reduzierte Bewegung, strukturierte Daten und Sitemap.
 
-- Startseite: `index.html`
-- Projektübersicht: `projekte.html`
-- Services & Angebote: `produkte.html`
-- VHS-Digitalisierung: `vhs-digitalisierung.html`
-- 3D-Druck: `3d-druck.html`
-- Datenrettung: `datenrettung.html`
-- Energietechnik (Batteriespeicher & Inselnetz): `energietechnik.html`
-- Webdesign & Digitale Lösungen: `webdesign.html`
-- Über mich: `ueber-mich.html`
-- Anfrage-Assistent: `anfrage-assistent.html`
-- Danke-Seite nach Formularversand: `danke.html`
-- Fehlerseite (GitHub Pages): `404.html`
-- Impressum: `impressum.html`
-- Datenschutz: `datenschutz.html`
-- AGB: `agb.html`
+## Seiten
+
+| Bereich | Datei |
+| --- | --- |
+| Startseite | `index.html` |
+| Leistungsübersicht | `produkte.html` |
+| IT-Betreuung | `it-betreuung.html` |
+| Datenrettung | `datenrettung.html` |
+| Webdesign & Digitale Lösungen | `webdesign.html` |
+| 3D-Druck | `3d-druck.html` |
+| VHS-Digitalisierung | `vhs-digitalisierung.html` |
+| Batteriespeicher & Inselnetz | `energietechnik.html` |
+| Eigene IT-Projekte | `projekte.html` |
+| Über mich | `ueber-mich.html` |
+| Anfrage | `anfrage-assistent.html` |
+| Versandbestätigung / Fehlerseite | `danke.html` / `404.html` |
+| Rechtliches | `impressum.html`, `datenschutz.html`, `agb.html` |
+
+## Lokal ansehen und veröffentlichen
+
+```powershell
+python -m http.server 4177
+```
+
+Danach `http://127.0.0.1:4177/` öffnen. Ein Push auf `main` veröffentlicht die Website über GitHub Pages. Vorher Links, Bilder, Desktop/Mobil, Dark/Light und `git diff --check` prüfen; bei JavaScript-Änderungen zusätzlich `node --check` ausführen.
+
+Das Formular sendet über FormSubmit an `sawazki.electronics@googlemail.com` und leitet nach `danke.html` weiter. Beim Testen keine echten Anfragen absenden. Beim ersten tatsächlichen Versand kann eine Aktivierung durch FormSubmit erforderlich sein.
 
 ## Dokumentation
 
-Seit dem 02.07.2026 gibt es eine konsolidierte Doku-Struktur (nur noch vier MD-Dateien):
+- [AGENTS.md](AGENTS.md): Einstieg, Regeln und Veröffentlichung.
+- [docs/tasks.md](docs/tasks.md): einzige Aufgabenquelle und Abschlussnachweise.
+- [docs/documentation.md](docs/documentation.md): aktueller Aufbau, Entscheidungen, Änderungsprotokoll und Bildaufträge.
+- [docs/claude2codex.md](docs/claude2codex.md): abgestimmtes Leitbild, Umbaupakete und Rückmeldungen.
 
-- [`AGENTS.md`](AGENTS.md) (Projektstamm): zentrale Übergabe für alle Mitarbeiter und
-  KI-Agenten – Regeln, Arbeitsablauf, Prüfungen, Veröffentlichung. Die frühere
-  `CODEX_HANDOVER.md` ist hier integriert.
-- [`docs/tasks.md`](docs/tasks.md): primäre Aufgabenquelle – offene, laufende und
-  abgeschlossene Aufgaben mit Datum, Version und Bearbeiter.
-- [`docs/documentation.md`](docs/documentation.md): ausführliche Projekt- und Firmendoku –
-  Versionsstand, Änderungsprotokoll, Design-/Technikentscheidungen, SEO-/Marketing-Leitfaden,
-  Bildauftrag (Prompts) und Projektgedächtnis. Hieß früher `CODEX_PROJECT_DOCUMENTATION.md`.
-- `README.md` (diese Datei): öffentlicher Überblick.
-
-## Aufgabenwarteschlange
-
-Aufgaben werden in [`docs/tasks.md`](docs/tasks.md) geführt (offen / in Arbeit /
-abgeschlossen). Es gibt keinen zweiten Aufgaben-Eingang mehr;
-die ausführliche Dokumentation steht in `docs/documentation.md`. Details und Regeln stehen in `AGENTS.md`.
-
-## Kontaktformulare
-
-Das Kontaktformular und der Anfrage-Assistent senden über FormSubmit an
-`sawazki.electronics@googlemail.com`. Beim ersten echten Absenden kann FormSubmit eine
-Aktivierungs-E-Mail an diese Adresse verschicken. Nach Bestätigung werden Formularanfragen direkt
-weitergeleitet.
-
-## Rechtliches
-
-Impressum, Datenschutz und AGB sind als eigene Seiten enthalten. Bei Änderungen an Leistungen,
-externen Diensten oder geschäftlichen Abläufen sollten die rechtlichen Inhalte mit geprüft werden.
+Rechtliche Inhalte bei Änderungen an Leistungen, externen Diensten oder Abläufen bewusst mitprüfen. Keine erfundenen Referenzen, Preise oder Leistungsversprechen ergänzen.
