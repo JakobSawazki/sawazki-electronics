@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 8. Oktober 2026 · Version: v1.29.0
+Stand: 9. Oktober 2026 · Version: v1.29.0
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -285,6 +285,8 @@ Nach dem Veröffentlichen:
 - Prüfung: 15 lokal verlinkte Seiten bei 1280 px und 390 × 844 in Dark/Light, je eine H1 und kein horizontaler Überlauf; AGB-Überlauf entdeckt und in beiden Themes behoben. Sichtprüfung von Profil, Anfrage, Preis/FAQ und Menü. 16 HTML-Dateien/35 FAQ ohne Link-/Schemafehler, Rechtstext-Inhalte gegen Git verglichen. 404 verwendet absichtlich absolute Live-Assets und wird nach Veröffentlichung zusätzlich geprüft.
 - Cache-Buster einheitlich `20261009-gestaltung`.
 
+
+- Veröffentlichung: `5526cdb`, GitHub Pages erfolgreich und live geprüft.
 
 ### 8. Oktober 2026 – v1.28.0: Angebotsseiten vereinheitlicht und gekürzt
 
