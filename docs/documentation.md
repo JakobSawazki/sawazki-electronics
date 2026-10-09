@@ -1150,6 +1150,8 @@ weil Google ihn nicht fuer das Ranking verwendet.
 
 ### Google-Unternehmensprofil
 
+Aktualisierung 09.10.2026: Das vorhandene bestätigte Profil ist zugänglich. Die bisherige IT-Beschreibung war bereits gepflegt; ergänzt wurden die aktuellen Bereiche Webdesign und technische Spezialleistungen. Acht eigene Dienstleistungen gespeichert: IT-Betreuung, Netzwerk & WLAN, Datensicherung, Datenrettung, Webdesign & Digitale Lösungen, 3D-Druck, VHS-Digitalisierung, Batteriespeicher & Inselnetz – Beratung. Die Verwaltung zeigt die Änderungen als ausstehend zur Google-Prüfung. Keine Preise, neuen Kategorien oder Öffnungszeiten geändert.
+
 Bei der Pruefung am 10. Juni 2026 war das Unternehmensprofil gut sichtbar. Als Beschreibung
 wurde jedoch ein alter Impressums-/Datenschutztext angezeigt. Empfohlener Beschreibungstext:
 

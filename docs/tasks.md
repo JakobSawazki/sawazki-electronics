@@ -18,7 +18,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 | Porträtfoto für `ueber-mich.html` (`assets/images/jakob-sawazki.webp`) | wartet auf Foto von Jakob |
 | Echte Kundenstimmen/Testimonials einholen und einbauen | keine erfundenen Inhalte verwenden |
 | Referenz-Galerie mit echten Arbeitsfotos | wartet auf Fotos |
-| Google-Unternehmensprofil: Beschreibungstext aktualisieren, Leistungen pflegen | Vorlage in `documentation.md`, Abschnitt SEO |
+| Google-Unternehmensprofil: Freigabe der eingereichten Änderungen nachprüfen | Beschreibung und acht Leistungen am 09.10.2026 gespeichert; Google prüft Beschreibung (bis 10 Minuten laut UI) und Leistungen (bis ein Tag). |
 | Search Console: ersten Sitemap-Abruf nachprüfen | Inhaberschaft bestätigt, Sitemap am 09.10.2026 eingereicht. Google meldet zunächst „Sitemap konnte nicht gelesen werden“; echte URL korrekt, HTTP 200, application/xml, 11 gültige URLs und robots.txt erlaubt Abruf. |
 
 | FormSubmit: Anbieter-Vertrag und Datenverarbeitung klären | Öffentlich nicht belegt: vollständiger Vertragspartner/Anschrift, AVV, Verarbeitungsorte/Unterauftragnehmer und gegebenenfalls Grundlage von Drittlandtransfers. Kein Nachweis im Repo; kein Anbieter kontaktiert. |
@@ -33,6 +33,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-10-09 | – | Google-Unternehmensprofil: Beschreibung aktualisiert und acht Website-Leistungen gespeichert; Überprüfung durch Google ausstehend | Codex |
 | 2026-10-09 | v1.31.1 | Paket 9 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (6db730c) | Codex |
 | 2026-10-09 | v1.31.0 | Paket 8 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (5981ca7) | Codex |
 | 2026-10-09 | v1.30.0 | Paket 7 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (ca4194b) | Codex |
