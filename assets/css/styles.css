@@ -4354,6 +4354,40 @@ html {
 /* Das Leiterbahn-Muster der Startseite liegt jetzt auf allen Seiten hinter dem Inhalt;
    vollflächige Abschnittshintergründe der Unterseiten werden dafür durchsichtig. */
 :root[data-theme] .metal-header:not(.demo-page) main > .section,
-:root[data-theme] .metal-header:not(.demo-page) :is(.vhs-intro, .vhs-formats, .vhs-pricing, .vhs-process, .vhs-faq, .offer-alt, .legal-main, .assistant-main, .product-main, .projects-main, .offer-overview, .project-directory, .web-guide-intro) {
+:root[data-theme] .metal-header:not(.demo-page) main :is(.vhs-intro, .vhs-formats, .vhs-pricing, .vhs-process, .vhs-faq, .offer-alt, .legal-main, .assistant-main, .product-main, .projects-main, .offer-overview, .project-directory, .web-guide-intro) {
   background: transparent;
 }
+
+
+/* „IT-Hilfe“ ruhiger und edler: kein Farbverlauf von Weiß nach Cyan mehr, sondern eine
+   fast weiße Fläche mit feiner senkrechter Stahl-Schattierung und einer Cyan-Linie darunter. */
+.home-hero-lead {
+  position: relative;
+  padding-bottom: .2em;
+  color: #082f57;
+  background: linear-gradient(180deg, #0d4f82 0%, #082f57 62%, #06243f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: none;
+}
+:root[data-theme="dark"] .home-hero-lead {
+  color: #f1f8fc;
+  background-image: linear-gradient(180deg, #ffffff 0%, #f1f8fc 42%, #c9dde9 78%, #a9c6d6 100%);
+  filter: drop-shadow(0 2px 2px #010a1280);
+}
+.home-hero-lead::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: .04em;
+  width: 1.15em;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #20bfd2, #147bb8);
+}
+:root[data-theme="dark"] .home-hero-lead::after {
+  background: linear-gradient(90deg, #c9f6ff, #46cfe9 55%, #46cfe900);
+  box-shadow: 0 0 12px #46cfe999;
+}
+:root[data-contrast="max"] .home-hero-lead { background: none; }

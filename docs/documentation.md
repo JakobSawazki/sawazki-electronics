@@ -328,7 +328,7 @@ nach dem Aufräumen zu karg; das Design soll wieder hochwertiger werden, Schritt
 - **Lesehilfe erweitert:** Fenster im Stil der Aufklappmenüs, 380 px breit, Kontrast in drei
   Stufen (Normal, Hoch, Sehr hoch = reines Schwarz/Weiß ohne Muster); `data-contrast="max"`.
 - Offen: Kontrastmessung/Barrierefreiheit und Sichtprüfung des hellen Modus stehen noch aus.
-- Cache-Version auf allen Seiten: `20261010-header-metall41`.
+- Cache-Version auf allen Seiten: `20261010-header-metall43`.
 - Lokal geprüft: Layout bei 1100–1680 px und 360 px ohne Überlauf, einheitliche Höhen gemessen,
   beide Menüs öffnen/wechseln/schließen, Mobilmenü, keine Konsolenfehler. Farbwirkung und
   Hover wurden von Jakob am Bildschirm abgenommen; heller Modus nicht gesondert geprüft.
