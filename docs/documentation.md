@@ -239,6 +239,8 @@ Nach dem Veröffentlichen:
 
 ### 10. Oktober 2026 – v1.33.1: Metallische Buttons der Startseite
 
+- Veröffentlicht: `17b89a7`, GitHub-Pages-Lauf `38048042707` erfolgreich. Metalloberfläche und CSS-Cache-Buster live bestätigt.
+
 - Jakobs Wunsch: deutlich schönere, realistisch metallisch wirkende Buttons in edlem Blau.
 - Hauptaktionen, Header-Anfrage und WhatsApp auf der Startseite erhalten eine Oberfläche aus gebürstetem Stahlblau, Lichtreflexen, feiner Metallkante und flachem räumlichem Schatten. Theme- und mobile Menüschalter passen sich mit einer zurückhaltenderen Metalloberfläche an.
 - Native CSS-Verläufe statt Bildbeschriftungen: scharfer Text und Icons bei jeder Größe, keine neuen Bilddownloads. Auf die Startseite begrenzt als nächster Gestaltungsschritt.
