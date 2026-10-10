@@ -277,8 +277,24 @@ nach dem Aufräumen zu karg; das Design soll wieder hochwertiger werden, Schritt
 - **Abschnitts-Trenner der Startseite:** auslaufende Linie mit leuchtendem Knotenpunkt statt
   einfacher Rahmenlinie (`.home-section::before/::after`); geringerer Abstand zwischen Hero
   und Leistungen.
-- Die Metalloptik gilt bisher nur für die Startseite; Übertragung auf die Unterseiten ist offen.
-- Cache-Version auf allen Seiten: `20261010-header-metall25`.
+- **Einheitliche Karten:** Warum-Punkte (`.home-values article`), Ablauf-Schritte
+  (`.home-process li`) und die Zusagen im Hero teilen denselben gefassten Stil mit Cyan-Kante
+  und leichtem Hub beim Überfahren. Ablauf-Schritte stehen unter 520 px einspaltig.
+- **Eigene IT-Projekte:** gefasstes Band (`.home-project-band`) mit Text, Schaltfläche
+  „Alle Projekte" und den neun Projektgrafiken in einer Reihe (mobil 5 + 4); jede Grafik
+  öffnet das Projekt in neuem Tab. Neue Projekte auch hier ergänzen.
+- **Titel:** zweite Zeile jetzt „Verständlich. Persönlich. Zuverlässig." (löst die Kommafrage
+  der zweizeiligen Fassung); der Seitentitel behält „IT-Hilfe … die man versteht" nicht –
+  dort steht weiter die SEO-Fassung.
+- **Über mich:** Textlink im Warum-Abschnitt ist jetzt eine Schaltfläche „Über mich" im Stil
+  von „Leistungen ansehen".
+- **Header auf allen Seiten:** Alle Seiten tragen die Body-Klasse `metal-header`; die
+  Header-Regeln hängen an `.metal-header` statt an `.home-page`. Geprüft per Messung auf elf
+  Seitentypen in Dark und Light: Maserung aktiv, alle Schaltflächen 46 px, kein Überlauf,
+  Inhalte nicht vom Header verdeckt. `404.html` lädt Styles über absolute URLs und zeigt den
+  neuen Header daher erst nach der Veröffentlichung.
+- Offen: Kontrastmessung/Barrierefreiheit und Sichtprüfung des hellen Modus stehen noch aus.
+- Cache-Version auf allen Seiten: `20261010-header-metall26`.
 - Lokal geprüft: Layout bei 1100–1680 px und 360 px ohne Überlauf, einheitliche Höhen gemessen,
   beide Menüs öffnen/wechseln/schließen, Mobilmenü, keine Konsolenfehler. Farbwirkung und
   Hover wurden von Jakob am Bildschirm abgenommen; heller Modus nicht gesondert geprüft.
