@@ -4804,3 +4804,32 @@ html {
 }
 
 :root[data-theme="dark"] .metal-header .project-group > summary { background: transparent; }
+
+
+/* Projektseite: Angebot „Software nach Maß“ als gefasstes Band zwischen Einstieg und Gruppen. */
+.project-offer {
+  width: min(100% - 3rem, var(--max));
+  margin: 0 auto 28px;
+  padding: 26px 30px 26px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  scroll-margin-top: 110px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: linear-gradient(180deg, #20bfd2, #147bb8) left center / 3px calc(100% - 44px) no-repeat, var(--surface-2);
+}
+:root[data-theme="dark"] .project-offer {
+  border-color: #a6dcf038;
+  background:
+    linear-gradient(180deg, #20bfd2, #147bb8) left center / 3px calc(100% - 44px) no-repeat,
+    linear-gradient(180deg, #86b3cc1f 0%, #2b556f24 48%, #10283b3d 52%, #1f476024 100%);
+  box-shadow: inset 0 1px 0 #e6f7ff1f, inset 0 -1px 0 #010a1247;
+}
+.project-offer h2 { margin: 6px 0 10px; color: var(--ink); font-size: clamp(1.4rem, 2.1vw, 1.8rem); line-height: 1.25; }
+.project-offer p:not(.eyebrow) { margin: 0; max-width: 70ch; color: var(--ink-2); line-height: 1.65; }
+.project-offer .button { flex: none; }
+@media (max-width: 800px) {
+  .project-offer { flex-direction: column; align-items: flex-start; gap: 18px; padding: 22px 22px 22px 26px; }
+}

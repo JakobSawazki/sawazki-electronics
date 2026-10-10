@@ -14,6 +14,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Aufgabe | Kontext / Quelle |
 | --- | --- |
+| „Software nach Maß": eigene Angebotsseite, Leistungsumfang mit Jakob festlegen (Web-Anwendungen, Werkzeuge, Lernangebote; native Apps?), AGB für Softwareprojekte prüfen lassen | Angebot ist seit 10.10.2026 als Band auf `projekte.html` und Karte auf `produkte.html` angelegt |
 | Reparatur als eigene Leistung: Menüeintrag in „IT-Service" und eigene Seite (Handy alle Hersteller, Laptop, PC, Apple; Diagnosepauschale) | Wunsch von Jakob vom 10.10.2026 |
 | Kontrastprüfung Dark/Light (Barrierefreiheit) und Sichtprüfung des hellen Modus | Lesehilfe-Menü ist seit 10.10.2026 umgesetzt; Messung steht noch aus |
 | Inhaltsbereiche der Unterseiten an den Stil der Startseite angleichen (gefasste Karten, Trenner), Seite für Seite | Wunsch von Jakob: alles einheitlich; Header/Footer/Schaltflächen sind bereits überall gleich |

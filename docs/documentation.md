@@ -336,8 +336,14 @@ nach dem Aufräumen zu karg; das Design soll wieder hochwertiger werden, Schritt
   Pfeil statt „Leistung ansehen". Hintergrund und Leiterbahn-Muster liegen auf `body` und
   reichen auf jeder Seite über die volle Breite. Projektgruppen im dunklen Modus mit
   gebürsteter Navy-Fläche. Bildrahmen überall 4 px.
+- **Neues Angebot „Software nach Maß" (lokal, Idee von Jakob):** Band auf `projekte.html`
+  (`#software-nach-mass`) mit Schaltfläche zum Anfrage-Assistenten, Karte in der Gruppe „Für
+  Unternehmen" auf `produkte.html`, Eintrag im Leistungsmenü aller Seiten und Thema
+  `Softwareentwicklung` im Assistenten. Bewusst ohne Preise, ohne Kundenreferenzen und ohne
+  Versprechen zu nativen Apps; Grundlage sind die eigenen Projekte. Eigene Angebotsseite und
+  Rechtstext-Prüfung (Nutzungsrechte, Abnahme, Wartung) sind offen.
 - Offen: Kontrastmessung/Barrierefreiheit und Sichtprüfung des hellen Modus stehen noch aus.
-- Cache-Version auf allen Seiten: `20261010-header-metall56`.
+- Cache-Version auf allen Seiten: `20261010-header-metall57`.
 - Lokal geprüft: Layout bei 1100–1680 px und 360 px ohne Überlauf, einheitliche Höhen gemessen,
   beide Menüs öffnen/wechseln/schließen, Mobilmenü, keine Konsolenfehler. Farbwirkung und
   Hover wurden von Jakob am Bildschirm abgenommen; heller Modus nicht gesondert geprüft.
