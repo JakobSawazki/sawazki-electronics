@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 10. Oktober 2026 · Version: v1.33.4
+Stand: 10. Oktober 2026 · Version: v1.34.0
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.34.0 | 2026-10-10 | Startseiten-Header in gebürstetem Navy, Projekte-Aufklappmenü auf allen Seiten, zweizeiliger Hero-Titel |
 | v1.33.4 | 2026-10-10 | Metallischer Bildrahmen und dezente Hover-Effekte |
 | v1.33.3 | 2026-10-10 | Kürzerer Startseiten-Einstieg ohne örtliche Eingrenzung |
 | v1.33.2 | 2026-10-10 | Startseiten-Navigation in Stahlblau |
@@ -239,6 +240,40 @@ Nach dem Veröffentlichen:
 - Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
 
 ## Bisheriges Aenderungsprotokoll
+
+### 10. Oktober 2026 – v1.34.0: Header in gebürstetem Navy, Projekte-Menü, Hero-Titel
+
+Schrittweise mit Jakob am lokalen Stand abgestimmt (Claude). Anlass: Die Startseite wirkte
+nach dem Aufräumen zu karg; das Design soll wieder hochwertiger werden, Schritt für Schritt.
+
+- **Header der Startseite** (`.home-page`, alles am Ende von `styles.css`): durchgehende Leiste
+  in dunklem, gebürstetem Navy. Die Maserung ist ein als Data-URI eingebettetes
+  SVG-Rauschen (`feTurbulence`), also ohne zusätzliche Datei oder Anfrage. Marke ganz links
+  (Leistenbreite bis 1760 px), Menü mittig, Theme-Schalter und „Anfrage starten" rechts.
+  Der frühere Kasten um die Menüpunkte entfällt am Desktop; mobil bleibt die Klappfläche.
+- **Schaltflächen:** alle sechs mit sichtbarer Fassung und einheitlich 46 px Höhe. Einheitlicher
+  Hover: Lichtlauf, leichter Hub, leuchtende Cyan-Linie unten. Fokusring innen an der Kante.
+  „Leistungen"/„Projekte" bilden mit ihrem Pfeil je eine gemeinsame Fassung mit Trennlinie.
+- **Marke:** Hover mit Lichtstreifen über dem Symbol, Cyan-Schein und Schimmer im Schriftzug;
+  bewusst ohne Drehung (wirkte zu verspielt).
+- **Aufklappflächen:** gleiche gebürstete Fläche, leicht durchscheinend mit Weichzeichner.
+- **Menü auf allen Seiten:** Reihenfolge Leistungen · Projekte · Über mich · Kontakt. „Projekte"
+  hat ein eigenes Aufklappmenü mit den fünf Gruppen von `projekte.html` (Lern-Labs,
+  Berufsschule, Schülerprojekte, Gaming, Wissen & Bildung); Einträge öffnen das Projekt in
+  neuem Tab, der Menüpunkt selbst führt auf `projekte.html`. Neue Projekte künftig auch hier
+  im Header aller Seiten ergänzen.
+- **`main.js`:** Die Menülogik ist verallgemeinert – jedes `.nav-services`-Element ist ein
+  eigenes Aufklappmenü, es ist immer nur eines offen, Escape schließt das offene. Der Name für
+  die Beschriftung kommt aus `data-menu-label` (Standard „Leistungen").
+- **Hero:** geringerer Abstand zur Leiste; Titel zweizeilig mit `.home-hero-lead` („IT-Hilfe,",
+  groß, Cyan-Verlauf) und `.home-hero-sub` („die man versteht.", dezenter). Unterzeile nennt
+  jetzt auch Reparatur und Handy.
+- Die Metalloptik gilt bisher nur für die Startseite; Übertragung auf die Unterseiten ist offen.
+- Cache-Version auf allen Seiten: `20261010-header-metall11`.
+- Lokal geprüft: Layout bei 1100–1680 px und 360 px ohne Überlauf, einheitliche Höhen gemessen,
+  beide Menüs öffnen/wechseln/schließen, Mobilmenü, keine Konsolenfehler. Farbwirkung und
+  Hover wurden von Jakob am Bildschirm abgenommen; heller Modus nicht gesondert geprüft.
+  `node --check` nicht möglich (kein Node.js auf dem Gerät).
 
 ### 10. Oktober 2026 – v1.33.4: Bildrahmen und professionelle Bildeffekte
 

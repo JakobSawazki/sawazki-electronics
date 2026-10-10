@@ -272,57 +272,80 @@ if (priceCalc) {
 }
 
 // A normal overview link remains available without JavaScript.
-const servicesToggle = document.querySelector('[data-services-toggle]');
-const servicesPanel = document.querySelector('[data-services-panel]');
-let servicesCloseTimer;
-function setServicesOpen(open) {
-  window.clearTimeout(servicesCloseTimer);
-  if (!servicesToggle || !servicesPanel) return;
-  servicesToggle.setAttribute('aria-expanded', String(open));
-  servicesToggle.setAttribute('aria-label', open ? 'Leistungen zuklappen' : 'Leistungen aufklappen');
-  servicesPanel.hidden = !open;
+// Jedes .nav-services-Element ist ein eigenes Aufklappmenü (Leistungen, Projekte).
+const dropdownMenus = Array.from(document.querySelectorAll('.nav-services'))
+  .map(container => ({
+    container,
+    toggle: container.querySelector('[data-services-toggle]'),
+    panel: container.querySelector('[data-services-panel]'),
+    closeTimer: 0,
+  }))
+  .filter(menu => menu.toggle && menu.panel);
+
+function setMenuOpen(menu, open) {
+  window.clearTimeout(menu.closeTimer);
+  const label = menu.toggle.dataset.menuLabel || 'Leistungen';
+  menu.toggle.setAttribute('aria-expanded', String(open));
+  menu.toggle.setAttribute('aria-label', `${label} ${open ? 'zuklappen' : 'aufklappen'}`);
+  menu.panel.hidden = !open;
+  if (open) {
+    dropdownMenus.forEach(other => {
+      if (other !== menu) setMenuOpen(other, false);
+    });
+  }
 }
-if (servicesToggle && servicesPanel) {
-  servicesToggle.hidden = false;
-  const servicesMobile = window.matchMedia('(max-width: 1080px)');
-  const updateServicesGroups = () => {
-    servicesPanel.querySelectorAll('details').forEach(group => {
-      group.open = !servicesMobile.matches;
+
+function setServicesOpen(open) {
+  dropdownMenus.forEach(menu => setMenuOpen(menu, open));
+}
+
+if (dropdownMenus.length) {
+  const menusMobile = window.matchMedia('(max-width: 1080px)');
+  const desktopHover = window.matchMedia('(min-width: 1081px) and (hover: hover) and (pointer: fine)');
+  const updateMenuGroups = () => {
+    dropdownMenus.forEach(menu => {
+      menu.panel.querySelectorAll('details').forEach(group => {
+        group.open = !menusMobile.matches;
+      });
     });
   };
-  updateServicesGroups();
-  servicesMobile.addEventListener('change', () => {
-    updateServicesGroups();
+  updateMenuGroups();
+  menusMobile.addEventListener('change', () => {
+    updateMenuGroups();
     setServicesOpen(false);
-  });
-  servicesToggle.addEventListener('click', () => setServicesOpen(servicesPanel.hidden));
-  const servicesNavigation = servicesToggle.closest('.nav-services');
-  const desktopHover = window.matchMedia('(min-width: 1081px) and (hover: hover) and (pointer: fine)');
-  servicesNavigation.addEventListener('pointerenter', event => {
-    if (event.pointerType === 'mouse' && desktopHover.matches) setServicesOpen(true);
-  });
-  servicesNavigation.addEventListener('pointerleave', event => {
-    if (event.pointerType !== 'mouse' || !desktopHover.matches) return;
-    servicesCloseTimer = window.setTimeout(() => {
-      if (!servicesNavigation.contains(document.activeElement)) setServicesOpen(false);
-    }, 180);
   });
   desktopHover.addEventListener('change', () => setServicesOpen(false));
 
-  document.addEventListener('click', event => {
-    if (!event.target.closest('.nav-services')) setServicesOpen(false);
+  dropdownMenus.forEach(menu => {
+    menu.toggle.hidden = false;
+    menu.toggle.addEventListener('click', () => setMenuOpen(menu, menu.panel.hidden));
+    menu.container.addEventListener('pointerenter', event => {
+      if (event.pointerType === 'mouse' && desktopHover.matches) setMenuOpen(menu, true);
+    });
+    menu.container.addEventListener('pointerleave', event => {
+      if (event.pointerType !== 'mouse' || !desktopHover.matches) return;
+      menu.closeTimer = window.setTimeout(() => {
+        if (!menu.container.contains(document.activeElement)) setMenuOpen(menu, false);
+      }, 180);
+    });
   });
+
+  const closeMenusOutside = event => {
+    dropdownMenus.forEach(menu => {
+      if (!menu.container.contains(event.target)) setMenuOpen(menu, false);
+    });
+  };
+  document.addEventListener('click', closeMenusOutside);
+  document.addEventListener('focusin', closeMenusOutside);
   document.addEventListener('keydown', event => {
     if (event.key !== 'Escape') return;
-    if (!servicesPanel.hidden) {
-      setServicesOpen(false);
-      servicesToggle.focus();
+    const openMenu = dropdownMenus.find(menu => !menu.panel.hidden);
+    if (openMenu) {
+      setMenuOpen(openMenu, false);
+      openMenu.toggle.focus();
     } else if (navLinks?.classList.contains('is-open')) {
       closeMenu();
       navToggle?.focus();
     }
-  });
-  document.addEventListener('focusin', event => {
-    if (!event.target.closest('.nav-services')) setServicesOpen(false);
   });
 }

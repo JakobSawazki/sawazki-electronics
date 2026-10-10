@@ -9,6 +9,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
+| 2026-10-10 | v1.34.0: Startseiten-Header in gebürstetem Navy, Projekte-Aufklappmenü auf allen Seiten, zweizeiliger Hero-Titel; danach schrittweise weiter (Reparatur als Leistung, Header auf Unterseiten) | Claude | Header von Jakob abgenommen; lokal committet, Veröffentlichung wartet auf Jakobs Freigabe |
 
 ## Offen (abhängig von Material, Unterlagen oder externem Status)
 

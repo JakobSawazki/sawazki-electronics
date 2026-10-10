@@ -2909,3 +2909,486 @@ html {
   .home-hero-image:hover, .home-group:hover, .home-hero-image:hover img, .home-group:hover img { transform: none; }
   .home-image-window::after, .home-group-image::after { display: none; }
 }
+
+
+/* Startseiten-Header: durchgehende Leiste aus gebürstetem Stahlblau.
+   Marke links, Menü mittig, Theme-Schalter und Anfrage rechts. Die Maserung
+   ist ein eingebettetes SVG-Rauschen (keine externe Datei, kein Bild-Request). */
+:root[data-theme] .home-page .site-header,
+:root[data-theme] .home-page .site-header.is-scrolled {
+  border-bottom: 1px solid #010a12;
+  background:
+    linear-gradient(102deg, transparent 0 14%, #9fd4f514 27%, transparent 41%, transparent 58%, #9fd4f50d 74%, transparent 90%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='120'%3E%3Cfilter id='b' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.0035 0.9' numOctaves='3' seed='11' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.55 0 0 0 0 0.78 0 0 0 0 1 0.4 0 0 0 -0.12'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23b)'/%3E%3C/svg%3E") 0 0 / 900px 100%,
+    linear-gradient(180deg, #0c284a 0%, #071e39 12%, #05162c 49%, #031022 52%, #061a32 88%, #020b18 100%);
+  box-shadow: inset 0 1px 0 #9fd4f547, inset 0 -1px 0 #020c18, 0 12px 32px #010a1280;
+  backdrop-filter: none;
+}
+:root[data-theme] .home-page .site-header::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #48bfd999 18%, #a8ecf8 50%, #48bfd999 82%, transparent);
+  pointer-events: none;
+}
+
+/* Marke */
+:root[data-theme] .home-page .site-header .brand {
+  gap: 0.85rem;
+  padding: 6px 16px 6px 6px;
+  color: #f4fbff;
+  border: 1px solid transparent;
+  border-radius: 14px;
+  transition: background 260ms ease, border-color 260ms ease, box-shadow 260ms ease;
+}
+:root[data-theme] .home-page .site-header .brand-mark {
+  position: relative;
+  border: 1px solid #c4e3f0b3;
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px #02101c, 0 6px 16px #010a1273;
+  transition: transform 320ms cubic-bezier(.2,.7,.3,1), box-shadow 320ms ease, border-color 320ms ease;
+}
+:root[data-theme] .home-page .site-header .brand-mark::after {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  background: linear-gradient(115deg, transparent 38%, #ffffffd9 50%, transparent 62%);
+  transform: translateX(-130%);
+  transition: transform 700ms ease;
+  pointer-events: none;
+}
+:root[data-theme] .home-page .site-header .brand strong {
+  font-size: 1.14rem;
+  letter-spacing: 0.01em;
+  color: transparent;
+  background: linear-gradient(100deg, #f4fbff 0 42%, #8be7f8 50%, #f4fbff 58% 100%) 100% 0 / 260% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(0 1px 1px #010a12b3);
+  transition: background-position 800ms ease;
+}
+:root[data-theme] .home-page .site-header .brand small {
+  margin-top: 2px;
+  color: #a9cfe0;
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  transition: color 260ms ease;
+}
+:root[data-theme] .home-page .site-header .brand:hover,
+:root[data-theme] .home-page .site-header .brand:focus-visible {
+  transform: none;
+  border-color: #a6dcf04d;
+  background: linear-gradient(170deg, #6d98b238, #12304680);
+  box-shadow: inset 0 1px 0 #e6f7ff33, 0 8px 20px #010a1240;
+}
+:root[data-theme] .home-page .site-header .brand:hover .brand-mark,
+:root[data-theme] .home-page .site-header .brand:focus-visible .brand-mark {
+  transform: scale(1.05);
+  border-color: #9be9f8;
+  box-shadow: 0 0 0 1px #02101c, 0 0 0 3px #43c8e340, 0 0 24px #3cc3e08c;
+}
+:root[data-theme] .home-page .site-header .brand:hover .brand-mark::after,
+:root[data-theme] .home-page .site-header .brand:focus-visible .brand-mark::after { transform: translateX(130%); }
+:root[data-theme] .home-page .site-header .brand:hover strong,
+:root[data-theme] .home-page .site-header .brand:focus-visible strong { background-position: 0 0; }
+:root[data-theme] .home-page .site-header .brand:hover small,
+:root[data-theme] .home-page .site-header .brand:focus-visible small { color: #8be7f8; }
+:root[data-theme] .home-page .site-header .brand:focus-visible { outline: 2px solid #64d8ed; outline-offset: 3px; }
+
+/* Menüpunkte: Lichtlauf, leuchtende Unterkante, leichter Hub */
+:root[data-theme] .home-page .site-header .nav-links > a:not(.nav-cta),
+:root[data-theme] .home-page .nav-services-heading > a {
+  letter-spacing: 0.02em;
+  transition: color 200ms ease, background 220ms ease, border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
+}
+:root[data-theme] .home-page .site-header .nav-links > a:not(.nav-cta)::before,
+:root[data-theme] .home-page .nav-services-heading > a::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(112deg, transparent 32%, #e4f7ff4d 50%, transparent 68%);
+  transform: translateX(-125%);
+  transition: transform 560ms ease;
+  pointer-events: none;
+}
+:root[data-theme] .home-page .site-header .nav-links > a:not(.nav-cta)::after,
+:root[data-theme] .home-page .nav-services-heading > a::after {
+  display: block;
+  right: 14px;
+  bottom: 4px;
+  left: 14px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #7fe6f8 30%, #c9f6ff 50%, #7fe6f8 70%, transparent);
+  box-shadow: 0 0 10px #46cfe9, 0 0 2px #c9f6ff;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 260ms cubic-bezier(.2,.7,.3,1);
+}
+@media (hover: hover) {
+  :root[data-theme] .home-page .site-header .nav-links > a:not(.nav-cta):hover,
+  :root[data-theme] .home-page .nav-services-heading > a:hover {
+    color: #fff;
+    border-color: #a6dcf066;
+    background: linear-gradient(180deg, #7aa6c04d 0%, #2b556f73 48%, #1639508c 52%, #25506b66 100%);
+    box-shadow: inset 0 1px 0 #e6f7ff4d, inset 0 -1px 0 #010a1280, 0 6px 14px #010a1247;
+    transform: translateY(-2px);
+  }
+  :root[data-theme] .home-page .site-header .nav-links > a:not(.nav-cta):hover::before,
+  :root[data-theme] .home-page .nav-services-heading > a:hover::before { transform: translateX(125%); }
+  :root[data-theme] .home-page .site-header .nav-links > a:not(.nav-cta):hover::after,
+  :root[data-theme] .home-page .nav-services-heading > a:hover::after { transform: scaleX(1); }
+  :root[data-theme] .home-page .site-header .theme-toggle:hover {
+    color: #fff;
+    border-color: #9be9f8;
+    box-shadow: inset 0 1px 0 #d3e9f980, 0 0 0 3px #43c8e333, 0 0 18px #3cc3e066;
+    transform: translateY(-2px);
+  }
+}
+:root[data-theme] .home-page .site-header .nav-links > a:not(.nav-cta):focus-visible::after,
+:root[data-theme] .home-page .nav-services-heading > a:focus-visible::after { transform: scaleX(1); }
+:root[data-theme] .home-page .site-header .theme-toggle {
+  transition: transform 260ms ease, box-shadow 260ms ease, border-color 260ms ease, color 200ms ease;
+}
+
+@media (min-width: 1081px) {
+  :root[data-theme] .home-page .nav-shell {
+    width: min(100% - 3rem, 1760px);
+    min-height: 88px;
+    gap: 1.5rem;
+  }
+  /* Die Leiste selbst ist jetzt die Metallfläche; das Menü steht frei und mittig darauf. */
+  :root[data-theme] .home-page .site-header .nav-links {
+    flex: 1;
+    gap: 6px;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    font-size: 1rem;
+  }
+  :root[data-theme] .home-page .site-header .nav-links > .nav-services:first-child { margin-left: auto; }
+  :root[data-theme] .home-page .site-header .nav-links > a:nth-last-of-type(2) { margin-right: auto; }
+  :root[data-theme] .home-page .site-header .nav-links > a:not(.nav-cta),
+  :root[data-theme] .home-page .nav-services-heading > a { padding: 12px 18px; }
+  :root[data-theme] .home-page .site-header .nav-links .nav-cta { margin-left: 10px; }
+  :root[data-theme] .home-page .nav-services-panel { top: 100px; }
+}
+@media (max-width: 1080px) {
+  :root[data-theme] .home-page .site-header .brand { padding: 4px 10px 4px 4px; }
+  :root[data-theme] .home-page .site-header .brand small { letter-spacing: 0.1em; }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root[data-theme] .home-page .site-header .brand,
+  :root[data-theme] .home-page .site-header .brand-mark,
+  :root[data-theme] .home-page .site-header .brand strong,
+  :root[data-theme] .home-page .site-header .theme-toggle,
+  :root[data-theme] .home-page .site-header .nav-links > a:not(.nav-cta),
+  :root[data-theme] .home-page .nav-services-heading > a { transition: none; }
+  :root[data-theme] .home-page .site-header .brand:hover .brand-mark,
+  :root[data-theme] .home-page .site-header .theme-toggle:hover,
+  :root[data-theme] .home-page .site-header .nav-links > a:not(.nav-cta):hover,
+  :root[data-theme] .home-page .nav-services-heading > a:hover { transform: none; }
+  :root[data-theme] .home-page .site-header .brand-mark::after,
+  :root[data-theme] .home-page .site-header .nav-links > a:not(.nav-cta)::before,
+  :root[data-theme] .home-page .nav-services-heading > a::before { display: none; }
+}
+
+
+/* „Leistungen“ und Pfeil als eine gefasste Schaltfläche mit feiner Trennlinie. */
+:root[data-theme] .home-page .site-header .nav-services-heading {
+  align-items: stretch;
+  border: 1px solid #a6dcf038;
+  border-radius: 11px;
+  background: linear-gradient(180deg, #86b3cc24 0%, #2b556f2e 48%, #10283b47 52%, #1f47602e 100%);
+  box-shadow: inset 0 1px 0 #e6f7ff26, inset 0 -1px 0 #010a1259;
+  transition: border-color 240ms ease, background 240ms ease, box-shadow 240ms ease, transform 240ms ease;
+}
+:root[data-theme] .home-page .site-header .nav-services-heading > a {
+  border: 0;
+  border-radius: 10px 0 0 10px;
+}
+:root[data-theme] .home-page .site-header .nav-services-toggle {
+  width: 40px;
+  height: auto;
+  margin: 0;
+  color: #8fe3f5;
+  border: 0;
+  border-left: 1px solid #a6dcf033;
+  border-radius: 0 10px 10px 0;
+  background: transparent;
+  transition: color 200ms ease, background 220ms ease;
+}
+:root[data-theme] .home-page .site-header .nav-services-toggle svg {
+  width: 15px;
+  height: 15px;
+  filter: drop-shadow(0 0 4px #46cfe980);
+  transition: transform 320ms cubic-bezier(.2,.7,.3,1);
+}
+:root[data-theme] .home-page .site-header .nav-services-toggle svg path { stroke-width: 1.4; }
+:root[data-theme] .home-page .site-header .nav-services-toggle[aria-expanded="true"] {
+  color: #fff;
+  border-color: #a6dcf033;
+  background: linear-gradient(180deg, #46cfe938, #46cfe914);
+}
+:root[data-theme] .home-page .site-header .nav-services-heading:focus-within,
+:root[data-theme] .home-page .site-header .nav-services-heading:has(.nav-services-toggle[aria-expanded="true"]) {
+  border-color: #9be9f88c;
+  box-shadow: inset 0 1px 0 #e6f7ff40, inset 0 -1px 0 #010a1259, 0 0 0 3px #43c8e31f, 0 8px 18px #010a1247;
+}
+@media (hover: hover) {
+  :root[data-theme] .home-page .site-header .nav-services-heading:hover {
+    border-color: #9be9f88c;
+    background: linear-gradient(180deg, #8fbdd64d 0%, #2f5c7773 48%, #1639508c 52%, #2a587466 100%);
+    box-shadow: inset 0 1px 0 #e6f7ff4d, inset 0 -1px 0 #010a1280, 0 0 0 3px #43c8e31f, 0 8px 18px #010a1247;
+    transform: translateY(-2px);
+  }
+  /* Die Fassung übernimmt Fläche und Hub; der Link selbst bleibt ruhig. */
+  :root[data-theme] .home-page .site-header .nav-services-heading > a:hover {
+    border: 0;
+    background: none;
+    box-shadow: none;
+    transform: none;
+  }
+  :root[data-theme] .home-page .site-header .nav-services-toggle:hover {
+    color: #fff;
+    border-color: #a6dcf033;
+    background: linear-gradient(180deg, #46cfe92e, #46cfe90f);
+  }
+  :root[data-theme] .home-page .site-header .nav-services-toggle:hover svg { transform: translateY(2px); }
+  :root[data-theme] .home-page .site-header .nav-services-toggle[aria-expanded="true"]:hover svg { transform: rotate(180deg) translateY(2px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root[data-theme] .home-page .site-header .nav-services-heading,
+  :root[data-theme] .home-page .site-header .nav-services-toggle svg { transition: none; }
+  :root[data-theme] .home-page .site-header .nav-services-heading:hover { transform: none; }
+}
+
+
+/* Alle Schaltflächen der Leiste: sichtbare Fassung und einheitliche Höhe. */
+:root[data-theme] .home-page .site-header .nav-links > a:not(.nav-cta) {
+  border: 1px solid #a6dcf04d;
+  border-radius: 11px;
+  background: linear-gradient(180deg, #86b3cc24 0%, #2b556f2e 48%, #10283b47 52%, #1f47602e 100%);
+  box-shadow: inset 0 1px 0 #e6f7ff26, inset 0 -1px 0 #010a1259;
+}
+:root[data-theme] .home-page .site-header .nav-services-heading { border-color: #a6dcf04d; }
+:root[data-theme] .home-page .site-header .nav-services-toggle { border-left-color: #a6dcf04d; }
+@media (min-width: 1081px) {
+  :root[data-theme] .home-page .site-header .nav-links { gap: 10px; }
+  :root[data-theme] .home-page .site-header .nav-links > a,
+  :root[data-theme] .home-page .site-header .nav-services-heading,
+  :root[data-theme] .home-page .site-header .nav-links .theme-toggle {
+    box-sizing: border-box;
+    height: 46px;
+  }
+  :root[data-theme] .home-page .site-header .nav-links > a,
+  :root[data-theme] .home-page .site-header .nav-services-heading > a {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  :root[data-theme] .home-page .site-header .nav-links .nav-cta { padding: 0 22px; }
+  :root[data-theme] .home-page .site-header .nav-links .theme-toggle { width: 46px; border-radius: 11px; }
+}
+
+
+/* Einheitlicher Hover für alle Schaltflächen der Leiste: Lichtlauf,
+   leuchtende Unterkante, leichter Hub – auch Pfeil-Fassung, Theme-Schalter und Anfrage. */
+:root[data-theme] .home-page .site-header .nav-services-heading,
+:root[data-theme] .home-page .site-header .nav-links .theme-toggle,
+:root[data-theme] .home-page .site-header .nav-links .nav-cta {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  transition: color 200ms ease, background 220ms ease, border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease, filter 220ms ease;
+}
+:root[data-theme] .home-page .site-header .nav-services-heading::before,
+:root[data-theme] .home-page .site-header .nav-links .theme-toggle::before,
+:root[data-theme] .home-page .site-header .nav-links .nav-cta::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(112deg, transparent 32%, #e4f7ff4d 50%, transparent 68%);
+  transform: translateX(-125%);
+  transition: transform 560ms ease;
+  pointer-events: none;
+}
+:root[data-theme] .home-page .site-header .nav-services-heading::after,
+:root[data-theme] .home-page .site-header .nav-links .theme-toggle::after,
+:root[data-theme] .home-page .site-header .nav-links .nav-cta::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 14px;
+  bottom: 4px;
+  left: 14px;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, #7fe6f8 30%, #c9f6ff 50%, #7fe6f8 70%, transparent);
+  box-shadow: 0 0 10px #46cfe9, 0 0 2px #c9f6ff;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 260ms cubic-bezier(.2,.7,.3,1);
+  pointer-events: none;
+}
+:root[data-theme] .home-page .site-header .nav-links .theme-toggle::after { right: 8px; left: 8px; }
+/* In der Leistungen-Fassung laufen Lichtlauf und Linie über die ganze Fassung. */
+:root[data-theme] .home-page .site-header .nav-services-heading > a::before,
+:root[data-theme] .home-page .site-header .nav-services-heading > a::after { display: none; }
+@media (hover: hover) {
+  :root[data-theme] .home-page .site-header .nav-links .theme-toggle:hover,
+  :root[data-theme] .home-page .site-header .nav-links .nav-cta:hover {
+    color: #fff;
+    border-color: #a6dcf099;
+    filter: none;
+    box-shadow: inset 0 1px 0 #e6f7ff66, inset 0 -1px 0 #010a1280, 0 6px 14px #010a1247;
+    transform: translateY(-2px);
+  }
+  :root[data-theme] .home-page .site-header .nav-links .theme-toggle:hover {
+    background: linear-gradient(180deg, #7aa6c04d 0%, #2b556f73 48%, #1639508c 52%, #25506b66 100%);
+  }
+  :root[data-theme] .home-page .site-header .nav-services-heading:hover::before,
+  :root[data-theme] .home-page .site-header .nav-links .theme-toggle:hover::before,
+  :root[data-theme] .home-page .site-header .nav-links .nav-cta:hover::before { transform: translateX(125%); }
+  :root[data-theme] .home-page .site-header .nav-services-heading:hover::after,
+  :root[data-theme] .home-page .site-header .nav-links .theme-toggle:hover::after,
+  :root[data-theme] .home-page .site-header .nav-links .nav-cta:hover::after { transform: scaleX(1); }
+}
+:root[data-theme] .home-page .site-header .nav-services-heading:focus-within::after,
+:root[data-theme] .home-page .site-header .nav-links .theme-toggle:focus-visible::after,
+:root[data-theme] .home-page .site-header .nav-links .nav-cta:focus-visible::after { transform: scaleX(1); }
+@media (prefers-reduced-motion: reduce) {
+  :root[data-theme] .home-page .site-header .nav-services-heading,
+  :root[data-theme] .home-page .site-header .nav-links .theme-toggle,
+  :root[data-theme] .home-page .site-header .nav-links .nav-cta { transition: none; }
+  :root[data-theme] .home-page .site-header .nav-services-heading::before,
+  :root[data-theme] .home-page .site-header .nav-links .theme-toggle::before,
+  :root[data-theme] .home-page .site-header .nav-links .nav-cta::before { display: none; }
+  :root[data-theme] .home-page .site-header .nav-links .theme-toggle:hover,
+  :root[data-theme] .home-page .site-header .nav-links .nav-cta:hover { transform: none; }
+}
+
+
+/* Aufklappfläche „Leistungen“: dieselbe gebürstete Navy-Fläche wie die Leiste. */
+:root[data-theme] .home-page .site-header .nav-services-panel {
+  border: 1px solid #a6dcf052;
+  background:
+    linear-gradient(118deg, transparent 0 20%, #9fd4f512 38%, transparent 56%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='120'%3E%3Cfilter id='b' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.0035 0.9' numOctaves='3' seed='11' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.55 0 0 0 0 0.78 0 0 0 0 1 0.4 0 0 0 -0.12'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23b)'/%3E%3C/svg%3E") 0 0 / 900px 120px,
+    linear-gradient(180deg, #0f3157eb 0%, #092443e6 14%, #061a33e0 60%, #04142ae6 100%);
+  box-shadow: inset 0 1px 0 #9fd4f54d, inset 0 -1px 0 #020c18, 0 22px 54px #010a1299;
+  -webkit-backdrop-filter: blur(14px) saturate(125%);
+  backdrop-filter: blur(14px) saturate(125%);
+}
+:root[data-theme] .home-page .site-header .nav-group summary { color: #8fe3f5; letter-spacing: 0.12em; }
+:root[data-theme] .home-page .site-header .nav-group + .nav-group { border-color: #a6dcf038; }
+:root[data-theme] .home-page .site-header .nav-links .nav-group a {
+  border: 1px solid transparent;
+  border-radius: 9px;
+  transition: color 180ms ease, background 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+}
+@media (hover: hover) {
+  :root[data-theme] .home-page .site-header .nav-links .nav-group a:hover {
+    color: #fff;
+    border-color: #a6dcf066;
+    background: linear-gradient(180deg, #7aa6c040 0%, #2b556f66 48%, #16395080 52%, #25506b59 100%);
+    box-shadow: inset 0 1px 0 #e6f7ff40, inset 0 -1px 0 #010a1266;
+    transform: none;
+  }
+}
+
+
+/* Projekte-Menü: fünf Gruppen wie auf projekte.html, sonst wie das Leistungsmenü. */
+@media (min-width: 1081px) {
+  .nav-services-panel--projects { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 22px; }
+  .nav-services-panel--projects .nav-group + .nav-group { padding-left: 22px; }
+}
+
+
+/* Gleiche optische Höhe: keine Unterkante mit Versatz, gleiche Fassung, Fokusring innen. */
+:root[data-theme] .home-page .site-header .nav-links .nav-cta,
+:root[data-theme] .home-page .site-header .nav-links .theme-toggle {
+  border: 1px solid #a6dcf066;
+  border-radius: 11px;
+  box-shadow: inset 0 1px 0 #e6f7ff4d, inset 0 -1px 0 #010a1280;
+}
+@media (hover: hover) {
+  :root[data-theme] .home-page .site-header .nav-links .nav-cta:hover,
+  :root[data-theme] .home-page .site-header .nav-links .theme-toggle:hover {
+    box-shadow: inset 0 1px 0 #e6f7ff66, inset 0 -1px 0 #010a1280, 0 6px 14px #010a1247;
+  }
+}
+:root[data-theme] .home-page .site-header .nav-links .nav-cta:active {
+  transform: translateY(0);
+  filter: brightness(.96);
+  box-shadow: inset 0 2px 5px #03172880;
+}
+:root[data-theme] .home-page .site-header .nav-links a:focus-visible,
+:root[data-theme] .home-page .site-header .nav-links .theme-toggle:focus-visible,
+:root[data-theme] .home-page .site-header .nav-services-toggle:focus-visible {
+  outline: 2px solid #64d8ed;
+  outline-offset: -2px;
+}
+
+
+/* Startseiten-Einstieg: näher an der Leiste, zweizeilige Überschrift mit klarer Gewichtung. */
+.home-hero { padding-top: 124px; padding-bottom: 72px; grid-template-columns: 1.15fr 1fr; }
+.home-hero h1 { margin-bottom: 24px; letter-spacing: 0; }
+.home-hero-lead,
+.home-hero-sub { display: block; }
+.home-hero-lead {
+  width: fit-content;
+  font-size: clamp(3.6rem, 7vw, 6rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -.045em;
+  color: var(--navy-2);
+  background: linear-gradient(100deg, #0a3a66 0%, #147bb8 60%, #20bfd2 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: .08em;
+}
+:root[data-theme="dark"] .home-hero-lead {
+  color: #7fe3f5;
+  background-image: linear-gradient(100deg, #f1fbff 0%, #8eeaf8 42%, #2fb9da 100%);
+  filter: drop-shadow(0 6px 22px #20bfd22e);
+}
+.home-hero-sub {
+  margin-top: .18em;
+  font-size: clamp(1.9rem, 3.4vw, 2.9rem);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -.02em;
+  color: var(--ink-2);
+}
+.home-hero-copy p { max-width: 520px; }
+@media (max-width: 1000px) { .home-hero { padding-top: 116px; } }
+@media (max-width: 700px) {
+  .home-hero { grid-template-columns: 1fr; padding: 104px 0 44px; }
+  .home-hero-lead { font-size: clamp(3rem, 15vw, 4rem); }
+  .home-hero-sub { font-size: clamp(1.6rem, 7vw, 2.1rem); }
+}
+
+
+/* Schmale Desktop-Breiten: Menü bleibt einzeilig. */
+:root[data-theme] .home-page .site-header .nav-links > a,
+:root[data-theme] .home-page .site-header .nav-services-heading > a { white-space: nowrap; }
+@media (min-width: 1081px) and (max-width: 1360px) {
+  :root[data-theme] .home-page .nav-shell { gap: 0.75rem; }
+  :root[data-theme] .home-page .site-header .nav-links { gap: 6px; font-size: .93rem; }
+  :root[data-theme] .home-page .site-header .nav-links > a:not(.nav-cta),
+  :root[data-theme] .home-page .site-header .nav-services-heading > a { padding-right: 11px; padding-left: 11px; }
+  :root[data-theme] .home-page .site-header .nav-services-toggle { width: 32px; }
+  :root[data-theme] .home-page .site-header .nav-links .nav-cta { padding: 0 14px; margin-left: 6px; }
+  :root[data-theme] .home-page .site-header .brand small { letter-spacing: 0.1em; }
+}
