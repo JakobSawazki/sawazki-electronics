@@ -71,7 +71,7 @@
       const value = JSON.parse(localStorage.getItem(readingKey) || "{}");
       return {
         font: ["md", "lg", "xl"].includes(value.font) ? value.font : "md",
-        contrast: value.contrast === "high" ? "high" : "normal",
+        contrast: ["high", "max"].includes(value.contrast) ? value.contrast : "normal",
       };
     } catch {
       return { ...readingDefaults };
@@ -86,8 +86,8 @@
     } else {
       root.dataset.font = reading.font;
     }
-    if (reading.contrast === "high") {
-      root.dataset.contrast = "high";
+    if (reading.contrast !== "normal") {
+      root.dataset.contrast = reading.contrast;
     } else {
       delete root.dataset.contrast;
     }
@@ -151,8 +151,9 @@
           <div class="reading-group" role="group" aria-label="Kontrast">
             <span>Kontrast</span>
             <div class="reading-options">
-              <button type="button" data-reading-contrast="normal">Standard</button>
+              <button type="button" data-reading-contrast="normal">Normal</button>
               <button type="button" data-reading-contrast="high">Hoch</button>
+              <button type="button" data-reading-contrast="max">Sehr hoch</button>
             </div>
           </div>
           <button class="reading-reset" type="button" data-reading-reset>Zurücksetzen</button>

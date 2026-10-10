@@ -2326,11 +2326,12 @@ html {
 
 /* Startseite: sechs ruhige Bereiche statt mehrfacher Angebotslisten. */
 
-.home-page { background: var(--surface); }
+.home-page,
+.metal-header:not(.demo-page) { background: var(--surface); }
 
 /* Technische Markenfläche: statisches, leichtes SVG statt Rasterbild/Animation.
    Die Mitte bleibt ruhiger; das Muster ist dekorativ und fängt keine Eingaben ab. */
-.home-page main {
+.metal-header:not(.demo-page) main {
   position: relative;
   isolation: isolate;
   background:
@@ -2338,7 +2339,7 @@ html {
     radial-gradient(ellipse 75% 700px at 0% 55%, #147bb812, transparent 75%),
     linear-gradient(160deg, #f4f8fb, #eaf3f8 45%, #f4f8fb);
 }
-.home-page main::before {
+.metal-header:not(.demo-page) main::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -2349,17 +2350,17 @@ html {
   -webkit-mask-image: linear-gradient(90deg, #000, #0009 22%, #0004 48%, #0009 78%, #000);
   mask-image: linear-gradient(90deg, #000, #0009 22%, #0004 48%, #0009 78%, #000);
 }
-:root[data-theme="dark"] .home-page main {
+:root[data-theme="dark"] .metal-header:not(.demo-page) main {
   background:
     radial-gradient(ellipse 85% 680px at 100% 8%, #0d6e8b40, transparent 74%),
     radial-gradient(ellipse 70% 760px at 0% 52%, #0d4f823b, transparent 75%),
     radial-gradient(ellipse 80% 600px at 85% 90%, #147b9326, transparent 75%),
     linear-gradient(155deg, #061725, #0a2030 44%, #071925);
 }
-:root[data-theme="dark"] .home-page main::before { opacity: .8; }
+:root[data-theme="dark"] .metal-header:not(.demo-page) main::before { opacity: .8; }
 @media (max-width: 700px) {
-  .home-page main::before { background-size: 504px 360px; opacity: .35; }
-  :root[data-theme="dark"] .home-page main::before { opacity: .6; }
+  .metal-header:not(.demo-page) main::before { background-size: 504px 360px; opacity: .35; }
+  :root[data-theme="dark"] .metal-header:not(.demo-page) main::before { opacity: .6; }
 }
 
 .home-hero { width: min(100% - 3rem, var(--max)); margin: 0 auto; padding: 160px 0 88px; display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 64px; }
@@ -3874,30 +3875,30 @@ html {
 }
 
 /* Hoher Kontrast: kräftigere Schrift, deckende Flächen, deutlichere Rahmen. */
-:root[data-contrast="high"] { --ink: #000; --ink-2: #0c1a24; --muted: #22323d; --line: rgba(8, 47, 87, .55); }
-:root[data-theme="dark"][data-contrast="high"] { --ink: #fff; --ink-2: #f3f8fb; --muted: #dbe7ee; --line: rgba(190, 230, 245, .6); }
-:root[data-contrast="high"] .metal-header .site-header .nav-services-panel,
-:root[data-contrast="high"] .reading-panel {
+:root[data-contrast] { --ink: #000; --ink-2: #0c1a24; --muted: #22323d; --line: rgba(8, 47, 87, .55); }
+:root[data-theme="dark"][data-contrast] { --ink: #fff; --ink-2: #f3f8fb; --muted: #dbe7ee; --line: rgba(190, 230, 245, .6); }
+:root[data-contrast] .metal-header .site-header .nav-services-panel,
+:root[data-contrast] .reading-panel {
   border-color: #c9f6ff;
   background: #04142a;
   -webkit-backdrop-filter: none;
   backdrop-filter: none;
 }
-:root[data-contrast="high"] .metal-header .site-header .brand small,
-:root[data-contrast="high"] .metal-header .site-header .nav-group summary { color: #e6f7fd; }
-:root[data-contrast="high"] .metal-header .site-header .nav-links > a:not(.nav-cta),
-:root[data-contrast="high"] .metal-header .site-header .nav-services-heading,
-:root[data-contrast="high"] .metal-header .site-header .nav-links .theme-toggle,
-:root[data-contrast="high"] .metal-header .site-header .nav-links .nav-cta { border-color: #c9f6ffb3; }
-:root[data-contrast="high"] .home-hero-sub { color: var(--ink); }
-:root[data-contrast="high"] .home-hero-points li,
-:root[data-contrast="high"] .home-values article,
-:root[data-contrast="high"] .home-process li,
-:root[data-contrast="high"] .home-project-band { border-color: var(--line); background: var(--white); }
-:root[data-theme="dark"][data-contrast="high"] .home-hero-points li,
-:root[data-theme="dark"][data-contrast="high"] .home-values article,
-:root[data-theme="dark"][data-contrast="high"] .home-process li,
-:root[data-theme="dark"][data-contrast="high"] .home-project-band { background: #061a30; }
+:root[data-contrast] .metal-header .site-header .brand small,
+:root[data-contrast] .metal-header .site-header .nav-group summary { color: #e6f7fd; }
+:root[data-contrast] .metal-header .site-header .nav-links > a:not(.nav-cta),
+:root[data-contrast] .metal-header .site-header .nav-services-heading,
+:root[data-contrast] .metal-header .site-header .nav-links .theme-toggle,
+:root[data-contrast] .metal-header .site-header .nav-links .nav-cta { border-color: #c9f6ffb3; }
+:root[data-contrast] .home-hero-sub { color: var(--ink); }
+:root[data-contrast] .home-hero-points li,
+:root[data-contrast] .home-values article,
+:root[data-contrast] .home-process li,
+:root[data-contrast] .home-project-band { border-color: var(--line); background: var(--white); }
+:root[data-theme="dark"][data-contrast] .home-hero-points li,
+:root[data-theme="dark"][data-contrast] .home-values article,
+:root[data-theme="dark"][data-contrast] .home-process li,
+:root[data-theme="dark"][data-contrast] .home-project-band { background: #061a30; }
 
 
 /* Footer: gleiche gebürstete Navy-Fläche und gleiche gefasste Schaltflächen wie die Leiste,
@@ -4020,4 +4021,339 @@ html {
 @media (min-width: 901px) {
   :root[data-theme] .metal-header .site-footer { padding-right: max(214px, calc((100% - 1760px) / 2 + 190px)); }
   :root[data-theme] .metal-header .site-footer nav { flex-wrap: wrap; flex-shrink: 1; }
+}
+
+
+/* Lesehilfe-Fenster im Stil der Aufklappmenüs: gebürstete Navy-Fläche, gefasste Schaltflächen. */
+.reading-panel {
+  width: 380px;
+  padding: 22px;
+  border: 1px solid #a6dcf052;
+  background:
+    linear-gradient(118deg, transparent 0 20%, #9fd4f512 38%, transparent 56%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='120'%3E%3Cfilter id='b' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.0035 0.9' numOctaves='3' seed='11' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.55 0 0 0 0 0.78 0 0 0 0 1 0.4 0 0 0 -0.12'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23b)'/%3E%3C/svg%3E") 0 0 / 900px 120px,
+    linear-gradient(180deg, #0c284af0 0%, #082040f0 18%, #061a33f0 62%, #071f3bf0 100%);
+  box-shadow: inset 0 1px 0 #9fd4f54d, inset 0 -1px 0 #020c18, 0 22px 54px #010a1299;
+  -webkit-backdrop-filter: blur(14px) saturate(125%);
+  backdrop-filter: blur(14px) saturate(125%);
+  animation: menu-slide-down 460ms cubic-bezier(.2, .75, .25, 1);
+}
+.reading-title { margin-bottom: 16px; }
+.reading-group { margin-bottom: 16px; }
+.reading-options { gap: 8px; }
+.reading-options button,
+.reading-reset {
+  position: relative;
+  min-height: 44px;
+  padding: 0 8px;
+  white-space: nowrap;
+  color: #eaf4fb;
+  border: 1px solid #a6dcf04d;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #86b3cc24 0%, #2b556f2e 48%, #10283b47 52%, #1f47602e 100%);
+  box-shadow: inset 0 1px 0 #e6f7ff26, inset 0 -1px 0 #010a1259;
+  transition: color 200ms ease, background 220ms ease, border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
+}
+.reading-options button::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  bottom: 4px;
+  left: 12px;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, #7fe6f8 30%, #c9f6ff 50%, #7fe6f8 70%, transparent);
+  box-shadow: 0 0 10px #46cfe9;
+  transform: scaleX(0);
+  transition: transform 260ms cubic-bezier(.2,.7,.3,1);
+}
+.reading-options button[aria-pressed="true"] {
+  color: #fff;
+  border-color: #9be9f8;
+  background: linear-gradient(180deg, #8fbdd659 0%, #2f5c7780 48%, #16395099 52%, #2a587473 100%);
+  box-shadow: inset 0 1px 0 #e6f7ff59, inset 0 -1px 0 #010a1280, 0 0 0 3px #43c8e326;
+}
+.reading-options button[aria-pressed="true"]::after { transform: scaleX(1); }
+@media (hover: hover) {
+  .reading-options button:hover,
+  .reading-reset:hover {
+    color: #fff;
+    border-color: #a6dcf099;
+    background: linear-gradient(180deg, #7aa6c04d 0%, #2b556f73 48%, #1639508c 52%, #25506b66 100%);
+    transform: translateY(-2px);
+  }
+}
+@media (max-width: 1080px) { .reading-panel { width: auto; } .reading-options { flex-wrap: wrap; } }
+@media (prefers-reduced-motion: reduce) {
+  .reading-panel { animation: none; }
+  .reading-options button, .reading-reset { transition: none; }
+  .reading-options button:hover, .reading-reset:hover { transform: none; }
+}
+
+/* Kontrast „Sehr hoch“: reines Schwarz/Weiß, keine Muster, keine durchscheinenden Flächen. */
+:root[data-contrast="max"] { --ink: #000; --ink-2: #000; --muted: #111; --line: #000; --surface: #fff; --surface-2: #fff; }
+:root[data-theme="dark"][data-contrast="max"] { --ink: #fff; --ink-2: #fff; --muted: #fff; --line: #fff; --surface: #000; --surface-2: #000; }
+:root[data-contrast="max"] body { background: var(--surface) !important; }
+:root[data-contrast="max"] .home-hero-lead {
+  background: none;
+  -webkit-text-fill-color: currentColor;
+  color: var(--ink);
+  filter: none;
+}
+:root[data-contrast="max"] .home-hero-points li,
+:root[data-contrast="max"] .home-values article,
+:root[data-contrast="max"] .home-process li,
+:root[data-contrast="max"] .home-project-band,
+:root[data-theme="dark"][data-contrast="max"] .home-hero-points li,
+:root[data-theme="dark"][data-contrast="max"] .home-values article,
+:root[data-theme="dark"][data-contrast="max"] .home-process li,
+:root[data-theme="dark"][data-contrast="max"] .home-project-band { border: 2px solid var(--line); background: var(--surface); box-shadow: none; }
+:root[data-contrast="max"] .metal-header .site-header .nav-services-panel,
+:root[data-contrast="max"] .reading-panel { border: 2px solid #fff; background: #000; }
+:root[data-contrast="max"] .metal-header .site-header .nav-links > a:not(.nav-cta),
+:root[data-contrast="max"] .metal-header .site-header .nav-services-heading,
+:root[data-contrast="max"] .metal-header .site-header .nav-links .theme-toggle,
+:root[data-contrast="max"] .metal-header .site-header .nav-links .nav-cta,
+:root[data-contrast="max"] .metal-header .site-footer nav a,
+:root[data-contrast="max"] .reading-options button,
+:root[data-contrast="max"] .reading-reset { color: #fff; border-color: #fff; }
+:root[data-contrast="max"] .metal-header .site-footer p,
+:root[data-contrast="max"] .metal-header .site-footer .footer-meta,
+:root[data-contrast="max"] .metal-header .site-header .brand small { color: #fff; }
+
+
+/* ===== Unterseiten im Stil der Startseite =====
+   Gleiche gefasste Karten (Cyan-Kante links, leichter Hub), gleiche Trenner, gleiche
+   Schaltflächen. Die Cyan-Kante liegt hier als Hintergrundebene auf der Karte, damit
+   vorhandene ::before/::after-Elemente der Bausteine frei bleiben. */
+
+/* Alle Karten und Tafeln: gleiche Fassung */
+:root[data-theme] .metal-header :is(
+  .format-grid article, .vhs-value-card, .vhs-process-grid article, .offer-steps li,
+  .service-card, .web-guide-grid article, .faq-grid details, .price-panel, .price-card,
+  .price-extras, .price-calc, .offer-details, .assistant-form, .assistant-panel,
+  .assistant-hero, .legal-document, .thank-you, .offer-cta, .offer-card, .project-tile
+) {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background-color: var(--surface-2);
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+:root[data-theme="dark"] .metal-header :is(
+  .format-grid article, .vhs-value-card, .vhs-process-grid article, .offer-steps li,
+  .service-card, .web-guide-grid article, .faq-grid details, .price-panel, .price-card,
+  .price-extras, .price-calc, .offer-details, .assistant-form, .assistant-panel,
+  .assistant-hero, .legal-document, .thank-you, .offer-cta, .offer-card, .project-tile
+) {
+  border-color: #a6dcf038;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #86b3cc1f 0%, #2b556f24 48%, #10283b3d 52%, #1f476024 100%);
+  box-shadow: inset 0 1px 0 #e6f7ff1f, inset 0 -1px 0 #010a1247;
+}
+
+/* Textkarten: Cyan-Kante links und einheitlicher Innenabstand */
+:root[data-theme] .metal-header :is(
+  .format-grid article, .vhs-value-card, .vhs-process-grid article, .offer-steps li,
+  .service-card, .web-guide-grid article
+) {
+  min-height: 0;
+  padding: 20px 22px 20px 24px;
+  border-top-width: 1px;
+  background-image: linear-gradient(180deg, #20bfd2, #147bb8);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 3px calc(100% - 36px);
+  transition: transform 260ms ease, border-color 260ms ease, box-shadow 260ms ease;
+}
+:root[data-theme="dark"] .metal-header :is(
+  .format-grid article, .vhs-value-card, .vhs-process-grid article, .offer-steps li,
+  .service-card, .web-guide-grid article
+) {
+  background-image:
+    linear-gradient(180deg, #20bfd2, #147bb8),
+    linear-gradient(180deg, #86b3cc1f 0%, #2b556f24 48%, #10283b3d 52%, #1f476024 100%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left center, 0 0;
+  background-size: 3px calc(100% - 36px), auto;
+}
+:root[data-theme] .metal-header .service-card::before { content: none; }
+:root[data-theme] .metal-header :is(.offer-card, .project-tile) {
+  transition: transform 260ms ease, border-color 260ms ease, box-shadow 260ms ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  :root[data-theme] .metal-header :is(
+    .format-grid article, .vhs-value-card, .vhs-process-grid article, .offer-steps li,
+    .service-card, .web-guide-grid article, .offer-card, .project-tile
+  ):hover { transform: translateY(-3px); border-color: #5fc9e0; }
+  :root[data-theme="dark"] .metal-header :is(
+    .format-grid article, .vhs-value-card, .vhs-process-grid article, .offer-steps li,
+    .service-card, .web-guide-grid article, .offer-card, .project-tile
+  ):hover {
+    border-color: #a6dcf080;
+    box-shadow: inset 0 1px 0 #e6f7ff33, inset 0 -1px 0 #010a1247, 0 10px 24px #010a1247;
+  }
+}
+
+/* Schrittnummern wie im Ablauf der Startseite */
+:root[data-theme] .metal-header .vhs-process-grid article > span,
+:root[data-theme] .metal-header .vhs-value-card > span,
+:root[data-theme] .metal-header .offer-steps li::before {
+  display: block;
+  margin-bottom: 10px;
+  color: #147bb8;
+  font-size: .82rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+}
+:root[data-theme="dark"] .metal-header .vhs-process-grid article > span,
+:root[data-theme="dark"] .metal-header .vhs-value-card > span,
+:root[data-theme="dark"] .metal-header .offer-steps li::before { color: #8fe3f5; }
+:root[data-theme] .metal-header .offer-steps li::before { content: "0" counter(steps); }
+:root[data-theme] .metal-header .offer-steps,
+:root[data-theme] .metal-header .vhs-process-grid,
+:root[data-theme] .metal-header .format-grid,
+:root[data-theme] .metal-header .vhs-value-grid { gap: 16px; }
+
+/* Tafeln mit breiterem Inhalt: Kante links, etwas mehr Luft */
+:root[data-theme] .metal-header :is(.price-panel, .offer-cta, .thank-you, .assistant-hero) {
+  background-image: linear-gradient(180deg, #20bfd2, #147bb8);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 3px calc(100% - 44px);
+}
+:root[data-theme="dark"] .metal-header :is(.price-panel, .offer-cta, .thank-you, .assistant-hero) {
+  background-image:
+    linear-gradient(180deg, #20bfd2, #147bb8),
+    linear-gradient(180deg, #86b3cc1f 0%, #2b556f24 48%, #10283b3d 52%, #1f476024 100%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left center, 0 0;
+  background-size: 3px calc(100% - 44px), auto;
+}
+
+/* Trenner zwischen den Abschnitten der Angebotsseiten */
+:root[data-theme] .metal-header.offer-page main > .section { position: relative; }
+:root[data-theme] .metal-header.offer-page main > .section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: min(100% - 3rem, var(--max));
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #147bb84d 18%, #20bfd2b3 50%, #147bb84d 82%, transparent);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+:root[data-theme] .metal-header.offer-page main > .section::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #20bfd2;
+  border-radius: 3px;
+  background: var(--surface);
+  box-shadow: 0 0 14px #20bfd299;
+  transform: translateX(-50%) rotate(45deg);
+  pointer-events: none;
+}
+:root[data-theme="dark"] .metal-header.offer-page main > .section::before {
+  background: linear-gradient(90deg, transparent, #48bfd940 18%, #a8ecf8cc 50%, #48bfd940 82%, transparent);
+}
+:root[data-theme="dark"] .metal-header.offer-page main > .section::after {
+  border-color: #8be7f8;
+  background: #0a2a45;
+  box-shadow: 0 0 16px #46cfe9b3;
+}
+
+/* Zweite Schaltfläche auf dunklen Flächen (Hero, Abschlussband): gefasst wie „Leistungen ansehen“ */
+:root[data-theme] .metal-header :is(.vhs-hero, .vhs-cta) .button.secondary {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  color: #eaf4fb;
+  border: 1px solid #a6dcf066;
+  border-radius: 11px;
+  background: linear-gradient(180deg, #86b3cc33 0%, #2b556f40 48%, #10283b59 52%, #1f476040 100%);
+  box-shadow: inset 0 1px 0 #e6f7ff33, inset 0 -1px 0 #010a1259;
+  font-weight: 700;
+  transition: color 200ms ease, background 220ms ease, border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
+}
+:root[data-theme] .metal-header :is(.vhs-hero, .vhs-cta) .button.secondary::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(112deg, transparent 32%, #e4f7ff4d 50%, transparent 68%);
+  transform: translateX(-125%);
+  transition: transform 560ms ease;
+  pointer-events: none;
+}
+:root[data-theme] .metal-header :is(.vhs-hero, .vhs-cta) .button.secondary::after {
+  content: "";
+  position: absolute;
+  right: 14px;
+  bottom: 4px;
+  left: 14px;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, #7fe6f8 30%, #c9f6ff 50%, #7fe6f8 70%, transparent);
+  box-shadow: 0 0 10px #46cfe9;
+  transform: scaleX(0);
+  transition: transform 260ms cubic-bezier(.2,.7,.3,1);
+  pointer-events: none;
+}
+@media (hover: hover) {
+  :root[data-theme] .metal-header :is(.vhs-hero, .vhs-cta) .button.secondary:hover {
+    color: #fff;
+    border-color: #a6dcf099;
+    background: linear-gradient(180deg, #7aa6c04d 0%, #2b556f73 48%, #1639508c 52%, #25506b66 100%);
+    box-shadow: inset 0 1px 0 #e6f7ff4d, inset 0 -1px 0 #010a1280, 0 6px 14px #010a1247;
+    transform: translateY(-2px);
+  }
+  :root[data-theme] .metal-header :is(.vhs-hero, .vhs-cta) .button.secondary:hover::before { transform: translateX(125%); }
+  :root[data-theme] .metal-header :is(.vhs-hero, .vhs-cta) .button.secondary:hover::after { transform: scaleX(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root[data-theme] .metal-header :is(
+    .format-grid article, .vhs-value-card, .vhs-process-grid article, .offer-steps li,
+    .service-card, .web-guide-grid article, .offer-card, .project-tile
+  ) { transition: none; }
+  :root[data-theme] .metal-header :is(
+    .format-grid article, .vhs-value-card, .vhs-process-grid article, .offer-steps li,
+    .service-card, .web-guide-grid article, .offer-card, .project-tile
+  ):hover { transform: none; }
+  :root[data-theme] .metal-header :is(.vhs-hero, .vhs-cta) .button.secondary { transition: none; }
+  :root[data-theme] .metal-header :is(.vhs-hero, .vhs-cta) .button.secondary:hover { transform: none; }
+  :root[data-theme] .metal-header :is(.vhs-hero, .vhs-cta) .button.secondary::before { display: none; }
+}
+
+/* Die fiktive Muster-Website (webdesign-muster.html) behält bewusst ihr eigenes Erscheinungsbild. */
+
+/* Abschlussband der Angebotsseiten ebenfalls als gefasste Tafel. */
+:root[data-theme] .metal-header.offer-page .vhs-cta {
+  padding: 28px 30px 28px 32px;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: linear-gradient(180deg, #20bfd2, #147bb8) left center / 3px calc(100% - 44px) no-repeat, var(--surface-2);
+  box-shadow: none;
+}
+:root[data-theme="dark"] .metal-header.offer-page .vhs-cta {
+  border-color: #a6dcf038;
+  background:
+    linear-gradient(180deg, #20bfd2, #147bb8) left center / 3px calc(100% - 44px) no-repeat,
+    linear-gradient(180deg, #86b3cc1f 0%, #2b556f24 48%, #10283b3d 52%, #1f476024 100%);
+  box-shadow: inset 0 1px 0 #e6f7ff1f, inset 0 -1px 0 #010a1247;
+}
+
+
+/* Das Leiterbahn-Muster der Startseite liegt jetzt auf allen Seiten hinter dem Inhalt;
+   vollflächige Abschnittshintergründe der Unterseiten werden dafür durchsichtig. */
+:root[data-theme] .metal-header:not(.demo-page) main > .section,
+:root[data-theme] .metal-header:not(.demo-page) :is(.vhs-intro, .vhs-formats, .vhs-pricing, .vhs-process, .vhs-faq, .offer-alt, .legal-main, .assistant-main, .product-main, .projects-main, .offer-overview, .project-directory, .web-guide-intro) {
+  background: transparent;
 }

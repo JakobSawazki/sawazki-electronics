@@ -313,8 +313,22 @@ nach dem Aufräumen zu karg; das Design soll wieder hochwertiger werden, Schritt
   Seiten in Dark und Light bestätigt: Leiste und Footer mit Maserung, Schaltflächen 46 px,
   Footer 101 px, Lesehilfe und Projekte-Menü vorhanden, kein Überlauf. Die Inhaltsbereiche
   der Unterseiten (Karten, Trenner) sind noch im bisherigen Stil.
+- **Unterseiten im Stil der Startseite (lokal, noch nicht veröffentlicht):** Ein Regelblock am Ende
+  von `styles.css` fasst alle Karten und Tafeln der Unterseiten gleich (Leistungs-, Format-,
+  Ablauf-, Preis-, FAQ-, Projekt- und Angebotskarten, Formular, Rechtstexte, Abschlussband):
+  gleiche Fassung, Cyan-Kante links, leichter Hub. Die Kante liegt dort als Hintergrundebene,
+  damit vorhandene Pseudo-Elemente frei bleiben. Angebotsseiten haben dieselben Trenner
+  zwischen den Abschnitten, Schrittnummern in Cyan und die zweite Schaltfläche im Hero im Stil
+  von „Leistungen ansehen". Das Leiterbahn-Muster (`home-circuit-pattern.svg`) liegt jetzt auf
+  allen Seiten hinter dem Inhalt; vollflächige Abschnittshintergründe sind dafür durchsichtig.
+  Ausnahme: `webdesign-muster.html` (fiktives Beispiel) behält bewusst sein eigenes Aussehen.
+  Geprüft: Muster auf 15 Seiten in Dark und Light aktiv, keine verdeckende Fläche, kein
+  Überlauf; Ausschnitte von Leistungen, Projekte, IT-Betreuung, Datenrettung, Anfrage-Assistent
+  und Impressum in voller Auflösung angesehen.
+- **Lesehilfe erweitert:** Fenster im Stil der Aufklappmenüs, 380 px breit, Kontrast in drei
+  Stufen (Normal, Hoch, Sehr hoch = reines Schwarz/Weiß ohne Muster); `data-contrast="max"`.
 - Offen: Kontrastmessung/Barrierefreiheit und Sichtprüfung des hellen Modus stehen noch aus.
-- Cache-Version auf allen Seiten: `20261010-header-metall37`.
+- Cache-Version auf allen Seiten: `20261010-header-metall41`.
 - Lokal geprüft: Layout bei 1100–1680 px und 360 px ohne Überlauf, einheitliche Höhen gemessen,
   beide Menüs öffnen/wechseln/schließen, Mobilmenü, keine Konsolenfehler. Farbwirkung und
   Hover wurden von Jakob am Bildschirm abgenommen; heller Modus nicht gesondert geprüft.
