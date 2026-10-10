@@ -278,7 +278,7 @@ nach dem Aufräumen zu karg; das Design soll wieder hochwertiger werden, Schritt
   einfacher Rahmenlinie (`.home-section::before/::after`); geringerer Abstand zwischen Hero
   und Leistungen.
 - Die Metalloptik gilt bisher nur für die Startseite; Übertragung auf die Unterseiten ist offen.
-- Cache-Version auf allen Seiten: `20261010-header-metall18`.
+- Cache-Version auf allen Seiten: `20261010-header-metall25`.
 - Lokal geprüft: Layout bei 1100–1680 px und 360 px ohne Überlauf, einheitliche Höhen gemessen,
   beide Menüs öffnen/wechseln/schließen, Mobilmenü, keine Konsolenfehler. Farbwirkung und
   Hover wurden von Jakob am Bildschirm abgenommen; heller Modus nicht gesondert geprüft.

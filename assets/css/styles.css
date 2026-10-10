@@ -3549,3 +3549,187 @@ html {
   .home-hero-image .home-image-window { flex: 1; height: auto; min-height: 0; }
   .home-hero-image img { position: absolute; inset: 0; object-position: 50% center; }
 }
+
+
+/* „Warum Sawazki Electronics?“: gleiche gefasste Karten wie die Zusagen im Einstieg. */
+.home-page .home-values { gap: 16px; align-items: stretch; }
+.home-page .home-values article {
+  position: relative;
+  padding: 20px 22px 20px 24px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface-2);
+  transition: transform 260ms ease, border-color 260ms ease, box-shadow 260ms ease;
+}
+.home-page .home-values article::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  bottom: 18px;
+  left: 0;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: linear-gradient(180deg, #20bfd2, #147bb8);
+}
+.home-page .home-values article h3 { margin-top: 0; }
+.home-page .home-values article p { margin-bottom: 0; }
+:root[data-theme="dark"] .home-page .home-values article {
+  border-color: #a6dcf038;
+  background: linear-gradient(180deg, #86b3cc1f 0%, #2b556f24 48%, #10283b3d 52%, #1f476024 100%);
+  box-shadow: inset 0 1px 0 #e6f7ff1f, inset 0 -1px 0 #010a1247;
+}
+:root[data-theme="dark"] .home-page .home-values article::before { box-shadow: 0 0 10px #46cfe980; }
+@media (hover: hover) and (pointer: fine) {
+  .home-page .home-values article:hover,
+  .home-page .home-hero-points li:hover { transform: translateY(-3px); border-color: #5fc9e0; }
+  :root[data-theme="dark"] .home-page .home-values article:hover,
+  :root[data-theme="dark"] .home-page .home-hero-points li:hover {
+    border-color: #a6dcf080;
+    box-shadow: inset 0 1px 0 #e6f7ff33, inset 0 -1px 0 #010a1247, 0 10px 24px #010a1247;
+  }
+}
+.home-page .home-hero-points li { transition: transform 260ms ease, border-color 260ms ease, box-shadow 260ms ease; }
+@media (prefers-reduced-motion: reduce) {
+  .home-page .home-values article,
+  .home-page .home-hero-points li { transition: none; }
+  .home-page .home-values article:hover,
+  .home-page .home-hero-points li:hover { transform: none; }
+}
+
+
+/* „So läuft Ihre Anfrage ab“: Schritte als gefasste Karten wie Zusagen und Warum-Punkte.
+   ::before trägt die Schrittnummer, deshalb liegt die Cyan-Kante auf ::after. */
+.home-page .home-process { gap: 16px; align-items: stretch; }
+.home-page .home-process li {
+  position: relative;
+  padding: 20px 22px 20px 24px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface-2);
+  transition: transform 260ms ease, border-color 260ms ease, box-shadow 260ms ease;
+}
+.home-page .home-process li::before {
+  margin-bottom: 10px;
+  color: #147bb8;
+  font-size: .82rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+}
+.home-page .home-process li::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  bottom: 18px;
+  left: 0;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: linear-gradient(180deg, #20bfd2, #147bb8);
+}
+.home-page .home-process h3 { margin-bottom: 8px; }
+:root[data-theme="dark"] .home-page .home-process li {
+  border-color: #a6dcf038;
+  background: linear-gradient(180deg, #86b3cc1f 0%, #2b556f24 48%, #10283b3d 52%, #1f476024 100%);
+  box-shadow: inset 0 1px 0 #e6f7ff1f, inset 0 -1px 0 #010a1247;
+}
+:root[data-theme="dark"] .home-page .home-process li::before { color: #8fe3f5; }
+:root[data-theme="dark"] .home-page .home-process li::after { box-shadow: 0 0 10px #46cfe980; }
+@media (hover: hover) and (pointer: fine) {
+  .home-page .home-process li:hover { transform: translateY(-3px); border-color: #5fc9e0; }
+  :root[data-theme="dark"] .home-page .home-process li:hover {
+    border-color: #a6dcf080;
+    box-shadow: inset 0 1px 0 #e6f7ff33, inset 0 -1px 0 #010a1247, 0 10px 24px #010a1247;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-page .home-process li { transition: none; }
+  .home-page .home-process li:hover { transform: none; }
+}
+
+@media (max-width: 700px) { .home-page .home-process { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } }
+@media (max-width: 520px) { .home-page .home-process { grid-template-columns: 1fr; } }
+
+
+/* „Eigene IT-Projekte“ auf der Startseite: gefasstes Band mit den Projektgrafiken. */
+.home-page .home-project-hint { display: block; padding: 44px 0 56px; }
+.home-project-band {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  gap: 36px;
+  align-items: center;
+  padding: 28px 30px 28px 32px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface-2);
+}
+.home-project-band::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  bottom: 22px;
+  left: 0;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: linear-gradient(180deg, #20bfd2, #147bb8);
+}
+:root[data-theme="dark"] .home-project-band {
+  border-color: #a6dcf038;
+  background: linear-gradient(180deg, #86b3cc1f 0%, #2b556f24 48%, #10283b3d 52%, #1f476024 100%);
+  box-shadow: inset 0 1px 0 #e6f7ff1f, inset 0 -1px 0 #010a1247;
+}
+:root[data-theme="dark"] .home-project-band::before { box-shadow: 0 0 10px #46cfe980; }
+.home-page .home-project-copy h2 { font-size: clamp(1.5rem, 2.2vw, 1.9rem); margin: 0 0 10px; }
+.home-page .home-project-copy p { margin: 0 0 20px; font-size: 1rem; }
+.home-project-icons {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+  list-style: none;
+}
+.home-project-icons a {
+  display: block;
+  width: 68px;
+  height: 68px;
+  overflow: hidden;
+  border: 1px solid #a6dcf04d;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px #010a1240;
+  transition: transform 260ms ease, border-color 260ms ease, box-shadow 260ms ease;
+}
+.home-project-icons img { display: block; width: 100%; height: 100%; object-fit: cover; }
+@media (hover: hover) and (pointer: fine) {
+  .home-project-icons a:hover {
+    transform: translateY(-4px) scale(1.06);
+    border-color: #9be9f8;
+    box-shadow: 0 0 0 3px #43c8e333, 0 10px 24px #010a1266;
+  }
+}
+.home-project-icons a:focus-visible { outline: 2px solid #64d8ed; outline-offset: 3px; }
+@media (max-width: 900px) {
+  .home-project-band { grid-template-columns: 1fr; gap: 24px; padding: 24px 22px 24px 26px; }
+  .home-project-icons { justify-content: flex-start; }
+  .home-project-icons a { width: 58px; height: 58px; border-radius: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-project-icons a { transition: none; }
+  .home-project-icons a:hover { transform: none; }
+}
+
+/* Alle neun Projektgrafiken in einer Reihe (mobil 5 + 4). */
+.home-project-band { grid-template-columns: minmax(0, 1fr) minmax(0, 1.55fr); }
+.home-project-icons { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 10px; }
+.home-project-icons a { width: 100%; height: auto; aspect-ratio: 1; }
+@media (max-width: 900px) {
+  .home-project-band { grid-template-columns: 1fr; }
+  .home-project-icons { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .home-project-icons a { width: 100%; height: auto; }
+}
+
+
+/* Zweite Titelzeile als Dreiklang: einzeilig am Desktop, mobil wortweise umbrechend. */
+.home-hero-sub { font-size: clamp(1.35rem, 2.05vw, 1.75rem); font-weight: 600; letter-spacing: .01em; margin-top: .5em; }
+.home-hero-sub span { display: inline-block; white-space: nowrap; margin-right: .35em; }
+@media (max-width: 700px) { .home-hero-sub { font-size: clamp(1.2rem, 5.4vw, 1.5rem); } }
