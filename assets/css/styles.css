@@ -4833,3 +4833,9 @@ html {
 @media (max-width: 800px) {
   .project-offer { flex-direction: column; align-items: flex-start; gap: 18px; padding: 22px 22px 22px 26px; }
 }
+
+
+/* FAQ: Kacheln einer Reihe gleich hoch; Fokusrahmen liegt innen an der Fassung. */
+:root[data-theme] .metal-header .faq-grid { align-items: stretch; gap: 16px; }
+:root[data-theme] .metal-header .faq-grid summary { border-radius: 11px; }
+:root[data-theme] .metal-header .faq-grid summary:focus-visible { outline: 2px solid #64d8ed; outline-offset: -2px; }
