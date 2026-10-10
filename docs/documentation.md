@@ -242,6 +242,8 @@ Nach dem Veröffentlichen:
 
 ### 10. Oktober 2026 – v1.33.4: Bildrahmen und professionelle Bildeffekte
 
+- Veröffentlicht: `8638859`, GitHub-Pages-Lauf `38048678092` erfolgreich; Bildrahmen und Cache-Buster live bestätigt.
+
 - Jakob wünscht einen edlen Rahmen um das große Startseitenbild sowie wieder dezente Effekte beim Überfahren von Bildern.
 - Hero-Bild mit schmalem, stahlblauem Metallrahmen, feiner Innenkante und weichem Schatten. Eigener innerer Bildausschnitt hält den Rahmen beim Zoom unverändert.
 - Bei Mausbedienung: Hero hebt sich 3 px an, Bild zoomt um 2,5 %, sanfter Lichtreflex und leicht mehr Helligkeit. Leistungsbilder erhalten einen passenden Zoom von 4 %, Reflex und zurückhaltende Kartenanhebung.
