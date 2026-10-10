@@ -343,7 +343,7 @@ nach dem Aufräumen zu karg; das Design soll wieder hochwertiger werden, Schritt
   Versprechen zu nativen Apps; Grundlage sind die eigenen Projekte. Eigene Angebotsseite und
   Rechtstext-Prüfung (Nutzungsrechte, Abnahme, Wartung) sind offen.
 - Offen: Kontrastmessung/Barrierefreiheit und Sichtprüfung des hellen Modus stehen noch aus.
-- Cache-Version auf allen Seiten: `20261010-header-metall58`.
+- Cache-Version auf allen Seiten: `20261010-header-metall59`.
 - Lokal geprüft: Layout bei 1100–1680 px und 360 px ohne Überlauf, einheitliche Höhen gemessen,
   beide Menüs öffnen/wechseln/schließen, Mobilmenü, keine Konsolenfehler. Farbwirkung und
   Hover wurden von Jakob am Bildschirm abgenommen; heller Modus nicht gesondert geprüft.
