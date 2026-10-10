@@ -241,6 +241,8 @@ Nach dem Veröffentlichen:
 
 ### 10. Oktober 2026 – v1.33.3: Kürzerer Einstieg ohne örtliche Eingrenzung
 
+- Veröffentlicht: `58a6cc8`, GitHub-Pages-Lauf `38048473431` erfolgreich; Überschrift und Kurzbeschreibung live bestätigt.
+
 - Jakob möchte mehr Kunden ansprechen und seinen Einsatzbereich nicht durch Freudenstadt in der Hauptüberschrift eingrenzen. Kundenbesuche sind nach Vereinbarung auch außerhalb des Standorts möglich.
 - H1 der Startseite: „IT-Hilfe, die man versteht.“
 - Kurzbeschreibung: „PC, Laptop und Netzwerk – bei Ihnen vor Ort oder per Fernhilfe.“
