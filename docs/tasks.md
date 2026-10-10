@@ -9,12 +9,14 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| 2026-10-10 | v1.34.0: Startseiten-Header in gebürstetem Navy, Projekte-Aufklappmenü auf allen Seiten, zweizeiliger Hero-Titel; danach schrittweise weiter (Reparatur als Leistung, Header auf Unterseiten) | Claude | Header von Jakob abgenommen; lokal committet, Veröffentlichung wartet auf Jakobs Freigabe |
 
 ## Offen (abhängig von Material, Unterlagen oder externem Status)
 
 | Aufgabe | Kontext / Quelle |
 | --- | --- |
+| Reparatur als eigene Leistung: Menüeintrag in „IT-Service" und eigene Seite (Handy alle Hersteller, Laptop, PC, Apple; Diagnosepauschale) | Wunsch von Jakob vom 10.10.2026 |
+| Lesehilfe-Menü im Header (Schriftgröße in drei Stufen, hoher Kontrast, Zurücksetzen) und Kontrastprüfung Dark/Light | Idee von Jakob vom 10.10.2026; Umfang noch abzustimmen |
+| Startseite: Abschnitt „Unsere Leistungen" und Kontakt im neuen Stil prüfen; passendes Hero-Foto (annähernd quadratisch komponiert oder echtes Foto) | Schrittweise Abstimmung mit Jakob; Bild über Codex |
 | Porträtfoto für `ueber-mich.html` (`assets/images/jakob-sawazki.webp`) | wartet auf Foto von Jakob |
 | Echte Kundenstimmen/Testimonials einholen und einbauen | wartet auf freigegebene Originalaussagen und Erlaubnis zur Veröffentlichung; keine Kunden kontaktiert |
 | Referenz-Galerie mit echten Arbeitsfotos | wartet auf Fotos |
@@ -32,6 +34,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-10-10 | v1.34.0 | Header in gebürstetem Navy auf allen Seiten, Projekte-Aufklappmenü, neuer Startseiten-Einstieg (Titel „IT-Hilfe – Verständlich. Persönlich. Zuverlässig.", Zusagen, breiteres Bild), einheitliche Karten für Warum/Ablauf, Projekt-Band, Abschnitts-Trenner; schrittweise mit Jakob abgestimmt; 3c9d899 gepusht, Pages erfolgreich, Startseite und Unterseite live geprüft | Claude |
 | 2026-10-10 | v1.33.4 | Metallrahmen am Hero und dezente Bildeffekte der Startseite; Desktop/Mobil, Hell/Dunkel, Hero-Hover und Tastaturfokus geprüft; 8638859 gepusht und live bestätigt | Codex |
 | 2026-10-10 | v1.33.3 | Kürzerer Startseiten-Einstieg ohne Freudenstadt in der H1; Vor-Ort-/Fernhilfe klar benannt; Desktop/Mobil geprüft, 58a6cc8 gepusht und live bestätigt | Codex |
 | 2026-10-10 | v1.33.2 | Startseitennavigation und Leistungsmenü in Stahlblau; Desktop/Mobil, Hell/Dunkel, Tastatur und Breakpoint-Wechsel geprüft; 639065a gepusht und GitHub Pages live bestätigt | Codex |
