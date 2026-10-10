@@ -4496,3 +4496,10 @@ html {
   :root[data-theme] .metal-header .offer-card h3::after { transition: none; }
   :root[data-theme] .metal-header .overview-visual:hover { transform: none; }
 }
+
+
+/* Überschrift der Übersichtsseiten einzeilig. */
+@media (min-width: 901px) {
+  :root[data-theme] .metal-header .overview-intro { grid-template-columns: 1fr 1.1fr; gap: 44px; }
+  :root[data-theme] .metal-header .overview-intro h1 { font-size: clamp(2.2rem, 4vw, 3.5rem); white-space: nowrap; }
+}
