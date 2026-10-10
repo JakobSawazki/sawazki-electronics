@@ -268,8 +268,17 @@ nach dem Aufräumen zu karg; das Design soll wieder hochwertiger werden, Schritt
 - **Hero:** geringerer Abstand zur Leiste; Titel zweizeilig mit `.home-hero-lead` („IT-Hilfe,",
   groß, Cyan-Verlauf) und `.home-hero-sub` („die man versteht.", dezenter). Unterzeile nennt
   jetzt auch Reparatur und Handy.
+- **Hero ausgebaut (von Jakob abgenommen):** Titel ohne sichtbares Komma (vollständiger Satz im
+  `aria-label`), Text beginnt auf Höhe der Bildoberkante, zweite Aktion „Leistungen ansehen"
+  (`.home-hero-ghost`) und drei Zusagen (`.home-hero-points`), die unten bündig mit dem Bild
+  abschließen. Ab 1001 px ist die Bildspalte breiter und die Bildhöhe folgt der Textspalte
+  (Seitenverhältnis ca. 1,26 statt 1,12). Das Foto ist ein 16:9-Querformat und bleibt
+  beschnitten; ein für den Rahmen komponiertes Motiv oder ein echtes Foto wäre besser.
+- **Abschnitts-Trenner der Startseite:** auslaufende Linie mit leuchtendem Knotenpunkt statt
+  einfacher Rahmenlinie (`.home-section::before/::after`); geringerer Abstand zwischen Hero
+  und Leistungen.
 - Die Metalloptik gilt bisher nur für die Startseite; Übertragung auf die Unterseiten ist offen.
-- Cache-Version auf allen Seiten: `20261010-header-metall11`.
+- Cache-Version auf allen Seiten: `20261010-header-metall18`.
 - Lokal geprüft: Layout bei 1100–1680 px und 360 px ohne Überlauf, einheitliche Höhen gemessen,
   beide Menüs öffnen/wechseln/schließen, Mobilmenü, keine Konsolenfehler. Farbwirkung und
   Hover wurden von Jakob am Bildschirm abgenommen; heller Modus nicht gesondert geprüft.
