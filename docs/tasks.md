@@ -9,7 +9,6 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| 2026-10-10 | Startseite: hochwertiger technischer Hintergrund mit Punkt-Linien-Muster | Codex | Umsetzung und visuelle Prüfung |
 
 ## Offen (abhängig von Material, Unterlagen oder externem Status)
 
@@ -32,6 +31,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-10-10 | v1.33.0 | Startseite: Navy-/Cyan-Hintergrund mit Punkt-Linien-/Leiterbahnmuster; Desktop/Mobil und Hell/Dunkel geprüft, c4b4aba gepusht und GitHub Pages live bestätigt | Codex |
 | 2026-10-09 | – | Search Console: Startseite bereits indexiert, aktueller Google-Live-Test erfolgreich; erneute Indexierung erfolgreich beantragt und Warteschlangen-Bestätigung geprüft | Codex |
 | 2026-10-09 | v1.32.1 | Paket 12 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (b6e5c80) | Codex |
 | 2026-10-09 | v1.32.0 | Paket 11 umgesetzt, lokal geprüft, gepusht und GitHub Pages live bestätigt (e154005) | Codex |

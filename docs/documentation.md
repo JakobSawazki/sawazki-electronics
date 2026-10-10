@@ -238,6 +238,8 @@ Nach dem Veröffentlichen:
 
 ### 10. Oktober 2026 – v1.33.0: Technischer Hintergrund der Startseite
 
+- Veröffentlicht: `c4b4aba`, GitHub-Pages-Lauf `38047825151` erfolgreich; Live-Ansicht und aktueller CSS-Cache-Buster bestätigt.
+
 - Jakob empfindet den stark reduzierten Stand als karg und wünscht wieder einen edlen, erkennbar technischen Auftritt. Erster ausdrücklich gewünschter Schritt: Hintergrund der Startseite, angelehnt an die früheren Punkt-Linien-Muster.
 - `assets/images/home-circuit-pattern.svg`: eigenes leichtes Vektormuster aus Raster, Knotenpunkten und abgewinkelten Leiterbahn-Verbindungen. Keine externen Ressourcen, keine Animation oder JavaScript nötig.
 - Startseiten-Hintergrund in Navy mit sanften Cyan-/Blau-Lichtflächen. Das Muster ist zur Mitte abgeschwächt und auf kleinen Bildschirmen angepasst; im hellen Modus erscheint es dezenter.
