@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 10. Oktober 2026 · Version: v1.33.2
+Stand: 10. Oktober 2026 · Version: v1.33.3
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.33.3 | 2026-10-10 | Kürzerer Startseiten-Einstieg ohne örtliche Eingrenzung |
 | v1.33.2 | 2026-10-10 | Startseiten-Navigation in Stahlblau |
 | v1.33.1 | 2026-10-10 | Metallische Buttons der Startseite |
 | v1.33.0 | 2026-10-10 | Technischer Hintergrund der Startseite wiederhergestellt |
@@ -237,6 +238,15 @@ Nach dem Veröffentlichen:
 - Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
 
 ## Bisheriges Aenderungsprotokoll
+
+### 10. Oktober 2026 – v1.33.3: Kürzerer Einstieg ohne örtliche Eingrenzung
+
+- Jakob möchte mehr Kunden ansprechen und seinen Einsatzbereich nicht durch Freudenstadt in der Hauptüberschrift eingrenzen. Kundenbesuche sind nach Vereinbarung auch außerhalb des Standorts möglich.
+- H1 der Startseite: „IT-Hilfe, die man versteht.“
+- Kurzbeschreibung: „PC, Laptop und Netzwerk – bei Ihnen vor Ort oder per Fernhilfe.“
+- Der tatsächliche Standort bleibt in Seitentitel, Metadaten und Kontaktdaten erhalten. Keine unbelegten Fahrgebiete, Entfernungen oder Anfahrtskosten hinzugefügt.
+- Cache-Buster auf allen Seiten einheitlich `20261010-hero-text`. HTML-/Link-/FAQ-Prüfung und `git diff --check`; visuelle Prüfung des kürzeren Texts auf Desktop und Mobil.
+
 
 ### 10. Oktober 2026 – v1.33.2: Edlere Startseiten-Navigation
 
