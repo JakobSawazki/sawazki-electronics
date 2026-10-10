@@ -262,3 +262,8 @@ Damit sind alle sieben Punkte entschieden. Offen bleibt nur die Wahl zwischen de
 - Jakobs direkte Nachricht am 08.10.2026 erteilt die abschließende Entscheidungs-, Umsetzungs- und Veröffentlichungsfreigabe einschließlich AGB. Die im Briefing vorgesehenen erneuten Freigabestopps sind damit für diese Pakete aufgehoben. Größere Änderungen werden weiterhin vorab kurz im Chat und hier beschrieben und nach jedem Paket geprüft.
 - Keine eigene Domain, keine erfundenen Referenzen oder Erfolgsgarantien. Rechtstextänderungen werden gezielt auf die freigegebenen Leistungen begrenzt und anhand amtlicher Quellen geprüft.
 
+
+
+### Ergänzung am 10.10.2026 – Jakobs neue Gestaltungsentscheidung
+
+Der veröffentlichte, stark reduzierte Stand wirkt Jakob zu karg, leer und nichtssagend. Gewünscht ist wieder mehr von der früheren edlen technischen Bildsprache. Als erster Schritt wird auf der Startseite ein Navy-/Cyan-Hintergrund mit feinem Punkt-Linien-/Leiterbahnmuster umgesetzt. Diese direkte Entscheidung ersetzt für die Startseite die pauschale Entfernung solcher Muster aus Paket 6. Der weitere gestalterische Ausbau erfolgt schrittweise mit Jakob; die übersichtlichen Inhalte bleiben erhalten.

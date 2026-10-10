@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 9. Oktober 2026 · Version: v1.32.1
+Stand: 10. Oktober 2026 · Version: v1.33.0
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.33.0 | 2026-10-10 | Technischer Hintergrund der Startseite wiederhergestellt |
 | v1.32.1 | 2026-10-09 | Abschlussprüfung und Reststatus |
 | v1.32.0 | 2026-10-09 | Webdesign-Muster und Erklärung zum Website-Betrieb |
 | v1.31.1 | 2026-10-09 | Google Search Console vorbereiten |
@@ -234,6 +235,16 @@ Nach dem Veröffentlichen:
 - Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
 
 ## Bisheriges Aenderungsprotokoll
+
+### 10. Oktober 2026 – v1.33.0: Technischer Hintergrund der Startseite
+
+- Jakob empfindet den stark reduzierten Stand als karg und wünscht wieder einen edlen, erkennbar technischen Auftritt. Erster ausdrücklich gewünschter Schritt: Hintergrund der Startseite, angelehnt an die früheren Punkt-Linien-Muster.
+- `assets/images/home-circuit-pattern.svg`: eigenes leichtes Vektormuster aus Raster, Knotenpunkten und abgewinkelten Leiterbahn-Verbindungen. Keine externen Ressourcen, keine Animation oder JavaScript nötig.
+- Startseiten-Hintergrund in Navy mit sanften Cyan-/Blau-Lichtflächen. Das Muster ist zur Mitte abgeschwächt und auf kleinen Bildschirmen angepasst; im hellen Modus erscheint es dezenter.
+- Umsetzung ausschließlich innerhalb `.home-page main`; übrige Seiten behalten ihre Gestaltung. Inhalte, Hero-Foto und Seitenaufbau bleiben für diesen ersten Schritt erhalten. Die pauschale Reduktion aller technischen Muster ist für die Startseite durch Jakobs neue Entscheidung aufgehoben.
+- Cache-Buster für CSS, theme.js und main.js auf allen Seiten einheitlich `20261010-technik`.
+- Lokal geprüft: Desktop 1280 px und Mobil 390 px, jeweils Hell/Dunkel; Muster sichtbar, Texte lesbar, kein horizontaler Überlauf. Mobile Menü-/Theme-Bedienung funktioniert. HTML-/Link-/FAQ-Prüfung ohne Fehler (19 Dateien, 35 FAQ), SVG gültig, `git diff --check` sauber.
+
 
 ### 9. Oktober 2026 – v1.32.1: Abschlussprüfung und Reststatus
 
