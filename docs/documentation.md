@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 10. Oktober 2026 · Version: v1.34.0
+Stand: 10. Oktober 2026 · Version: v1.34.1
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.34.1 | 2026-10-10 | Lesehilfe, Footer im Leistenstil, einheitliche Schaltflächen auf allen Seiten |
 | v1.34.0 | 2026-10-10 | Startseiten-Header in gebürstetem Navy, Projekte-Aufklappmenü auf allen Seiten, zweizeiliger Hero-Titel |
 | v1.33.4 | 2026-10-10 | Metallischer Bildrahmen und dezente Hover-Effekte |
 | v1.33.3 | 2026-10-10 | Kürzerer Startseiten-Einstieg ohne örtliche Eingrenzung |
@@ -306,8 +307,14 @@ nach dem Aufräumen zu karg; das Design soll wieder hochwertiger werden, Schritt
   `sawazki-electronics-lesehilfe`; „Zurücksetzen" löscht den Eintrag. Frei wählbare Farben
   wurden bewusst nicht umgesetzt. `datenschutz.html` um einen Satz dazu ergänzt (von Jakob
   noch gegenzulesen).
+- **Einheitlich auf allen Seiten:** Leiste, Aufklappmenüs, Lesehilfe, Footer sowie der Stil der
+  primären Schaltflächen und des WhatsApp-Knopfs hängen an `.metal-header` und gelten damit
+  überall. Im Footer bleibt rechts Platz für den WhatsApp-Knopf frei. Per Messung auf 17
+  Seiten in Dark und Light bestätigt: Leiste und Footer mit Maserung, Schaltflächen 46 px,
+  Footer 101 px, Lesehilfe und Projekte-Menü vorhanden, kein Überlauf. Die Inhaltsbereiche
+  der Unterseiten (Karten, Trenner) sind noch im bisherigen Stil.
 - Offen: Kontrastmessung/Barrierefreiheit und Sichtprüfung des hellen Modus stehen noch aus.
-- Cache-Version auf allen Seiten: `20261010-header-metall36`.
+- Cache-Version auf allen Seiten: `20261010-header-metall37`.
 - Lokal geprüft: Layout bei 1100–1680 px und 360 px ohne Überlauf, einheitliche Höhen gemessen,
   beide Menüs öffnen/wechseln/schließen, Mobilmenü, keine Konsolenfehler. Farbwirkung und
   Hover wurden von Jakob am Bildschirm abgenommen; heller Modus nicht gesondert geprüft.

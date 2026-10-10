@@ -15,7 +15,8 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 | Aufgabe | Kontext / Quelle |
 | --- | --- |
 | Reparatur als eigene Leistung: Menüeintrag in „IT-Service" und eigene Seite (Handy alle Hersteller, Laptop, PC, Apple; Diagnosepauschale) | Wunsch von Jakob vom 10.10.2026 |
-| Lesehilfe-Menü im Header (Schriftgröße in drei Stufen, hoher Kontrast, Zurücksetzen) und Kontrastprüfung Dark/Light | Idee von Jakob vom 10.10.2026; Umfang noch abzustimmen |
+| Kontrastprüfung Dark/Light (Barrierefreiheit) und Sichtprüfung des hellen Modus | Lesehilfe-Menü ist seit 10.10.2026 umgesetzt; Messung steht noch aus |
+| Inhaltsbereiche der Unterseiten an den Stil der Startseite angleichen (gefasste Karten, Trenner), Seite für Seite | Wunsch von Jakob: alles einheitlich; Header/Footer/Schaltflächen sind bereits überall gleich |
 | Startseite: Abschnitt „Unsere Leistungen" und Kontakt im neuen Stil prüfen; passendes Hero-Foto (annähernd quadratisch komponiert oder echtes Foto) | Schrittweise Abstimmung mit Jakob; Bild über Codex |
 | Porträtfoto für `ueber-mich.html` (`assets/images/jakob-sawazki.webp`) | wartet auf Foto von Jakob |
 | Echte Kundenstimmen/Testimonials einholen und einbauen | wartet auf freigegebene Originalaussagen und Erlaubnis zur Veröffentlichung; keine Kunden kontaktiert |
@@ -34,6 +35,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-10-10 | v1.34.1 | Lesehilfe (Schriftgröße, Kontrast, Zurücksetzen), Footer in gebürstetem Navy mit gefassten Schaltflächen, herausfahrende Aufklappmenüs, einheitlicher Schaltflächen-Stil auf allen Seiten; Datenschutz um Satz zur Lesehilfe ergänzt; auf 17 Seiten in Dark/Light gemessen | Claude |
 | 2026-10-10 | v1.34.0 | Header in gebürstetem Navy auf allen Seiten, Projekte-Aufklappmenü, neuer Startseiten-Einstieg (Titel „IT-Hilfe – Verständlich. Persönlich. Zuverlässig.", Zusagen, breiteres Bild), einheitliche Karten für Warum/Ablauf, Projekt-Band, Abschnitts-Trenner; schrittweise mit Jakob abgestimmt; 3c9d899 gepusht, Pages erfolgreich, Startseite und Unterseite live geprüft | Claude |
 | 2026-10-10 | v1.33.4 | Metallrahmen am Hero und dezente Bildeffekte der Startseite; Desktop/Mobil, Hell/Dunkel, Hero-Hover und Tastaturfokus geprüft; 8638859 gepusht und live bestätigt | Codex |
 | 2026-10-10 | v1.33.3 | Kürzerer Startseiten-Einstieg ohne Freudenstadt in der H1; Vor-Ort-/Fernhilfe klar benannt; Desktop/Mobil geprüft, 58a6cc8 gepusht und live bestätigt | Codex |

@@ -2444,7 +2444,7 @@ html {
 
 .home-project-hint > .home-anchor-alias { position: absolute; top: 0; left: 0; width: 0; }
 
-.home-page .button.primary { box-shadow: none; }
+.metal-header .button.primary { box-shadow: none; }
 
 @media (max-width: 1000px) {
 .home-hero { gap: 36px; padding-top: 140px; }
@@ -2718,9 +2718,9 @@ html {
 
 /* Startseite: gebürstetes Stahlblau mit kontrollierten Lichtreflexen.
    Echte Text-/Icon-Bedienelemente bleiben skalierbar und zugänglich. */
-:root[data-theme] .home-page .button.primary,
+:root[data-theme] .metal-header .button.primary,
 :root[data-theme] .metal-header .site-header .nav-links .nav-cta,
-:root[data-theme] .home-page .wa-float {
+:root[data-theme] .metal-header .wa-float {
   color: #f5fbff;
   border: 1px solid #8bb6ce;
   border-radius: 10px;
@@ -2733,25 +2733,25 @@ html {
   font-weight: 700;
   transition: transform 160ms ease, filter 160ms ease, box-shadow 160ms ease;
 }
-:root[data-theme] .home-page .wa-float { border-radius: 999px; }
+:root[data-theme] .metal-header .wa-float { border-radius: 999px; }
 @media (hover: hover) {
-  :root[data-theme] .home-page .button.primary:hover,
+  :root[data-theme] .metal-header .button.primary:hover,
   :root[data-theme] .metal-header .site-header .nav-links .nav-cta:hover,
-  :root[data-theme] .home-page .wa-float:hover {
+  :root[data-theme] .metal-header .wa-float:hover {
     filter: brightness(1.13);
     transform: translateY(-1px);
     box-shadow: inset 0 1px 0 #e0f4ffa6, inset 0 -2px 0 #071b2d99, 0 4px 0 #061824, 0 10px 24px #03132050;
   }
 }
-:root[data-theme] .home-page .button.primary:focus-visible,
+:root[data-theme] .metal-header .button.primary:focus-visible,
 :root[data-theme] .metal-header .site-header .nav-links .nav-cta:focus-visible,
-:root[data-theme] .home-page .wa-float:focus-visible {
+:root[data-theme] .metal-header .wa-float:focus-visible {
   outline: 2px solid var(--cyan);
   outline-offset: 5px;
 }
-:root[data-theme] .home-page .button.primary:active,
+:root[data-theme] .metal-header .button.primary:active,
 :root[data-theme] .metal-header .site-header .nav-links .nav-cta:active,
-:root[data-theme] .home-page .wa-float:active {
+:root[data-theme] .metal-header .wa-float:active {
   transform: translateY(2px);
   filter: brightness(.96);
   box-shadow: inset 0 2px 5px #03172880, inset 0 1px 0 #e0f4ff40, 0 1px 0 #061824, 0 3px 8px #03132030;
@@ -2764,12 +2764,12 @@ html {
   box-shadow: inset 0 1px 0 #d3e9f957, inset 0 -1px 0 #03172880, 0 3px 8px #03132025;
 }
 @media (prefers-reduced-motion: reduce) {
-  :root[data-theme] .home-page .button.primary,
+  :root[data-theme] .metal-header .button.primary,
   :root[data-theme] .metal-header .site-header .nav-links .nav-cta,
-  :root[data-theme] .home-page .wa-float { transition: none; }
-  :root[data-theme] .home-page .button.primary:hover,
+  :root[data-theme] .metal-header .wa-float { transition: none; }
+  :root[data-theme] .metal-header .button.primary:hover,
   :root[data-theme] .metal-header .site-header .nav-links .nav-cta:hover,
-  :root[data-theme] .home-page .wa-float:hover { transform: none; }
+  :root[data-theme] .metal-header .wa-float:hover { transform: none; }
 }
 
 :root[data-theme] .metal-header .site-header .nav-toggle span { color: inherit; }
@@ -3753,19 +3753,19 @@ html {
 
 /* Schaltflächen im Seiteninhalt der Startseite: derselbe Hover wie in der Leiste
    (Lichtlauf, leuchtende Unterkante, leichter Hub), gleiche Höhe ohne Unterkante. */
-:root[data-theme] .home-page .button.primary,
+:root[data-theme] .metal-header .button.primary,
 :root[data-theme] .home-page .home-hero-ghost {
   position: relative;
   isolation: isolate;
   overflow: hidden;
   border-radius: 11px;
 }
-:root[data-theme] .home-page .button.primary {
+:root[data-theme] .metal-header .button.primary {
   border-color: #a6dcf066;
   box-shadow: inset 0 1px 0 #e6f7ff4d, inset 0 -1px 0 #010a1280;
   transition: color 200ms ease, background 220ms ease, border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease, filter 220ms ease;
 }
-:root[data-theme] .home-page .button.primary::before,
+:root[data-theme] .metal-header .button.primary::before,
 :root[data-theme] .home-page .home-hero-ghost::before {
   content: "";
   position: absolute;
@@ -3776,7 +3776,7 @@ html {
   transition: transform 560ms ease;
   pointer-events: none;
 }
-:root[data-theme] .home-page .button.primary::after {
+:root[data-theme] .metal-header .button.primary::after {
   content: "";
   position: absolute;
   right: 14px;
@@ -3791,22 +3791,22 @@ html {
   pointer-events: none;
 }
 @media (hover: hover) {
-  :root[data-theme] .home-page .button.primary:hover {
+  :root[data-theme] .metal-header .button.primary:hover {
     filter: none;
     border-color: #a6dcf099;
     box-shadow: inset 0 1px 0 #e6f7ff66, inset 0 -1px 0 #010a1280, 0 6px 14px #010a1247;
     transform: translateY(-2px);
   }
-  :root[data-theme] .home-page .button.primary:hover::before,
+  :root[data-theme] .metal-header .button.primary:hover::before,
   :root[data-theme] .home-page .home-hero-ghost:hover::before { transform: translateX(125%); }
-  :root[data-theme] .home-page .button.primary:hover::after { transform: scaleX(1); }
+  :root[data-theme] .metal-header .button.primary:hover::after { transform: scaleX(1); }
 }
-:root[data-theme] .home-page .button.primary:focus-visible::after { transform: scaleX(1); }
-:root[data-theme] .home-page .button.primary:active { transform: translateY(0); filter: brightness(.96); box-shadow: inset 0 2px 5px #03172880; }
+:root[data-theme] .metal-header .button.primary:focus-visible::after { transform: scaleX(1); }
+:root[data-theme] .metal-header .button.primary:active { transform: translateY(0); filter: brightness(.96); box-shadow: inset 0 2px 5px #03172880; }
 @media (prefers-reduced-motion: reduce) {
-  :root[data-theme] .home-page .button.primary { transition: none; }
-  :root[data-theme] .home-page .button.primary:hover { transform: none; }
-  :root[data-theme] .home-page .button.primary::before,
+  :root[data-theme] .metal-header .button.primary { transition: none; }
+  :root[data-theme] .metal-header .button.primary:hover { transform: none; }
+  :root[data-theme] .metal-header .button.primary::before,
   :root[data-theme] .home-page .home-hero-ghost::before { display: none; }
 }
 
