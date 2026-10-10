@@ -4524,3 +4524,129 @@ html {
     box-shadow: inset 0 1px 0 #effbff73, inset 0 -1px 0 #06172780, 0 22px 50px #03152359, 0 0 0 3px #49a9c012;
   }
 }
+
+
+/* Übersichtsseiten (Leistungen, Projekte): Einstieg wie auf der Startseite –
+   silberweißer Titel mit Cyan-Linie, größeres Bild auf Höhe der Textspalte,
+   Bereiche als gefasste Karten, Trenner zwischen den Gruppen. */
+:root[data-theme] .metal-header .overview-intro h1 {
+  position: relative;
+  width: fit-content;
+  margin: 6px 0 22px;
+  padding-bottom: .28em;
+  letter-spacing: -.02em;
+  color: #082f57;
+  background: linear-gradient(180deg, #0d4f82 0%, #082f57 62%, #06243f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+:root[data-theme="dark"] .metal-header .overview-intro h1 {
+  color: #f1f8fc;
+  background-image: linear-gradient(180deg, #ffffff 0%, #f1f8fc 42%, #c9dde9 78%, #a9c6d6 100%);
+  filter: drop-shadow(0 2px 2px #010a1280);
+}
+:root[data-theme] .metal-header .overview-intro h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: .04em;
+  width: 2.4em;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #20bfd2, #147bb8);
+}
+:root[data-theme="dark"] .metal-header .overview-intro h1::after {
+  background: linear-gradient(90deg, #c9f6ff, #46cfe9 55%, #46cfe900);
+  box-shadow: 0 0 12px #46cfe999;
+}
+:root[data-contrast="max"] .metal-header .overview-intro h1 { background: none; -webkit-text-fill-color: currentColor; color: var(--ink); filter: none; }
+:root[data-theme] .metal-header .overview-copy > p:not(.eyebrow) { color: var(--ink-2); font-size: 1.1rem; line-height: 1.7; max-width: none; margin: 0 0 24px; }
+
+:root[data-theme] .metal-header .overview-jumps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+:root[data-theme] .metal-header .overview-jumps a {
+  position: relative;
+  display: block;
+  padding: 13px 14px 13px 17px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: linear-gradient(180deg, #20bfd2, #147bb8) left center / 3px calc(100% - 28px) no-repeat, var(--surface-2);
+  transition: transform 260ms ease, border-color 260ms ease, box-shadow 260ms ease;
+}
+:root[data-theme="dark"] .metal-header .overview-jumps a {
+  border-color: #a6dcf038;
+  background:
+    linear-gradient(180deg, #20bfd2, #147bb8) left center / 3px calc(100% - 28px) no-repeat,
+    linear-gradient(180deg, #86b3cc1f 0%, #2b556f24 48%, #10283b3d 52%, #1f476024 100%);
+  box-shadow: inset 0 1px 0 #e6f7ff1f, inset 0 -1px 0 #010a1247;
+}
+:root[data-theme] .metal-header .overview-jumps strong { display: block; color: var(--ink); font-size: .98rem; line-height: 1.3; }
+:root[data-theme] .metal-header .overview-jumps span { display: block; margin-top: 6px; color: var(--muted); font-size: .86rem; line-height: 1.45; }
+@media (hover: hover) and (pointer: fine) {
+  :root[data-theme] .metal-header .overview-jumps a:hover { transform: translateY(-3px); border-color: #5fc9e0; }
+  :root[data-theme="dark"] .metal-header .overview-jumps a:hover {
+    border-color: #a6dcf080;
+    box-shadow: inset 0 1px 0 #e6f7ff33, inset 0 -1px 0 #010a1247, 0 10px 24px #010a1247;
+  }
+}
+
+@media (min-width: 901px) {
+  :root[data-theme] .metal-header .overview-intro {
+    grid-template-columns: 1fr 1.16fr;
+    gap: 44px;
+    align-items: stretch;
+    margin-bottom: 40px;
+  }
+  :root[data-theme] .metal-header .overview-copy { display: flex; flex-direction: column; align-items: flex-start; padding-top: 6px; }
+  :root[data-theme] .metal-header .overview-jumps { width: 100%; margin-top: auto; padding-top: 20px; }
+  :root[data-theme] .metal-header .overview-visual { display: flex; align-self: stretch; min-height: 380px; }
+  :root[data-theme] .metal-header .overview-visual img { flex: 1; width: 100%; height: auto; min-height: 0; aspect-ratio: auto; object-fit: cover; }
+  :root[data-theme] .metal-header .offer-overview,
+  :root[data-theme] .metal-header .projects-main { padding-top: 26px; }
+}
+@media (max-width: 700px) {
+  :root[data-theme] .metal-header .overview-jumps { grid-template-columns: 1fr; }
+}
+
+/* Trenner zwischen den Gruppen der Leistungsübersicht */
+:root[data-theme] .metal-header .overview-group { position: relative; margin: 0; padding: 40px 0 36px; }
+:root[data-theme] .metal-header .overview-group::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #147bb84d 18%, #20bfd2b3 50%, #147bb84d 82%, transparent);
+  pointer-events: none;
+}
+:root[data-theme] .metal-header .overview-group::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #20bfd2;
+  border-radius: 3px;
+  background: var(--surface);
+  box-shadow: 0 0 14px #20bfd299;
+  transform: translateX(-50%) rotate(45deg);
+  pointer-events: none;
+}
+:root[data-theme="dark"] .metal-header .overview-group::before {
+  background: linear-gradient(90deg, transparent, #48bfd940 18%, #a8ecf8cc 50%, #48bfd940 82%, transparent);
+}
+:root[data-theme="dark"] .metal-header .overview-group::after { border-color: #8be7f8; background: #0a2a45; box-shadow: 0 0 16px #46cfe9b3; }
+:root[data-theme] .metal-header .overview-group-heading h2 { font-size: clamp(1.6rem, 2.4vw, 2.1rem); }
+@media (prefers-reduced-motion: reduce) {
+  :root[data-theme] .metal-header .overview-jumps a { transition: none; }
+  :root[data-theme] .metal-header .overview-jumps a:hover { transform: none; }
+}
