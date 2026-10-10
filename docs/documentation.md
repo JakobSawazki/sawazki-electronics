@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 10. Oktober 2026 · Version: v1.33.3
+Stand: 10. Oktober 2026 · Version: v1.33.4
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.33.4 | 2026-10-10 | Metallischer Bildrahmen und dezente Hover-Effekte |
 | v1.33.3 | 2026-10-10 | Kürzerer Startseiten-Einstieg ohne örtliche Eingrenzung |
 | v1.33.2 | 2026-10-10 | Startseiten-Navigation in Stahlblau |
 | v1.33.1 | 2026-10-10 | Metallische Buttons der Startseite |
@@ -238,6 +239,16 @@ Nach dem Veröffentlichen:
 - Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
 
 ## Bisheriges Aenderungsprotokoll
+
+### 10. Oktober 2026 – v1.33.4: Bildrahmen und professionelle Bildeffekte
+
+- Jakob wünscht einen edlen Rahmen um das große Startseitenbild sowie wieder dezente Effekte beim Überfahren von Bildern.
+- Hero-Bild mit schmalem, stahlblauem Metallrahmen, feiner Innenkante und weichem Schatten. Eigener innerer Bildausschnitt hält den Rahmen beim Zoom unverändert.
+- Bei Mausbedienung: Hero hebt sich 3 px an, Bild zoomt um 2,5 %, sanfter Lichtreflex und leicht mehr Helligkeit. Leistungsbilder erhalten einen passenden Zoom von 4 %, Reflex und zurückhaltende Kartenanhebung.
+- Reine CSS-Effekte, keine zusätzlichen Bilddownloads oder Skripte. Nicht verlinktes Hero-Bild bleibt ohne künstlichen Button-/Linkcharakter. Auf Touch-Geräten keine Maus-Effekte; `prefers-reduced-motion` unterbindet Zoom, Bewegung und Reflexanimation. Leistungslinks behalten sichtbaren Tastaturfokus.
+- Lokal geprüft: Desktop 1280 px und Mobil 390 px, Hell/Dunkel; Rahmenproportionen, Bildausschnitte, gleiche Leistungsbildgrößen, Tastaturfokus, keine horizontalen Überläufe. Hero-Hover tatsächlich ausgelöst und Zoom/Anhebung/Reflex über berechnete Styles bestätigt. HTML-/Link-/FAQ-Prüfung (19 Dateien, 35 FAQ) und `git diff --check` sauber.
+- Cache-Buster aller Seiten einheitlich: `20261010-bildrahmen`.
+
 
 ### 10. Oktober 2026 – v1.33.3: Kürzerer Einstieg ohne örtliche Eingrenzung
 
