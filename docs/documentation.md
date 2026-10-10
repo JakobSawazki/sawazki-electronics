@@ -327,8 +327,17 @@ nach dem Aufräumen zu karg; das Design soll wieder hochwertiger werden, Schritt
   und Impressum in voller Auflösung angesehen.
 - **Lesehilfe erweitert:** Fenster im Stil der Aufklappmenüs, 380 px breit, Kontrast in drei
   Stufen (Normal, Hoch, Sehr hoch = reines Schwarz/Weiß ohne Muster); `data-contrast="max"`.
+- **Einstieg aller Unterseiten wie die Startseite (lokal):** Angebotsseiten zeigen Text links und
+  das Bild rechts im schmalen Metallrahmen statt eines vollflächigen Fotos mit Abdunklung
+  (`.vhs-hero` als Raster, `.vhs-hero-overlay` aus). Alle Seitentitel sind silberweiß (hell:
+  Navy) mit kurzer Cyan-Linie; „IT-Hilfe" hat denselben Stil statt des Weiß-Cyan-Verlaufs.
+  `produkte.html` und `projekte.html`: größeres Bild auf Höhe der Textspalte, Bereiche als
+  gefasste Sprungkarten, Trenner zwischen den Gruppen, Angebotskarten mit 2-px-Fassung und
+  Pfeil statt „Leistung ansehen". Hintergrund und Leiterbahn-Muster liegen auf `body` und
+  reichen auf jeder Seite über die volle Breite. Projektgruppen im dunklen Modus mit
+  gebürsteter Navy-Fläche. Bildrahmen überall 4 px.
 - Offen: Kontrastmessung/Barrierefreiheit und Sichtprüfung des hellen Modus stehen noch aus.
-- Cache-Version auf allen Seiten: `20261010-header-metall52`.
+- Cache-Version auf allen Seiten: `20261010-header-metall56`.
 - Lokal geprüft: Layout bei 1100–1680 px und 360 px ohne Überlauf, einheitliche Höhen gemessen,
   beide Menüs öffnen/wechseln/schließen, Mobilmenü, keine Konsolenfehler. Farbwirkung und
   Hover wurden von Jakob am Bildschirm abgenommen; heller Modus nicht gesondert geprüft.
