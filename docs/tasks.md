@@ -9,6 +9,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
+| 2026-10-10 | Startseite: metallisch edle Buttons in Stahlblau | Codex | Umsetzung und visuelle Prüfung |
 
 ## Offen (abhängig von Material, Unterlagen oder externem Status)
 
