@@ -240,6 +240,8 @@ Nach dem Veröffentlichen:
 
 ### 10. Oktober 2026 – v1.33.2: Edlere Startseiten-Navigation
 
+- Veröffentlicht: `639065a`, GitHub-Pages-Lauf `38048339238` erfolgreich. Navigation und Cache-Buster live geprüft.
+
 - Jakobs Wunsch: auch die oberen Menüpunkte an den neuen hochwertigen Auftritt anpassen.
 - Navigation der Startseite als zusammenhängende stahlblaue Leiste mit feiner Metallkante, abgestimmten Abständen und dezenten hinterlegten Hover-/Fokusflächen. Helle Schrift auf Navy sorgt in beiden Themes für klare Kontraste.
 - Leistungsmenü mit passender Navy-/Stahlblau-Oberfläche, feinen Spaltentrennern und Cyan-/Silber-Akzenten; mobile Navigation verwendet dieselbe Formensprache. Gestaltung bleibt für diesen Schritt auf der Startseite.

@@ -9,7 +9,6 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| 2026-10-10 | Startseite: hochwertige stahlblaue Navigation und Leistungsmenü | Codex | Umsetzung und visuelle Prüfung |
 
 ## Offen (abhängig von Material, Unterlagen oder externem Status)
 
@@ -32,6 +31,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-10-10 | v1.33.2 | Startseitennavigation und Leistungsmenü in Stahlblau; Desktop/Mobil, Hell/Dunkel, Tastatur und Breakpoint-Wechsel geprüft; 639065a gepusht und GitHub Pages live bestätigt | Codex |
 | 2026-10-10 | v1.33.1 | Metallische Startseitenbuttons in Stahlblau; Desktop/Mobil, Hell/Dunkel und Tastaturfokus geprüft, 17b89a7 gepusht und GitHub Pages live bestätigt | Codex |
 | 2026-10-10 | v1.33.0 | Startseite: Navy-/Cyan-Hintergrund mit Punkt-Linien-/Leiterbahnmuster; Desktop/Mobil und Hell/Dunkel geprüft, c4b4aba gepusht und GitHub Pages live bestätigt | Codex |
 | 2026-10-09 | – | Search Console: Startseite bereits indexiert, aktueller Google-Live-Test erfolgreich; erneute Indexierung erfolgreich beantragt und Warteschlangen-Bestätigung geprüft | Codex |
