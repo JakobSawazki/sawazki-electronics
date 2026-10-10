@@ -4391,3 +4391,41 @@ html {
   box-shadow: 0 0 12px #46cfe999;
 }
 :root[data-contrast="max"] .home-hero-lead { background: none; }
+
+
+/* Hintergrund und Leiterbahn-Muster liegen auf dem body statt auf main: Auf einigen
+   Unterseiten ist main schmaler als das Fenster, dort wirkte die Fläche abgeschnitten. */
+:root[data-theme] .metal-header:not(.demo-page) {
+  position: relative;
+  isolation: isolate;
+  background:
+    radial-gradient(ellipse 85% 620px at 95% 8%, #20bfd21a, transparent 75%),
+    radial-gradient(ellipse 75% 700px at 0% 55%, #147bb812, transparent 75%),
+    linear-gradient(160deg, #f4f8fb, #eaf3f8 45%, #f4f8fb);
+}
+:root[data-theme="dark"] .metal-header:not(.demo-page) {
+  background:
+    radial-gradient(ellipse 85% 680px at 100% 8%, #0d6e8b40, transparent 74%),
+    radial-gradient(ellipse 70% 760px at 0% 52%, #0d4f823b, transparent 75%),
+    radial-gradient(ellipse 80% 600px at 85% 90%, #147b9326, transparent 75%),
+    linear-gradient(155deg, #061725, #0a2030 44%, #071925);
+}
+.metal-header:not(.demo-page)::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  pointer-events: none;
+  background: url("../images/home-circuit-pattern.svg") repeat center top / 672px 480px;
+  opacity: .5;
+  -webkit-mask-image: linear-gradient(90deg, #000, #0009 22%, #0004 48%, #0009 78%, #000);
+  mask-image: linear-gradient(90deg, #000, #0009 22%, #0004 48%, #0009 78%, #000);
+}
+:root[data-theme="dark"] .metal-header:not(.demo-page)::before { opacity: .8; }
+@media (max-width: 700px) {
+  .metal-header:not(.demo-page)::before { background-size: 504px 360px; opacity: .35; }
+  :root[data-theme="dark"] .metal-header:not(.demo-page)::before { opacity: .6; }
+}
+:root[data-theme] .metal-header:not(.demo-page) main { background: none; }
+:root[data-theme] .metal-header:not(.demo-page) main::before { content: none; }
+:root[data-contrast="max"] .metal-header::before { display: none; }
