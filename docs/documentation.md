@@ -293,8 +293,21 @@ nach dem Aufräumen zu karg; das Design soll wieder hochwertiger werden, Schritt
   Seitentypen in Dark und Light: Maserung aktiv, alle Schaltflächen 46 px, kein Überlauf,
   Inhalte nicht vom Header verdeckt. `404.html` lädt Styles über absolute URLs und zeigt den
   neuen Header daher erst nach der Veröffentlichung.
+- **Nachträge nach der Veröffentlichung (10.10.2026 abends):** Aufklappmenüs fahren von oben
+  heraus (`menu-slide-down`, 460 ms); primäre Schaltflächen der Startseite mit demselben Hover
+  wie die Leiste; Aufklappfläche in den Tönen der Leiste (eine stärkere Abdunklung hat Jakob
+  verworfen).
+- **Footer auf allen Seiten:** gleiche gebürstete Navy-Fläche, Links als gefasste Schaltflächen
+  (38 px) mit demselben Hover, so breit wie die Leiste, Höhe am Desktop ca. 101 statt 150 px.
+- **Lesehilfe:** Schalter links neben dem Theme-Schalter (von `theme.js` eingefügt). Schriftgröße
+  Normal/Groß/Sehr groß skaliert Inhalt und Footer per `zoom` (1,12 / 1,25), die Leiste bleibt
+  unverändert; Kontrast „Hoch" setzt kräftigere Textfarben, deckende Flächen und deutlichere
+  Rahmen (`data-font`, `data-contrast` am `html`-Element). Speicherung lokal unter
+  `sawazki-electronics-lesehilfe`; „Zurücksetzen" löscht den Eintrag. Frei wählbare Farben
+  wurden bewusst nicht umgesetzt. `datenschutz.html` um einen Satz dazu ergänzt (von Jakob
+  noch gegenzulesen).
 - Offen: Kontrastmessung/Barrierefreiheit und Sichtprüfung des hellen Modus stehen noch aus.
-- Cache-Version auf allen Seiten: `20261010-header-metall26`.
+- Cache-Version auf allen Seiten: `20261010-header-metall34`.
 - Lokal geprüft: Layout bei 1100–1680 px und 360 px ohne Überlauf, einheitliche Höhen gemessen,
   beide Menüs öffnen/wechseln/schließen, Mobilmenü, keine Konsolenfehler. Farbwirkung und
   Hover wurden von Jakob am Bildschirm abgenommen; heller Modus nicht gesondert geprüft.
