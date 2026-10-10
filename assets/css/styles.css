@@ -4003,3 +4003,21 @@ html {
 :root[data-theme] .metal-header .site-footer .footer-brand > strong + p { display: inline; margin-left: .55rem; }
 @media (min-width: 1321px) { :root[data-theme] .metal-header .site-footer nav { flex-wrap: nowrap; } }
 @media (max-width: 900px) { :root[data-theme] .metal-header .site-footer { padding-top: 16px; padding-bottom: 86px; } }
+
+/* Footer-Schaltflächen kompakt und ab 1181 px immer in einer Reihe; der WhatsApp-Knopf
+   weicht dem Footer nach oben aus (siehe main.js), statt die Reihe zu überdecken. */
+:root[data-theme] .metal-header .site-footer nav { gap: 6px; }
+:root[data-theme] .metal-header .site-footer nav a { padding: 0 11px; font-size: .87rem; }
+@media (min-width: 1181px) {
+  :root[data-theme] .metal-header .site-footer { gap: 1rem; }
+  :root[data-theme] .metal-header .site-footer nav { flex-wrap: nowrap; flex-shrink: 0; }
+  :root[data-theme] .metal-header .site-footer .footer-brand { min-width: 0; }
+}
+.wa-float { transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease, bottom 220ms ease; }
+
+/* Rechts bleibt im Footer Platz für den schwebenden WhatsApp-Knopf frei;
+   die Schaltflächen enden links davon und brechen nur um, wenn es wirklich nicht passt. */
+@media (min-width: 901px) {
+  :root[data-theme] .metal-header .site-footer { padding-right: max(214px, calc((100% - 1760px) / 2 + 190px)); }
+  :root[data-theme] .metal-header .site-footer nav { flex-wrap: wrap; flex-shrink: 1; }
+}

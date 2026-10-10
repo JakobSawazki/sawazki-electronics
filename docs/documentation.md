@@ -307,7 +307,7 @@ nach dem Aufräumen zu karg; das Design soll wieder hochwertiger werden, Schritt
   wurden bewusst nicht umgesetzt. `datenschutz.html` um einen Satz dazu ergänzt (von Jakob
   noch gegenzulesen).
 - Offen: Kontrastmessung/Barrierefreiheit und Sichtprüfung des hellen Modus stehen noch aus.
-- Cache-Version auf allen Seiten: `20261010-header-metall34`.
+- Cache-Version auf allen Seiten: `20261010-header-metall36`.
 - Lokal geprüft: Layout bei 1100–1680 px und 360 px ohne Überlauf, einheitliche Höhen gemessen,
   beide Menüs öffnen/wechseln/schließen, Mobilmenü, keine Konsolenfehler. Farbwirkung und
   Hover wurden von Jakob am Bildschirm abgenommen; heller Modus nicht gesondert geprüft.
