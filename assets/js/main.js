@@ -284,8 +284,16 @@ function setServicesOpen(open) {
 }
 if (servicesToggle && servicesPanel) {
   servicesToggle.hidden = false;
-  servicesPanel.querySelectorAll('details').forEach(group => {
-    group.open = !window.matchMedia('(max-width: 1080px)').matches;
+  const servicesMobile = window.matchMedia('(max-width: 1080px)');
+  const updateServicesGroups = () => {
+    servicesPanel.querySelectorAll('details').forEach(group => {
+      group.open = !servicesMobile.matches;
+    });
+  };
+  updateServicesGroups();
+  servicesMobile.addEventListener('change', () => {
+    updateServicesGroups();
+    setServicesOpen(false);
   });
   servicesToggle.addEventListener('click', () => setServicesOpen(servicesPanel.hidden));
   const servicesNavigation = servicesToggle.closest('.nav-services');

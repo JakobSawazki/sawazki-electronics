@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 10. Oktober 2026 · Version: v1.33.1
+Stand: 10. Oktober 2026 · Version: v1.33.2
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.33.2 | 2026-10-10 | Startseiten-Navigation in Stahlblau |
 | v1.33.1 | 2026-10-10 | Metallische Buttons der Startseite |
 | v1.33.0 | 2026-10-10 | Technischer Hintergrund der Startseite wiederhergestellt |
 | v1.32.1 | 2026-10-09 | Abschlussprüfung und Reststatus |
@@ -236,6 +237,16 @@ Nach dem Veröffentlichen:
 - Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
 
 ## Bisheriges Aenderungsprotokoll
+
+### 10. Oktober 2026 – v1.33.2: Edlere Startseiten-Navigation
+
+- Jakobs Wunsch: auch die oberen Menüpunkte an den neuen hochwertigen Auftritt anpassen.
+- Navigation der Startseite als zusammenhängende stahlblaue Leiste mit feiner Metallkante, abgestimmten Abständen und dezenten hinterlegten Hover-/Fokusflächen. Helle Schrift auf Navy sorgt in beiden Themes für klare Kontraste.
+- Leistungsmenü mit passender Navy-/Stahlblau-Oberfläche, feinen Spaltentrennern und Cyan-/Silber-Akzenten; mobile Navigation verwendet dieselbe Formensprache. Gestaltung bleibt für diesen Schritt auf der Startseite.
+- Gefundene Bedienungskorrektur in `main.js`: Beim Wechsel über den Mobil-/Desktop-Breakpoint werden Leistungsgruppen neu gesetzt (Desktop offen, Mobil geschlossen) und das Panel geschlossen. Dadurch bleiben nach einem Größenwechsel keine leeren Desktopspalten stehen.
+- Geprüft: Desktop 1280 px und Mobil 390 px, Hell/Dunkel; Leistungsmenü, Tastatur-Enter/Escape, mobile Gruppenauswahl und beide Breakpoint-Wechsel; kein horizontaler Überlauf. JS-Syntax, HTML-/Link-/FAQ-Prüfung und `git diff --check` ohne Fehler.
+- Cache-Buster aller Seiten einheitlich: `20261010-nav-final`.
+
 
 ### 10. Oktober 2026 – v1.33.1: Metallische Buttons der Startseite
 
