@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 10. Oktober 2026 · Version: v1.34.1
+Stand: 10. Oktober 2026 · Version: v1.35.0
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.35.0 | 2026-10-10 | Unterseiten im Stil der Startseite, Lesehilfe mit drei Kontraststufen, „Software nach Maß", Datenrettung ohne Ortsbindung |
 | v1.34.1 | 2026-10-10 | Lesehilfe, Footer im Leistenstil, einheitliche Schaltflächen auf allen Seiten |
 | v1.34.0 | 2026-10-10 | Startseiten-Header in gebürstetem Navy, Projekte-Aufklappmenü auf allen Seiten, zweizeiliger Hero-Titel |
 | v1.33.4 | 2026-10-10 | Metallischer Bildrahmen und dezente Hover-Effekte |

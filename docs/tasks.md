@@ -17,7 +17,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 | „Software nach Maß": eigene Angebotsseite, Leistungsumfang mit Jakob festlegen (Web-Anwendungen, Werkzeuge, Lernangebote; native Apps?), AGB für Softwareprojekte prüfen lassen | Angebot ist seit 10.10.2026 als Band auf `projekte.html` und Karte auf `produkte.html` angelegt |
 | Reparatur als eigene Leistung: Menüeintrag in „IT-Service" und eigene Seite (Handy alle Hersteller, Laptop, PC, Apple; Diagnosepauschale) | Wunsch von Jakob vom 10.10.2026 |
 | Kontrastprüfung Dark/Light (Barrierefreiheit) und Sichtprüfung des hellen Modus | Lesehilfe-Menü ist seit 10.10.2026 umgesetzt; Messung steht noch aus |
-| Inhaltsbereiche der Unterseiten an den Stil der Startseite angleichen (gefasste Karten, Trenner), Seite für Seite | Wunsch von Jakob: alles einheitlich; Header/Footer/Schaltflächen sind bereits überall gleich |
+| Unterseiten einzeln mit Jakob durchsehen (VHS, 3D-Druck, Energietechnik, Webdesign, Rechtstexte, Mobilansicht, heller Modus); Menüeinträge „Netzwerk & WLAN"/„Datensicherung" klären; Ablauf der Einsendung bei Datenrettung beschreiben | Einheitlicher Stil ist seit v1.35.0 umgesetzt; Feinschliff und offene Entscheidungen |
 | Startseite: Abschnitt „Unsere Leistungen" und Kontakt im neuen Stil prüfen; passendes Hero-Foto (annähernd quadratisch komponiert oder echtes Foto) | Schrittweise Abstimmung mit Jakob; Bild über Codex |
 | Porträtfoto für `ueber-mich.html` (`assets/images/jakob-sawazki.webp`) | wartet auf Foto von Jakob |
 | Echte Kundenstimmen/Testimonials einholen und einbauen | wartet auf freigegebene Originalaussagen und Erlaubnis zur Veröffentlichung; keine Kunden kontaktiert |
@@ -36,6 +36,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-10-10 | v1.35.0 | Alle Unterseiten im Stil der Startseite (Einstieg mit Bild im Metallrahmen, silberweiße Titel, gefasste Karten, Trenner, Leiterbahn-Hintergrund auf jeder Seite), Übersichtsseiten mit Sprungkarten, Lesehilfe mit drei Kontraststufen, neues Angebot „Software nach Maß", Datenrettung ohne Ortsbindung; schrittweise mit Jakob abgestimmt | Claude |
 | 2026-10-10 | v1.34.1 | Lesehilfe (Schriftgröße, Kontrast, Zurücksetzen), Footer in gebürstetem Navy mit gefassten Schaltflächen, herausfahrende Aufklappmenüs, einheitlicher Schaltflächen-Stil auf allen Seiten; Datenschutz um Satz zur Lesehilfe ergänzt; auf 17 Seiten in Dark/Light gemessen | Claude |
 | 2026-10-10 | v1.34.0 | Header in gebürstetem Navy auf allen Seiten, Projekte-Aufklappmenü, neuer Startseiten-Einstieg (Titel „IT-Hilfe – Verständlich. Persönlich. Zuverlässig.", Zusagen, breiteres Bild), einheitliche Karten für Warum/Ablauf, Projekt-Band, Abschnitts-Trenner; schrittweise mit Jakob abgestimmt; 3c9d899 gepusht, Pages erfolgreich, Startseite und Unterseite live geprüft | Claude |
 | 2026-10-10 | v1.33.4 | Metallrahmen am Hero und dezente Bildeffekte der Startseite; Desktop/Mobil, Hell/Dunkel, Hero-Hover und Tastaturfokus geprüft; 8638859 gepusht und live bestätigt | Codex |
