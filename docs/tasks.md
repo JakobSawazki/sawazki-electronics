@@ -9,7 +9,6 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| 2026-10-14 | WebLab im Projekte-Menü und unter Lern-Labs mit eigenem fotorealistischem Projekticon ergänzen | Codex | Umsetzung und Prüfung |
 
 ## Offen (abhängig von Material, Unterlagen oder externem Status)
 
@@ -37,6 +36,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-10-14 | v1.35.1 | WebLab im Projektmenü aller 18 Seiten und als fünftes Lern-Lab mit fotorealistischem Icon ergänzt; Desktop/Mobil und Dark/Light geprüft, 0f6dea4 gepusht, Pages-Lauf 38611565777 erfolgreich; Karte, Bild, Menü und tatsächlicher Aufruf von WebLab live bestätigt | Codex |
 | 2026-10-10 | v1.35.0 | Alle Unterseiten im Stil der Startseite (Einstieg mit Bild im Metallrahmen, silberweiße Titel, gefasste Karten, Trenner, Leiterbahn-Hintergrund auf jeder Seite), Übersichtsseiten mit Sprungkarten, Lesehilfe mit drei Kontraststufen, neues Angebot „Software nach Maß", Datenrettung ohne Ortsbindung; schrittweise mit Jakob abgestimmt | Claude |
 | 2026-10-10 | v1.34.1 | Lesehilfe (Schriftgröße, Kontrast, Zurücksetzen), Footer in gebürstetem Navy mit gefassten Schaltflächen, herausfahrende Aufklappmenüs, einheitlicher Schaltflächen-Stil auf allen Seiten; Datenschutz um Satz zur Lesehilfe ergänzt; auf 17 Seiten in Dark/Light gemessen | Claude |
 | 2026-10-10 | v1.34.0 | Header in gebürstetem Navy auf allen Seiten, Projekte-Aufklappmenü, neuer Startseiten-Einstieg (Titel „IT-Hilfe – Verständlich. Persönlich. Zuverlässig.", Zusagen, breiteres Bild), einheitliche Karten für Warum/Ablauf, Projekt-Band, Abschnitts-Trenner; schrittweise mit Jakob abgestimmt; 3c9d899 gepusht, Pages erfolgreich, Startseite und Unterseite live geprüft | Claude |
