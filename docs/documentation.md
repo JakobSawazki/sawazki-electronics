@@ -249,7 +249,7 @@ Nach dem Veröffentlichen:
 
 Auf Jakobs Wunsch die Projektnamen innerhalb jeder Kategorie alphabetisch nach deutscher Sortierung geordnet. Gilt für das Projektmenü aller 18 Seiten und die vollständigen Karten auf `projekte.html`. Lern-Labs: AlgoLab, Excel-Lab, PythonLab, WebLab, WorkbenchLab. Berufsschule: BM-Lab, EC-Lernstudio. Kategorien behalten ihre bisherige Reihenfolge. Die DOM-Reihenfolge der Karten ergibt am Desktop zeilenweise links → rechts, dann die nächste Zeile; mobil dieselbe Folge von oben nach unten. Statische Reihenfolge ohne zusätzliches JavaScript. Cachekennung für gemeinsame CSS-/Theme-Dateien auf allen Seiten auf 1.35.2 angehoben.
 
-Prüfung: Alle 18 Projektmenüs alphabetisch; sämtliche Linkziele und alle zehn vollständigen Karteninhalte gegenüber dem vorherigen Commit erhalten. Edge bei 1440/390 Pixeln, jeweils Dark/Light: Reihenfolge aller fünf Kategorien und tatsächliche Kartenpositionen geprüft, kein horizontaler Überlauf, keine Konsolenfehler. `git diff --check` bestanden. Veröffentlichung und Live-Prüfung folgen.
+Prüfung: Alle 18 Projektmenüs alphabetisch; sämtliche Linkziele und alle zehn vollständigen Karteninhalte gegenüber dem vorherigen Commit erhalten. Edge bei 1440/390 Pixeln, jeweils Dark/Light: Reihenfolge aller fünf Kategorien und tatsächliche Kartenpositionen geprüft, kein horizontaler Überlauf, keine Konsolenfehler. `git diff --check` bestanden. Veröffentlicht mit Commit `1ddd75f`; [Pages-Lauf 38612474392](https://github.com/JakobSawazki/sawazki-electronics/actions/runs/38612474392) erfolgreich. Alphabetische Folge sämtlicher Kategorien sowohl im Menü als auch auf der Projektseite online im Browser bestätigt.
 
 ### 14. Oktober 2026 – Codex – v1.35.1: WebLab ergänzen
 
