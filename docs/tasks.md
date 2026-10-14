@@ -9,6 +9,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
+| 2026-10-14 | Projekte je Kategorie alphabetisch in allen Projektmenüs und auf der Projektseite sortieren | Codex | Umsetzung und Prüfung |
 
 ## Offen (abhängig von Material, Unterlagen oder externem Status)
 

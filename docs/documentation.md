@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 14. Oktober 2026 · Version: v1.35.1
+Stand: 14. Oktober 2026 · Version: v1.35.2
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.35.2 | 2026-10-14 | Projekte innerhalb jeder Kategorie alphabetisch im Menü und auf der Projektseite sortiert |
 | v1.35.1 | 2026-10-14 | WebLab im Projektmenü auf allen 18 Seiten und als fünftes Lern-Lab mit fotorealistischem Projekticon |
 | v1.35.0 | 2026-10-10 | Unterseiten im Stil der Startseite, Lesehilfe mit drei Kontraststufen, „Software nach Maß", Datenrettung ohne Ortsbindung |
 | v1.34.1 | 2026-10-10 | Lesehilfe, Footer im Leistenstil, einheitliche Schaltflächen auf allen Seiten |
@@ -243,6 +244,12 @@ Nach dem Veröffentlichen:
 - Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
 
 ## Bisheriges Aenderungsprotokoll
+
+### 14. Oktober 2026 – Codex – v1.35.2: Alphabetische Projektfolge
+
+Auf Jakobs Wunsch die Projektnamen innerhalb jeder Kategorie alphabetisch nach deutscher Sortierung geordnet. Gilt für das Projektmenü aller 18 Seiten und die vollständigen Karten auf `projekte.html`. Lern-Labs: AlgoLab, Excel-Lab, PythonLab, WebLab, WorkbenchLab. Berufsschule: BM-Lab, EC-Lernstudio. Kategorien behalten ihre bisherige Reihenfolge. Die DOM-Reihenfolge der Karten ergibt am Desktop zeilenweise links → rechts, dann die nächste Zeile; mobil dieselbe Folge von oben nach unten. Statische Reihenfolge ohne zusätzliches JavaScript. Cachekennung für gemeinsame CSS-/Theme-Dateien auf allen Seiten auf 1.35.2 angehoben.
+
+Prüfung: Alle 18 Projektmenüs alphabetisch; sämtliche Linkziele und alle zehn vollständigen Karteninhalte gegenüber dem vorherigen Commit erhalten. Edge bei 1440/390 Pixeln, jeweils Dark/Light: Reihenfolge aller fünf Kategorien und tatsächliche Kartenpositionen geprüft, kein horizontaler Überlauf, keine Konsolenfehler. `git diff --check` bestanden. Veröffentlichung und Live-Prüfung folgen.
 
 ### 14. Oktober 2026 – Codex – v1.35.1: WebLab ergänzen
 
