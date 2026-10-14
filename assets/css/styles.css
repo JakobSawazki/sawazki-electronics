@@ -2232,6 +2232,8 @@ html {
 
 .project-tile-link::after {content:"";position:absolute;inset:0;z-index:1;border-radius:inherit;}
 
+.project-tile-link:focus-visible {outline:none;}
+
 .project-tile-link:focus-visible::after {outline:3px solid var(--cyan);outline-offset:-4px;}
 
 .project-tile-link:hover h3 {text-decoration:none;}
