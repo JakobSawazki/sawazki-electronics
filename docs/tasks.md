@@ -9,6 +9,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
+| 2026-10-14 | WebLab im Projekte-Menü und unter Lern-Labs mit eigenem fotorealistischem Projekticon ergänzen | Codex | Umsetzung und Prüfung |
 
 ## Offen (abhängig von Material, Unterlagen oder externem Status)
 

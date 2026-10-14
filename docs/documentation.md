@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 10. Oktober 2026 · Version: v1.35.0
+Stand: 14. Oktober 2026 · Version: v1.35.1
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.35.1 | 2026-10-14 | WebLab im Projektmenü auf allen 18 Seiten und als fünftes Lern-Lab mit fotorealistischem Projekticon |
 | v1.35.0 | 2026-10-10 | Unterseiten im Stil der Startseite, Lesehilfe mit drei Kontraststufen, „Software nach Maß", Datenrettung ohne Ortsbindung |
 | v1.34.1 | 2026-10-10 | Lesehilfe, Footer im Leistenstil, einheitliche Schaltflächen auf allen Seiten |
 | v1.34.0 | 2026-10-10 | Startseiten-Header in gebürstetem Navy, Projekte-Aufklappmenü auf allen Seiten, zweizeiliger Hero-Titel |
@@ -242,6 +243,14 @@ Nach dem Veröffentlichen:
 - Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
 
 ## Bisheriges Aenderungsprotokoll
+
+### 14. Oktober 2026 – Codex – v1.35.1: WebLab ergänzen
+
+Auf Jakobs Auftrag WebLab unter Lern-Labs integriert: Projektmenü auf allen 18 regulären HTML-Seiten, Projektkarte auf `projekte.html` mit Direktlink, HTML-/CSS-Kurzbeschreibung und aufklappbaren Informationen zu Angebot, Zielgruppe und Lernziel. WebLab steht nach WorkbenchLab. Beide Lern-Labs-Zähler nennen fünf Projekte; README nennt zehn Projekte insgesamt. Der bestehende Gruppenname bleibt erhalten. Gemeinsame CSS-/Theme-Cachekennung auf 1.35.1 angehoben.
+
+Neues fotorealistisches Symbolbild: gebürstetes Metall-Browserfenster mit HTML-Klammern, Navy-/Cyan-Flächen; lokal als `assets/images/project-weblab.webp`. Erzeugt mit integriertem Imagegen, Prompt und Herkunft in `weblab-bildprompt.md`. Keine neue Laufzeitabhängigkeit.
+
+Prüfung: Projektkarte, Bild und Infobereich in Edge bei 1440 und 390 Pixeln jeweils Dark/Light, kein horizontaler Überlauf. Menülink am Desktop per Tastatur und mobil über Navigation → Projekte → Lern-Labs erreichbar. Alle 18 Menüs sowie 593 lokale Bild-/Dateiverweise kontrolliert, keine Browser-Konsolenfehler. `git diff --check` bestanden. Im lokalen Git fehlte das Objekt der bereits versionierten `datenschutz.html`; unverändert aus GitHub wiederhergestellt und durch identische Git-Objekt-ID bestätigt. Der Rechtstext selbst wurde nicht geändert. Veröffentlichung und Live-Prüfung folgen im Aufgabenprotokoll.
 
 ### 10. Oktober 2026 – v1.34.0: Header in gebürstetem Navy, Projekte-Menü, Hero-Titel
 

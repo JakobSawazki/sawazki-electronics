@@ -9,7 +9,7 @@ Statische Website für IT-Service, Webdesign und technische Dienstleistungen in 
 - Startseite mit kurzem Einstieg, drei Leistungsgruppen, Arbeitsweise, Ablauf, Kontakt und einem Hinweis auf eigene IT-Projekte.
 - Einheitliches Leistungsmenü mit Desktop-Hover und mobiler Gruppenauswahl; Dark Mode als Standard und gespeicherte Light-/Dark-Auswahl.
 - Sechs Angebotsseiten mit gemeinsamem Aufbau: Leistungen, Ablauf, Preis & Aufwand, FAQ und Anfrage. Die freigegebene IT-Diagnosepauschale beträgt 50 € Endpreis; VHS hat eine eigene Staffel und einen Preis-Schätzer.
-- Neun verlinkte Projekte in fünf aufklappbaren Gruppen. Grafik, Name und Kurzbeschreibung sind direkt sichtbar; weitere Informationen optional.
+- Zehn verlinkte Projekte, einschließlich WebLab für HTML und CSS, in fünf aufklappbaren Gruppen. Grafik, Name und Kurzbeschreibung sind direkt sichtbar; weitere Informationen optional.
 - Ein Anfrageformular in vier Schritten: Thema, Anliegen, Kontakt und Prüfung. Themenlinks wählen passende Felder vor.
 - Lokale Bilder, Systemschriften und ruhige Navy-/Blau-Flächen. Kein Framework, kein Build-Prozess, keine Paketabhängigkeiten.
 - Responsive Darstellung, Tastaturbedienung, sichtbarer Fokus, reduzierte Bewegung, strukturierte Daten und Sitemap.
