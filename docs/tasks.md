@@ -9,7 +9,6 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| 2026-10-14 | Projektanzahl in Kategorieüberschriften kontrastreicher darstellen | Codex | Umsetzung und Prüfung |
 
 ## Offen (abhängig von Material, Unterlagen oder externem Status)
 
@@ -37,6 +36,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-10-14 | v1.35.3 | Projektanzahl im dunklen Design weiß und im hellen Design dunkel gesetzt; Desktop/Mobil und Dark/Light geprüft; 864390d gepusht, Pages-Lauf 38612803946 erfolgreich, alle fünf Zähler online mit weißer Textfarbe bestätigt | Codex |
 | 2026-10-14 | v1.35.2 | Projekte innerhalb jeder Kategorie alphabetisch in allen 18 Menüs und zeilenweise auf der Projektseite sortiert; Desktop/Mobil, Dark/Light und Erhalt aller Inhalte geprüft; 1ddd75f gepusht, Pages-Lauf 38612474392 erfolgreich, Sortierung live bestätigt | Codex |
 | 2026-10-14 | v1.35.1 | WebLab im Projektmenü aller 18 Seiten und als fünftes Lern-Lab mit fotorealistischem Icon ergänzt; Desktop/Mobil und Dark/Light geprüft, 0f6dea4 gepusht, Pages-Lauf 38611565777 erfolgreich; Karte, Bild, Menü und tatsächlicher Aufruf von WebLab live bestätigt | Codex |
 | 2026-10-10 | v1.35.0 | Alle Unterseiten im Stil der Startseite (Einstieg mit Bild im Metallrahmen, silberweiße Titel, gefasste Karten, Trenner, Leiterbahn-Hintergrund auf jeder Seite), Übersichtsseiten mit Sprungkarten, Lesehilfe mit drei Kontraststufen, neues Angebot „Software nach Maß", Datenrettung ohne Ortsbindung; schrittweise mit Jakob abgestimmt | Claude |

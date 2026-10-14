@@ -250,7 +250,7 @@ Nach dem Veröffentlichen:
 
 Auf Jakobs Wunsch `.project-group-count` von Blau auf kontrastreiche Schrift umgestellt: im dunklen Design reines Weiß (#fff), im hellen Design die dunkle Textfarbe (#10283f). Gilt für alle fünf Kategorieüberschriften. Bestehende Größe, Position und Einfassung bleiben erhalten. Gemeinsame CSS-/Theme-Cachekennung auf allen Seiten auf 1.35.3 angehoben.
 
-Prüfung: Edge mit 1440/390 Pixeln jeweils Dark/Light. Alle fünf Zähler haben die erwartete berechnete Textfarbe, kein horizontaler Überlauf und keine Konsolenfehler. Darstellung visuell geprüft, `git diff --check` bestanden. Veröffentlichung und Live-Prüfung folgen.
+Prüfung: Edge mit 1440/390 Pixeln jeweils Dark/Light. Alle fünf Zähler haben die erwartete berechnete Textfarbe, kein horizontaler Überlauf und keine Konsolenfehler. Darstellung visuell geprüft, `git diff --check` bestanden. Veröffentlicht mit Commit `864390d`; [Pages-Lauf 38612803946](https://github.com/JakobSawazki/sawazki-electronics/actions/runs/38612803946) erfolgreich. Alle fünf Zähler online im Browser mit berechneter Textfarbe rgb(255, 255, 255) bestätigt.
 
 ### 14. Oktober 2026 – Codex – v1.35.2: Alphabetische Projektfolge
 
