@@ -2226,11 +2226,18 @@ html {
 
 .project-directory .project-group-label {font-size:1.15rem;}
 
-.project-tile {min-width:0;scroll-margin-top:110px;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;}
+.project-tile {position:relative;isolation:isolate;min-width:0;scroll-margin-top:110px;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;}
 
 .project-tile-link {display:flex;gap:20px;align-items:center;padding:22px;color:var(--ink);}
 
-.project-tile-link:hover h3 {text-decoration:underline;text-underline-offset:4px;}
+.project-tile-link::after {content:"";position:absolute;inset:0;z-index:1;border-radius:inherit;}
+
+.project-tile-link:focus-visible::after {outline:3px solid var(--cyan);outline-offset:-4px;}
+
+.project-tile-link:hover h3 {text-decoration:none;}
+
+.project-info>summary,
+.project-info-copy {position:relative;z-index:2;}
 
 .project-tile-link img {width:104px;height:104px;flex-shrink:0;object-fit:cover;border-radius:12px;}
 

@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 14. Oktober 2026 · Version: v1.35.3
+Stand: 14. Oktober 2026 · Version: v1.35.4
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.35.4 | 2026-10-14 | Gesamte Projektkacheln anklickbar, Projektnamen ohne Hover-Unterstreichung |
 | v1.35.3 | 2026-10-14 | Projektanzahl in Kategorieüberschriften im dunklen Design weiß, im hellen Design dunkel |
 | v1.35.2 | 2026-10-14 | Projekte innerhalb jeder Kategorie alphabetisch im Menü und auf der Projektseite sortiert |
 | v1.35.1 | 2026-10-14 | WebLab im Projektmenü auf allen 18 Seiten und als fünftes Lern-Lab mit fotorealistischem Projekticon |
@@ -245,6 +246,12 @@ Nach dem Veröffentlichen:
 - Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
 
 ## Bisheriges Aenderungsprotokoll
+
+### 14. Oktober 2026 – Codex – v1.35.4: Vollflächige Projektlinks
+
+Auf Jakobs Wunsch den vorhandenen Projektlink per CSS-Pseudoelement auf die gesamte Kachel ausgedehnt, einschließlich freier Flächen und Ränder. Native Links mit neuem Tab, Tastaturbedienung und Kontextmenü bleiben erhalten; kein zusätzliches JavaScript. „Mehr Informationen“ und aufgeklappte Informationstexte liegen oberhalb der Linkfläche und bleiben unabhängig bedienbar bzw. auswählbar. Fokus auf dem Projektlink umrandet die gesamte Kachel. Hover-Unterstreichung am Projektnamen entfernt; bestehende Bewegungs-, Rahmen- und Schatteneffekte unverändert. CSS-/Theme-Cachekennung auf allen Seiten auf 1.35.4 angehoben.
+
+Prüfung: Edge bei 1440/390 Pixeln in Dark/Light. An allen zehn Kacheln jeweils vier freie Rand-/Flächenpositionen dem korrekten Link zugeordnet. Echter Klick auf die freie untere rechte Ecke öffnet Excel-Lab im neuen Tab; Enter am fokussierten Link ebenfalls. Info-Aufklappen und freie Textfläche unabhängig bedienbar. Keine Unterstreichung beim Hover, kein horizontaler Überlauf und keine Anwendungsfehler. `git diff --check` bestanden. Veröffentlichung und Live-Prüfung folgen.
 
 ### 14. Oktober 2026 – Codex – v1.35.3: Lesbare Projektanzahl
 
