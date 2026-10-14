@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 14. Oktober 2026 · Version: v1.35.2
+Stand: 14. Oktober 2026 · Version: v1.35.3
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.35.3 | 2026-10-14 | Projektanzahl in Kategorieüberschriften im dunklen Design weiß, im hellen Design dunkel |
 | v1.35.2 | 2026-10-14 | Projekte innerhalb jeder Kategorie alphabetisch im Menü und auf der Projektseite sortiert |
 | v1.35.1 | 2026-10-14 | WebLab im Projektmenü auf allen 18 Seiten und als fünftes Lern-Lab mit fotorealistischem Projekticon |
 | v1.35.0 | 2026-10-10 | Unterseiten im Stil der Startseite, Lesehilfe mit drei Kontraststufen, „Software nach Maß", Datenrettung ohne Ortsbindung |
@@ -244,6 +245,12 @@ Nach dem Veröffentlichen:
 - Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
 
 ## Bisheriges Aenderungsprotokoll
+
+### 14. Oktober 2026 – Codex – v1.35.3: Lesbare Projektanzahl
+
+Auf Jakobs Wunsch `.project-group-count` von Blau auf kontrastreiche Schrift umgestellt: im dunklen Design reines Weiß (#fff), im hellen Design die dunkle Textfarbe (#10283f). Gilt für alle fünf Kategorieüberschriften. Bestehende Größe, Position und Einfassung bleiben erhalten. Gemeinsame CSS-/Theme-Cachekennung auf allen Seiten auf 1.35.3 angehoben.
+
+Prüfung: Edge mit 1440/390 Pixeln jeweils Dark/Light. Alle fünf Zähler haben die erwartete berechnete Textfarbe, kein horizontaler Überlauf und keine Konsolenfehler. Darstellung visuell geprüft, `git diff --check` bestanden. Veröffentlichung und Live-Prüfung folgen.
 
 ### 14. Oktober 2026 – Codex – v1.35.2: Alphabetische Projektfolge
 

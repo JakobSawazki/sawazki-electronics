@@ -1870,7 +1870,9 @@ html {
 
 .project-group-title > span:not(.project-group-label) { display: block; margin-top: .2rem; color: var(--muted); font-size: .82rem; line-height: 1.5; }
 
-.project-group-count { white-space: nowrap; font-size: .75rem; font-weight: 700; color: var(--teal); padding: .25rem .6rem; border: 1px solid var(--line); border-radius: 20px; }
+.project-group-count { white-space: nowrap; font-size: .75rem; font-weight: 700; color: var(--ink); padding: .25rem .6rem; border: 1px solid var(--line); border-radius: 20px; }
+
+:root[data-theme="dark"] .project-group-count { color: #fff; }
 
 .project-group-chevron { width: 24px; height: 24px; flex-shrink: 0; color: var(--teal); transition: transform 280ms ease; }
 
