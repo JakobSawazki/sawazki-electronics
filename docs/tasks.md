@@ -9,7 +9,6 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Aufgabe | Bearbeiter | Status |
 | --- | --- | --- | --- |
-| 2026-10-14 | Ganze Projektkacheln verlinken, Unterstreichung der Projektnamen entfernen und Info-Aufklappen erhalten | Codex | Umsetzung und Prüfung |
 
 ## Offen (abhängig von Material, Unterlagen oder externem Status)
 
@@ -37,6 +36,7 @@ den Eintrag unter „In Arbeit" anlegen, **nach** Abschluss (inkl. Push + Live-P
 
 | Datum | Version | Aufgabe | Bearbeiter |
 | --- | --- | --- | --- |
+| 2026-10-14 | v1.35.4 | Gesamte Projektkacheln als native Links, keine Hover-Unterstreichung; Info-Aufklappen und Effekte erhalten. Alle zehn Kacheln Desktop/Mobil und Dark/Light geprüft; b2caa7e gepusht, Pages-Lauf 38613223024 erfolgreich; Flächenklick, Ziel und Infobereich live bestätigt | Codex |
 | 2026-10-14 | v1.35.3 | Projektanzahl im dunklen Design weiß und im hellen Design dunkel gesetzt; Desktop/Mobil und Dark/Light geprüft; 864390d gepusht, Pages-Lauf 38612803946 erfolgreich, alle fünf Zähler online mit weißer Textfarbe bestätigt | Codex |
 | 2026-10-14 | v1.35.2 | Projekte innerhalb jeder Kategorie alphabetisch in allen 18 Menüs und zeilenweise auf der Projektseite sortiert; Desktop/Mobil, Dark/Light und Erhalt aller Inhalte geprüft; 1ddd75f gepusht, Pages-Lauf 38612474392 erfolgreich, Sortierung live bestätigt | Codex |
 | 2026-10-14 | v1.35.1 | WebLab im Projektmenü aller 18 Seiten und als fünftes Lern-Lab mit fotorealistischem Icon ergänzt; Desktop/Mobil und Dark/Light geprüft, 0f6dea4 gepusht, Pages-Lauf 38611565777 erfolgreich; Karte, Bild, Menü und tatsächlicher Aufruf von WebLab live bestätigt | Codex |
