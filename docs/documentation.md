@@ -256,6 +256,7 @@ Nach dem Veröffentlichen:
 - Projektmenü auf allen 18 Seiten, beide Lern-Lab-Zähler, strukturierte Daten und README aktualisiert; Cache-Version 1.35.5.
 - Die Beschreibung stellt Kennenlernen und Organisation vor. Noch nicht freigeschaltete Konten werden nicht als verfügbare Funktion beworben.
 - Lokal geprüft: Desktop und 390-px-Mobilansicht jeweils Dark/Light ohne horizontalen Überlauf, Grafik geladen, Infobereich bedienbar, mobiles Menü alphabetisch. Alle 18 Menüs, elf Kacheln, Zähler, strukturierte Daten, lokale Referenzen und eindeutige IDs geprüft; keine Browserfehler.
+- Veröffentlicht mit `d88811e`; GitHub-Pages-Lauf 39049296904 erfolgreich. StartLab-Karte, geladenes Bild (1254 px), Linkziel und elf Projektkarten live bestätigt.
 
 ### 14. Oktober 2026 – Codex – v1.35.4: Vollflächige Projektlinks
 
