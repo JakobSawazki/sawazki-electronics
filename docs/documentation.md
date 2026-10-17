@@ -1,6 +1,6 @@
 # Sawazki Electronics – Projektdokumentation
 
-Stand: 14. Oktober 2026 · Version: v1.35.4
+Stand: 17. Oktober 2026 · Version: v1.35.5
 
 Diese Dokumentation ist die zentrale Wissensbasis fuer alle Mitarbeiter und KI-Agenten
 (Codex/ChatGPT, Claude) und fuer die Weiterarbeit auf anderen Geraeten. Sie wird bei jeder
@@ -19,6 +19,7 @@ steht weiter unten.
 
 | Version | Datum | Schwerpunkt |
 | --- | --- | --- |
+| v1.35.5 | 2026-10-17 | StartLab als sechstes Lern-Lab mit fotorealistischer Grafik und Eintrag in allen Projektmenüs |
 | v1.35.4 | 2026-10-14 | Gesamte Projektkacheln anklickbar, Projektnamen ohne Hover-Unterstreichung |
 | v1.35.3 | 2026-10-14 | Projektanzahl in Kategorieüberschriften im dunklen Design weiß, im hellen Design dunkel |
 | v1.35.2 | 2026-10-14 | Projekte innerhalb jeder Kategorie alphabetisch im Menü und auf der Projektseite sortiert |
@@ -246,6 +247,15 @@ Nach dem Veröffentlichen:
 - Vorschlag wartet gemäß Benutzerauftrag auf Jakobs Freigabe. Codex 3 (gesamte Website) bleibt das nachfolgende Arbeitspaket.
 
 ## Bisheriges Aenderungsprotokoll
+
+### 17. Oktober 2026 – Codex – v1.35.5: StartLab eingebunden
+
+- StartLab als sechstes Lern-Lab und elftes Projekt ergänzt; alphabetisch nach PythonLab.
+- Projektkarte mit Kurzbeschreibung, Zielgruppe, Zweck und Link auf die bestehende StartLab-Seite.
+- Eigenes fotorealistisches KI-Symbolbild, lokal als `assets/images/project-startlab.webp`; Bildauftrag in `docs/projekte-bildprompt.md`.
+- Projektmenü auf allen 18 Seiten, beide Lern-Lab-Zähler, strukturierte Daten und README aktualisiert; Cache-Version 1.35.5.
+- Die Beschreibung stellt Kennenlernen und Organisation vor. Noch nicht freigeschaltete Konten werden nicht als verfügbare Funktion beworben.
+- Lokal geprüft: Desktop und 390-px-Mobilansicht jeweils Dark/Light ohne horizontalen Überlauf, Grafik geladen, Infobereich bedienbar, mobiles Menü alphabetisch. Alle 18 Menüs, elf Kacheln, Zähler, strukturierte Daten, lokale Referenzen und eindeutige IDs geprüft; keine Browserfehler.
 
 ### 14. Oktober 2026 – Codex – v1.35.4: Vollflächige Projektlinks
 

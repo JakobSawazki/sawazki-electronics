@@ -1,5 +1,15 @@
 # Bildauftrag: IT-Projekte
 
+## StartLab – 17. Oktober 2026
+
+Mit dem integrierten Imagegen-Werkzeug erzeugtes fotorealistisches Symbolbild; als WebP ohne Änderung des Bildinhalts gespeichert unter `assets/images/project-startlab.webp` (1254 × 1254). Keine Aufnahme einer tatsächlichen Schule.
+
+Finaler Generierungs-Prompt:
+
+Use case: photorealistic-natural. Square 1:1 premium photographic project tile for StartLab, a German school-year welcome and organization learning portal, matching a professional navy/cyan IT portfolio. A realistic open dark metal laptop on a tidy navy-grey school desk shows a clean welcoming dashboard with three large simple cards: a small group-of-people icon, a calendar icon, a checklist icon, subtle cyan and warm amber accents, no readable words. Next to laptop a modest paper planner, three blank pastel name cards and pens suggest getting to know classmates and planning lessons. Softly blurred bright modern classroom with empty chairs in background, gentle daylight balanced with deep navy and cyan reflections, warm inviting atmosphere. One coherent scene, realistic materials, physically plausible screen perspective and reflections, shallow editorial photographic depth of field. Main laptop and planner within central 75 percent, readable silhouette at small thumbnail size, square composition. No people, no faces, no logos, no brand marks, no readable text, no watermark, no holograms, no collage, no neon fantasy lighting. Symbolic AI-generated classroom workspace, not an actual school photograph.
+
+## Projektübersicht – 8. Oktober 2026
+
 08.10.2026 · integriertes Imagegen-Werkzeug · eingebunden als `assets/images/projekte-hero.webp`.
 
 Finaler Generierungs-Prompt:
